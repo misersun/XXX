@@ -16,7 +16,6 @@ proxies:
     - {name: https://git.io/v9999 clash ip1 4, server: 139.226.163.144, port: 10001, type: vmess, uuid: 2e6fe034-aeaf-4b7d-9c28-7d5465f58837, alterId: 1, cipher: auto, tls: false}
     - {name: https://git.io/v9999 clash 德国2, server: 104.19.32.10, port: 443, type: vmess, uuid: 55139eb8-f598-4cdd-90e5-def733e8f999, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: ge001.free2222.xyz}}
     - {name: https://git.io/v9999 clash 德国3, server: 104.19.64.20, port: 443, type: vmess, uuid: 55139eb8-f598-4cdd-90e5-def733e8f999, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: ge001.free2222.xyz}}
-    - {name: https://github.com/Alvin9999/new-pac/wiki ip2&ip4洛杉矶, server: us102.free2222.xyz, port: 443, type: vmess, uuid: 113ed49b-85cb-4eb7-a94e-95da956cf4bb, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: us102.free2222.xyz}}
     - {name: https://git.io/v9999 洛杉矶, server: us103.free2222.xyz, port: 443, type: vmess, uuid: f2075a98-f9c8-4eae-81dc-7c0d5fc1dfed, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: us103.free2222.xyz}}
     - {name: https://github.com/Alvin9999/new-pac/wiki ip1德国CDN, server: cloudflare.com, port: 443, type: vmess, uuid: 55139eb8-f598-4cdd-90e5-def733e8f999, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: ge001.free2222.xyz}}
     - {name: https://github.com/Alvin9999/new-pac/wiki ip2&ip4洛杉矶, server: us102.free2222.xyz, port: 443, type: vmess, uuid: 113ed49b-85cb-4eb7-a94e-95da956cf4bb, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: us102.free2222.xyz}}
@@ -58,7 +57,7 @@ proxies:
 
  
  
-     - name: "ge001.free2222.xyz"
+    -  name: "ge001.free2222.xyz"
        type: vmess
        server: ge001.free2222.xyz
        port: 443
@@ -73,7 +72,7 @@ proxies:
        ws-headers: # 这一行后面不要写东西
          Host: ge001.free2222.xyz #填你的主机名   
      
-     - name: "104.19.0.10"
+    -  name: "104.19.0.10"
        type: vmess
        server: 104.19.0.10
        port: 443
