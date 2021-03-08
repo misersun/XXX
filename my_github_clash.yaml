@@ -117,7 +117,7 @@ proxies:
     - {name: https://www.mattkaydiary.com 2, server: a43db2148a730d16a.awsglobalaccelerator.com, port: 44444, type: vmess, uuid: 0847e536-35e7-4f3d-afd5-64bab07d7beb, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: a43db2148a730d16a.awsglobalaccelerator.com}}
 
 #0308
-    - {name: 馃嚫馃嚞 https://www.mattkaydiary.com|鑱旈€氱Щ鍔?鏂板姞鍧?3, server: sg05.ronghuafugui.xyz, port: 443, type: vmess, uuid: 2a157409-82ee-48d8-80a8-c79688cddc7a, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /test, ws-headers: {Host: sg05.ronghuafugui.xyz}}
+    - {name: https://www.mattkaydiary.com|3, server: sg05.ronghuafugui.xyz, port: 443, type: vmess, uuid: 2a157409-82ee-48d8-80a8-c79688cddc7a, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /test, ws-headers: {Host: sg05.ronghuafugui.xyz}}
     - {name: 馃嚟馃嚢 https://www.mattkaydiary.com|鑱旈€氱Щ鍔?棣欐腐8, server: hk07.ronghuafugui.xyz, port: 443, type: vmess, uuid: 2a157409-82ee-48d8-80a8-c79688cddc7a, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /test, ws-headers: {Host: hk07.ronghuafugui.xyz}}
     - {name: 馃嚫馃嚞 https://www.mattkaydiary.com|鑱旈€氱Щ鍔?鏂板姞鍧?0, server: sg01.ronghuafugui.xyz, port: 443, type: vmess, uuid: 2a157409-82ee-48d8-80a8-c79688cddc7a, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /test, ws-headers: {Host: sg01.ronghuafugui.xyz}}
     - {name: 馃嚫馃嚞 https://www.mattkaydiary.com|鑱旈€氱Щ鍔?鏂板姞鍧?1, server: sg02.ronghuafugui.xyz, port: 443, type: vmess, uuid: 2a157409-82ee-48d8-80a8-c79688cddc7a, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /test, ws-headers: {Host: sg02.ronghuafugui.xyz}}
