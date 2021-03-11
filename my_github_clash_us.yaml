@@ -1,0 +1,30 @@
+socks-port: 7891
+allow-lan: true
+bind-address: '*'
+mode: rule
+log-level: silent
+
+dns:
+  enable: false
+
+proxies:
+#free_clash:
+    - {name: https://github.com/Alvin9999/new-pac/wiki ip2&ip4洛杉矶, server: us102.free2222.xyz, port: 443, type: vmess, uuid: 113ed49b-85cb-4eb7-a94e-95da956cf4bb, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: us102.free2222.xyz}}
+    - {name: https://git.io/v9999 洛杉矶, server: us103.free2222.xyz, port: 443, type: vmess, uuid: f2075a98-f9c8-4eae-81dc-7c0d5fc1dfed, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: us103.free2222.xyz}}
+    - {name: https://git.io/v9999 115, server: 104.18.6.138, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+#0305
+    - {name: https://www.mattkaydiary.com|adi|0301T - ZZ_1012, server: pro-us1-4.sstr-api.xyz, port: 443, type: trojan, password: W3ADSjTHjxN3Nt28WC, sni: pro-us1-4.sstr-api.xyz}
+#0309
+    - {name: 🏳️‍🌈 https://www.mattkaydiary.com|美国-PRO-US1-1-流量倍率:0.5, server: pro-us1-1.sstr-api.xyz, port: 443, type: trojan, password: W3ADSjTHjxN3Nt28WC, sni: pro-us1-1.sstr-api.xyz}
+    - {name: 🏳️‍🌈 https://www.mattkaydiary.com|美国-PRO-US1-2-流量倍率:0.5, server: pro-us1-2.sstr-api.xyz, port: 443, type: trojan, password: W3ADSjTHjxN3Nt28WC, sni: pro-us1-2.sstr-api.xyz}
+    - {name: 🏳️‍🌈 https://www.mattkaydiary.com|美国-PRO-US1-3-流量倍率:0.5, server: pro-us1-3.sstr-api.xyz, port: 443, type: trojan, password: W3ADSjTHjxN3Nt28WC, sni: pro-us1-3.sstr-api.xyz}
+    - {name: 🏳️‍🌈 https://www.mattkaydiary.com|美国-PRO-US1-4-流量倍率:0.5, server: pro-us1-4.sstr-api.xyz, port: 443, type: trojan, password: W3ADSjTHjxN3Nt28WC, sni: pro-us1-4.sstr-api.xyz}
+      
+proxy-groups:
+  - name: "testUs"
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+
+rules:
+  - MATCH,testUs
