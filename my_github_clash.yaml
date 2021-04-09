@@ -1,0 +1,54 @@
+socks-port: 7891
+allow-lan: true
+bind-address: '*'
+mode: rule
+log-level: silent
+
+dns:
+  enable: false
+
+proxies:
+#0409
+    - {name: 🇺🇸 https://www.mattkaydiary.com|🇺🇸 US_299 |19.34Mb, server: 104.18.6.138, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+    - {name: https://www.mattkaydiary.com|Relay_🇨🇦CA-🇨🇦CA_596 |56.10Mb, server: v2-02.ssrsub.one, port: 153, type: vmess, uuid: 6bb99012-5169-405b-9443-05d8773fc120, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: n46hm52773.laowanxiang.com}}
+    - {name: 🇭🇰 https://www.mattkaydiary.com|Relay_🇭🇰HK-🇭🇰HK_1662 |24.30Mb, server: v2-hk-002.xiaoxiaobujidao.xyz, port: 80, type: vmess, uuid: e676ca8b-920d-3e16-90bc-41cff4ac59bc, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /xiaodao, ws-headers: {Host: v2hk002.cccccc.cc}}
+    - {name: 🇳🇱 https://www.mattkaydiary.com|Relay_🇺🇸US-🇳🇱NL_3299 | 6.33Mb, server: ali-los-001.bujidao.org, port: 80, type: vmess, uuid: 7f5c089e-2e07-3c57-82ad-b33b9c45d2a9, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /xiaodao, ws-headers: {Host: v2-nl-001.xiaodao.com}}
+    - {name: 🇸🇬 https://www.mattkaydiary.com|新加坡◆AWS 03 Netflix 1x, server: l1-aws-sg-03.baipiao.de, port: 80, type: vmess, uuid: 914e9603-3535-3228-96a9-e66fe76bd5b5, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /pucloud, ws-headers: {Host: l1-aws-sg-03.baipiao.de}}
+    - {name: 🇯🇵 https://www.mattkaydiary.com|日本◆AWS 08 Netflix 1x, server: l1-aws-jp-08.baipiao.de, port: 80, type: vmess, uuid: 914e9603-3535-3228-96a9-e66fe76bd5b5, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /pucloud, ws-headers: {Host: l1-aws-jp-08.baipiao.de}}
+    - {name: 🇺🇸 https://www.mattkaydiary.com|🇺🇸 US_1140, server: 128.14.153.42, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8633, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: usa2-node.3366test.com}}
+    - {name: 🇺🇸 https://www.mattkaydiary.com|🇺🇸 US_1147, server: 104.17.188.91, port: 443, type: vmess, uuid: 8e82a9a5-b894-4b4d-bf2e-dbf0807572aa, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: raspy-sky-9e81.roewesu.workers.dev}}
+    - {name: 🇺🇸 https://www.mattkaydiary.com|🇺🇸 US_1148, server: free.milagropets.tech, port: 80, type: vmess, uuid: fe4b09d6-8af6-33a2-8340-d3539f8c8a4c, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /ray, ws-headers: {Host: free.milagropets.tech}}
+    - {name: https://www.mattkaydiary.com|Relay_🇨🇦CA-🇨🇦CA_466, server: v2-05.ssrsub.one, port: 153, type: vmess, uuid: 6bb99012-5169-405b-9443-05d8773fc120, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: n46hm52773.laowanxiang.com}}
+    - {name: 🇩🇪 https://www.mattkaydiary.com|Relay_🇨🇳CN-🇩🇪DE_498, server: jm-cm01.haoye.cf, port: 21030, type: vmess, uuid: d0713bc8-a892-43ed-bbd5-2d42228c5c73, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: jm-cm01.haoye.cf}}
+    - {name: 🇺🇸 https://www.mattkaydiary.com|Relay_🇨🇳CN-🇺🇸US_504, server: cs-cu01.haoye.cf, port: 20007, type: vmess, uuid: d0713bc8-a892-43ed-bbd5-2d42228c5c73, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: cs-cu01.haoye.cf}}
+    - {name: 🇺🇸 https://www.mattkaydiary.com|Relay_🇨🇳CN-🇺🇸US_514, server: jm-cm01.haoye.cf, port: 21011, type: vmess, uuid: d0713bc8-a892-43ed-bbd5-2d42228c5c73, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: jm-cm01.haoye.cf}}
+    - {name: 🇺🇸 https://www.mattkaydiary.com|Relay_🇨🇳CN-🇺🇸US_516, server: ls-cm01.haoye.cf, port: 10004, type: vmess, uuid: d0713bc8-a892-43ed-bbd5-2d42228c5c73, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: ls-cm01.haoye.cf}}
+    - {name: 🇯🇵 https://www.mattkaydiary.com|Relay_🇨🇳CN-🇯🇵JP_518, server: 52.80.57.145, port: 10002, type: vmess, uuid: b062d543-f6a2-4e0d-8ae6-1d0a5871aa1b, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /Pinmk4Nk, ws-headers: {Host: 52.80.57.145}}
+    - {name: 🇭🇰 https://www.mattkaydiary.com|Relay_🇨🇳CN-🇭🇰HK_519, server: ah-cu01.haoye.cf, port: 50034, type: vmess, uuid: d0713bc8-a892-43ed-bbd5-2d42228c5c73, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: ah-cu01.haoye.cf}}
+    - {name: 🇺🇸 https://www.mattkaydiary.com|Relay_🇨🇳CN-🇺🇸US_520, server: jm-cm01.haoye.cf, port: 21027, type: vmess, uuid: d0713bc8-a892-43ed-bbd5-2d42228c5c73, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: jm-cm01.haoye.cf}}
+    - {name: 🇯🇵 https://www.mattkaydiary.com|Relay_🇨🇳CN-🇯🇵JP_521, server: 52.80.57.145, port: 10001, type: vmess, uuid: b062d543-f6a2-4e0d-8ae6-1d0a5871aa1b, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /Pinmk4Nk, ws-headers: {Host: 52.80.57.145}}
+    - {name: 🇭🇰 https://www.mattkaydiary.com|Relay_🇨🇳CN-🇭🇰HK_522, server: 52.80.57.145, port: 10004, type: vmess, uuid: b062d543-f6a2-4e0d-8ae6-1d0a5871aa1b, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /Pinmk4Nk, ws-headers: {Host: 52.80.57.145}}
+    - {name: 🇭🇰 https://www.mattkaydiary.com|Relay_🇭🇰HK-🇭🇰HK_1310, server: v2-hk-002.xiaoxiaobujidao.xyz, port: 80, type: vmess, uuid: 0b544d05-b85b-36df-85c0-9f0417c5ced8, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /xiaodao, ws-headers: {Host: v2hk002.cccccc.cc}}
+    - {name: 🇭🇰 https://www.mattkaydiary.com|Relay_🇭🇰HK-🇭🇰HK_1311, server: v2-hk-002.xiaoxiaobujidao.xyz, port: 80, type: vmess, uuid: 7f5c089e-2e07-3c57-82ad-b33b9c45d2a9, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /xiaodao, ws-headers: {Host: v2hk002.cccccc.cc}}
+    - {name: 🇭🇰 https://www.mattkaydiary.com|Relay_🇭🇰HK-🇭🇰HK_1312, server: v2-hk-002.xiaoxiaobujidao.xyz, port: 23342, type: vmess, uuid: 7f5c089e-2e07-3c57-82ad-b33b9c45d2a9, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /xiaodao, ws-headers: {Host: v2hk002.cccccc.cc}}
+    - {name: 🇭🇰 https://www.mattkaydiary.com|Relay_🇭🇰HK-🇭🇰HK_1313, server: v2-hk-002.xiaoxiaobujidao.xyz, port: 23342, type: vmess, uuid: 1f4c23ab-e109-3f97-a6af-fb41cd4d31b5, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /xiaodao, ws-headers: {Host: v2hk002.cccccc.cc}}
+    - {name: 🇭🇰 https://www.mattkaydiary.com|Relay_🇭🇰HK-🇭🇰HK_1314, server: v2-hk-002.xiaoxiaobujidao.xyz, port: 80, type: vmess, uuid: 1f4c23ab-e109-3f97-a6af-fb41cd4d31b5, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /xiaodao, ws-headers: {Host: v2hk002.cccccc.cc}}
+    - {name: 🇭🇰 https://www.mattkaydiary.com|Relay_🇭🇰HK-🇭🇰HK_1316, server: hk05.kelecloud.xyz, port: 20086, type: vmess, uuid: b062d543-f6a2-4e0d-8ae6-1d0a5871aa1b, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /Pinmk4Nk, ws-headers: {Host: hk05.kelecloud.xyz}}
+    - {name: 🇭🇰 https://www.mattkaydiary.com|Relay_🇭🇰HK-🇭🇰HK_1317, server: hk04.kelecloud.xyz, port: 20086, type: vmess, uuid: b062d543-f6a2-4e0d-8ae6-1d0a5871aa1b, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /Pinmk4Nk, ws-headers: {Host: hk04.kelecloud.xyz}}
+    - {name: 🇭🇰 https://www.mattkaydiary.com|Relay_🇭🇰HK-🇭🇰HK_1319, server: hk01.kelecloud.xyz, port: 20086, type: vmess, uuid: b062d543-f6a2-4e0d-8ae6-1d0a5871aa1b, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /Pinmk4Nk, ws-headers: {Host: hk01.kelecloud.xyz}}
+    - {name: 🇭🇰 https://www.mattkaydiary.com|Relay_🇭🇰HK-🇭🇰HK_1320, server: hk03.kelecloud.xyz, port: 20086, type: vmess, uuid: b062d543-f6a2-4e0d-8ae6-1d0a5871aa1b, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /Pinmk4Nk, ws-headers: {Host: hk03.kelecloud.xyz}}
+    - {name: 🇭🇰 https://www.mattkaydiary.com|Relay_🇭🇰HK-🇭🇰HK_1329, server: hk02.kelecloud.xyz, port: 20086, type: vmess, uuid: b062d543-f6a2-4e0d-8ae6-1d0a5871aa1b, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /Pinmk4Nk, ws-headers: {Host: microsoft.com}}
+    - {name: 🇭🇰 https://www.mattkaydiary.com|Relay_🇭🇰HK-🇭🇰HK_37, server: v2-hk-002.xiaoxiaobujidao.xyz, port: 23342, type: vmess, uuid: e676ca8b-920d-3e16-90bc-41cff4ac59bc, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /xiaodao, ws-headers: {Host: v2hk002.cccccc.cc}}
+    - {name: 🇭🇰 https://www.mattkaydiary.com|Relay_🇭🇰HK-🇭🇰HK_38, server: v2-hk-005.xiaoxiaobujidao.xyz, port: 80, type: vmess, uuid: 0b544d05-b85b-36df-85c0-9f0417c5ced8, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /xiaodao, ws-headers: {Host: v2hk005.cccccc.cc}}
+    - {name: 🇸🇬 https://www.mattkaydiary.com|AWS新加坡-广州移动, server: 183.232.56.80, port: 10279, type: vmess, uuid: 8d7e664f-a3a5-3ef8-8d4f-056ae06705fa, alterId: 16, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 183.232.56.80}}
+    - {name: 🇰🇷 https://www.mattkaydiary.com|AWS韩国直连, server: 3.34.181.194, port: 28519, type: vmess, uuid: 8d7e664f-a3a5-3ef8-8d4f-056ae06705fa, alterId: 16, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 3.34.181.194}}
+    - {name: 🇭🇰 https://www.mattkaydiary.com|HK-香港, server: 75.2.43.193, port: 4441, type: vmess, uuid: 0386674d-aa32-35b3-b6b1-cb67eef0434e, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 75.2.43.193}}
+  
+proxy-groups:
+  - name: "testGithub"
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+
+rules:
+  - MATCH,testGithub
