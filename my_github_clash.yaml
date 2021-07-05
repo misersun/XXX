@@ -1,0 +1,100 @@
+socks-port: 7891
+allow-lan: true
+bind-address: '*'
+mode: rule
+log-level: silent
+
+dns:
+  enable: false
+
+proxies:
+#0704
+    - {name: 🇺🇸 https://www.mattkaydiary.com|Relay_🇨🇳CN-🇺🇸US_1944, server: 116.149.51.40, port: 30504, type: vmess, uuid: 615d36d4-8ca9-3d4b-9fde-33fca7d24c09, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: xn--r1a.website/s/vpnhat}}
+    - {name: 🇺🇸 https://www.mattkaydiary.com|🇺🇸 US_7578, server: free-russian01-cdn.xiaohouzi.club, port: 80, type: vmess, uuid: 3d31728e-064d-42b8-b945-f79c008f73fc, alterId: 233, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: free-russian01-cdn.xiaohouzi.club}}
+    - {name: https://www.mattkaydiary.com|🏁 ZZ_8119, server: cfcn.9sep.org, port: 80, type: vmess, uuid: f22a80af-a9c9-3360-841e-25610688f353, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /w421x2bx2za, ws-headers: {Host: nj.sb-cloud.cf}}
+    - {name: 🇨🇳 https://www.mattkaydiary.com|🇨🇳 CN_893, server: 116.149.51.40, port: 22334, type: vmess, uuid: 35b77d63-ba4b-3271-b526-65645bd2e267, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 116.149.51.40}}
+    - {name: 🇩🇪 https://www.mattkaydiary.com|Relay_🇺🇸US-🇩🇪DE_484, server: 104.16.1.4, port: 443, type: vmess, uuid: 5224cbe6-3104-3b77-98ec-d128a6feae68, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /0wejcsges, ws-headers: {Host: de.sb-cloud.cf}}
+    - {name: 🇺🇸 https://www.mattkaydiary.com|🇺🇸 US_7547, server: 16.162.55.4, port: 443, type: vmess, uuid: 2c859d5f-b599-382d-ab6c-31e08afcd438, alterId: 16, cipher: auto, tls: false, network: ws, ws-path: /nima, ws-headers: {Host: 16.162.55.4}}
+    - {name: https://www.mattkaydiary.com|Relay_ | 9.38Mb, server: 104.21.48.161, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+    - {name: 🇺🇸 https://www.mattkaydiary.com|🇺🇸 US_7570, server: 23.224.30.36, port: 443, type: vmess, uuid: e4494518-74e8-4d6b-942a-6b332cce09ef, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.01902367.xyz}}
+    - {name: 🇯🇵 https://www.mattkaydiary.com|【直连】NRT/东京 B - 3, server: 028.JP.AP.POP.BIGAIRPORT.NET, port: 80, type: vmess, uuid: bb511347-6ed5-475c-9ffe-ac7268fdf351, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 028.JP.AP.POP.BIGAIRPORT.NET}}
+    - {name: https://www.mattkaydiary.com|🇬🇧 GB_2700, server: 46.101.28.98, port: 8888, type: vmess, uuid: ae7486f9-d7b7-4f26-97a0-dc5b093dfa89, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 46.101.28.98}}
+    - {name: 🇨🇳 https://www.mattkaydiary.com|🇨🇳 CN_879, server: 113.207.102.1, port: 80, type: vmess, uuid: d51b0f1b-cf5a-454c-bc4c-171491ff5e74, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 005.cdn.8x.cx.hit.edu.cn}}
+    - {name: 🇺🇸 https://www.mattkaydiary.com|🇺🇸 US_7615, server: 3.33.135.147, port: 80, type: vmess, uuid: 83c18473-68f5-4c6e-8f3b-728abd2f04df, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: xn--r1a.website/s/vpnhat}}
+    - {name: 🇨🇳 https://www.mattkaydiary.com|🇨🇳 CN_887, server: qwerjm.moox.icu, port: 40007, type: vmess, uuid: 452b00a7-92d5-4a5b-a88c-4c3e0c629d5b, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: qwerjm.moox.icu}}
+    - {name: 🇺🇸 https://www.mattkaydiary.com|美国㉔直连, server: 154.17.2.112, port: 18335, type: ss, cipher: chacha20-ietf-poly1305, password: N0KSFR6alSxjgp7T8Aa9Ce8DnCaAOYqz5lFZxe3O2I3uycYZXEDp3S34RyCDwB}
+    - {name: 🇺🇸 https://www.mattkaydiary.com|美国⑳直连, server: 154.17.2.95, port: 18334, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
+    - {name: 🇺🇸 https://www.mattkaydiary.com|🇺🇸US_3745, server: 16.162.55.4, port: 443, type: vmess, uuid: 2c859d5f-b599-382d-ab6c-31e08afcd438, alterId: 16, cipher: auto, tls: false, network: ws, ws-path: /nima, ws-headers: {Host: 16.162.55.4}}
+    - {name: 🇺🇸 https://www.mattkaydiary.com|美国㉟直连, server: 154.17.2.153, port: 18334, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
+    - {name: 🇩🇪 https://www.mattkaydiary.com|Relay_🇺🇸US-🇩🇪DE_3760, server: 104.18.6.138, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+    - {name: "🇺🇸 https://www.mattkaydiary.com|美国T1[初级|x1]", server: speed.cloudflare.com, port: 443, type: vmess, uuid: f22a80af-a9c9-3360-841e-25610688f353, alterId: 3, cipher: auto, tls: true, network: ws, ws-path: /114515/iuuu, ws-headers: {Host: t-1.sb-cloud.cf}}
+    - {name: 🇺🇸 https://www.mattkaydiary.com|美国㉞直连, server: 154.17.2.149, port: 18334, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
+    - {name: 🇨🇳 https://www.mattkaydiary.com|Relay_🇨🇳CN-🇬🇧GB_22 | 9.03Mb, server: qwerjm.moox.icu, port: 34001, type: vmess, uuid: 452b00a7-92d5-4a5b-a88c-4c3e0c629d5b, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: digjp.moox.icu}}
+    - {name: 🇺🇸 https://www.mattkaydiary.com|美国㊱直连, server: 154.17.2.160, port: 18333, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
+    - {name: 🇺🇸 https://www.mattkaydiary.com|🇺🇸 US_7559, server: ac2077.herokuapp.com, port: 443, type: vmess, uuid: d1babe08-f8ac-490b-b66f-9be27467f3cc, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /d1babe08-f8ac-490b-b66f-9be27467f3cc-vmess, ws-headers: {Host: ac2077.herokuapp.com}}
+    - {name: 🇺🇸 https://www.mattkaydiary.com|美国③直连, server: 154.17.1.251, port: 18334, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
+    - {name: 🇯🇵 https://www.mattkaydiary.com|🇯🇵JP_2630, server: 3.115.6.115, port: 443, type: vmess, uuid: 2c859d5f-b599-382d-ab6c-31e08afcd438, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /nima, ws-headers: {Host: 3.115.6.115}}
+    - {name: 🇨🇳 https://www.mattkaydiary.com|🇨🇳 CN_883, server: qwerjm.moox.icu, port: 34002, type: vmess, uuid: 452b00a7-92d5-4a5b-a88c-4c3e0c629d5b, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: awsjp1.moox.icu}}
+    - {name: 🇯🇵 https://www.mattkaydiary.com|🇯🇵 JP_3458, server: 3.115.6.115, port: 443, type: vmess, uuid: 2c859d5f-b599-382d-ab6c-31e08afcd438, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /nima, ws-headers: {Host: 3.115.6.115}}
+    - {name: https://www.mattkaydiary.com|_1744, server: 85.117.234.184, port: 19303, type: vmess, uuid: c3806abf-afaf-4ed1-8f7e-41a7ecdbb4e3, alterId: 0, cipher: auto, tls: false}
+    - {name: 🇺🇸 https://www.mattkaydiary.com|🇺🇸 US_234, server: 104.18.7.138, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+    - {name: 🇺🇸 https://www.mattkaydiary.com|🇺🇸 US_7555, server: 104.19.45.117, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+    - {name: 🇨🇳 https://www.mattkaydiary.com|台湾01 三网优化 隧道节点, server: 120.240.47.76, port: 31004, type: vmess, uuid: fa16a75d-2f25-3ec9-ae38-1921f140d9d3, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /ny, ws-headers: {Host: 120.240.47.76}}
+    - {name: 🇩🇪 https://www.mattkaydiary.com|德国01 三网优化 隧道节点, server: 120.240.47.76, port: 31005, type: vmess, uuid: fa16a75d-2f25-3ec9-ae38-1921f140d9d3, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /ny, ws-headers: {Host: 120.240.47.76}}
+    - {name: 🇯🇵 https://www.mattkaydiary.com|日本01 三网优化 隧道节点, server: 120.240.47.76, port: 31003, type: vmess, uuid: fa16a75d-2f25-3ec9-ae38-1921f140d9d3, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /ny, ws-headers: {Host: 120.240.47.76}}
+    - {name: 🇫🇷 https://www.mattkaydiary.com|法国01 三网优化 隧道节点, server: 120.240.47.76, port: 31007, type: vmess, uuid: fa16a75d-2f25-3ec9-ae38-1921f140d9d3, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /ny, ws-headers: {Host: 120.240.47.76}}
+    - {name: 🇺🇸 https://www.mattkaydiary.com|美国01 原生ip 推特 外贸 奈飞, server: 120.240.47.76, port: 31000, type: vmess, uuid: fa16a75d-2f25-3ec9-ae38-1921f140d9d3, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /ny, ws-headers: {Host: 120.240.47.76}}
+    - {name: 🇺🇸 https://www.mattkaydiary.com|美国02 原生ip 推特 外贸 奈飞, server: 120.240.47.76, port: 31001, type: vmess, uuid: fa16a75d-2f25-3ec9-ae38-1921f140d9d3, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /ny, ws-headers: {Host: 120.240.47.76}}
+    - {name: 🇺🇸 https://www.mattkaydiary.com|美国03 三网优化 隧道节点, server: 120.240.47.76, port: 31002, type: vmess, uuid: fa16a75d-2f25-3ec9-ae38-1921f140d9d3, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /ny, ws-headers: {Host: 120.240.47.76}}
+    - {name: 🇬🇧 https://www.mattkaydiary.com|英国01 三网优化 隧道节点, server: 120.240.47.76, port: 31006, type: vmess, uuid: fa16a75d-2f25-3ec9-ae38-1921f140d9d3, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /ny, ws-headers: {Host: 120.240.47.76}}
+    - {name: 🇭🇰 https://www.mattkaydiary.com|香港01 免流80节点, server: 1.yyds123.com, port: 80, type: vmess, uuid: fa16a75d-2f25-3ec9-ae38-1921f140d9d3, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /ny, ws-headers: {Host: 1.yyds123.com}}
+    - {name: 🇭🇰 https://www.mattkaydiary.com|香港02 免流80节点, server: 2.yyds123.com, port: 80, type: vmess, uuid: fa16a75d-2f25-3ec9-ae38-1921f140d9d3, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /ny, ws-headers: {Host: 2.yyds123.com}}
+    - {name: 🇭🇰 https://www.mattkaydiary.com|香港03 免流80节点, server: 3.yyds123.com, port: 80, type: vmess, uuid: fa16a75d-2f25-3ec9-ae38-1921f140d9d3, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /ny, ws-headers: {Host: 3.yyds123.com}}
+    - {name: 🇭🇰 https://www.mattkaydiary.com|香港04 免流80节点, server: 4.yyds123.com, port: 80, type: vmess, uuid: fa16a75d-2f25-3ec9-ae38-1921f140d9d3, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /ny, ws-headers: {Host: 4.yyds123.com}}
+    - {name: 🇭🇰 https://www.mattkaydiary.com|香港05 免流80节点 解锁奈飞 5000m高速, server: 5.yyds123.com, port: 80, type: vmess, uuid: fa16a75d-2f25-3ec9-ae38-1921f140d9d3, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /ny, ws-headers: {Host: 5.yyds123.com}}
+
+
+
+#3
+#5
+    - {name: 🇯🇵 https://git.io/v9999 日本东京Amazon数据中心 5, server: v2.linn.ink, port: 30070, type: vmess, uuid: 39341fe7-b8b7-4605-a811-af1f1d46d4fb, alterId: 100, cipher: auto, tls: false}
+    - {name: 🇺🇸 https://git.io/v9999 美国加利福尼亚州洛杉矶IT7网络 1, server: c39s3.jamjams.net, port: 61535, type: vmess, uuid: eacf6911-b896-42ba-8340-298083d7b2e4, alterId: 8, cipher: auto, tls: false}
+    - {name: 🇺🇸 https://git.io/v9999 美国CloudFlare公司CDN节点 13, server: 104.19.79.202, port: 443, type: vmess, uuid: aa209e52-9bfa-4c05-96b0-e962da2cb457, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /xrayvws, ws-headers: {Host: c.1808.cf}}
+    - {name: 🇺🇸 https://git.io/v9999 美国CloudFlare公司CDN节点, server: 104.27.0.0, port: 443, type: vmess, uuid: aa209e52-9bfa-4c05-96b0-e962da2cb457, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /xrayvws, ws-headers: {Host: c.1808.cf}}
+    - {name: 🇺🇸 https://git.io/v9999 美国CloudFlare公司CDN节点 2, server: www.digitalocean.com, port: 443, type: vmess, uuid: aa209e52-9bfa-4c05-96b0-e962da2cb457, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /xrayvws, ws-headers: {Host: c.1808.cf}}
+    - {name: 🇳🇱 https://git.io/v9999 荷兰  28, server: 46.182.107.156, port: 443, type: vmess, uuid: 20b30916-e203-412e-8ec0-900f3acd3588, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.25936911.xyz}}
+    - {name: 🇩🇪 https://git.io/v9999 clash ip5德国, server: 89.163.224.127, port: 52497, type: vmess, uuid: 86825607-80ec-436c-9833-519d1bfb4721, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 89.163.224.127}}
+    - {name: 🇩🇪 https://git.io/v9999 clash ip5德国 2, server: 89.163.224.92, port: 14328, type: vmess, uuid: 89ff2ba0-6b27-4dd2-9fb6-8391965d57b4, alterId: 0, cipher: auto, tls: false}
+    - {name: 🇷🇺 https://git.io/v9999 clash ip4莫斯科, server: 85.117.234.184, port: 14146, type: vmess, uuid: f459a051-cfe0-496e-b830-eea2a7faee8b, alterId: 0, cipher: auto, tls: false}
+    - {name: 🇷🇺 https://git.io/v9999 clash ip4莫斯科 2, server: 45.140.169.224, port: 39702, type: vmess, uuid: c43acd44-f54e-4d7a-b5f8-d3b9cd2c10ab, alterId: 0, cipher: auto, tls: false}
+    - {name: 🇷🇺 https://git.io/v9999 clash ip4 莫斯科, server: 176.32.35.73, port: 22689, type: vmess, uuid: 358d1a6b-1672-4f72-b726-e111a7c887c5, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 176.32.35.73}}
+    - {name: 🇷🇺 https://git.io/v9999 clash ip4 莫斯科 2, server: 46.17.45.139, port: 52499, type: vmess, uuid: 27d6d33b-e961-4477-92e0-672307e3f9b9, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 46.17.45.139}}
+    - {name: https://git.io/v9999 clash ip3, server: 46.182.107.94, port: 443, type: vmess, uuid: 743bdc87-1dea-41bf-aa0b-96dfbbfec8aa, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.79570456.xyz}}
+    - {name: https://git.io/v9999 clash ip3 2, server: 46.182.107.145, port: 443, type: vmess, uuid: acedd8e0-e654-4a40-935d-5594c6c114bd, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.61020861.xyz}}
+    - {name: https://git.io/v9999 clash ip3 3, server: 46.182.107.154, port: 443, type: vmess, uuid: 130c9f2e-42b1-4ebf-b345-e26111a061f9, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.53103739.xyz}}
+    - {name: https://git.io/v9999 clash ip3 4, server: 54.199.114.51, port: 30070, type: vmess, uuid: 39341fe7-b8b7-4605-a811-af1f1d46d4fb, alterId: 100, cipher: auto, tls: false}
+    - {name: https://git.io/v9999 clash ip3 5, server: bimbel.ruangguru.com, port: 80, type: vmess, uuid: b22b990f-b6dd-4b57-a0e1-ee3f829d413f, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /sshkit, ws-headers: {Host: eu-sshkit.v2-ray.cf}}
+    - {name: https://git.io/v9999 clash ip3 6, server: 102.130.122.184, port: 80, type: vmess, uuid: a514a5fe-0fc6-4d30-a5ec-96bff8d9f5d5, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /sshocean, ws-headers: {Host: 102.130.122.184}}
+    - {name: https://git.io/v9999 clash ip3 7, server: euserv8p.ezddns.tk, port: 80, type: vmess, uuid: 24d6dc76-f0a0-4809-8a70-6ad2dce20022, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /video, ws-headers: {Host: euserv8p.ezddns.tk}}
+    - {name: https://git.io/v9999 clash ip3 8, server: 23.224.8.91, port: 443, type: vmess, uuid: bef6f470-d961-4419-a0df-d9c2dcafaefa, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.10925848.xyz}}
+    - {name: https://git.io/v9999 clash ip3 9, server: 60.251.50.20, port: 443, type: vmess, uuid: 5ba738e7-0abf-4935-b67e-d404a083d6a6, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.92809472.xyz}}
+    - {name: https://git.io/v9999 clash ip3 10, server: 154.84.1.10, port: 443, type: vmess, uuid: bcca23ea-be73-4caf-b143-cbab2be93145, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.33960870.xyz}}
+    - {name: https://git.io/v9999 clash ip3 11, server: 46.182.107.97, port: 443, type: vmess, uuid: 6e79eea4-5f72-4683-ad0e-5339f077621b, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.08538470.xyz}}
+    - {name: https://git.io/v9999 clash ip3 12, server: 46.182.107.157, port: 443, type: vmess, uuid: 20b30916-e203-412e-8ec0-900f3acd3588, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.25936911.xyz}}
+    - {name: https://git.io/v9999 clash ip3 13, server: 46.182.107.37, port: 443, type: vmess, uuid: 65ea6727-4461-47a7-a5c4-fef2c67f2f68, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.32811341.xyz}}
+    - {name: https://git.io/v9999 clash ip3 14, server: 104.19.19.253, port: 443, type: vmess, uuid: aa209e52-9bfa-4c05-96b0-e962da2cb457, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /xrayvws, ws-headers: {Host: c.1808.cf}}
+    - {name: https://git.io/v9999 clash ip3 15, server: 104.19.42.20, port: 443, type: vmess, uuid: aa209e52-9bfa-4c05-96b0-e962da2cb457, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /xrayvws, ws-headers: {Host: c.1808.cf}}
+    - {name: https://git.io/v9999 clash ip3 16, server: 46.182.107.144, port: 443, type: vmess, uuid: acedd8e0-e654-4a40-935d-5594c6c114bd, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.61020861.xyz}}
+    - {name: https://git.io/v9999 clash ip3 17, server: 46.182.107.151, port: 443, type: vmess, uuid: f5250c4e-f855-4eff-b73c-a02226d42fe7, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.06321530.xyz}}
+    - {name: https://git.io/v9999 clash ip3 18, server: 46.182.107.148, port: 443, type: vmess, uuid: 1d474f0b-e78d-4af9-bc4a-a539467bc7a7, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.73207635.xyz}}
+    - {name: https://git.io/v9999 clash ip3 19, server: 46.182.107.82, port: 443, type: vmess, uuid: 37c29f42-b7c7-40c7-9da9-743dcc4895bc, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.63681459.xyz}}
+
+
+proxy-groups:
+  - name: "testGithub"
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+
+rules:
+  - MATCH,testGithub
