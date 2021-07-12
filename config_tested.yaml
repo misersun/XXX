@@ -1,0 +1,58 @@
+socks-port: 7891
+allow-lan: true
+bind-address: '*'
+mode: rule
+log-level: silent
+
+dns:
+  enable: false
+
+proxies:
+    - {name: Relay_ | 7.94Mb, server: ff5c0fb.hd.gladns.com, port: 3306, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /s/ff5c0fb.fm.apple.com:30513, ws-headers: {Host: baidu.com}}
+    - {name: 🇭🇰 馃嚟馃嚢HK_1152 | 8.18Mb, server: 13.70.28.145, port: 34323, type: vmess, uuid: 5a2056b9-61c5-4737-b153-b2775ec8bad9, alterId: 64, cipher: auto, tls: false}
+    - {name: 🇯🇵 Relay_馃嚚馃嚦CN-馃嚡馃嚨JP_454 | 2.51Mb, server: ngzyd-1.okex-tradebot.xyz, port: 30006, type: vmess, uuid: 2ba0dc04-b36b-427d-8117-f3ec56557583, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: ngzyd-1.okex-tradebot.xyz}}
+    - {name: 🇭🇰 Relay_馃嚚馃嚦CN-馃嚟馃嚢HK_456, server: ngzyd-1.okex-tradebot.xyz, port: 30002, type: vmess, uuid: 2ba0dc04-b36b-427d-8117-f3ec56557583, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: ngzyd-1.okex-tradebot.xyz}}
+    - {name: 🇭🇰 Relay_馃嚚馃嚦CN-馃嚟馃嚢HK_461, server: in04.ddns168.com, port: 63027, type: vmess, uuid: e5d073f5-cc8c-3b3b-83e5-c0f4f3443d11, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: cdn.bootcdn.net}}
+    - {name: 🇨🇳 馃嚚馃嚦CN_455 | 2.07Mb, server: ngzyd-1.okex-tradebot.xyz, port: 30004, type: vmess, uuid: 2ba0dc04-b36b-427d-8117-f3ec56557583, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: ngzyd-1.okex-tradebot.xyz}}
+    - {name: 🇲🇾 Relay_馃嚚馃嚦CN-馃嚥馃嚲MY_934 |15.25Mb, server: ngzyd-1.okex-tradebot.xyz, port: 30014, type: vmess, uuid: 2ba0dc04-b36b-427d-8117-f3ec56557583, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: ngzyd-1.okex-tradebot.xyz}}
+    - {name: 🇺🇸 Relay_馃嚚馃嚦CN-馃嚭馃嚫US_453, server: ngzyd-1.okex-tradebot.xyz, port: 30010, type: vmess, uuid: 2ba0dc04-b36b-427d-8117-f3ec56557583, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: ngzyd-1.okex-tradebot.xyz}}
+    - {name: 🇸🇬 馃嚫馃嚞SG_1835 | 8.93Mb, server: sg-2.okex-tradebot.xyz, port: 30001, type: vmess, uuid: 2ba0dc04-b36b-427d-8117-f3ec56557583, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: sg-2.okex-tradebot.xyz}}
+    - {name: Relay_ | 8.01Mb, server: c39s4.jamjams.net, port: 10606, type: vmess, uuid: c474da00-e28b-40b0-8356-8f62e5eb71e2, alterId: 8, cipher: auto, tls: false}
+    - {name: 🇨🇳 Relay_馃嚚馃嚦CN-馃嚬馃嚰TW_451, server: ngzyd-1.okex-tradebot.xyz, port: 30012, type: vmess, uuid: 2ba0dc04-b36b-427d-8117-f3ec56557583, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: ngzyd-1.okex-tradebot.xyz}}
+    - {name: "|27.24Mb", server: 185.225.69.134, port: 45081, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 64, cipher: auto, tls: false}
+    - {name: "|15.98Mb", server: 54.215.234.182, port: 14924, type: vmess, uuid: d099824d-8259-4c45-f6ab-c1896f741393, alterId: 64, cipher: auto, tls: false}
+    - {name: 🇷🇺 馃嚪馃嚭RU_4821 |25.52Mb, server: 45.66.156.199, port: 39792, type: vmess, uuid: c8457a5e-5b58-4f3d-9133-5a975b7af4de, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 45.66.156.199}}
+    - {name: "|48.27Mb", server: 5.183.101.200, port: 35374, type: vmess, uuid: 62836733-0014-4014-e0e3-908eea2f3063, alterId: 64, cipher: auto, tls: false}
+    - {name: "|24.89Mb", server: 5.183.101.204, port: 59857, type: vmess, uuid: 4c35d374-dbf2-4e5f-c731-dfa49191825a, alterId: 64, cipher: auto, tls: false}
+    - {name: 🇺🇸 Relay_馃嚭馃嚫US-馃嚭馃嚫US_2568 |18.61Mb, server: v2-xgb-v9.cl123.xyz, port: 80, type: vmess, uuid: 6d3faf56-93b6-33ca-a57d-673bb6ab696f, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: v2-xgb-v9.cl123.xyz}}
+    - {name: Relay_ |20.26Mb, server: ru-a-01.joker007.top, port: 80, type: vmess, uuid: e90c4ab7-c3f0-43b0-80f8-48b4fffec448, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}}
+    - {name: 🇭🇰 Relay_馃嚟馃嚢HK-馃嚠馃嚛ID_1154 | 2.36Mb, server: 18.162.50.178, port: 20430, type: vmess, uuid: 39341fe7-b8b7-4605-a811-af1f1d46d4fb, alterId: 100, cipher: auto, tls: false}
+    - {name: Relay_ | 7.66Mb, server: euserv12p.ezddns.tk, port: 80, type: vmess, uuid: c0304bc1-f8ff-4108-9bc6-3415d16ae5e3, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /video, ws-headers: {Host: euserv12p.ezddns.tk}}
+    - {name: _54 | 2.69Mb, server: 5.183.101.204, port: 59857, type: vmess, uuid: 4c35d374-dbf2-4e5f-c731-dfa49191825a, alterId: 64, cipher: auto, tls: false}
+    - {name: 🇭🇰 Relay_馃嚟馃嚢HK-馃嚭馃嚫US_1153 |12.35Mb, server: 18.167.90.100, port: 20430, type: vmess, uuid: 39341fe7-b8b7-4605-a811-af1f1d46d4fb, alterId: 100, cipher: auto, tls: false}
+    - {name: "|42.73Mb", server: 138.201.150.52, port: 33957, type: vmess, uuid: 89cee221-b06c-46c5-f0d7-4fd3f4740b97, alterId: 64, cipher: auto, tls: false}
+    - {name: Relay_ |10.21Mb, server: euserv11p.ezddns.tk, port: 80, type: vmess, uuid: ffab7ea6-596d-4f88-daa5-4ec177f314a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /download.rar, ws-headers: {Host: euserv11p.ezddns.tk}}
+    - {name: Relay_ |15.79Mb, server: euserv10p.ezddns.tk, port: 80, type: vmess, uuid: 4323a38e-29dc-4c6d-f436-b15114e57a75, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /download.zip, ws-headers: {Host: euserv10p.ezddns.tk}}
+    - {name: Relay_ |17.69Mb, server: euserv17p.ezddns.tk, port: 80, type: vmess, uuid: 4a6cc4a6-491f-4a58-fb45-bf888f0b381f, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /video, ws-headers: {Host: euserv17p.ezddns.tk}}
+    - {name: 🇺🇸 Relay_-馃嚭馃嚫US_59 | 3.21Mb, server: euserv9p.ezddns.tk, port: 80, type: vmess, uuid: ca870483-fa7d-4f64-983a-6ed455143aca, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /live, ws-headers: {Host: euserv9p.ezddns.tk}}
+    - {name: 🇭🇰 Relay_馃嚚馃嚦CN-馃嚟馃嚢HK_932, server: in05.ddns168.com, port: 63027, type: vmess, uuid: e5d073f5-cc8c-3b3b-83e5-c0f4f3443d11, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: cdn.bootcdn.net}}
+    - {name: Relay_ |14.37Mb, server: euserv18p.ezddns.tk, port: 80, type: vmess, uuid: 344c0b7d-2c35-4c95-8481-e2fc3c456a06, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /audio.mp3, ws-headers: {Host: euserv18p.ezddns.tk}}
+    - {name: "|458.94Mb", server: 149.28.157.115, port: 42612, type: vmess, uuid: 236888ea-038b-4b66-b6ba-1c0d97575b73, alterId: 4, cipher: auto, tls: false, network: ws, ws-path: /freenodes, ws-headers: {Host: 149.28.157.115}}
+    - {name: 🇺🇸 Relay_-馃嚭馃嚫US_53 | 9.79Mb, server: euserv5p.ezddns.tk, port: 80, type: vmess, uuid: 60b738e2-3aa4-4cde-c270-20f8cc1ab16a, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /audio.wav, ws-headers: {Host: euserv5p.ezddns.tk}}
+    - {name: 🇨🇳 Pool_馃嚬馃嚰TW_5015, server: 211.23.132.124, port: 9233, type: vmess, uuid: be58f4e4-894a-47ee-8836-cf75e74fa9c9, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 211.23.132.124}}
+    - {name: "|12.24Mb", server: 35.178.68.152, port: 47611, type: vmess, uuid: 97a4d167-b361-48b8-b004-8bc45669e334, alterId: 0, cipher: auto, tls: false}
+    - {name: 🇺🇸 馃嚭馃嚫US_7152 | 4.78Mb, server: 135.125.207.34, port: 80, type: vmess, uuid: b42c2cbd-9aa7-42f6-9239-6055906bee3b, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /sshocean, ws-headers: {Host: 135.125.207.34}}
+    - {name: "|41.62Mb", server: 18.157.179.71, port: 443, type: vmess, uuid: 81dd574d-8d47-4b31-9f5a-3f638b427842, alterId: 64, cipher: auto, tls: false}
+    - {name: Relay_ |17.19Mb, server: euserv7p.ezddns.tk, port: 80, type: vmess, uuid: 0b5aeb7c-e477-484f-8999-61772c43b43c, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /audio.wav, ws-headers: {Host: euserv7p.ezddns.tk}}
+    - {name: "|20.35Mb", server: 132.226.169.93, port: 45623, type: vmess, uuid: 0453154b-db51-4a66-8f7c-0887878cb9a3, alterId: 0, cipher: auto, tls: false}
+    - {name: 🇫🇷 Relay_馃嚚馃嚘CA-馃嚝馃嚪FR_806 | 2.55Mb, server: bimbel.ruangguru.com, port: 80, type: vmess, uuid: b22b990f-b6dd-4b57-a0e1-ee3f829d413f, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /sshkit, ws-headers: {Host: eu-sshkit.v2-ray.cf}}
+    - {name: 🇺🇸 馃嚭馃嚫US_7157 |10.86Mb, server: 152.70.102.66, port: 19999, type: vmess, uuid: ce6c472b-b5c6-43c9-82f5-421a7a1c5c6b, alterId: 8, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 152.70.102.66}}
+
+proxy-groups:
+  - name: "testGithub"
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+
+rules:
+  - MATCH,testGithub
