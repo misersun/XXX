@@ -1,3 +1,0 @@
-proxies:
- - {name: 🇳🇱 https://www.mattkaydiary.com|荷兰, server: 81.19.208.107, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
- - {name: 🇺🇸 https://www.mattkaydiary.com|Relay_🇺🇸US |22.72Mb, server: mc-a-01.joker007.top, port: 80, type: vmess, uuid: e90c4ab7-c3f0-43b0-80f8-48b4fffec448, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: mc-a-01.joker007.top}}
