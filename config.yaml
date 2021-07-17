@@ -1,0 +1,589 @@
+# ★第一部分，系统配置
+mixed-port: 7891
+redir-port: 17891
+allow-lan: true
+bind-address: '*'
+mode: rule
+log-level: silent
+ipv6: false
+#external-controller: 0.0.0.0:9090
+#external-ui: dashboardB
+#interface-name: en0
+
+# ★第二部分，DNS配置
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.lan'
+    - 'localhost.ptlogin2.qq.com'
+    - 'dns.msftncsi.com'
+    - 'www.msftncsi.com'
+    - 'www.msftconnecttest.com'
+  nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+
+# ★第三部分，代理配置
+
+
+
+proxy-groups:
+  - name: "FuckWall"
+    type: select
+    proxies:
+      - load-balance
+      - tested_BaDu
+      - DianXing_pool
+      - KeJi_pool
+      - YiDong_pool
+      - tested_mypool
+      - tested2
+      - tested5
+      - tested6
+      # - tested-free-1
+      - tested-free-2
+      - tested-free-4
+      - tested-free-6
+      - MySelected1
+      - MySelected2
+      - DIRECT
+ 
+  - name: "MySelected1"
+    type: select
+    use:
+      # - free_1
+      - free_2
+      - free_4
+      - free_6
+      - sspool_all
+      - herokuapp2_all
+      - all_kingfu
+
+  - name: "load-balance"
+    type: load-balance
+    use:
+      - DianXingPool
+      - KeJiPool
+      - YiDongPool
+      - MyPool
+      - BaDu_all
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300  
+
+  - name: "MySelected2"
+    type: select
+    use:
+      - YiDongPool
+      - DianXingPool
+      - KeJiPool      
+      - MyPool
+      - BaDu_all
+      
+  - name: "Just4FaceBook"
+    type: select
+    proxies:
+      - DIRECT
+      - Just4FaceBook_tested
+      - Just4FaceBook_MySelected
+
+
+  - name: "Just4FaceBook_MySelected"
+    type: select
+    use:
+      - sspool_us
+      - herokuapp2_us
+      - us_kingfu
+      - DianXingPool
+      - KeJiPool
+      - YiDongPool
+      - MyPool
+      - free_2
+      - free_4
+      - free_6
+      - BaDu_all
+
+  - name: "Final"
+    type: select
+    proxies:
+      - FuckWall
+      - DIRECT
+
+  - name: "KeJi_pool"
+    type: url-test
+    use:
+      - KeJiPool
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 600
+    tolerance: 50
+ 
+  - name: "DianXing_pool"
+    type: url-test
+    use:
+      - DianXingPool
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 600
+    tolerance: 50
+
+  - name: "YiDong_pool"
+    type: url-test
+    use:
+      - YiDongPool
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 600
+    tolerance: 50
+ 
+ 
+  - name: "tested_mypool"
+    type: url-test
+    use:
+      - MyPool
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 600
+    tolerance: 50
+ 
+  - name: "tested_BaDu"
+    type: url-test
+    use:
+      - BaDu_all
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 600
+    tolerance: 50
+
+  
+  - name: "tested2"
+    type: url-test
+    use:
+      - sspool_all
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 600
+    tolerance: 50
+
+
+  - name: "tested5"
+    type: url-test
+    use:
+      - herokuapp2_all
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 600
+    tolerance: 50
+
+  - name: "tested6"
+    type: url-test
+    use:
+      - all_kingfu
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 600
+    tolerance: 50
+
+
+
+  # - name: "tested-free-1"
+    # type: url-test
+    # use:
+      # - free_1
+    # url: 'http://www.gstatic.com/generate_204'
+    # interval: 600
+    # tolerance: 50
+
+  - name: "tested-free-2"
+    type: url-test
+    use:
+      - free_2
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 600
+    tolerance: 50
+
+  # - name: "tested-free-3"
+    # type: url-test
+    # use:
+      # - free_3
+    # url: 'http://www.gstatic.com/generate_204'
+    # interval: 600
+    # tolerance: 50
+
+  - name: "tested-free-4"
+    type: url-test
+    use:
+      - free_4
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 600
+    tolerance: 50
+
+  # - name: "tested-free-5"
+    # type: url-test
+    # use:
+      # - free_5
+    # url: 'http://www.gstatic.com/generate_204'
+    # interval: 600
+    # tolerance: 50
+
+  - name: "tested-free-6"
+    type: url-test
+    use:
+      - free_6
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 600
+    tolerance: 50
+
+  - name: "Just4FaceBook_tested"
+    type: url-test
+    use:
+      - sspool_us
+      - herokuapp2_us
+      - us_kingfu
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 600 
+ 
+      
+proxy-providers:
+  "KeJiPool":
+    type: http
+    #url: "https://cdn.jsdelivr.net/gh/misersun/my_clash@main/config_tested.yaml"
+    #url: "https://raw.githubusercontent.com/misersun/my_clash/main/config_tested.yaml"
+    url: "https://raw.fastgit.org/misersun/my_clash/main/tested_keji.yaml"
+    #url: "https://raw.githubusercontent.com/misersun/my_clash/main/tested_keji.yaml"
+    interval: 3600
+    path: ./download/tested_keji.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+  "DianXingPool":
+    type: http
+    #url: "https://cdn.jsdelivr.net/gh/misersun/my_clash@main/config_tested.yaml"
+    #url: "https://raw.githubusercontent.com/misersun/my_clash/main/config_tested.yaml"
+    url: "https://raw.fastgit.org/misersun/my_clash/main/tested_dianxing.yaml"
+    #url: "https://raw.githubusercontent.com/misersun/my_clash/main/tested_dianxing.yaml"
+    interval: 3600
+    path: ./download/tested_dianxing.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+  "YiDongPool":
+    type: http
+    #url: "https://cdn.jsdelivr.net/gh/misersun/my_clash@main/config_tested.yaml"
+    #url: "https://raw.githubusercontent.com/misersun/my_clash/main/config_tested.yaml"
+    url: "https://raw.fastgit.org/misersun/my_clash/main/tested_yidong.yaml"
+    #url: "https://raw.githubusercontent.com/misersun/my_clash/main/tested_yidong.yaml"
+    interval: 3600
+    path: ./download/tested_yidong.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+
+  "MyPool":
+    type: http
+    #url: "https://cdn.jsdelivr.net/gh/misersun/my_clash@main/my_github_clash.yaml"
+    url: "https://raw.fastgit.org/misersun/my_clash/main/my_github_clash.yaml"
+    interval: 3600
+    path: ./download/my_github_clash.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+#https://github.com/Alvin9999/new-pac/wiki
+#http://tr1.freeair888.club/
+  # free_1:
+    # type: http
+    # url: "https://gitlab.com/free9999/ipupdate/-/raw/master/clash/config.yaml"     
+    # path: ./download/free-1.yaml
+    # health-check:
+      # enable: true
+      # interval: 600
+      # url: http://www.gstatic.com/generate_204
+
+  free_2:
+    type: http
+    url: "https://cdn.jsdelivr.net/gh/Alvin9999/pac2@latest/clash/config.yaml"     
+    path: ./download/free-2.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+  # free_3:
+    # type: http
+    # url: "https://gitlab.com/free9999/ipupdate/-/raw/master/clash/2/config.yaml"     
+    # path: ./download/free-3.yaml
+    # health-check:
+      # enable: true
+      # interval: 600
+      # url: http://www.gstatic.com/generate_204
+
+  free_4:
+    type: http
+    url: "https://cdn.jsdelivr.net/gh/Alvin9999/pac2@latest/clash/2/config.yaml"     
+    path: ./download/free-4.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+  # free_5:
+    # type: http
+    # url: "https://gitlab.com/free9999/ipupdate/-/raw/master/clash/3/config.yaml"     
+    # path: ./download/free-5.yaml
+    # health-check:
+      # enable: true
+      # interval: 600
+      # url: http://www.gstatic.com/generate_204
+
+  free_6:
+    type: http
+    url: "https://cdn.jsdelivr.net/gh/Alvin9999/pac2@latest/clash/3/config.yaml"     
+    path: ./download/free-6.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+
+#八度科技
+#https://raw.githubusercontent.com/chfchf0306/4.18clash/main/Class
+#https://raw.fastgit.org/chfchf0306/4.18clash/main/Class
+  BaDu_all:
+    type: http
+    url: "https://raw.fastgit.org/chfchf0306/4.18clash/main/Class"     
+    path: ./download/BaDu_all.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+#https://sspool.herokuapp.com/clash/config 
+  sspool_all:
+    type: http
+    #url: "https://sspool.herokuapp.com/clash/proxies"
+    #https://sspool.herokuapp.com/clash/proxies?nc=CN,HK,TW,US,CA,JP,SG,AU,CH,DE,GB,NL,FR,RU
+    #url: "https://sspool.herokuapp.com/clash/proxies?nc=CN,HK,TW&speed=1,200"
+    url: "https://sspool.herokuapp.com/clash/proxies?c=US,CA,JP,SG,AU,CH,DE,GB,NL,FR,RU&speed=1,200"
+    path: ./download/sspool_all.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  
+  sspool_us:
+    type: http
+    url: "https://sspool.herokuapp.com/clash/proxies?c=US&speed=1,200"
+    path: ./download/sspool_us.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+
+# #https://proxypool-guest997.herokuapp.com/clash/config
+  # herokuapp_all:
+    # type: http
+    # #url: "https://proxypool-guest997.herokuapp.com/clash/proxies?nc=CN,HK,TW&speed=1,100"
+    # url: "https://proxypool-guest997.herokuapp.com/clash/proxies?c=US,CA,JP,SG,AU,CH,DE,GB,NL,FR,RU&speed=1,100"  
+    # path: ./download/herokuapp_all.yaml
+    # health-check:
+      # enable: true
+      # interval: 600
+      # url: http://www.gstatic.com/generate_204 
+      
+  # herokuapp_us:
+    # type: http
+    # url: "https://proxypool-guest997.herokuapp.com/clash/proxies?c=US&speed=1,100"    
+    # path: ./download/herokuapp_us.yaml
+    # health-check:
+      # enable: true
+      # interval: 600
+      # url: http://www.gstatic.com/generate_204 
+
+#https://free886.herokuapp.com/clash/config
+  herokuapp2_all:
+    type: http
+    #url: "https://free886.herokuapp.com/clash/proxies?nc=CN,TW,HK"
+    url: "https://free886.herokuapp.com/clash/proxies?c=US,CA,JP,SG,AU,CH,DE,GB,NL,FR,RU"     
+    path: ./download/herokuapp2_all.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204 
+      
+  herokuapp2_us:
+    type: http
+    url: "https://free886.herokuapp.com/clash/proxies?c=US"    
+    path: ./download/herokuapp2_us.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204 
+
+# #https://www.233660.xyz/clash/config
+  # all_233660:
+    # type: http
+    # #url: "https://www.233660.xyz/clash/proxies?nc=CN,HK,TW&speed=1,30"
+    # url: "https://www.233660.xyz/clash/proxies?c=US,CA,JP,SG,AU,CH,DE,GB,NL,FR,RU&speed=1,100"  
+    # path: ./download/all_233660.yaml
+    # health-check:
+      # enable: true
+      # interval: 600
+      # url: http://www.gstatic.com/generate_204 
+      
+  # us_233660:
+    # type: http
+    # url: "https://www.233660.xyz/clash/proxies?c=US&speed=1,100"    
+    # path: ./download/us_233660.yaml
+    # health-check:
+      # enable: true
+      # interval: 600
+      # url: http://www.gstatic.com/generate_204 
+
+
+# #https://hm2019721.ml
+  # all_hm2019721:
+    # type: http
+    # url: "https://hm2019721.ml/clash/proxies?c=US,CA,JP,SG,AU,CH,DE,GB,NL,FR,RU&type=vmess"  
+    # path: ./download/all_hm2019721.yaml
+    # health-check:
+      # enable: true
+      # interval: 600
+      # url: http://www.gstatic.com/generate_204 
+      
+  # us_hm2019721:
+    # type: http
+    # url: "https://hm2019721.ml/clash/proxies?c=US&type=vmess"
+    # path: ./download/us_hm2019721.yaml
+    # health-check:
+      # enable: true
+      # interval: 600
+      # url: http://www.gstatic.com/generate_204 
+
+#https://free.kingfu.cf
+  all_kingfu:
+    type: http
+    url: "https://free.kingfu.cf/clash/proxies?c=US,CA,JP,SG,AU,CH,DE,GB,NL,FR,RU&type=vmess"
+    path: ./download/all_kingfu.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+  us_kingfu:
+    type: http
+    url: "https://free.kingfu.cf/clash/proxies?c=US&type=vmess"
+    path: ./download/us_kingfu.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204    
+
+
+
+# ★第四部分，规则配置
+rule-providers:
+  reject:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
+    path: ./ruleset/reject.yaml
+    interval: 86400
+
+  icloud:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt"
+    path: ./ruleset/icloud.yaml
+    interval: 86400
+
+  apple:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt"
+    path: ./ruleset/apple.yaml
+    interval: 86400
+
+  google:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt"
+    path: ./ruleset/google.yaml
+    interval: 86400
+
+  proxy:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt"
+    path: ./ruleset/proxy.yaml
+    interval: 86400
+
+  direct:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"
+    path: ./ruleset/direct.yaml
+    interval: 86400
+
+  gfw:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt"
+    path: ./ruleset/gfw.yaml
+    interval: 86400
+
+  greatfire:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/greatfire.txt"
+    path: ./ruleset/greatfire.yaml
+    interval: 86400
+
+  tld-not-cn:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt"
+    path: ./ruleset/tld-not-cn.yaml
+    interval: 86400
+
+  telegramcidr:
+    type: http
+    behavior: ipcidr
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt"
+    path: ./ruleset/telegramcidr.yaml
+    interval: 86400
+
+  cncidr:
+    type: http
+    behavior: ipcidr
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt"
+    path: ./ruleset/cncidr.yaml
+    interval: 86400
+
+  lancidr:
+    type: http
+    behavior: ipcidr
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
+    path: ./ruleset/lancidr.yaml
+    interval: 86400
+
+rules:
+  - DOMAIN,clash.razord.top,DIRECT
+  - DOMAIN,yacd.haishan.me,DIRECT
+  - DOMAIN-SUFFIX,googleapis.cn,FuckWall
+  - DOMAIN-KEYWORD,facebook,Just4FaceBook
+  - DOMAIN-KEYWORD,oculus,Just4FaceBook
+  - DOMAIN-KEYWORD,oculuscdn,Just4FaceBook
+  - DOMAIN-SUFFIX,myip.com,Just4FaceBook
+  #- RULE-SET,reject,REJECT
+  - RULE-SET,icloud,DIRECT
+  - RULE-SET,apple,DIRECT
+  - RULE-SET,google,FuckWall
+  - RULE-SET,proxy,FuckWall
+  - RULE-SET,direct,DIRECT
+  - RULE-SET,telegramcidr,FuckWall
+  - GEOIP,CN,DIRECT
+#  - MATCH,FuckWall
+  - MATCH,Final
