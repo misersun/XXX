@@ -1,0 +1,132 @@
+socks-port: 7891
+allow-lan: true
+bind-address: '*'
+mode: rule
+log-level: silent
+
+dns:
+  enable: false
+
+proxies:
+#0719
+    - {name: 馃嚭馃嚫 https://www.mattkaydiary.com|缇庡浗(US)USA/Seattle, server: 008.HK.AP.POP.BIGAIRPORT.NET, port: 80, type: vmess, uuid: 720fc256-99d1-49ee-a698-409fcef34c68, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 008.HK.AP.POP.BIGAIRPORT.NET}}
+    - {name: 馃嚟馃嚢 https://www.mattkaydiary.com|111111, server: cm-jm.okvpn.cc, port: 20004, type: vmess, uuid: 14be65c6-d2cc-4e6f-b529-4186ed6c326e, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.cc}}
+    - {name: 馃嚚馃嚘 https://www.mattkaydiary.com|鍔犳嬁澶aaCA)Canada/Vancouver, server: 198.8.92.84, port: 44945, type: ss, cipher: aes-256-gcm, password: F5bKkb9ggkLx4JbQrbLn7LjZ}
+    - {name: 馃嚞馃嚙 https://www.mattkaydiary.com|鑻卞浗(GB)United Kiongdom/London, server: 185.44.76.188, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+    - {name: 馃嚭馃嚫 https://www.mattkaydiary.com|缇庡浗(US)USA/Los Angeles, server: 138.199.9.202, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+    - {name: 馃嚡馃嚨 https://www.mattkaydiary.com|鏃ユ湰(JP)Japan/Tokyo, server: auto.freev2.top, port: 56331, type: vmess, uuid: d0715036-2c41-491f-ab1f-070d1dd5dc70, alterId: 1, cipher: auto, tls: false}
+    - {name: 馃嚠馃嚬 https://www.mattkaydiary.com|鎰忓ぇ鍒aaIT)Italy/Rome, server: 82.102.26.117, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+    - {name: 馃嚪馃嚭 https://www.mattkaydiary.com|淇勭綏鏂aaRU)Russia/Moscow, server: 194.87.48.252, port: 38673, type: vmess, uuid: f0da4655-f438-4008-a9e0-6c7f0c4cfaa5, alterId: 0, cipher: auto, tls: false}
+    - {name: 馃嚟馃嚢 https://www.mattkaydiary.com|22222 2, server: cm-jm.okvpn.cc, port: 20002, type: vmess, uuid: 14be65c6-d2cc-4e6f-b529-4186ed6c326e, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.cc}}
+    - {name: 馃嚭馃嚫 https://www.mattkaydiary.com|缇庡浗(US)USA/Los Angeles 2, server: 107.167.23.98, port: 443, type: vmess, uuid: 6c73d6bf-25a4-410b-94b7-c2c517d61f23, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.53009192.xyz}}
+    - {name: 馃嚡馃嚨 https://www.mattkaydiary.com|鏃ユ湰(JP)Japan/Tokyo 2, server: ncdc.gov.ng, port: 443, type: vmess, uuid: d96e0bc9-e1d9-4715-ae3f-39dac55b9e44, alterId: 34, cipher: auto, tls: true, network: ws, ws-path: /9e1cb04e/, ws-headers: {Host: edozvpn.xyz}}
+    - {name: 馃嚭馃嚫 https://www.mattkaydiary.com|缇庡浗(US)USA/Chicago, server: 104.21.62.15, port: 443, type: vmess, uuid: d96e0bc9-e1d9-4715-ae3f-39dac55b9e44, alterId: 34, cipher: auto, tls: true, network: ws, ws-path: /9e1cb04e/, ws-headers: {Host: edozvpn.xyz}}
+    - {name: 馃嚭馃嚫 https://www.mattkaydiary.com|缇庡浗(US)USA/San Francisco, server: 54.215.234.182, port: 14924, type: vmess, uuid: d099824d-8259-4c45-f6ab-c1896f741393, alterId: 64, cipher: auto, tls: false}
+    - {name: 馃嚦馃嚤 https://www.mattkaydiary.com|鑽峰叞(NL)Netherlands/Amsterdam, server: 46.182.107.39, port: 443, type: vmess, uuid: d3133484-f2bf-4b0c-8d38-f8e645b65687, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.07890885.xyz}}
+    - {name: 馃嚭馃嚫 https://www.mattkaydiary.com|缇庡浗(US)USA/Ashburn, server: v2raylpc.herokuapp.com, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: v2raylpc.herokuapp.com}}
+    - {name: 馃嚟馃嚢 https://www.mattkaydiary.com|3333333 3, server: ngzyd-1.okex-tradebot.xyz, port: 30004, type: vmess, uuid: bfcd0463-2f1e-4945-9d90-50037230a372, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: ngzyd-1.okex-tradebot.xyz}}
+    - {name: 馃嚭馃嚫 https://www.mattkaydiary.com|缇庡浗(US)USA/Chicago 2, server: 104.17.113.188, port: 443, type: vmess, uuid: d96e0bc9-e1d9-4715-ae3f-39dac55b9e44, alterId: 34, cipher: auto, tls: true, network: ws, ws-path: /9e1cb04e/, ws-headers: {Host: edozvpn.xyz}}
+    - {name: 馃嚦馃嚤 https://www.mattkaydiary.com|鑽峰叞(NL)Netherlands/Amsterdam 2, server: 46.182.107.157, port: 443, type: vmess, uuid: 20b30916-e203-412e-8ec0-900f3acd5128, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.73345741.xyz}}
+    - {name: 馃嚭馃嚫 https://www.mattkaydiary.com|缇庡浗(US)USA/Chicago 3, server: cfcn.9sep.org, port: 2086, type: vmess, uuid: f22a80af-a9c9-3360-841e-25610688f353, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /w421x2bx2za, ws-headers: {Host: nj.sb-cloud.cf}}
+    - {name: 馃嚟馃嚢 https://www.mattkaydiary.com|44444444 4, server: cm-jm.okvpn.cc, port: 20015, type: vmess, uuid: 14be65c6-d2cc-4e6f-b529-4186ed6c326e, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.cc}}
+    - {name: 馃嚛馃嚢 https://www.mattkaydiary.com|涓归害(DK)Denmark/Copenhagen, server: 5.183.101.204, port: 59857, type: vmess, uuid: 4c35d374-dbf2-4e5f-c731-dfa49191825a, alterId: 64, cipher: auto, tls: false}
+    - {name: 馃嚟馃嚢 https://www.mattkaydiary.com|5555555555, server: cm-jm.okvpn.cc, port: 20049, type: vmess, uuid: 14be65c6-d2cc-4e6f-b529-4186ed6c326e, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.cc}}
+    - {name: 馃嚫馃嚞 https://www.mattkaydiary.com|鏂板姞鍧aaSG)Singapore/Singapore, server: sg.wocaonimabi666.xyz, port: 22255, type: vmess, uuid: 5acc302e-4559-45e3-d2bd-e716000cdd9c, alterId: 64, cipher: auto, tls: false}
+    - {name: 馃嚭馃嚫 https://www.mattkaydiary.com|缇庡浗(US)USA/Chicago 4, server: speed.cloudflare.com, port: 2082, type: vmess, uuid: f22a80af-a9c9-3360-841e-25610688f353, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /5hfgf/5hg, ws-headers: {Host: md-1.07942568.xyz}}
+    - {name: 馃嚢馃嚪 https://www.mattkaydiary.com|闊╁浗(KR)Korea/Seoul, server: kr105.wwin.ga, port: 31404, type: vmess, uuid: da4b0602-71b5-4e0d-f673-b8af0fa03f9d, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: kr105.wwin.ga}}
+    - {name: 馃嚭馃嚫 https://www.mattkaydiary.com|缇庡浗(US)USA/New York, server: qq1-cloud13.feiclouddd.me, port: 443, type: vmess, uuid: 478055cc-fdb8-404e-b730-c32faa2c7ca1, alterId: 60, cipher: auto, tls: true, network: ws, ws-path: /asdfasdf, ws-headers: {Host: qq1-cloud13.feiclouddd.me}}
+    - {name: 馃嚭馃嚫 https://www.mattkaydiary.com|缇庡浗(US)USA/Atlanta, server: nn-ssr4.feiclouddd.me, port: 443, type: vmess, uuid: 79214731-7f0c-4f2d-a894-13b7df293624, alterId: 60, cipher: auto, tls: true, network: ws, ws-path: /sadfasdf, ws-headers: {Host: nn-ssr4.feiclouddd.me}}
+    - {name: 馃嚟馃嚢 https://www.mattkaydiary.com|6666666666666666 6, server: cm-jm.okvpn.cc, port: 20001, type: vmess, uuid: 14be65c6-d2cc-4e6f-b529-4186ed6c326e, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.cc}}
+    - {name: 馃嚭馃嚫 https://www.mattkaydiary.com|缇庡浗(US)USA/Los Angeles 3, server: 107.167.9.124, port: 443, type: vmess, uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.17080100.xyz}}
+    - {name: 馃嚭馃嚫 https://www.mattkaydiary.com|缇庡浗(US)USA/Manassas, server: 207.244.67.149, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+    - {name: 馃嚛馃嚜 https://www.mattkaydiary.com|寰峰浗(DE)Germany/Frankfurt am Main, server: 18.157.179.71, port: 443, type: vmess, uuid: 81dd574d-8d47-4b31-9f5a-3f638b427842, alterId: 64, cipher: auto, tls: false}
+    - {name: 馃嚡馃嚨 https://www.mattkaydiary.com|鏃ユ湰(JP)Japan/Tokyo 3, server: auto.freev2.top, port: 56331, type: vmess, uuid: d0715036-2c41-491f-ab1f-070d1dd5dc70, alterId: 1, cipher: auto, tls: false}
+    - {name: 馃嚭馃嚫 https://www.mattkaydiary.com|缇庡浗(US)USA/Sandy Springs, server: 66.115.175.37, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+    - {name: 馃嚦馃嚤 https://www.mattkaydiary.com|鑽峰叞(NL)Netherlands/Amsterdam 3, server: 81.19.208.107, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+    - {name: 馃嚦馃嚤 https://www.mattkaydiary.com|鑽峰叞(NL)Netherlands/Amsterdam 4, server: 154.84.1.217, port: 443, type: vmess, uuid: 130c9f2e-42b1-4ebf-b345-e26456a061f9, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.05222027.xyz}}
+    - {name: 馃嚭馃嚫 https://www.mattkaydiary.com|缇庡浗(US)USA/Chicago 5, server: 104.26.12.49, port: 443, type: vmess, uuid: d96e0bc9-e1d9-4715-ae3f-39dac55b9e44, alterId: 34, cipher: auto, tls: true, network: ws, ws-path: /9e1cb04e/, ws-headers: {Host: edozvpn.xyz}}
+    - {name: 馃嚠馃嚬 https://www.mattkaydiary.com|鎰忓ぇ鍒aaIT)Italy/Rome 2, server: 82.102.26.117, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+    - {name: 馃嚭馃嚫 https://www.mattkaydiary.com|缇庡浗(US)USA/Chicago 6, server: speed.cloudflare.com, port: 443, type: vmess, uuid: f22a80af-a9c9-3360-841e-25610688f353, alterId: 3, cipher: auto, tls: true, network: ws, ws-path: /114515/iuuu, ws-headers: {Host: t-1.sb-cloud.cf}}
+    - {name: 馃嚭馃嚫 https://www.mattkaydiary.com|缇庡浗(US)USA/New York 2, server: 84.17.35.78, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+    - {name: 馃嚠馃嚦 https://www.mattkaydiary.com|鍗板害(IN)India/Indore, server: 137.59.52.107, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+
+
+#工具大师
+    - {name: 🇨🇳 台湾((Youtube频道：工具大师！)), server: 211.23.132.124, port: 9233, type: vmess, uuid: be58f4e4-894a-47ee-8836-cf75e74fa9c9, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 211.23.132.124}}
+    - {name: 23.82.11.49:50168, server: 23.82.11.49, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+    - {name: 185.44.76.188:31572, server: 185.44.76.188, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+    - {name: 🇺🇸 美国(Youtube频道：工具大师！), server: 198.147.22.87, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+    - {name: 🇺🇸 美国(Youtube频道：工具大师！) 2, server: 23.224.30.36, port: 443, type: vmess, uuid: e4494518-74e8-4d6b-942a-6b332cce09ef, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.01902367.xyz}}
+    - {name: 罗马(Youtube频道：工具大师！), server: 91.90.123.115, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+    - {name: 罗马(Youtube频道：工具大师！) 2, server: 91.90.123.115, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
+    - {name: 罗马(Youtube频道：工具大师！) 3, server: 91.90.123.115, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
+    - {name: 🇺🇸 美国(Youtube频道：工具大师！) 3, server: 198.147.22.87, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+    - {name: 🇳🇱 荷兰(Youtube频道：工具大师！), server: 46.182.107.44, port: 443, type: vmess, uuid: fe5f69e7-e183-439b-950b-9661ef0651f2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.68737987.xyz}}
+    - {name: 🇳🇱 荷兰(Youtube频道：工具大师！) 2, server: 46.182.107.45, port: 443, type: vmess, uuid: fe5f69e7-e183-439b-950b-9661ef0651f2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.68737987.xyz}}
+    - {name: 🇳🇱 荷兰(Youtube频道：工具大师！) 3, server: 46.182.107.94, port: 443, type: vmess, uuid: 743bdc87-1dea-41bf-aa0b-51dfbbfec8aa, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.54872833.xyz}}
+    - {name: 🇳🇱 荷兰(Youtube频道：工具大师！) 4, server: 46.182.107.37, port: 443, type: vmess, uuid: 65ea6727-4461-47a7-a5c4-fef2c67f2f79, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.09462550.xyz}}
+    - {name: 🇳🇱 荷兰(Youtube频道：工具大师！) 5, server: 46.182.107.93, port: 443, type: vmess, uuid: 743bdc87-1dea-41bf-aa0b-51dfbbfec8aa, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.54872833.xyz}}
+    - {name: 🇳🇱 荷兰(Youtube频道：工具大师！) 6, server: 46.182.107.25, port: 443, type: vmess, uuid: 0a1ab3bd-0431-4da8-ad8a-238367ce4efc, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.11300814.xyz}}
+    - {name: 🇺🇸 美国(Youtube频道：工具大师！) 4, server: 198.8.92.84, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+    - {name: 🇺🇸 美国(Youtube频道：工具大师！) 5, server: 198.147.22.87, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+    - {name: 🇬🇧 英国(Youtube频道：工具大师！), server: 185.44.76.188, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+    - {name: 🇺🇸 美国(Youtube频道：工具大师！) 6, server: 104.200.131.165, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+    - {name: 🇯🇵 日本(Youtube频道：工具大师！), server: dreet.dfiiopopiwsdadsda.tk, port: 443, type: vmess, uuid: cdec276f-bb6c-4da2-972a-2174728ac2c5, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /c12a/, ws-headers: {Host: dreet.dfiiopopiwsdadsda.tk}}
+    - {name: 罗马(Youtube频道：工具大师！) 4, server: 91.90.123.115, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+    - {name: 🇺🇸 美国(Youtube频道：工具大师！) 7, server: 198.147.22.87, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+    - {name: 🇺🇸 美国(Youtube频道：工具大师！) 8, server: 198.8.92.84, port: 44945, type: ss, cipher: aes-256-gcm, password: F5bKkb9ggkLx4JbQrbLn7LjZ}
+    - {name: 罗马(Youtube频道：工具大师！) 5, server: 91.90.123.115, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+    - {name: 🇺🇸 美国(Youtube频道：工具大师！) 9, server: 198.8.92.84, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+    - {name: 罗马(Youtube频道：工具大师！) 6, server: 91.90.123.115, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+    - {name: 罗马(Youtube频道：工具大师！) 7, server: 91.90.123.115, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
+    - {name: 罗马(Youtube频道：工具大师！) 8, server: 91.90.123.115, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
+    - {name: 罗马(Youtube频道：工具大师！) 9, server: 91.90.123.115, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
+    - {name: 罗马(Youtube频道：工具大师！) 10, server: 91.90.123.115, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+    - {name: 罗马(Youtube频道：工具大师！) 11, server: 91.90.123.115, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
+    - {name: 罗马(Youtube频道：工具大师！) 12, server: 91.90.123.115, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+    - {name: 罗马(Youtube频道：工具大师！) 13, server: 91.90.123.115, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+    - {name: 罗马(Youtube频道：工具大师！) 14, server: 91.90.123.115, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+    - {name: 罗马(Youtube频道：工具大师！) 15, server: 91.90.123.115, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+    - {name: 罗马(Youtube频道：工具大师！) 16, server: 91.90.123.115, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
+    - {name: 🇺🇸 美国(Youtube频道：工具大师！) 10, server: 207.244.67.149, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+    - {name: 罗马(Youtube频道：工具大师！) 17, server: 91.90.123.115, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+    - {name: 罗马(Youtube频道：工具大师！) 18, server: 91.90.123.115, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
+    - {name: 🇺🇸 美国(Youtube频道：工具大师！) 11, server: 104.18.27.64, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+    - {name: 🇳🇱 荷兰(Youtube频道：工具大师！) 7, server: 46.182.107.37, port: 443, type: vmess, uuid: 65ea6727-4461-47a7-a5c4-fef2c67f2f79, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.09462550.xyz}}
+    - {name: 🇳🇱 荷兰(Youtube频道：工具大师！) 8, server: 46.182.107.157, port: 443, type: vmess, uuid: 20b30916-e203-412e-8ec0-900f3acd5128, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.73345741.xyz}}
+    - {name: 罗马(Youtube频道：工具大师！) 19, server: 91.90.123.115, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+    - {name: 罗马(Youtube频道：工具大师！) 20, server: 91.90.123.115, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+    - {name: 罗马(Youtube频道：工具大师！) 21, server: 91.90.123.115, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+    - {name: 🇳🇱 荷兰(Youtube频道：工具大师！) 9, server: 46.182.107.44, port: 443, type: vmess, uuid: fe5f69e7-e183-439b-950b-9661ef0651f2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.68737987.xyz}}
+    - {name: 🇺🇸 美国(Youtube频道：工具大师！) 12, server: 96.43.91.60, port: 443, type: vmess, uuid: 3bfb43e2-7dfe-4757-86ee-1ce9fb9fd13a, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.45218443.xyz}}
+    - {name: 🇳🇱 荷兰(Youtube频道：工具大师！) 10, server: 46.182.107.93, port: 443, type: vmess, uuid: 743bdc87-1dea-41bf-aa0b-51dfbbfec8aa, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.54872833.xyz}}
+    - {name: 🇳🇱 荷兰(Youtube频道：工具大师！) 11, server: 46.182.107.154, port: 443, type: vmess, uuid: 130c9f2e-42b1-4ebf-b345-e26456a061f9, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.05222027.xyz}}
+    - {name: 罗马(Youtube频道：工具大师！) 22, server: 91.90.123.115, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+    - {name: 罗马(Youtube频道：工具大师！) 23, server: 195.47.194.42, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+    - {name: 🇳🇱 荷兰(Youtube频道：工具大师！) 12, server: 154.84.1.217, port: 443, type: vmess, uuid: 130c9f2e-42b1-4ebf-b345-e26456a061f9, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.05222027.xyz}}
+    - {name: 🇳🇱 荷兰(Youtube频道：工具大师！) 13, server: 46.182.107.39, port: 443, type: vmess, uuid: d3133484-f2bf-4b0c-8d38-f8e645b65687, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.07890885.xyz}}
+    - {name: 🇳🇱 荷兰(Youtube频道：工具大师！) 14, server: 46.182.107.25, port: 443, type: vmess, uuid: 0a1ab3bd-0431-4da8-ad8a-238367ce4efc, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.11300814.xyz}}
+    - {name: 🇺🇸 美国(Youtube频道：工具大师！) 13, server: 172.67.209.58, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+    - {name: 罗马(Youtube频道：工具大师！) 24, server: 195.47.194.42, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+    - {name: 🇺🇸 美国(Youtube频道：工具大师！) 14, server: 66.115.175.37, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+    - {name: 罗马(Youtube频道：工具大师！) 25, server: 195.47.194.42, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+    - {name: 🇳🇱 荷兰(Youtube频道：工具大师！) 15, server: 46.182.107.45, port: 443, type: vmess, uuid: fe5f69e7-e183-439b-950b-9661ef0651f2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.68737987.xyz}}
+    - {name: 🇫🇷 法国(Youtube频道：工具大师！), server: 51.89.99.59, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+    - {name: 🇺🇸 美国(Youtube频道：工具大师！) 15, server: 23.224.30.36, port: 443, type: vmess, uuid: e4494518-74e8-4d6b-942a-6b332cce09ef, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.01902367.xyz}}
+    - {name: 🇺🇸 美国(Youtube频道：工具大师！) 16, server: 198.8.92.84, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+    - {name: 🇺🇸 美国(Youtube频道：工具大师！) 17, server: 198.8.92.84, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+    - {name: 🇺🇸 美国(Youtube频道：工具大师！) 18, server: 198.147.22.87, port: 31757, type: ss, cipher: aes-256-gcm, password: wj7nDCuNARchSeKNCN8VFK62}
+    - {name: 🇺🇸 美国(Youtube频道：工具大师！) 19, server: 66.55.148.42, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+    - {name: 🇺🇸 美国(Youtube频道：工具大师！) 20, server: 198.147.22.87, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+    - {name: 🇺🇸 美国(Youtube频道：工具大师！) 21, server: 198.147.22.87, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+    - {name: 🇨🇳 台湾(Youtube频道：工具大师！), server: 211.23.132.124, port: 9233, type: vmess, uuid: be58f4e4-894a-47ee-8836-cf75e74fa9c9, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 211.23.132.124}}
+
+
+proxy-groups:
+  - name: "testGithub"
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+
+rules:
+  - MATCH,testGithub
