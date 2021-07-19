@@ -8,37 +8,26 @@ dns:
   enable: false
 
 proxies:
-  - {name: 🇨🇳 馃嚚馃嚦 CN_158, server: cn2.relay.starlink.st, port: 65006, type: vmess, uuid: de84ddcc-954f-49a3-903b-b1e5817d8e8f, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 Relay_馃嚚馃嚦CN-馃嚭馃嚫US_907, server: 113.207.102.30, port: 80, type: vmess, uuid: d51b0f1b-cf5a-454c-bc4c-171491ff5e74, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 005.cdn.8x.cx.hit.edu.cn}}
-  - {name: 🇺🇸 Relay_馃嚚馃嚦CN-馃嚭馃嚫US_922, server: 113.207.102.1, port: 80, type: vmess, uuid: d51b0f1b-cf5a-454c-bc4c-171491ff5e74, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 005.cdn.8x.cx.hit.edu.cn}}
-  - {name: 🇨🇳 馃嚚馃嚦 CN_160, server: cn2.relay.starlink.st, port: 65005, type: vmess, uuid: de84ddcc-954f-49a3-903b-b1e5817d8e8f, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇳 馃嚚馃嚦 CN_162, server: cn1.relay.starlink.st, port: 65005, type: vmess, uuid: de84ddcc-954f-49a3-903b-b1e5817d8e8f, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 Relay_馃嚚馃嚦CN-馃嚟馃嚢HK_22, server: cn2.relay.starlink.st, port: 65001, type: vmess, uuid: de84ddcc-954f-49a3-903b-b1e5817d8e8f, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇳 馃嚚馃嚦 CN_159, server: cn2.relay.starlink.st, port: 65008, type: vmess, uuid: de84ddcc-954f-49a3-903b-b1e5817d8e8f, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇷🇺 馃嚪馃嚭RU_154 |30.60Mb, server: 194.87.48.252, port: 23348, type: vmess, uuid: 3dac3771-247b-4088-8a98-499a79ddef47, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇳 馃嚚馃嚦CN_1495 | 2.31Mb, server: cn1.relay.starlink.st, port: 65006, type: vmess, uuid: de84ddcc-954f-49a3-903b-b1e5817d8e8f, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 馃嚭馃嚫US_6973, server: 104.149.202.54, port: 80, type: vmess, uuid: d51b0f1b-cf5a-454c-bc4c-171491ff5e74, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: en.tgchannels.org/channel/vpnpool}}
-  - {name: 🇯🇵 馃嚡馃嚨 JP_179, server: auto.freev2.top, port: 19252, type: vmess, uuid: 31b44dc2-b349-482b-b9b6-4f00c1c81688, alterId: 1, cipher: auto, tls: false}
-  - {name: 🇨🇳 馃嚚馃嚦CN_1515 | 4.06Mb, server: cn2.relay.starlink.st, port: 65009, type: vmess, uuid: de84ddcc-954f-49a3-903b-b1e5817d8e8f, alterId: 0, cipher: auto, tls: false}
-  - {name: 馃嚟馃嚭 HU_25, server: 185.225.69.134, port: 45081, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 64, cipher: auto, tls: false}
-  - {name: "|73.22Mb", server: 54.215.234.182, port: 14924, type: vmess, uuid: d099824d-8259-4c45-f6ab-c1896f741393, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇭🇰 Relay_馃嚟馃嚢HK-馃嚟馃嚢HK_67 |20.98Mb, server: hk1.auto.starlink.st, port: 65000, type: vmess, uuid: de84ddcc-954f-49a3-903b-b1e5817d8e8f, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 Relay_馃嚭馃嚫US |18.66Mb, server: euserv10p.ezddns.tk, port: 80, type: vmess, uuid: 4323a38e-29dc-4c6d-f436-b15114e57a75, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /download.zip, ws-headers: {Host: euserv10p.ezddns.tk}}
-  - {name: 🇺🇸 Relay_馃嚭馃嚫US |39.44Mb, server: us2.paopao.cf, port: 443, type: trojan, password: 7f6b65e4-6d5b-4137-a1dc-d32f4a810239, sni: us2.paopao.cf}
-  - {name: "", server: v2-xgc.cl123.xyz, port: 80, type: vmess, uuid: 6d3faf56-93b6-33ca-a57d-673bb6ab696f, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: v2-xgc.cl123.xyz}}
-  - {name: Relay_ | 7.27Mb, server: euserv6p.ezddns.tk, port: 80, type: vmess, uuid: 499737a4-9f18-4e1f-fb38-437e1855fc04, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /video, ws-headers: {Host: euserv6p.ezddns.tk}}
-  - {name: 🇯🇵 馃嚡馃嚨 JP_180, server: 54.238.21.12, port: 2222, type: vmess, uuid: 57b9f56f-8f51-3af3-87de-87b6e46b2e17, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 54.238.21.12}}
-  - {name: 🇺🇸 馃嚭馃嚫 US_35, server: euserv18p.ezddns.tk, port: 80, type: vmess, uuid: 344c0b7d-2c35-4c95-8481-e2fc3c456a06, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /audio.mp3, ws-headers: {Host: euserv18p.ezddns.tk}}
-  - {name: _143, server: 172.67.150.130, port: 80, type: vmess, uuid: 3d31728e-064d-42b8-b945-f79c008f73fc, alterId: 233, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: free-russian01-cdn.xiaohouzi.club}}
-  - {name: 🇺🇸 Relay_馃嚭馃嚫US |18.74Mb, server: euserv12p.ezddns.tk, port: 80, type: vmess, uuid: c0304bc1-f8ff-4108-9bc6-3415d16ae5e3, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /video, ws-headers: {Host: euserv12p.ezddns.tk}}
-  - {name: " 2", server: euserv7p.ezddns.tk, port: 80, type: vmess, uuid: 0b5aeb7c-e477-484f-8999-61772c43b43c, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /audio.wav, ws-headers: {Host: euserv7p.ezddns.tk}}
-  - {name: 馃嚞馃嚙 GB_17, server: 35.178.68.152, port: 47611, type: vmess, uuid: 97a4d167-b361-48b8-b004-8bc45669e334, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 Relay_馃嚭馃嚫US |17.40Mb, server: euserv6p.ezddns.tk, port: 80, type: vmess, uuid: 499737a4-9f18-4e1f-fb38-437e1855fc04, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /video, ws-headers: {Host: euserv6p.ezddns.tk}}
-  - {name: 🇺🇸 Relay_馃嚭馃嚫US |24.89Mb, server: free-russian01-cdn.xiaohouzi.club, port: 80, type: vmess, uuid: 3d31728e-064d-42b8-b945-f79c008f73fc, alterId: 233, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: free-russian01-cdn.xiaohouzi.club}}
-  - {name: 🇨🇳 馃嚚馃嚦CN_1512 | 8.27Mb, server: cn1.relay.starlink.st, port: 65008, type: vmess, uuid: de84ddcc-954f-49a3-903b-b1e5817d8e8f, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇳 馃嚚馃嚦 CN_166, server: cn1.relay.starlink.st, port: 65009, type: vmess, uuid: de84ddcc-954f-49a3-903b-b1e5817d8e8f, alterId: 0, cipher: auto, tls: false}
-  - {name: "| 9.47Mb", server: 35.178.68.152, port: 47611, type: vmess, uuid: 97a4d167-b361-48b8-b004-8bc45669e334, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇫🇷 馃嚝馃嚪FR_2620 |51.93Mb, server: 54.37.18.98, port: 80, type: vmess, uuid: c4c24503-a357-40d1-b9bd-0dc4264d65e3, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /sshocean, ws-headers: {Host: 54.37.18.98}}
+  - {name: 🇸🇬 Relay_馃嚚馃嚦CN-馃嚫馃嚞SG_45, server: ngzyd-1.okex-tradebot.xyz, port: 30004, type: vmess, uuid: bfcd0463-2f1e-4945-9d90-50037230a372, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: ngzyd-1.okex-tradebot.xyz}}
+  - {name: 馃嚞馃嚙GB_69, server: 5.183.102.142, port: 14420, type: vmess, uuid: 9984501d-e80a-4144-c6bd-2503fb49872d, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇷🇺 馃嚪馃嚭 RU_78, server: 194.87.48.252, port: 38673, type: vmess, uuid: f0da4655-f438-4008-a9e0-6c7f0c4cfaa5, alterId: 0, cipher: auto, tls: false}
+  - {name: 馃嚞馃嚙 GB_169, server: 5.183.101.200, port: 35374, type: vmess, uuid: 62836733-0014-4014-e0e3-908eea2f3063, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇩🇪 馃嚛馃嚜 DE_21, server: 138.201.150.52, port: 33957, type: vmess, uuid: 89cee221-b06c-46c5-f0d7-4fd3f4740b97, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇭🇰 Relay_馃嚟馃嚢HK-馃嚭馃嚫US_79, server: azhk2.pengui.tools, port: 50000, type: vmess, uuid: fa77a1da-32ee-4b4c-b62c-05d0d3426f4b, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: azhk2.pengui.tools}}
+  - {name: 🇺🇸 馃嚭馃嚫US_6842 |87.85Mb, server: 54.215.234.182, port: 14924, type: vmess, uuid: d099824d-8259-4c45-f6ab-c1896f741393, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇳🇱 馃嚦馃嚤 NL_48, server: 132.226.169.93, port: 45623, type: vmess, uuid: 0453154b-db51-4a66-8f7c-0887878cb9a3, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 Relay_馃嚭馃嚫US-馃嚭馃嚫US_237, server: euserv12p.ezddns.tk, port: 80, type: vmess, uuid: c0304bc1-f8ff-4108-9bc6-3415d16ae5e3, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /video, ws-headers: {Host: euserv12p.ezddns.tk}}
+  - {name: 馃嚞馃嚙 GB_52, server: 35.178.68.152, port: 47611, type: vmess, uuid: 97a4d167-b361-48b8-b004-8bc45669e334, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 Relay_馃嚭馃嚫US-馃嚭馃嚫US_238, server: euserv5p.ezddns.tk, port: 80, type: vmess, uuid: 60b738e2-3aa4-4cde-c270-20f8cc1ab16a, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /audio.wav, ws-headers: {Host: euserv5p.ezddns.tk}}
+  - {name: 🇺🇸 Relay_馃嚭馃嚫US-馃嚭馃嚫US_240, server: euserv9p.ezddns.tk, port: 80, type: vmess, uuid: ca870483-fa7d-4f64-983a-6ed455143aca, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /live, ws-headers: {Host: euserv9p.ezddns.tk}}
+  - {name: 🇺🇸 Relay_馃嚭馃嚫US-馃嚭馃嚫US_235, server: euserv18p.ezddns.tk, port: 80, type: vmess, uuid: 344c0b7d-2c35-4c95-8481-e2fc3c456a06, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /audio.mp3, ws-headers: {Host: euserv18p.ezddns.tk}}
+  - {name: 🇫🇷 馃嚝馃嚪 FR_168, server: 54.37.18.98, port: 80, type: vmess, uuid: c4c24503-a357-40d1-b9bd-0dc4264d65e3, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /sshocean, ws-headers: {Host: 54.37.18.98}}
+  - {name: 🇩🇪 馃嚛馃嚜 DE_38, server: 18.157.179.71, port: 443, type: vmess, uuid: 81dd574d-8d47-4b31-9f5a-3f638b427842, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇺🇸 馃嚭馃嚫 US_124, server: 135.125.207.34, port: 80, type: vmess, uuid: e2816152-6326-4cf9-aa95-34b0f9a8c666, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /sshocean, ws-headers: {Host: 135.125.207.34}}
+  - {name: 🇯🇵 馃嚡馃嚨 JP_181, server: auto.freev2.top, port: 53726, type: vmess, uuid: f645b027-f5a7-461e-a8d1-758d1dc4bae8, alterId: 1, cipher: auto, tls: false}
+  - {name: 🇺🇸 Relay_馃嚚馃嚦CN-馃嚭馃嚫US_37, server: 117.28.243.248, port: 8333, type: ss, cipher: rc4-md5, password: passfw2xs4e!}
+  - {name: 🇺🇸 Relay_馃嚭馃嚫US-馃嚭馃嚫US_247, server: euserv7p.ezddns.tk, port: 80, type: vmess, uuid: 0b5aeb7c-e477-484f-8999-61772c43b43c, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /audio.wav, ws-headers: {Host: euserv7p.ezddns.tk}}
+
 
 #free
   - {name: https://git.io/v9999 clash ip3 54, server: 13.70.28.145, port: 34323, type: vmess, uuid: 5a2056b9-61c5-4737-b153-b2775ec8bad9, alterId: 64, cipher: auto, tls: false}
