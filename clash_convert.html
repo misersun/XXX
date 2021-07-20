@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+
+<h1>clash订阅转换</h1>
+
+<p>请输入订阅链接</p>
+
+<textarea id="text1" autocomplete="off" rows="3" cols="100" placeholder="支持订阅或ss/ssr/vmess/trojan链接，多个链接每行一个或用 | 分隔, 注意请不要把几千个节点的订阅往里面塞" style="min-height: 31px;"></textarea>
+
+<button type="button" onclick="myFunction()">提交</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x, t;
+
+    // 获取 id="numb" 的值
+    x = document.getElementById("text1").value;	
+
+    // 如果输入的值 x 不是数字或者小于 1 或者大于 10，则提示错误 Not a Number or less than one or greater than 10
+    //if (isNaN(x) || x < 1 || x > 10) {
+    //    text = "输入错误";
+    //} else {
+    //    text = "输入正确";
+    //}
+	
+	x = x.replace(/(\n|\r|\n\r)/g, "|");
+	t = "http://127.0.0.1:25500/sub?target=clash"+"&url="+encodeURIComponent(x)+"&insert=false";
+	
+    document.getElementById("demo").innerHTML = "<a href=\""+t+"\">点击生成的链接</a>";
+}
+</script>
+
+</body>
+</html>
