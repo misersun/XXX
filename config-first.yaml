@@ -1,0 +1,209 @@
+# ★第一部分，系统配置
+mixed-port: 7891
+redir-port: 17891
+allow-lan: true
+bind-address: '*'
+mode: rule
+log-level: silent
+ipv6: false
+#external-controller: 0.0.0.0:9090
+#external-ui: dashboardB
+#interface-name: en0
+
+# ★第二部分，DNS配置
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.lan'
+    - 'localhost.ptlogin2.qq.com'
+    - 'dns.msftncsi.com'
+    - 'www.msftncsi.com'
+    - 'www.msftconnecttest.com'
+  nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+
+# ★第三部分，代理配置
+
+
+
+proxy-groups:
+  - name: "FuckWall"
+    type: select
+    proxies:
+      - MySelected
+      - DIRECT
+ 
+  - name: "MySelected"
+    type: select
+    use:
+      - KeJiPool
+      - DianXingPool
+      - YiDongPool
+      - MyPool
+    
+  - name: "Final"
+    type: select
+    proxies:
+      - FuckWall
+      - DIRECT
+
+
+ 
+      
+proxy-providers:
+  "KeJiPool":
+    type: http
+    #url: "https://cdn.jsdelivr.net/gh/misersun/my_clash@main/config_tested.yaml"
+    #url: "https://raw.githubusercontent.com/misersun/my_clash/main/config_tested.yaml"
+    url: "https://raw.fastgit.org/misersun/my_clash/main/tested_keji.yaml"
+    #url: "https://raw.githubusercontent.com/misersun/my_clash/main/tested_keji.yaml"
+    interval: 3600
+    path: ./download/tested_keji.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+  "DianXingPool":
+    type: http
+    #url: "https://cdn.jsdelivr.net/gh/misersun/my_clash@main/config_tested.yaml"
+    #url: "https://raw.githubusercontent.com/misersun/my_clash/main/config_tested.yaml"
+    url: "https://raw.fastgit.org/misersun/my_clash/main/tested_dianxing.yaml"
+    #url: "https://raw.githubusercontent.com/misersun/my_clash/main/tested_dianxing.yaml"
+    interval: 3600
+    path: ./download/tested_dianxing.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+  "YiDongPool":
+    type: http
+    #url: "https://cdn.jsdelivr.net/gh/misersun/my_clash@main/config_tested.yaml"
+    #url: "https://raw.githubusercontent.com/misersun/my_clash/main/config_tested.yaml"
+    url: "https://raw.fastgit.org/misersun/my_clash/main/tested_yidong.yaml"
+    #url: "https://raw.githubusercontent.com/misersun/my_clash/main/tested_yidong.yaml"
+    interval: 3600
+    path: ./download/tested_yidong.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+
+  "MyPool":
+    type: http
+    #url: "https://cdn.jsdelivr.net/gh/misersun/my_clash@main/my_github_clash.yaml"
+    url: "https://raw.fastgit.org/misersun/my_clash/main/my_github_clash.yaml"
+    interval: 3600
+    path: ./download/my_github_clash.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+
+# ★第四部分，规则配置
+rule-providers:
+  reject:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
+    path: ./ruleset/reject.yaml
+    interval: 86400
+
+  icloud:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt"
+    path: ./ruleset/icloud.yaml
+    interval: 86400
+
+  apple:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt"
+    path: ./ruleset/apple.yaml
+    interval: 86400
+
+  google:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt"
+    path: ./ruleset/google.yaml
+    interval: 86400
+
+  proxy:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt"
+    path: ./ruleset/proxy.yaml
+    interval: 86400
+
+  direct:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"
+    path: ./ruleset/direct.yaml
+    interval: 86400
+
+  gfw:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt"
+    path: ./ruleset/gfw.yaml
+    interval: 86400
+
+  greatfire:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/greatfire.txt"
+    path: ./ruleset/greatfire.yaml
+    interval: 86400
+
+  tld-not-cn:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt"
+    path: ./ruleset/tld-not-cn.yaml
+    interval: 86400
+
+  telegramcidr:
+    type: http
+    behavior: ipcidr
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt"
+    path: ./ruleset/telegramcidr.yaml
+    interval: 86400
+
+  cncidr:
+    type: http
+    behavior: ipcidr
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt"
+    path: ./ruleset/cncidr.yaml
+    interval: 86400
+
+  lancidr:
+    type: http
+    behavior: ipcidr
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
+    path: ./ruleset/lancidr.yaml
+    interval: 86400
+
+rules:
+  - DOMAIN,clash.razord.top,DIRECT
+  - DOMAIN,yacd.haishan.me,DIRECT
+  - DOMAIN-SUFFIX,googleapis.cn,FuckWall
+  #- RULE-SET,reject,REJECT
+  - RULE-SET,icloud,DIRECT
+  - RULE-SET,apple,DIRECT
+  - RULE-SET,google,FuckWall
+  - RULE-SET,proxy,FuckWall
+  - RULE-SET,direct,DIRECT
+  - RULE-SET,telegramcidr,FuckWall
+  - GEOIP,CN,DIRECT
+#  - MATCH,FuckWall
+  - MATCH,Final
