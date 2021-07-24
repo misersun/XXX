@@ -42,6 +42,7 @@ proxy-groups:
       - load-balance-other
       - MySelected1
       - MySelected2
+      - MySelected_DianXing
       - tested_BaDu
       - DianXing_pool
       - KeJi_pool
@@ -73,17 +74,27 @@ proxy-groups:
     type: select
     use:
       - YiDongPool
-      - DianXingPool
       - KeJiPool      
       - MyPool
       - BaDu_all
+
+  - name: "MySelected_DianXing"
+    type: select
+    use:
+      - DianXingPool
 
   - name: "Just4FaceBook"
     type: select
     proxies:
       - DIRECT
       - Just4FaceBook_tested
+      - FaceBook_DianXing
       - Just4FaceBook_MySelected
+
+  - name: "FaceBook_DianXing"
+    type: select
+    use:
+      - DianXingPool
 
 
   - name: "Just4FaceBook_MySelected"
