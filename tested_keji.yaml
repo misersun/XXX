@@ -67,6 +67,18 @@ proxies:
   - {name: 🇺🇸 馃嚭馃嚫 US_128, server: us-01.yinriver.top, port: 80, type: vmess, uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: us-01.yinriver.top}}
   - {name: 🇺🇸 Relay_馃嚚馃嚦CN-馃嚭馃嚫US_1555, server: p8.22332e.com, port: 8333, type: ss, cipher: rc4-md5, password: passfw2xs4e!}
 
+  - {name: 捷克(Youtube频道：工具大师！), server: 89.187.168.39, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 欧洲(Youtube频道：工具大师！), server: 138.199.16.137, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
+  - {name: 欧洲(Youtube频道：工具大师！) 2, server: 185.44.76.188, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: 欧洲(Youtube频道：工具大师！) 3, server: 195.47.194.42, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 🇺🇸 美国(Youtube频道：工具大师！), server: 154.17.2.162, port: 18334, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
+  - {name: 捷克(Youtube频道：工具大师！) 2, server: 45.83.91.133, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 🇺🇸 美国(Youtube频道：工具大师！) 2, server: 198.8.92.84, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇳🇱 荷兰(Youtube频道：工具大师！), server: 46.182.107.157, port: 443, type: vmess, uuid: 20b30916-e203-412e-8ec0-900f3acd5128, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.73345741.xyz}}
+  - {name: 欧洲(Youtube频道：工具大师！) 4, server: ss.au.sshmax.net, port: 1443, type: ss, cipher: chacha20-ietf-poly1305, password: kRAxb8hPUxS0}
+  - {name: 罗马(Youtube频道：工具大师！), server: 91.90.123.115, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
+  - {name: 🇺🇸 美国(Youtube频道：工具大师！) 3, server: 198.8.92.84, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
+
 #free
   - {name: httpsgitiov9999 clash ip3 15, server: 15.152.48.124, port: 44734, type: vmess, uuid: ede610d8-6902-454e-a96e-d6d12d3eec04, alterId: 64, cipher: auto, tls: false}
   - {name: httpsgitiov9999 clash ip3 16, server: 15.152.48.124, port: 39845, type: vmess, uuid: fcf47cd1-b4c5-4950-afcf-da40564ffc49, alterId: 64, cipher: auto, tls: false}
