@@ -1,0 +1,5845 @@
+proxies:
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 莫斯科'
+  port: 56282
+  server: 46.17.43.179
+  tls: false
+  type: vmess
+  uuid: 5d3e6e14-5828-4e88-a946-bad5c700b4d5
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 荷兰'
+  port: 56282
+  server: 163.172.214.118
+  tls: false
+  type: vmess
+  uuid: 5d3e6e14-5828-4e88-a946-bad5c700b4d5
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 clash ip5德国'
+  port: 56748
+  server: 217.79.181.111
+  tls: false
+  type: vmess
+  uuid: bcc21751-81be-4b0b-8cbc-bc30d67cb818
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 clash ip5德国 2'
+  port: 28599
+  server: 89.163.224.127
+  tls: false
+  type: vmess
+  uuid: ec8be0c5-9eac-4728-8929-ef23c73d8341
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 clash ip4莫斯科'
+  port: 56967
+  server: 46.17.45.139
+  tls: false
+  type: vmess
+  uuid: 5458261b-ec18-4673-9251-fa7859a5cacb
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 clash ip4莫斯科 2'
+  port: 20592
+  server: 176.32.35.73
+  tls: false
+  type: vmess
+  uuid: e7385e13-1a69-4b2c-9d95-20ebf36226ae
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 clash ip4莫斯科 3'
+  port: 52341
+  server: 45.140.169.224
+  tls: false
+  type: vmess
+  uuid: 3f1079d6-998a-4d1b-98be-a7e9d5f30d07
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3
+  network: ws
+  port: 443
+  server: jp-01.yinriver.top
+  tls: true
+  type: vmess
+  uuid: 50f86e6f-a7d7-45bc-aa69-f95fc8cf3025
+  ws-headers:
+    Host: jp-01.yinriver.top
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 2
+  network: ws
+  port: 443
+  server: 172.67.223.77
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 3
+  network: ws
+  port: 443
+  server: 104.22.4.180
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 4
+  network: ws
+  port: 443
+  server: hostmonit.com
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 5
+  network: ws
+  port: 443
+  server: 104.16.148.48
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 6
+  network: ws
+  port: 443
+  server: 46.182.107.36
+  tls: true
+  type: vmess
+  uuid: 65ea6727-4461-47a7-a5c4-fef2c67f2f79
+  ws-headers:
+    Host: www.09462550.xyz
+  ws-path: /footers
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 7
+  network: ws
+  port: 24446
+  server: transit-azure-b1s-hk.speedtestcustom.tk
+  tls: false
+  type: vmess
+  uuid: 732ada90-3ad1-45bd-bd37-fb5fe1b9007c
+  ws-headers:
+    Host: transit-azure-b1s-hk.speedtestcustom.tk
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 8
+  network: ws
+  port: 52344
+  server: gzcm1.domain.hxray.me
+  tls: true
+  type: vmess
+  uuid: b1848660-f141-4e80-969e-d325c80aa209
+  ws-headers:
+    Host: sgp1.domain.hxray.me
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 9
+  network: ws
+  port: 61989
+  server: ahyd1.domain.hxray.me
+  tls: true
+  type: vmess
+  uuid: 98dff0a6-dc7b-4978-8fb0-a126b6be268d
+  ws-headers:
+    Host: sgp1.domain.hxray.me
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 10
+  network: ws
+  port: 52344
+  server: gzcm1.domain.hxray.me
+  tls: true
+  type: vmess
+  uuid: 98dff0a6-dc7b-4978-8fb0-a126b6be268d
+  ws-headers:
+    Host: sgp1.domain.hxray.me
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 11
+  network: ws
+  port: 31818
+  server: gz.cm.huitiank.com
+  tls: false
+  type: vmess
+  uuid: 5f6ed9ca-ef42-43e8-ab9f-470016bf92e9
+  ws-headers:
+    Host: pull-flv-l6.douyincdn.com
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 12
+  network: ws
+  port: 52344
+  server: gzcm1.domain.hxray.me
+  tls: true
+  type: vmess
+  uuid: 5cfff7ad-2f9c-404e-8844-1eca4f2fe5ac
+  ws-headers:
+    Host: sgp1.domain.hxray.me
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 13
+  network: ws
+  port: 12005
+  server: shcn2.domain.hxray.me
+  tls: true
+  type: vmess
+  uuid: 5cfff7ad-2f9c-404e-8844-1eca4f2fe5ac
+  ws-headers:
+    Host: sgp1.domain.hxray.me
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 14
+  network: ws
+  port: 12005
+  server: shcn2.domain.hxray.me
+  tls: true
+  type: vmess
+  uuid: b1848660-f141-4e80-969e-d325c80aa209
+  ws-headers:
+    Host: sgp1.domain.hxray.me
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 15
+  network: ws
+  port: 61989
+  server: ahyd1.domain.hxray.me
+  tls: true
+  type: vmess
+  uuid: b1848660-f141-4e80-969e-d325c80aa209
+  ws-headers:
+    Host: sgp1.domain.hxray.me
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 16
+  network: ws
+  port: 20001
+  server: cm-jm.okvpn.cc
+  tls: false
+  type: vmess
+  uuid: 94a60d56-10ee-4796-a072-25fc8d9a52b8
+  ws-headers:
+    Host: cm-jm.okvpn.cc
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 17
+  network: ws
+  port: 443
+  server: 180.215.218.223
+  tls: true
+  type: vmess
+  uuid: 702e0b48-e2cd-4286-ae37-d5275a65ed54
+  ws-headers:
+    Host: www.35462784.xyz
+  ws-path: /footers
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 18
+  network: ws
+  port: 443
+  server: 72.44.74.98
+  tls: true
+  type: vmess
+  uuid: 81295af2-bcd2-0d7e-8bc4-f1367049cf95
+  ws-headers:
+    Host: 72-44-74-98.wdnmd1145141919810.xyz
+  ws-path: /gafnvws
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 19
+  network: ws
+  port: 42359
+  server: 45.63.127.248
+  tls: false
+  type: vmess
+  uuid: e03ea624-6458-4c28-f20d-5f734f0db562
+  ws-headers:
+    Host: 45.63.127.248
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 20
+  port: 14420
+  server: 5.183.102.142
+  tls: false
+  type: vmess
+  uuid: 9984501d-e80a-4144-c6bd-2503fb49872d
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 21
+  network: ws
+  port: 80
+  server: 51.195.217.20
+  tls: false
+  type: vmess
+  uuid: 6c0cb6a9-2389-4b5d-8bec-b14b076f4a4e
+  ws-headers:
+    Host: 51.195.217.20
+  ws-path: /sshocean
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 22
+  network: ws
+  port: 443
+  server: 104.16.149.72
+  tls: true
+  type: vmess
+  uuid: e26e8e56-6af6-fe22-d1ed-926650b89c76
+  ws-headers:
+    Host: nsawsrb.mooncloud.bike
+  ws-path: /fokfvws
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 23
+  network: ws
+  port: 443
+  server: 104.20.82.105
+  tls: true
+  type: vmess
+  uuid: e26e8e56-6af6-fe22-d1ed-926650b89c76
+  ws-headers:
+    Host: nsawsrb.mooncloud.bike
+  ws-path: /fokfvws
+- alterId: 60
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 24
+  network: ws
+  port: 443
+  server: www.garmin.com
+  tls: true
+  type: vmess
+  uuid: 2ac0acf7-a788-4b3e-a643-3a87368a49dd
+  ws-headers:
+    Host: qq13.feiclouddd.me
+  ws-path: /sadfasf
+- alterId: 60
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 25
+  network: ws
+  port: 443
+  server: 104.19.45.117
+  tls: true
+  type: vmess
+  uuid: 2ac0acf7-a788-4b3e-a643-3a87368a49dd
+  ws-headers:
+    Host: qq13.feiclouddd.me
+  ws-path: /sadfasf
+- alterId: 60
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 26
+  network: ws
+  port: 443
+  server: 172.67.223.77
+  tls: true
+  type: vmess
+  uuid: 2ac0acf7-a788-4b3e-a643-3a87368a49dd
+  ws-headers:
+    Host: qq13.feiclouddd.me
+  ws-path: /sadfasf
+- alterId: 60
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 27
+  network: ws
+  port: 443
+  server: icook.tw
+  tls: true
+  type: vmess
+  uuid: 2ac0acf7-a788-4b3e-a643-3a87368a49dd
+  ws-headers:
+    Host: qq13.feiclouddd.me
+  ws-path: /sadfasf
+- alterId: 60
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 28
+  network: ws
+  port: 443
+  server: 104.21.239.147
+  tls: true
+  type: vmess
+  uuid: 2ac0acf7-a788-4b3e-a643-3a87368a49dd
+  ws-headers:
+    Host: qq13.feiclouddd.me
+  ws-path: /sadfasf
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 29
+  network: ws
+  port: 44443
+  server: hk1.domain.hxray.me
+  tls: true
+  type: vmess
+  uuid: 98dff0a6-dc7b-4978-8fb0-a126b6be268d
+  ws-headers:
+    Host: hk1.domain.hxray.me
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 30
+  network: ws
+  port: 443
+  server: 104.18.207.189
+  tls: true
+  type: vmess
+  uuid: e26e8e56-6af6-fe22-d1ed-926650b89c76
+  ws-headers:
+    Host: nsawsrb.mooncloud.bike
+  ws-path: /fokfvws
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 31
+  network: ws
+  port: 443
+  server: 46.182.107.94
+  tls: true
+  type: vmess
+  uuid: 743bdc87-1dea-41bf-aa0b-51dfbbfec8aa
+  ws-headers:
+    Host: www.54872833.xyz
+  ws-path: /footers
+- alterId: 60
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 32
+  network: ws
+  port: 443
+  server: 104.17.36.178
+  tls: true
+  type: vmess
+  uuid: 2ac0acf7-a788-4b3e-a643-3a87368a49dd
+  ws-headers:
+    Host: qq13.feiclouddd.me
+  ws-path: /sadfasf
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 33
+  network: ws
+  port: 443
+  server: 104.22.3.3
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 60
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 34
+  network: ws
+  port: 443
+  server: nn-ssr24.feiclouddd.me
+  tls: true
+  type: vmess
+  uuid: 94d3ddba-3c75-4ddd-84c5-b859a30b1fb9
+  ws-headers:
+    Host: nn-ssr24.feiclouddd.me
+  ws-path: /dsafasdf
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 35
+  network: ws
+  port: 80
+  server: 107.191.112.214
+  tls: false
+  type: vmess
+  uuid: 732ada90-3ad1-45bd-bd37-fb5fe1b9007c
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 36
+  network: ws
+  port: 443
+  server: 104.25.175.69
+  tls: true
+  type: vmess
+  uuid: 9e193088-078d-44cb-960a-f179d93554ee
+  ws-headers:
+    Host: nl.vincent-jackson2021.cf
+  ws-path: /vincent-jacksonvws
+- alterId: 60
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 37
+  network: ws
+  port: 443
+  server: 104.16.181.15
+  tls: true
+  type: vmess
+  uuid: 2ac0acf7-a788-4b3e-a643-3a87368a49dd
+  ws-headers:
+    Host: qq13.feiclouddd.me
+  ws-path: /sadfasf
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 38
+  network: ws
+  port: 443
+  server: 104.20.81.240
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 39
+  network: ws
+  port: 443
+  server: 104.16.16.255
+  tls: true
+  type: vmess
+  uuid: 7a1bd825-d7da-461c-be6a-d082e32d3337
+  ws-headers:
+    Host: ehtdz61g4.dongkid.online
+  ws-path: /qhjmvws?ed=2048
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 40
+  network: ws
+  port: 443
+  server: 154.84.1.217
+  tls: true
+  type: vmess
+  uuid: 130c9f2e-42b1-4ebf-b345-e26456a061f9
+  ws-headers:
+    Host: www.05222027.xyz
+  ws-path: /footers
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 41
+  network: ws
+  port: 443
+  server: 104.17.36.178
+  tls: true
+  type: vmess
+  uuid: 7a1bd825-d7da-461c-be6a-d082e32d3337
+  ws-headers:
+    Host: ehtdz61g4.dongkid.online
+  ws-path: /qhjmvws?ed=2048
+- alterId: 2
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 42
+  network: ws
+  port: 20925
+  server: 103.56.60.37
+  tls: false
+  type: vmess
+  uuid: b8583f26-9717-3f5a-91cf-b48a910344ad
+  ws-headers:
+    Host: 103.56.60.37
+  ws-path: /mfyun.m3u8
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 43
+  network: ws
+  port: 80
+  server: 199.60.103.228
+  tls: false
+  type: vmess
+  uuid: b22b990f-b6dd-4b57-a0e1-ee3f829d413f
+  ws-headers:
+    Host: eu-sshkit.v2-ray.cf
+  ws-path: /sshkit
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 44
+  network: ws
+  port: 443
+  server: www.garmin.com
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 45
+  network: ws
+  port: 443
+  server: 567567.cf
+  tls: true
+  type: vmess
+  uuid: 5f4b2e42-ff2b-6666-86fc-b7ba1b5361e8
+  ws-headers:
+    Host: 567567.cf
+  ws-path: /The-Great-Awakening_vws?ed=2048
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 46
+  network: ws
+  port: 443
+  server: icook.tw
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- name: httpsgitiov9999 clash ip3 47
+  password: 7f6b65e4-6d5b-4137-a1dc-d32f4a810239
+  port: 443
+  server: us2.paopao.cf
+  sni: us2.paopao.cf
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 48
+  network: ws
+  port: 443
+  server: 104.22.44.50
+  tls: true
+  type: vmess
+  uuid: 9e193088-078d-44cb-960a-f179d93554ee
+  ws-headers:
+    Host: nl.vincent-jackson2021.cf
+  ws-path: /vincent-jacksonvws
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 49
+  network: ws
+  port: 443
+  server: 104.18.135.208
+  tls: true
+  type: vmess
+  uuid: 9e193088-078d-44cb-960a-f179d93554ee
+  ws-headers:
+    Host: nl.vincent-jackson2021.cf
+  ws-path: /vincent-jacksonvws
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 50
+  network: ws
+  port: 443
+  server: icook.tw
+  tls: true
+  type: vmess
+  uuid: e2cbac5f-b754-407b-a6cc-3205482f1fb4
+  ws-headers:
+    Host: 567567.ga
+  ws-path: /Vincent-Jacksonvws?ed=2048
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 51
+  network: ws
+  port: 10121
+  server: 45.11.92.139
+  tls: false
+  type: vmess
+  uuid: 24cd8398-c0e6-4667-a712-a358754809d9
+  ws-headers:
+    Host: 45.11.92.139
+  ws-path: /
+- name: httpsgitiov9999 clash ip3 52
+  password: 7x42LetRa0
+  port: 1443
+  server: in1-1.noojat.com
+  sni: in1-1.noojat.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 53
+  network: ws
+  port: 443
+  server: t6.ssrsub.one
+  tls: true
+  type: vmess
+  uuid: 97018aac-0985-4d4b-8283-f774c9fe9418
+  ws-headers:
+    Host: t6.ssrsub.one
+  ws-path: /v2ray/fc671c24/
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 54
+  network: ws
+  port: 443
+  server: 23.224.30.36
+  tls: true
+  type: vmess
+  uuid: e4494518-74e8-4d6b-942a-6b332cce09ef
+  ws-headers:
+    Host: www.01902367.xyz
+  ws-path: /path/310910211916
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 55
+  network: ws
+  port: 443
+  server: 23.224.30.37
+  tls: true
+  type: vmess
+  uuid: e4494518-74e8-4d6b-942a-6b332cce09ef
+  ws-headers:
+    Host: www.01902367.xyz
+  ws-path: /path/310910211916
+- alterId: 60
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 56
+  network: ws
+  port: 443
+  server: qq13.feiclouddd.me
+  tls: true
+  type: vmess
+  uuid: 2ac0acf7-a788-4b3e-a643-3a87368a49dd
+  ws-headers:
+    Host: qq13.feiclouddd.me
+  ws-path: /sadfasf
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 57
+  network: ws
+  port: 443
+  server: 104.20.130.43
+  tls: true
+  type: vmess
+  uuid: 9e193088-078d-44cb-960a-f179d93554ee
+  ws-headers:
+    Host: nl.vincent-jackson2021.cf
+  ws-path: /vincent-jacksonvws
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 58
+  port: 59857
+  server: 5.183.101.204
+  tls: false
+  type: vmess
+  uuid: 4c35d374-dbf2-4e5f-c731-dfa49191825a
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 59
+  network: ws
+  port: 443
+  server: us2.paopao.cf
+  tls: true
+  type: vmess
+  uuid: 7f6b65e4-6d5b-4137-a1dc-d32f4a810239
+  ws-headers:
+    Host: us2.paopao.cf
+  ws-path: /tgzhucaidan
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 60
+  network: ws
+  port: 80
+  server: 146.59.13.37
+  tls: false
+  type: vmess
+  uuid: b79212e2-b670-4d4b-8c22-eb796921b97a
+  ws-headers:
+    Host: 146.59.13.37
+  ws-path: /sshocean
+- alterId: 60
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 61
+  network: ws
+  port: 443
+  server: 104.16.207.196
+  tls: true
+  type: vmess
+  uuid: 2ac0acf7-a788-4b3e-a643-3a87368a49dd
+  ws-headers:
+    Host: qq13.feiclouddd.me
+  ws-path: /sadfasf
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 62
+  network: ws
+  port: 80
+  server: bimbel.ruangguru.com
+  tls: false
+  type: vmess
+  uuid: b22b990f-b6dd-4b57-a0e1-ee3f829d413f
+  ws-headers:
+    Host: eu-sshkit.v2-ray.cf
+  ws-path: /sshkit
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 63
+  network: ws
+  port: 80
+  server: 45.82.167.21
+  tls: false
+  type: vmess
+  uuid: a7b384a1-dd97-4fc3-819d-06cd8c706811
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 64
+  network: ws
+  port: 443
+  server: 104.16.160.114
+  tls: true
+  type: vmess
+  uuid: 5f4b2e42-ff2b-4342-86fc-b7ba1b5361e8
+  ws-headers:
+    Host: vincent-jackson2021.ga
+  ws-path: /The-Great-Awakening_vws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 65
+  network: ws
+  port: 443
+  server: 104.20.130.43
+  tls: true
+  type: vmess
+  uuid: e2cbac5f-b754-407b-a6cc-3205482f1fb4
+  ws-headers:
+    Host: 567567.ga
+  ws-path: /Vincent-Jacksonvws?ed=2048
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 66
+  network: ws
+  port: 443
+  server: 104.160.186.54
+  tls: true
+  type: vmess
+  uuid: d3cbe556-8db3-47e0-8ef1-06b2cce00411
+  ws-headers:
+    Host: www.92726054.xyz
+  ws-path: /path/310910211916
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 67
+  network: ws
+  port: 443
+  server: www.17080100.xyz
+  tls: true
+  type: vmess
+  uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724
+  ws-headers:
+    Host: www.17080100.xyz
+  ws-path: /path/310910211916
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 68
+  network: ws
+  port: 443
+  server: icook.tw
+  tls: true
+  type: vmess
+  uuid: 5f4b2e42-ff2b-4342-86fc-b7ba1b5361e8
+  ws-headers:
+    Host: vincent-jackson2021.ga
+  ws-path: /The-Great-Awakening_vws?ed=2048
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 69
+  network: ws
+  port: 443
+  server: 46.182.107.37
+  tls: true
+  type: vmess
+  uuid: 65ea6727-4461-47a7-a5c4-fef2c67f2f79
+  ws-headers:
+    Host: www.09462550.xyz
+  ws-path: /footers
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 70
+  network: ws
+  port: 443
+  server: 46.182.107.93
+  tls: true
+  type: vmess
+  uuid: 743bdc87-1dea-41bf-aa0b-51dfbbfec8aa
+  ws-headers:
+    Host: www.54872833.xyz
+  ws-path: /footers
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 71
+  network: ws
+  port: 443
+  server: 46.182.107.154
+  tls: true
+  type: vmess
+  uuid: 130c9f2e-42b1-4ebf-b345-e26456a061f9
+  ws-headers:
+    Host: www.05222027.xyz
+  ws-path: /footers
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 72
+  network: ws
+  port: 443
+  server: 46.182.107.39
+  tls: true
+  type: vmess
+  uuid: d3133484-f2bf-4b0c-8d38-f8e645b65687
+  ws-headers:
+    Host: www.07890885.xyz
+  ws-path: /footers
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 73
+  network: ws
+  port: 443
+  server: 46.182.107.45
+  tls: true
+  type: vmess
+  uuid: fe5f69e7-e183-439b-950b-9661ef0651f2
+  ws-headers:
+    Host: www.68737987.xyz
+  ws-path: /footers
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 74
+  port: 56282
+  server: 46.17.43.179
+  tls: false
+  type: vmess
+  uuid: 5d3e6e14-5828-4e88-a946-bad5c700b4d5
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 75
+  network: ws
+  port: 443
+  server: 46.182.107.13
+  tls: true
+  type: vmess
+  uuid: a7fa8f14-4fb6-4280-9005-d6bbe99c5da9
+  ws-headers:
+    Host: www.07395375.xyz
+  ws-path: /path/310910211916
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 76
+  network: ws
+  port: 443
+  server: 46.182.107.146
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca4690dd24
+  ws-headers:
+    Host: www.44590130.xyz
+  ws-path: /footers
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 77
+  network: ws
+  port: 443
+  server: icook.tw
+  tls: true
+  type: vmess
+  uuid: 7a1bd825-d7da-461c-be6a-d082e32d3337
+  ws-headers:
+    Host: ehtdz61g4.dongkid.online
+  ws-path: /qhjmvws?ed=2048
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 78
+  network: ws
+  port: 443
+  server: 46.182.107.157
+  tls: true
+  type: vmess
+  uuid: 20b30916-e203-412e-8ec0-900f3acd5128
+  ws-headers:
+    Host: www.73345741.xyz
+  ws-path: /footers
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 79
+  network: ws
+  port: 443
+  server: 198.41.209.5
+  tls: true
+  type: vmess
+  uuid: 1c0d1093-876e-490f-8a5d-affbb78a79df
+  ws-headers:
+    Host: shy-heart-b4df.v5v5v5.workers.dev
+  ws-path: /1c0d1093-876e-490f-8a5d-affbb78a79df-vmess
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 80
+  network: ws
+  port: 443
+  server: 46.182.107.165
+  tls: true
+  type: vmess
+  uuid: d3133484-f2bf-4b0c-8d38-f8e645b65687
+  ws-headers:
+    Host: www.07890885.xyz
+  ws-path: /footers
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 81
+  network: ws
+  port: 80
+  server: euserv8p.ezddns.tk
+  tls: false
+  type: vmess
+  uuid: 24d6dc76-f0a0-4809-8a70-6ad2dce20022
+  ws-headers:
+    Host: euserv8p.ezddns.tk
+  ws-path: /video
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 82
+  network: ws
+  port: 443
+  server: www.digitalocean.com
+  tls: true
+  type: vmess
+  uuid: e2cbac5f-b754-407b-a6cc-3205482f1fb4
+  ws-headers:
+    Host: 567567.ga
+  ws-path: /Vincent-Jacksonvws?ed=2048
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip3 83
+  password: ugyBkSEFxVEmUYSHyvxmWNj9
+  port: 40220
+  server: 198.8.92.84
+  type: ss
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 84
+  network: ws
+  port: 443
+  server: www.17080100.xyz
+  tls: true
+  type: vmess
+  uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724
+  ws-headers:
+    Host: www.17080100.xyz
+  ws-path: /path/310910211916
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 85
+  network: ws
+  port: 36788
+  server: 45.79.114.57
+  tls: false
+  type: vmess
+  uuid: B22C2F57-0189-25E7-79FA-90717E212748
+  ws-headers:
+    Host: 45.79.114.57
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 86
+  network: ws
+  port: 443
+  server: 104.16.182.15
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 87
+  network: ws
+  port: 443
+  server: 104.16.181.15
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 88
+  network: ws
+  port: 443
+  server: www.garmin.com
+  tls: true
+  type: vmess
+  uuid: e2cbac5f-b754-407b-a6cc-3205482f1fb4
+  ws-headers:
+    Host: 567567.ga
+  ws-path: /Vincent-Jacksonvws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 89
+  port: 47611
+  server: 35.178.68.152
+  tls: false
+  type: vmess
+  uuid: 97a4d167-b361-48b8-b004-8bc45669e334
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 90
+  network: ws
+  port: 443
+  server: 46.182.107.44
+  tls: true
+  type: vmess
+  uuid: fe5f69e7-e183-439b-950b-9661ef0651f2
+  ws-headers:
+    Host: www.68737987.xyz
+  ws-path: /footers
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 91
+  network: ws
+  port: 443
+  server: 104.16.160.114
+  tls: true
+  type: vmess
+  uuid: 5f4b2e42-ff2b-4342-86fc-b7ba1b5361e8
+  ws-headers:
+    Host: vincent-jackson2021.ga
+  ws-path: /The-Great-Awakening_vws
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 92
+  network: ws
+  port: 443
+  server: 104.22.44.50
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 93
+  network: ws
+  port: 443
+  server: 104.16.160.114
+  tls: true
+  type: vmess
+  uuid: 5f4b2e42-ff2b-6666-86fc-b7ba1b5361e8
+  ws-headers:
+    Host: 567567.cf
+  ws-path: /The-Great-Awakening_vws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 94
+  network: ws
+  port: 443
+  server: 104.25.104.240
+  tls: true
+  type: vmess
+  uuid: 5f4b2e42-ff2b-6666-86fc-b7ba1b5361e8
+  ws-headers:
+    Host: 567567.cf
+  ws-path: /The-Great-Awakening_vws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 95
+  network: ws
+  port: 443
+  server: 104.25.104.240
+  tls: true
+  type: vmess
+  uuid: 9e193088-078d-44cb-960a-f179d93554ee
+  ws-headers:
+    Host: nl.vincent-jackson2021.cf
+  ws-path: /vincent-jacksonvws
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 96
+  port: 56282
+  server: 163.172.214.118
+  tls: false
+  type: vmess
+  uuid: 5d3e6e14-5828-4e88-a946-bad5c700b4d5
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 97
+  network: ws
+  port: 443
+  server: 172.67.209.58
+  tls: true
+  type: vmess
+  uuid: 9e193088-078d-44cb-960a-f179d93554ee
+  ws-headers:
+    Host: nl.vincent-jackson2021.cf
+  ws-path: /vincent-jacksonvws
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 98
+  network: ws
+  port: 443
+  server: www.garmin.com
+  tls: true
+  type: vmess
+  uuid: 5f4b2e42-ff2b-4342-86fc-b7ba1b5361e8
+  ws-headers:
+    Host: vincent-jackson2021.ga
+  ws-path: /The-Great-Awakening_vws?ed=2048
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 99
+  network: ws
+  port: 443
+  server: 104.20.130.43
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 60
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 100
+  network: ws
+  port: 443
+  server: qq1-cloud13.feiclouddd.me
+  tls: true
+  type: vmess
+  uuid: 478055cc-fdb8-404e-b730-c32faa2c7ca1
+  ws-headers:
+    Host: qq1-cloud13.feiclouddd.me
+  ws-path: /asdfasdf
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 101
+  network: ws
+  port: 443
+  server: 104.16.167.138
+  tls: true
+  type: vmess
+  uuid: 7a1bd825-d7da-461c-be6a-d082e32d3337
+  ws-headers:
+    Host: ehtdz61g4.dongkid.online
+  ws-path: /qhjmvws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 102
+  network: ws
+  port: 443
+  server: www.garmin.com
+  tls: true
+  type: vmess
+  uuid: 5f4b2e42-ff2b-6666-86fc-b7ba1b5361e8
+  ws-headers:
+    Host: 567567.cf
+  ws-path: /The-Great-Awakening_vws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 103
+  network: ws
+  port: 443
+  server: www.digitalocean.com
+  tls: true
+  type: vmess
+  uuid: 5f4b2e42-ff2b-6666-86fc-b7ba1b5361e8
+  ws-headers:
+    Host: 567567.cf
+  ws-path: /The-Great-Awakening_vws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 104
+  network: ws
+  port: 443
+  server: 104.16.160.114
+  tls: true
+  type: vmess
+  uuid: 9e193088-078d-44cb-960a-f179d93554ee
+  ws-headers:
+    Host: nl.vincent-jackson2021.cf
+  ws-path: /vincent-jacksonvws
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 105
+  network: ws
+  port: 443
+  server: www.digitalocean.com
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 106
+  network: ws
+  port: 443
+  server: 13.49.246.208
+  tls: true
+  type: vmess
+  uuid: df055ea2-4d3a-445e-977d-8e958abaad3a
+  ws-headers:
+    Host: v2ray-se-2.xamjyssvpn.xyz
+  ws-path: /xamjyss143/
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 107
+  network: ws
+  port: 443
+  server: www.92726054.xyz
+  tls: true
+  type: vmess
+  uuid: d3cbe556-8db3-47e0-8ef1-06b2cce00411
+  ws-headers:
+    Host: www.92726054.xyz
+  ws-path: /path/310910211916
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 108
+  network: ws
+  port: 443
+  server: 172.67.223.77
+  tls: true
+  type: vmess
+  uuid: 9e193088-078d-44cb-960a-f179d93554ee
+  ws-headers:
+    Host: nl.vincent-jackson2021.cf
+  ws-path: /vincent-jacksonvws
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 109
+  network: ws
+  port: 80
+  server: euserv9p.ezddns.tk
+  tls: false
+  type: vmess
+  uuid: ca870483-fa7d-4f64-983a-6ed455143aca
+  ws-headers:
+    Host: euserv9p.ezddns.tk
+  ws-path: /live
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 110
+  network: ws
+  port: 443
+  server: nl.vincent-jackson2021.cf
+  tls: true
+  type: vmess
+  uuid: 9e193088-078d-44cb-960a-f179d93554ee
+  ws-headers:
+    Host: nl.vincent-jackson2021.cf
+  ws-path: /vincent-jacksonvws
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 111
+  network: ws
+  port: 443
+  server: 107.167.9.124
+  tls: true
+  type: vmess
+  uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724
+  ws-headers:
+    Host: www.17080100.xyz
+  ws-path: /path/310910211916
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 112
+  network: ws
+  port: 80
+  server: us-01.yinriver.top
+  tls: false
+  type: vmess
+  uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875
+  ws-headers:
+    Host: us-01.yinriver.top
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 113
+  port: 47611
+  server: 35.178.68.152
+  tls: false
+  type: vmess
+  uuid: 97a4d167-b361-48b8-b004-8bc45669e334
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1
+  password: J9Y2ncrdPEC38gwydNFFGBna
+  port: 35294
+  server: 89.187.168.39
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 2
+  password: kD9vkjnE6dsUzwQfvKkPkQAd
+  port: 37588
+  server: 85.10.50.164
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 3
+  password: CTK8GXFQgKYQErrghPJfZ6tk
+  port: 47121
+  server: 82.102.26.117
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 4
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 138.199.19.162
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 5
+  password: Vt5pBJFwdtNB26cJbTXxm88Z
+  port: 47027
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 6
+  password: wEsFcHCvbL4eJkL4DZQa7RgR
+  port: 45746
+  server: 82.102.26.117
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 7
+  password: YgusH2MWA8PWc3p2VDsR7AVv
+  port: 31764
+  server: 82.102.26.117
+  type: ss
+- name: httpsgitiov9999 clash ip1 8
+  port: 0
+  server: 4F3fw7PgIY
+  type: socks5
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 9
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 143.244.60.167
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 10
+  password: NHwQTPLCfaTMSqTnU3mjcSxe
+  port: 33998
+  server: 156.146.56.137
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 11
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 198.8.92.84
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 12
+  password: BdRWC38L5JUDMTYNNxJGcUwB
+  port: 49396
+  server: 82.102.26.117
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 13
+  password: kD9vkjnE6dsUzwQfvKkPkQAd
+  port: 37588
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 14
+  password: aYNeKDMzYQYw4KbUbJA8Wszq
+  port: 31944
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 15
+  password: CUndSZnYsPKcu6Kj8THVMBHD
+  port: 39772
+  server: 180.149.231.11
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: httpsgitiov9999 clash ip1 16
+  password: G!yBwPWH3Vao
+  port: 802
+  server: 66.55.148.42
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 17
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 84.17.53.221
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 18
+  password: LkFAzkzXkSCRYa2CsRdL8cGb
+  port: 34815
+  server: 198.8.92.84
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 19
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 89.46.223.239
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 20
+  password: n8w4StnbVD9dmXYn4Ajt87EA
+  port: 31572
+  server: 198.8.92.84
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 21
+  password: NHwQTPLCfaTMSqTnU3mjcSxe
+  port: 33998
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 22
+  password: kD9vkjnE6dsUzwQfvKkPkQAd
+  port: 37588
+  server: 89.187.168.39
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 23
+  password: YgusH2MWA8PWc3p2VDsR7AVv
+  port: 31764
+  server: 89.187.168.39
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 24
+  password: txmK9WhwP6WPhP7hqSBLVxpN
+  port: 34687
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 25
+  password: CTK8GXFQgKYQErrghPJfZ6tk
+  port: 47121
+  server: 91.90.123.115
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: httpsgitiov9999 clash ip1 26
+  password: G!yBwPWH3Vao
+  port: 808
+  server: 66.55.148.42
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 27
+  password: enctdKyJfSu76VqznKwTt6Ap
+  port: 37473
+  server: 198.8.92.84
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 28
+  password: kD9vkjnE6dsUzwQfvKkPkQAd
+  port: 37588
+  server: 198.8.92.84
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 29
+  password: CMduaFXddcQbwNAAs7xFDnc8
+  port: 33148
+  server: 198.8.92.84
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 30
+  password: wrCaGtrUbzeRqQLdc8Kmk3Nd
+  port: 49126
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 31
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 84.17.53.210
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 32
+  password: DKXfWwc4ebscpXTKpbt85rSH
+  port: 38742
+  server: 82.102.26.117
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 33
+  password: 4ejJ8n5ddLuYDUHGXJre2ufJ
+  port: 48938
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 34
+  password: r9Q3adc3ru9sfBDPEj4yp6U6
+  port: 48794
+  server: 91.90.123.115
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: httpsgitiov9999 clash ip1 35
+  password: G!yBwPWH3Vao
+  port: 812
+  server: 66.55.148.42
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 36
+  password: x23Z4LGkGDkThZ9Kaz4DURQp
+  port: 40093
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 37
+  password: jspgz9G3VmvBMCgMUWLBaZHu
+  port: 44820
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 38
+  password: n8w4StnbVD9dmXYn4Ajt87EA
+  port: 31572
+  server: 91.90.123.115
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: httpsgitiov9999 clash ip1 39
+  password: G!yBwPWH3Vao
+  port: 807
+  server: 66.55.148.42
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 40
+  password: F5bKkb9ggkLx4JbQrbLn7LjZ
+  port: 44945
+  server: 198.8.92.84
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 41
+  password: x23Z4LGkGDkThZ9Kaz4DURQp
+  port: 40093
+  server: 45.83.91.133
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 42
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 138.199.19.132
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 43
+  password: aYNeKDMzYQYw4KbUbJA8Wszq
+  port: 31944
+  server: 198.8.92.84
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 44
+  password: x23Z4LGkGDkThZ9Kaz4DURQp
+  port: 40093
+  server: 45.248.78.45
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 45
+  password: 8n6pwAcrrv2pj6tFY2p3TbQ6
+  port: 33992
+  server: 198.8.92.84
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: httpsgitiov9999 clash ip1 46
+  password: G!yBwPWH3Vao
+  port: 811
+  server: 66.55.148.42
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 47
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 185.180.14.147
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 48
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 138.199.19.182
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 49
+  password: gYL83DQWXuDbxmZAVVtUTXaK
+  port: 46642
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 50
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 138.199.19.154
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 51
+  password: CTK8GXFQgKYQErrghPJfZ6tk
+  port: 47121
+  server: 143.244.57.99
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 52
+  password: 8n6pwAcrrv2pj6tFY2p3TbQ6
+  port: 33992
+  server: 195.47.194.42
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 53
+  password: J9Y2ncrdPEC38gwydNFFGBna
+  port: 35294
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 54
+  password: x23Z4LGkGDkThZ9Kaz4DURQp
+  port: 40093
+  server: 143.244.57.99
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 55
+  password: FWrXcxPZjJxAN89xLgqY3Acp
+  port: 44236
+  server: 82.102.26.117
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: httpsgitiov9999 clash ip1 56
+  password: HgVDIN05O6bH
+  port: 57478
+  server: ss.uk.sshmax.net
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 57
+  password: aYNeKDMzYQYw4KbUbJA8Wszq
+  port: 31944
+  server: 89.187.168.39
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 58
+  password: LkFAzkzXkSCRYa2CsRdL8cGb
+  port: 34815
+  server: 195.47.194.42
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 59
+  password: kD9vkjnE6dsUzwQfvKkPkQAd
+  port: 37588
+  server: 23.82.11.49
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 60
+  password: CUndSZnYsPKcu6Kj8THVMBHD
+  port: 39772
+  server: 137.59.52.107
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 61
+  password: x23Z4LGkGDkThZ9Kaz4DURQp
+  port: 40093
+  server: 138.199.16.137
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 62
+  password: n8w4StnbVD9dmXYn4Ajt87EA
+  port: 31572
+  server: 82.102.26.117
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 63
+  password: gqtwGu9bVreJqL3FTHSVKGzy
+  port: 50695
+  server: 82.102.26.117
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 64
+  password: 8n6pwAcrrv2pj6tFY2p3TbQ6
+  port: 33992
+  server: 185.99.3.7
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 65
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 185.99.3.7
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: httpsgitiov9999 clash ip1 66
+  password: 96a15b984cd95acc
+  port: 35654
+  server: 137.220.161.216
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 67
+  password: Y9GcTPemHMKEkrfGQPJqFDNr
+  port: 49653
+  server: 82.102.26.117
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 68
+  password: z6pH3RyttkRWhJ5tpRyt6dYk
+  port: 41676
+  server: 82.102.26.117
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 69
+  password: b2jDPHUQxCNa2KmGHZjy7C4B
+  port: 50024
+  server: 138.199.16.137
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 70
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 185.212.111.6
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 71
+  password: aYNeKDMzYQYw4KbUbJA8Wszq
+  port: 31944
+  server: 195.47.194.42
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 72
+  password: fyXdw87yCH9SAmFkPvsvLVqC
+  port: 44745
+  server: 143.244.57.99
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 73
+  password: aYNeKDMzYQYw4KbUbJA8Wszq
+  port: 31944
+  server: 138.199.9.202
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 74
+  password: J9Y2ncrdPEC38gwydNFFGBna
+  port: 35294
+  server: 195.47.194.42
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 75
+  password: aYNeKDMzYQYw4KbUbJA8Wszq
+  port: 31944
+  server: 156.146.56.137
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 76
+  password: x23Z4LGkGDkThZ9Kaz4DURQp
+  port: 40093
+  server: 137.59.52.107
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 77
+  password: Kquv5UhvZXNMemAQy8DxZ7qn
+  port: 38620
+  server: 156.146.56.137
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 78
+  password: LkFAzkzXkSCRYa2CsRdL8cGb
+  port: 34815
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 79
+  password: NHwQTPLCfaTMSqTnU3mjcSxe
+  port: 33998
+  server: 198.8.92.84
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 80
+  password: FWrXcxPZjJxAN89xLgqY3Acp
+  port: 44236
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 81
+  password: jspgz9G3VmvBMCgMUWLBaZHu
+  port: 44820
+  server: 198.8.92.84
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: httpsgitiov9999 clash ip1 82
+  password: G!yBwPWH3Vao
+  port: 800
+  server: 51.89.99.59
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 83
+  password: YgusH2MWA8PWc3p2VDsR7AVv
+  port: 31764
+  server: 138.199.16.137
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 84
+  password: YgusH2MWA8PWc3p2VDsR7AVv
+  port: 31764
+  server: 198.8.92.84
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 85
+  password: DKXfWwc4ebscpXTKpbt85rSH
+  port: 38742
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 86
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 185.212.111.59
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: httpsgitiov9999 clash ip1 87
+  password: G!yBwPWH3Vao
+  port: 810
+  server: 66.55.148.42
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 88
+  password: AMvZHPXhPk6t
+  port: 4040
+  server: 176.31.146.89
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 89
+  password: z6pH3RyttkRWhJ5tpRyt6dYk
+  port: 41676
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 90
+  password: YyCBeDdYX4cadHpCkkmdJLq8
+  port: 43893
+  server: 91.90.123.115
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 clash ip5德国'
+  port: 28599
+  server: 89.163.224.127
+  tls: false
+  type: vmess
+  uuid: ec8be0c5-9eac-4728-8929-ef23c73d8341
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 clash ip5德国 2'
+  port: 56748
+  server: 217.79.181.111
+  tls: false
+  type: vmess
+  uuid: bcc21751-81be-4b0b-8cbc-bc30d67cb818
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 clash ip4莫斯科'
+  port: 52341
+  server: 45.140.169.224
+  tls: false
+  type: vmess
+  uuid: 3f1079d6-998a-4d1b-98be-a7e9d5f30d07
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 clash ip4莫斯科 2'
+  port: 56967
+  server: 46.17.45.139
+  tls: false
+  type: vmess
+  uuid: 5458261b-ec18-4673-9251-fa7859a5cacb
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 clash ip4莫斯科 3'
+  port: 20592
+  server: 176.32.35.73
+  tls: false
+  type: vmess
+  uuid: e7385e13-1a69-4b2c-9d95-20ebf36226ae
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 莫斯科'
+  port: 56282
+  server: 46.17.43.179
+  tls: false
+  type: vmess
+  uuid: 5d3e6e14-5828-4e88-a946-bad5c700b4d5
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 荷兰'
+  port: 56282
+  server: 163.172.214.118
+  tls: false
+  type: vmess
+  uuid: 5d3e6e14-5828-4e88-a946-bad5c700b4d5
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 clash ip5德国'
+  port: 56748
+  server: 217.79.181.111
+  tls: false
+  type: vmess
+  uuid: bcc21751-81be-4b0b-8cbc-bc30d67cb818
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 clash ip5德国 2'
+  port: 28599
+  server: 89.163.224.127
+  tls: false
+  type: vmess
+  uuid: ec8be0c5-9eac-4728-8929-ef23c73d8341
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 clash ip4莫斯科'
+  port: 56967
+  server: 46.17.45.139
+  tls: false
+  type: vmess
+  uuid: 5458261b-ec18-4673-9251-fa7859a5cacb
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 clash ip4莫斯科 2'
+  port: 20592
+  server: 176.32.35.73
+  tls: false
+  type: vmess
+  uuid: e7385e13-1a69-4b2c-9d95-20ebf36226ae
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 clash ip4莫斯科 3'
+  port: 52341
+  server: 45.140.169.224
+  tls: false
+  type: vmess
+  uuid: 3f1079d6-998a-4d1b-98be-a7e9d5f30d07
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3
+  network: ws
+  port: 443
+  server: jp-01.yinriver.top
+  tls: true
+  type: vmess
+  uuid: 50f86e6f-a7d7-45bc-aa69-f95fc8cf3025
+  ws-headers:
+    Host: jp-01.yinriver.top
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 2
+  network: ws
+  port: 443
+  server: 172.67.223.77
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 3
+  network: ws
+  port: 443
+  server: 104.22.4.180
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 4
+  network: ws
+  port: 443
+  server: hostmonit.com
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 5
+  network: ws
+  port: 443
+  server: 104.16.148.48
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 6
+  network: ws
+  port: 443
+  server: 46.182.107.36
+  tls: true
+  type: vmess
+  uuid: 65ea6727-4461-47a7-a5c4-fef2c67f2f79
+  ws-headers:
+    Host: www.09462550.xyz
+  ws-path: /footers
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 7
+  network: ws
+  port: 24446
+  server: transit-azure-b1s-hk.speedtestcustom.tk
+  tls: false
+  type: vmess
+  uuid: 732ada90-3ad1-45bd-bd37-fb5fe1b9007c
+  ws-headers:
+    Host: transit-azure-b1s-hk.speedtestcustom.tk
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 8
+  network: ws
+  port: 52344
+  server: gzcm1.domain.hxray.me
+  tls: true
+  type: vmess
+  uuid: b1848660-f141-4e80-969e-d325c80aa209
+  ws-headers:
+    Host: sgp1.domain.hxray.me
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 9
+  network: ws
+  port: 61989
+  server: ahyd1.domain.hxray.me
+  tls: true
+  type: vmess
+  uuid: 98dff0a6-dc7b-4978-8fb0-a126b6be268d
+  ws-headers:
+    Host: sgp1.domain.hxray.me
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 10
+  network: ws
+  port: 52344
+  server: gzcm1.domain.hxray.me
+  tls: true
+  type: vmess
+  uuid: 98dff0a6-dc7b-4978-8fb0-a126b6be268d
+  ws-headers:
+    Host: sgp1.domain.hxray.me
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 11
+  network: ws
+  port: 31818
+  server: gz.cm.huitiank.com
+  tls: false
+  type: vmess
+  uuid: 5f6ed9ca-ef42-43e8-ab9f-470016bf92e9
+  ws-headers:
+    Host: pull-flv-l6.douyincdn.com
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 12
+  network: ws
+  port: 52344
+  server: gzcm1.domain.hxray.me
+  tls: true
+  type: vmess
+  uuid: 5cfff7ad-2f9c-404e-8844-1eca4f2fe5ac
+  ws-headers:
+    Host: sgp1.domain.hxray.me
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 13
+  network: ws
+  port: 12005
+  server: shcn2.domain.hxray.me
+  tls: true
+  type: vmess
+  uuid: 5cfff7ad-2f9c-404e-8844-1eca4f2fe5ac
+  ws-headers:
+    Host: sgp1.domain.hxray.me
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 14
+  network: ws
+  port: 12005
+  server: shcn2.domain.hxray.me
+  tls: true
+  type: vmess
+  uuid: b1848660-f141-4e80-969e-d325c80aa209
+  ws-headers:
+    Host: sgp1.domain.hxray.me
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 15
+  network: ws
+  port: 61989
+  server: ahyd1.domain.hxray.me
+  tls: true
+  type: vmess
+  uuid: b1848660-f141-4e80-969e-d325c80aa209
+  ws-headers:
+    Host: sgp1.domain.hxray.me
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 16
+  network: ws
+  port: 20001
+  server: cm-jm.okvpn.cc
+  tls: false
+  type: vmess
+  uuid: 94a60d56-10ee-4796-a072-25fc8d9a52b8
+  ws-headers:
+    Host: cm-jm.okvpn.cc
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 17
+  network: ws
+  port: 443
+  server: 180.215.218.223
+  tls: true
+  type: vmess
+  uuid: 702e0b48-e2cd-4286-ae37-d5275a65ed54
+  ws-headers:
+    Host: www.35462784.xyz
+  ws-path: /footers
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 18
+  network: ws
+  port: 443
+  server: 72.44.74.98
+  tls: true
+  type: vmess
+  uuid: 81295af2-bcd2-0d7e-8bc4-f1367049cf95
+  ws-headers:
+    Host: 72-44-74-98.wdnmd1145141919810.xyz
+  ws-path: /gafnvws
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 19
+  network: ws
+  port: 42359
+  server: 45.63.127.248
+  tls: false
+  type: vmess
+  uuid: e03ea624-6458-4c28-f20d-5f734f0db562
+  ws-headers:
+    Host: 45.63.127.248
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 20
+  port: 14420
+  server: 5.183.102.142
+  tls: false
+  type: vmess
+  uuid: 9984501d-e80a-4144-c6bd-2503fb49872d
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 21
+  network: ws
+  port: 80
+  server: 51.195.217.20
+  tls: false
+  type: vmess
+  uuid: 6c0cb6a9-2389-4b5d-8bec-b14b076f4a4e
+  ws-headers:
+    Host: 51.195.217.20
+  ws-path: /sshocean
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 22
+  network: ws
+  port: 443
+  server: 104.16.149.72
+  tls: true
+  type: vmess
+  uuid: e26e8e56-6af6-fe22-d1ed-926650b89c76
+  ws-headers:
+    Host: nsawsrb.mooncloud.bike
+  ws-path: /fokfvws
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 23
+  network: ws
+  port: 443
+  server: 104.20.82.105
+  tls: true
+  type: vmess
+  uuid: e26e8e56-6af6-fe22-d1ed-926650b89c76
+  ws-headers:
+    Host: nsawsrb.mooncloud.bike
+  ws-path: /fokfvws
+- alterId: 60
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 24
+  network: ws
+  port: 443
+  server: www.garmin.com
+  tls: true
+  type: vmess
+  uuid: 2ac0acf7-a788-4b3e-a643-3a87368a49dd
+  ws-headers:
+    Host: qq13.feiclouddd.me
+  ws-path: /sadfasf
+- alterId: 60
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 25
+  network: ws
+  port: 443
+  server: 104.19.45.117
+  tls: true
+  type: vmess
+  uuid: 2ac0acf7-a788-4b3e-a643-3a87368a49dd
+  ws-headers:
+    Host: qq13.feiclouddd.me
+  ws-path: /sadfasf
+- alterId: 60
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 26
+  network: ws
+  port: 443
+  server: 172.67.223.77
+  tls: true
+  type: vmess
+  uuid: 2ac0acf7-a788-4b3e-a643-3a87368a49dd
+  ws-headers:
+    Host: qq13.feiclouddd.me
+  ws-path: /sadfasf
+- alterId: 60
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 27
+  network: ws
+  port: 443
+  server: icook.tw
+  tls: true
+  type: vmess
+  uuid: 2ac0acf7-a788-4b3e-a643-3a87368a49dd
+  ws-headers:
+    Host: qq13.feiclouddd.me
+  ws-path: /sadfasf
+- alterId: 60
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 28
+  network: ws
+  port: 443
+  server: 104.21.239.147
+  tls: true
+  type: vmess
+  uuid: 2ac0acf7-a788-4b3e-a643-3a87368a49dd
+  ws-headers:
+    Host: qq13.feiclouddd.me
+  ws-path: /sadfasf
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 29
+  network: ws
+  port: 44443
+  server: hk1.domain.hxray.me
+  tls: true
+  type: vmess
+  uuid: 98dff0a6-dc7b-4978-8fb0-a126b6be268d
+  ws-headers:
+    Host: hk1.domain.hxray.me
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 30
+  network: ws
+  port: 443
+  server: 104.18.207.189
+  tls: true
+  type: vmess
+  uuid: e26e8e56-6af6-fe22-d1ed-926650b89c76
+  ws-headers:
+    Host: nsawsrb.mooncloud.bike
+  ws-path: /fokfvws
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 31
+  network: ws
+  port: 443
+  server: 46.182.107.94
+  tls: true
+  type: vmess
+  uuid: 743bdc87-1dea-41bf-aa0b-51dfbbfec8aa
+  ws-headers:
+    Host: www.54872833.xyz
+  ws-path: /footers
+- alterId: 60
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 32
+  network: ws
+  port: 443
+  server: 104.17.36.178
+  tls: true
+  type: vmess
+  uuid: 2ac0acf7-a788-4b3e-a643-3a87368a49dd
+  ws-headers:
+    Host: qq13.feiclouddd.me
+  ws-path: /sadfasf
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 33
+  network: ws
+  port: 443
+  server: 104.22.3.3
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 60
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 34
+  network: ws
+  port: 443
+  server: nn-ssr24.feiclouddd.me
+  tls: true
+  type: vmess
+  uuid: 94d3ddba-3c75-4ddd-84c5-b859a30b1fb9
+  ws-headers:
+    Host: nn-ssr24.feiclouddd.me
+  ws-path: /dsafasdf
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 35
+  network: ws
+  port: 80
+  server: 107.191.112.214
+  tls: false
+  type: vmess
+  uuid: 732ada90-3ad1-45bd-bd37-fb5fe1b9007c
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 36
+  network: ws
+  port: 443
+  server: 104.25.175.69
+  tls: true
+  type: vmess
+  uuid: 9e193088-078d-44cb-960a-f179d93554ee
+  ws-headers:
+    Host: nl.vincent-jackson2021.cf
+  ws-path: /vincent-jacksonvws
+- alterId: 60
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 37
+  network: ws
+  port: 443
+  server: 104.16.181.15
+  tls: true
+  type: vmess
+  uuid: 2ac0acf7-a788-4b3e-a643-3a87368a49dd
+  ws-headers:
+    Host: qq13.feiclouddd.me
+  ws-path: /sadfasf
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 38
+  network: ws
+  port: 443
+  server: 104.20.81.240
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 39
+  network: ws
+  port: 443
+  server: 104.16.16.255
+  tls: true
+  type: vmess
+  uuid: 7a1bd825-d7da-461c-be6a-d082e32d3337
+  ws-headers:
+    Host: ehtdz61g4.dongkid.online
+  ws-path: /qhjmvws?ed=2048
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 40
+  network: ws
+  port: 443
+  server: 154.84.1.217
+  tls: true
+  type: vmess
+  uuid: 130c9f2e-42b1-4ebf-b345-e26456a061f9
+  ws-headers:
+    Host: www.05222027.xyz
+  ws-path: /footers
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 41
+  network: ws
+  port: 443
+  server: 104.17.36.178
+  tls: true
+  type: vmess
+  uuid: 7a1bd825-d7da-461c-be6a-d082e32d3337
+  ws-headers:
+    Host: ehtdz61g4.dongkid.online
+  ws-path: /qhjmvws?ed=2048
+- alterId: 2
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 42
+  network: ws
+  port: 20925
+  server: 103.56.60.37
+  tls: false
+  type: vmess
+  uuid: b8583f26-9717-3f5a-91cf-b48a910344ad
+  ws-headers:
+    Host: 103.56.60.37
+  ws-path: /mfyun.m3u8
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 43
+  network: ws
+  port: 80
+  server: 199.60.103.228
+  tls: false
+  type: vmess
+  uuid: b22b990f-b6dd-4b57-a0e1-ee3f829d413f
+  ws-headers:
+    Host: eu-sshkit.v2-ray.cf
+  ws-path: /sshkit
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 44
+  network: ws
+  port: 443
+  server: www.garmin.com
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 45
+  network: ws
+  port: 443
+  server: 567567.cf
+  tls: true
+  type: vmess
+  uuid: 5f4b2e42-ff2b-6666-86fc-b7ba1b5361e8
+  ws-headers:
+    Host: 567567.cf
+  ws-path: /The-Great-Awakening_vws?ed=2048
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 46
+  network: ws
+  port: 443
+  server: icook.tw
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- name: httpsgitiov9999 clash ip3 47
+  password: 7f6b65e4-6d5b-4137-a1dc-d32f4a810239
+  port: 443
+  server: us2.paopao.cf
+  sni: us2.paopao.cf
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 48
+  network: ws
+  port: 443
+  server: 104.22.44.50
+  tls: true
+  type: vmess
+  uuid: 9e193088-078d-44cb-960a-f179d93554ee
+  ws-headers:
+    Host: nl.vincent-jackson2021.cf
+  ws-path: /vincent-jacksonvws
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 49
+  network: ws
+  port: 443
+  server: 104.18.135.208
+  tls: true
+  type: vmess
+  uuid: 9e193088-078d-44cb-960a-f179d93554ee
+  ws-headers:
+    Host: nl.vincent-jackson2021.cf
+  ws-path: /vincent-jacksonvws
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 50
+  network: ws
+  port: 443
+  server: icook.tw
+  tls: true
+  type: vmess
+  uuid: e2cbac5f-b754-407b-a6cc-3205482f1fb4
+  ws-headers:
+    Host: 567567.ga
+  ws-path: /Vincent-Jacksonvws?ed=2048
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 51
+  network: ws
+  port: 10121
+  server: 45.11.92.139
+  tls: false
+  type: vmess
+  uuid: 24cd8398-c0e6-4667-a712-a358754809d9
+  ws-headers:
+    Host: 45.11.92.139
+  ws-path: /
+- name: httpsgitiov9999 clash ip3 52
+  password: 7x42LetRa0
+  port: 1443
+  server: in1-1.noojat.com
+  sni: in1-1.noojat.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 53
+  network: ws
+  port: 443
+  server: t6.ssrsub.one
+  tls: true
+  type: vmess
+  uuid: 97018aac-0985-4d4b-8283-f774c9fe9418
+  ws-headers:
+    Host: t6.ssrsub.one
+  ws-path: /v2ray/fc671c24/
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 54
+  network: ws
+  port: 443
+  server: 23.224.30.36
+  tls: true
+  type: vmess
+  uuid: e4494518-74e8-4d6b-942a-6b332cce09ef
+  ws-headers:
+    Host: www.01902367.xyz
+  ws-path: /path/310910211916
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 55
+  network: ws
+  port: 443
+  server: 23.224.30.37
+  tls: true
+  type: vmess
+  uuid: e4494518-74e8-4d6b-942a-6b332cce09ef
+  ws-headers:
+    Host: www.01902367.xyz
+  ws-path: /path/310910211916
+- alterId: 60
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 56
+  network: ws
+  port: 443
+  server: qq13.feiclouddd.me
+  tls: true
+  type: vmess
+  uuid: 2ac0acf7-a788-4b3e-a643-3a87368a49dd
+  ws-headers:
+    Host: qq13.feiclouddd.me
+  ws-path: /sadfasf
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 57
+  network: ws
+  port: 443
+  server: 104.20.130.43
+  tls: true
+  type: vmess
+  uuid: 9e193088-078d-44cb-960a-f179d93554ee
+  ws-headers:
+    Host: nl.vincent-jackson2021.cf
+  ws-path: /vincent-jacksonvws
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 58
+  port: 59857
+  server: 5.183.101.204
+  tls: false
+  type: vmess
+  uuid: 4c35d374-dbf2-4e5f-c731-dfa49191825a
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 59
+  network: ws
+  port: 443
+  server: us2.paopao.cf
+  tls: true
+  type: vmess
+  uuid: 7f6b65e4-6d5b-4137-a1dc-d32f4a810239
+  ws-headers:
+    Host: us2.paopao.cf
+  ws-path: /tgzhucaidan
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 60
+  network: ws
+  port: 80
+  server: 146.59.13.37
+  tls: false
+  type: vmess
+  uuid: b79212e2-b670-4d4b-8c22-eb796921b97a
+  ws-headers:
+    Host: 146.59.13.37
+  ws-path: /sshocean
+- alterId: 60
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 61
+  network: ws
+  port: 443
+  server: 104.16.207.196
+  tls: true
+  type: vmess
+  uuid: 2ac0acf7-a788-4b3e-a643-3a87368a49dd
+  ws-headers:
+    Host: qq13.feiclouddd.me
+  ws-path: /sadfasf
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 62
+  network: ws
+  port: 80
+  server: bimbel.ruangguru.com
+  tls: false
+  type: vmess
+  uuid: b22b990f-b6dd-4b57-a0e1-ee3f829d413f
+  ws-headers:
+    Host: eu-sshkit.v2-ray.cf
+  ws-path: /sshkit
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 63
+  network: ws
+  port: 80
+  server: 45.82.167.21
+  tls: false
+  type: vmess
+  uuid: a7b384a1-dd97-4fc3-819d-06cd8c706811
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 64
+  network: ws
+  port: 443
+  server: 104.16.160.114
+  tls: true
+  type: vmess
+  uuid: 5f4b2e42-ff2b-4342-86fc-b7ba1b5361e8
+  ws-headers:
+    Host: vincent-jackson2021.ga
+  ws-path: /The-Great-Awakening_vws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 65
+  network: ws
+  port: 443
+  server: 104.20.130.43
+  tls: true
+  type: vmess
+  uuid: e2cbac5f-b754-407b-a6cc-3205482f1fb4
+  ws-headers:
+    Host: 567567.ga
+  ws-path: /Vincent-Jacksonvws?ed=2048
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 66
+  network: ws
+  port: 443
+  server: 104.160.186.54
+  tls: true
+  type: vmess
+  uuid: d3cbe556-8db3-47e0-8ef1-06b2cce00411
+  ws-headers:
+    Host: www.92726054.xyz
+  ws-path: /path/310910211916
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 67
+  network: ws
+  port: 443
+  server: www.17080100.xyz
+  tls: true
+  type: vmess
+  uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724
+  ws-headers:
+    Host: www.17080100.xyz
+  ws-path: /path/310910211916
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 68
+  network: ws
+  port: 443
+  server: icook.tw
+  tls: true
+  type: vmess
+  uuid: 5f4b2e42-ff2b-4342-86fc-b7ba1b5361e8
+  ws-headers:
+    Host: vincent-jackson2021.ga
+  ws-path: /The-Great-Awakening_vws?ed=2048
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 69
+  network: ws
+  port: 443
+  server: 46.182.107.37
+  tls: true
+  type: vmess
+  uuid: 65ea6727-4461-47a7-a5c4-fef2c67f2f79
+  ws-headers:
+    Host: www.09462550.xyz
+  ws-path: /footers
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 70
+  network: ws
+  port: 443
+  server: 46.182.107.93
+  tls: true
+  type: vmess
+  uuid: 743bdc87-1dea-41bf-aa0b-51dfbbfec8aa
+  ws-headers:
+    Host: www.54872833.xyz
+  ws-path: /footers
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 71
+  network: ws
+  port: 443
+  server: 46.182.107.154
+  tls: true
+  type: vmess
+  uuid: 130c9f2e-42b1-4ebf-b345-e26456a061f9
+  ws-headers:
+    Host: www.05222027.xyz
+  ws-path: /footers
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 72
+  network: ws
+  port: 443
+  server: 46.182.107.39
+  tls: true
+  type: vmess
+  uuid: d3133484-f2bf-4b0c-8d38-f8e645b65687
+  ws-headers:
+    Host: www.07890885.xyz
+  ws-path: /footers
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 73
+  network: ws
+  port: 443
+  server: 46.182.107.45
+  tls: true
+  type: vmess
+  uuid: fe5f69e7-e183-439b-950b-9661ef0651f2
+  ws-headers:
+    Host: www.68737987.xyz
+  ws-path: /footers
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 74
+  port: 56282
+  server: 46.17.43.179
+  tls: false
+  type: vmess
+  uuid: 5d3e6e14-5828-4e88-a946-bad5c700b4d5
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 75
+  network: ws
+  port: 443
+  server: 46.182.107.13
+  tls: true
+  type: vmess
+  uuid: a7fa8f14-4fb6-4280-9005-d6bbe99c5da9
+  ws-headers:
+    Host: www.07395375.xyz
+  ws-path: /path/310910211916
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 76
+  network: ws
+  port: 443
+  server: 46.182.107.146
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca4690dd24
+  ws-headers:
+    Host: www.44590130.xyz
+  ws-path: /footers
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 77
+  network: ws
+  port: 443
+  server: icook.tw
+  tls: true
+  type: vmess
+  uuid: 7a1bd825-d7da-461c-be6a-d082e32d3337
+  ws-headers:
+    Host: ehtdz61g4.dongkid.online
+  ws-path: /qhjmvws?ed=2048
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 78
+  network: ws
+  port: 443
+  server: 46.182.107.157
+  tls: true
+  type: vmess
+  uuid: 20b30916-e203-412e-8ec0-900f3acd5128
+  ws-headers:
+    Host: www.73345741.xyz
+  ws-path: /footers
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 79
+  network: ws
+  port: 443
+  server: 198.41.209.5
+  tls: true
+  type: vmess
+  uuid: 1c0d1093-876e-490f-8a5d-affbb78a79df
+  ws-headers:
+    Host: shy-heart-b4df.v5v5v5.workers.dev
+  ws-path: /1c0d1093-876e-490f-8a5d-affbb78a79df-vmess
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 80
+  network: ws
+  port: 443
+  server: 46.182.107.165
+  tls: true
+  type: vmess
+  uuid: d3133484-f2bf-4b0c-8d38-f8e645b65687
+  ws-headers:
+    Host: www.07890885.xyz
+  ws-path: /footers
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 81
+  network: ws
+  port: 80
+  server: euserv8p.ezddns.tk
+  tls: false
+  type: vmess
+  uuid: 24d6dc76-f0a0-4809-8a70-6ad2dce20022
+  ws-headers:
+    Host: euserv8p.ezddns.tk
+  ws-path: /video
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 82
+  network: ws
+  port: 443
+  server: www.digitalocean.com
+  tls: true
+  type: vmess
+  uuid: e2cbac5f-b754-407b-a6cc-3205482f1fb4
+  ws-headers:
+    Host: 567567.ga
+  ws-path: /Vincent-Jacksonvws?ed=2048
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip3 83
+  password: ugyBkSEFxVEmUYSHyvxmWNj9
+  port: 40220
+  server: 198.8.92.84
+  type: ss
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 84
+  network: ws
+  port: 443
+  server: www.17080100.xyz
+  tls: true
+  type: vmess
+  uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724
+  ws-headers:
+    Host: www.17080100.xyz
+  ws-path: /path/310910211916
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 85
+  network: ws
+  port: 36788
+  server: 45.79.114.57
+  tls: false
+  type: vmess
+  uuid: B22C2F57-0189-25E7-79FA-90717E212748
+  ws-headers:
+    Host: 45.79.114.57
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 86
+  network: ws
+  port: 443
+  server: 104.16.182.15
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 87
+  network: ws
+  port: 443
+  server: 104.16.181.15
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 88
+  network: ws
+  port: 443
+  server: www.garmin.com
+  tls: true
+  type: vmess
+  uuid: e2cbac5f-b754-407b-a6cc-3205482f1fb4
+  ws-headers:
+    Host: 567567.ga
+  ws-path: /Vincent-Jacksonvws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 89
+  port: 47611
+  server: 35.178.68.152
+  tls: false
+  type: vmess
+  uuid: 97a4d167-b361-48b8-b004-8bc45669e334
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 90
+  network: ws
+  port: 443
+  server: 46.182.107.44
+  tls: true
+  type: vmess
+  uuid: fe5f69e7-e183-439b-950b-9661ef0651f2
+  ws-headers:
+    Host: www.68737987.xyz
+  ws-path: /footers
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 91
+  network: ws
+  port: 443
+  server: 104.16.160.114
+  tls: true
+  type: vmess
+  uuid: 5f4b2e42-ff2b-4342-86fc-b7ba1b5361e8
+  ws-headers:
+    Host: vincent-jackson2021.ga
+  ws-path: /The-Great-Awakening_vws
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 92
+  network: ws
+  port: 443
+  server: 104.22.44.50
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 93
+  network: ws
+  port: 443
+  server: 104.16.160.114
+  tls: true
+  type: vmess
+  uuid: 5f4b2e42-ff2b-6666-86fc-b7ba1b5361e8
+  ws-headers:
+    Host: 567567.cf
+  ws-path: /The-Great-Awakening_vws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 94
+  network: ws
+  port: 443
+  server: 104.25.104.240
+  tls: true
+  type: vmess
+  uuid: 5f4b2e42-ff2b-6666-86fc-b7ba1b5361e8
+  ws-headers:
+    Host: 567567.cf
+  ws-path: /The-Great-Awakening_vws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 95
+  network: ws
+  port: 443
+  server: 104.25.104.240
+  tls: true
+  type: vmess
+  uuid: 9e193088-078d-44cb-960a-f179d93554ee
+  ws-headers:
+    Host: nl.vincent-jackson2021.cf
+  ws-path: /vincent-jacksonvws
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 96
+  port: 56282
+  server: 163.172.214.118
+  tls: false
+  type: vmess
+  uuid: 5d3e6e14-5828-4e88-a946-bad5c700b4d5
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 97
+  network: ws
+  port: 443
+  server: 172.67.209.58
+  tls: true
+  type: vmess
+  uuid: 9e193088-078d-44cb-960a-f179d93554ee
+  ws-headers:
+    Host: nl.vincent-jackson2021.cf
+  ws-path: /vincent-jacksonvws
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 98
+  network: ws
+  port: 443
+  server: www.garmin.com
+  tls: true
+  type: vmess
+  uuid: 5f4b2e42-ff2b-4342-86fc-b7ba1b5361e8
+  ws-headers:
+    Host: vincent-jackson2021.ga
+  ws-path: /The-Great-Awakening_vws?ed=2048
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 99
+  network: ws
+  port: 443
+  server: 104.20.130.43
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 60
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 100
+  network: ws
+  port: 443
+  server: qq1-cloud13.feiclouddd.me
+  tls: true
+  type: vmess
+  uuid: 478055cc-fdb8-404e-b730-c32faa2c7ca1
+  ws-headers:
+    Host: qq1-cloud13.feiclouddd.me
+  ws-path: /asdfasdf
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 101
+  network: ws
+  port: 443
+  server: 104.16.167.138
+  tls: true
+  type: vmess
+  uuid: 7a1bd825-d7da-461c-be6a-d082e32d3337
+  ws-headers:
+    Host: ehtdz61g4.dongkid.online
+  ws-path: /qhjmvws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 102
+  network: ws
+  port: 443
+  server: www.garmin.com
+  tls: true
+  type: vmess
+  uuid: 5f4b2e42-ff2b-6666-86fc-b7ba1b5361e8
+  ws-headers:
+    Host: 567567.cf
+  ws-path: /The-Great-Awakening_vws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 103
+  network: ws
+  port: 443
+  server: www.digitalocean.com
+  tls: true
+  type: vmess
+  uuid: 5f4b2e42-ff2b-6666-86fc-b7ba1b5361e8
+  ws-headers:
+    Host: 567567.cf
+  ws-path: /The-Great-Awakening_vws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 104
+  network: ws
+  port: 443
+  server: 104.16.160.114
+  tls: true
+  type: vmess
+  uuid: 9e193088-078d-44cb-960a-f179d93554ee
+  ws-headers:
+    Host: nl.vincent-jackson2021.cf
+  ws-path: /vincent-jacksonvws
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 105
+  network: ws
+  port: 443
+  server: www.digitalocean.com
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 106
+  network: ws
+  port: 443
+  server: 13.49.246.208
+  tls: true
+  type: vmess
+  uuid: df055ea2-4d3a-445e-977d-8e958abaad3a
+  ws-headers:
+    Host: v2ray-se-2.xamjyssvpn.xyz
+  ws-path: /xamjyss143/
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 107
+  network: ws
+  port: 443
+  server: www.92726054.xyz
+  tls: true
+  type: vmess
+  uuid: d3cbe556-8db3-47e0-8ef1-06b2cce00411
+  ws-headers:
+    Host: www.92726054.xyz
+  ws-path: /path/310910211916
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 108
+  network: ws
+  port: 443
+  server: 172.67.223.77
+  tls: true
+  type: vmess
+  uuid: 9e193088-078d-44cb-960a-f179d93554ee
+  ws-headers:
+    Host: nl.vincent-jackson2021.cf
+  ws-path: /vincent-jacksonvws
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 109
+  network: ws
+  port: 80
+  server: euserv9p.ezddns.tk
+  tls: false
+  type: vmess
+  uuid: ca870483-fa7d-4f64-983a-6ed455143aca
+  ws-headers:
+    Host: euserv9p.ezddns.tk
+  ws-path: /live
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 110
+  network: ws
+  port: 443
+  server: nl.vincent-jackson2021.cf
+  tls: true
+  type: vmess
+  uuid: 9e193088-078d-44cb-960a-f179d93554ee
+  ws-headers:
+    Host: nl.vincent-jackson2021.cf
+  ws-path: /vincent-jacksonvws
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 111
+  network: ws
+  port: 443
+  server: 107.167.9.124
+  tls: true
+  type: vmess
+  uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724
+  ws-headers:
+    Host: www.17080100.xyz
+  ws-path: /path/310910211916
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 112
+  network: ws
+  port: 80
+  server: us-01.yinriver.top
+  tls: false
+  type: vmess
+  uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875
+  ws-headers:
+    Host: us-01.yinriver.top
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 113
+  port: 47611
+  server: 35.178.68.152
+  tls: false
+  type: vmess
+  uuid: 97a4d167-b361-48b8-b004-8bc45669e334
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1
+  password: J9Y2ncrdPEC38gwydNFFGBna
+  port: 35294
+  server: 89.187.168.39
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 2
+  password: kD9vkjnE6dsUzwQfvKkPkQAd
+  port: 37588
+  server: 85.10.50.164
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 3
+  password: CTK8GXFQgKYQErrghPJfZ6tk
+  port: 47121
+  server: 82.102.26.117
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 4
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 138.199.19.162
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 5
+  password: Vt5pBJFwdtNB26cJbTXxm88Z
+  port: 47027
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 6
+  password: wEsFcHCvbL4eJkL4DZQa7RgR
+  port: 45746
+  server: 82.102.26.117
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 7
+  password: YgusH2MWA8PWc3p2VDsR7AVv
+  port: 31764
+  server: 82.102.26.117
+  type: ss
+- name: httpsgitiov9999 clash ip1 8
+  port: 0
+  server: 4F3fw7PgIY
+  type: socks5
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 9
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 143.244.60.167
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 10
+  password: NHwQTPLCfaTMSqTnU3mjcSxe
+  port: 33998
+  server: 156.146.56.137
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 11
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 198.8.92.84
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 12
+  password: BdRWC38L5JUDMTYNNxJGcUwB
+  port: 49396
+  server: 82.102.26.117
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 13
+  password: kD9vkjnE6dsUzwQfvKkPkQAd
+  port: 37588
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 14
+  password: aYNeKDMzYQYw4KbUbJA8Wszq
+  port: 31944
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 15
+  password: CUndSZnYsPKcu6Kj8THVMBHD
+  port: 39772
+  server: 180.149.231.11
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: httpsgitiov9999 clash ip1 16
+  password: G!yBwPWH3Vao
+  port: 802
+  server: 66.55.148.42
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 17
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 84.17.53.221
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 18
+  password: LkFAzkzXkSCRYa2CsRdL8cGb
+  port: 34815
+  server: 198.8.92.84
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 19
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 89.46.223.239
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 20
+  password: n8w4StnbVD9dmXYn4Ajt87EA
+  port: 31572
+  server: 198.8.92.84
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 21
+  password: NHwQTPLCfaTMSqTnU3mjcSxe
+  port: 33998
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 22
+  password: kD9vkjnE6dsUzwQfvKkPkQAd
+  port: 37588
+  server: 89.187.168.39
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 23
+  password: YgusH2MWA8PWc3p2VDsR7AVv
+  port: 31764
+  server: 89.187.168.39
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 24
+  password: txmK9WhwP6WPhP7hqSBLVxpN
+  port: 34687
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 25
+  password: CTK8GXFQgKYQErrghPJfZ6tk
+  port: 47121
+  server: 91.90.123.115
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: httpsgitiov9999 clash ip1 26
+  password: G!yBwPWH3Vao
+  port: 808
+  server: 66.55.148.42
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 27
+  password: enctdKyJfSu76VqznKwTt6Ap
+  port: 37473
+  server: 198.8.92.84
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 28
+  password: kD9vkjnE6dsUzwQfvKkPkQAd
+  port: 37588
+  server: 198.8.92.84
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 29
+  password: CMduaFXddcQbwNAAs7xFDnc8
+  port: 33148
+  server: 198.8.92.84
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 30
+  password: wrCaGtrUbzeRqQLdc8Kmk3Nd
+  port: 49126
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 31
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 84.17.53.210
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 32
+  password: DKXfWwc4ebscpXTKpbt85rSH
+  port: 38742
+  server: 82.102.26.117
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 33
+  password: 4ejJ8n5ddLuYDUHGXJre2ufJ
+  port: 48938
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 34
+  password: r9Q3adc3ru9sfBDPEj4yp6U6
+  port: 48794
+  server: 91.90.123.115
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: httpsgitiov9999 clash ip1 35
+  password: G!yBwPWH3Vao
+  port: 812
+  server: 66.55.148.42
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 36
+  password: x23Z4LGkGDkThZ9Kaz4DURQp
+  port: 40093
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 37
+  password: jspgz9G3VmvBMCgMUWLBaZHu
+  port: 44820
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 38
+  password: n8w4StnbVD9dmXYn4Ajt87EA
+  port: 31572
+  server: 91.90.123.115
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: httpsgitiov9999 clash ip1 39
+  password: G!yBwPWH3Vao
+  port: 807
+  server: 66.55.148.42
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 40
+  password: F5bKkb9ggkLx4JbQrbLn7LjZ
+  port: 44945
+  server: 198.8.92.84
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 41
+  password: x23Z4LGkGDkThZ9Kaz4DURQp
+  port: 40093
+  server: 45.83.91.133
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 42
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 138.199.19.132
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 43
+  password: aYNeKDMzYQYw4KbUbJA8Wszq
+  port: 31944
+  server: 198.8.92.84
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 44
+  password: x23Z4LGkGDkThZ9Kaz4DURQp
+  port: 40093
+  server: 45.248.78.45
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 45
+  password: 8n6pwAcrrv2pj6tFY2p3TbQ6
+  port: 33992
+  server: 198.8.92.84
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: httpsgitiov9999 clash ip1 46
+  password: G!yBwPWH3Vao
+  port: 811
+  server: 66.55.148.42
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 47
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 185.180.14.147
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 48
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 138.199.19.182
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 49
+  password: gYL83DQWXuDbxmZAVVtUTXaK
+  port: 46642
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 50
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 138.199.19.154
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 51
+  password: CTK8GXFQgKYQErrghPJfZ6tk
+  port: 47121
+  server: 143.244.57.99
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 52
+  password: 8n6pwAcrrv2pj6tFY2p3TbQ6
+  port: 33992
+  server: 195.47.194.42
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 53
+  password: J9Y2ncrdPEC38gwydNFFGBna
+  port: 35294
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 54
+  password: x23Z4LGkGDkThZ9Kaz4DURQp
+  port: 40093
+  server: 143.244.57.99
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 55
+  password: FWrXcxPZjJxAN89xLgqY3Acp
+  port: 44236
+  server: 82.102.26.117
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: httpsgitiov9999 clash ip1 56
+  password: HgVDIN05O6bH
+  port: 57478
+  server: ss.uk.sshmax.net
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 57
+  password: aYNeKDMzYQYw4KbUbJA8Wszq
+  port: 31944
+  server: 89.187.168.39
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 58
+  password: LkFAzkzXkSCRYa2CsRdL8cGb
+  port: 34815
+  server: 195.47.194.42
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 59
+  password: kD9vkjnE6dsUzwQfvKkPkQAd
+  port: 37588
+  server: 23.82.11.49
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 60
+  password: CUndSZnYsPKcu6Kj8THVMBHD
+  port: 39772
+  server: 137.59.52.107
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 61
+  password: x23Z4LGkGDkThZ9Kaz4DURQp
+  port: 40093
+  server: 138.199.16.137
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 62
+  password: n8w4StnbVD9dmXYn4Ajt87EA
+  port: 31572
+  server: 82.102.26.117
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 63
+  password: gqtwGu9bVreJqL3FTHSVKGzy
+  port: 50695
+  server: 82.102.26.117
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 64
+  password: 8n6pwAcrrv2pj6tFY2p3TbQ6
+  port: 33992
+  server: 185.99.3.7
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 65
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 185.99.3.7
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: httpsgitiov9999 clash ip1 66
+  password: 96a15b984cd95acc
+  port: 35654
+  server: 137.220.161.216
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 67
+  password: Y9GcTPemHMKEkrfGQPJqFDNr
+  port: 49653
+  server: 82.102.26.117
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 68
+  password: z6pH3RyttkRWhJ5tpRyt6dYk
+  port: 41676
+  server: 82.102.26.117
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 69
+  password: b2jDPHUQxCNa2KmGHZjy7C4B
+  port: 50024
+  server: 138.199.16.137
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 70
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 185.212.111.6
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 71
+  password: aYNeKDMzYQYw4KbUbJA8Wszq
+  port: 31944
+  server: 195.47.194.42
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 72
+  password: fyXdw87yCH9SAmFkPvsvLVqC
+  port: 44745
+  server: 143.244.57.99
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 73
+  password: aYNeKDMzYQYw4KbUbJA8Wszq
+  port: 31944
+  server: 138.199.9.202
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 74
+  password: J9Y2ncrdPEC38gwydNFFGBna
+  port: 35294
+  server: 195.47.194.42
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 75
+  password: aYNeKDMzYQYw4KbUbJA8Wszq
+  port: 31944
+  server: 156.146.56.137
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 76
+  password: x23Z4LGkGDkThZ9Kaz4DURQp
+  port: 40093
+  server: 137.59.52.107
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 77
+  password: Kquv5UhvZXNMemAQy8DxZ7qn
+  port: 38620
+  server: 156.146.56.137
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 78
+  password: LkFAzkzXkSCRYa2CsRdL8cGb
+  port: 34815
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 79
+  password: NHwQTPLCfaTMSqTnU3mjcSxe
+  port: 33998
+  server: 198.8.92.84
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 80
+  password: FWrXcxPZjJxAN89xLgqY3Acp
+  port: 44236
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 81
+  password: jspgz9G3VmvBMCgMUWLBaZHu
+  port: 44820
+  server: 198.8.92.84
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: httpsgitiov9999 clash ip1 82
+  password: G!yBwPWH3Vao
+  port: 800
+  server: 51.89.99.59
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 83
+  password: YgusH2MWA8PWc3p2VDsR7AVv
+  port: 31764
+  server: 138.199.16.137
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 84
+  password: YgusH2MWA8PWc3p2VDsR7AVv
+  port: 31764
+  server: 198.8.92.84
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 85
+  password: DKXfWwc4ebscpXTKpbt85rSH
+  port: 38742
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 86
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 185.212.111.59
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: httpsgitiov9999 clash ip1 87
+  password: G!yBwPWH3Vao
+  port: 810
+  server: 66.55.148.42
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 88
+  password: AMvZHPXhPk6t
+  port: 4040
+  server: 176.31.146.89
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 89
+  password: z6pH3RyttkRWhJ5tpRyt6dYk
+  port: 41676
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 90
+  password: YyCBeDdYX4cadHpCkkmdJLq8
+  port: 43893
+  server: 91.90.123.115
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 clash ip5德国'
+  port: 28599
+  server: 89.163.224.127
+  tls: false
+  type: vmess
+  uuid: ec8be0c5-9eac-4728-8929-ef23c73d8341
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 clash ip5德国 2'
+  port: 56748
+  server: 217.79.181.111
+  tls: false
+  type: vmess
+  uuid: bcc21751-81be-4b0b-8cbc-bc30d67cb818
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 clash ip4莫斯科'
+  port: 52341
+  server: 45.140.169.224
+  tls: false
+  type: vmess
+  uuid: 3f1079d6-998a-4d1b-98be-a7e9d5f30d07
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 clash ip4莫斯科 2'
+  port: 56967
+  server: 46.17.45.139
+  tls: false
+  type: vmess
+  uuid: 5458261b-ec18-4673-9251-fa7859a5cacb
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 clash ip4莫斯科 3'
+  port: 20592
+  server: 176.32.35.73
+  tls: false
+  type: vmess
+  uuid: e7385e13-1a69-4b2c-9d95-20ebf36226ae
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 莫斯科'
+  port: 56282
+  server: 46.17.43.179
+  tls: false
+  type: vmess
+  uuid: 5d3e6e14-5828-4e88-a946-bad5c700b4d5
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 荷兰'
+  port: 56282
+  server: 163.172.214.118
+  tls: false
+  type: vmess
+  uuid: 5d3e6e14-5828-4e88-a946-bad5c700b4d5
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 clash ip5德国'
+  port: 56748
+  server: 217.79.181.111
+  tls: false
+  type: vmess
+  uuid: bcc21751-81be-4b0b-8cbc-bc30d67cb818
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 clash ip5德国 2'
+  port: 28599
+  server: 89.163.224.127
+  tls: false
+  type: vmess
+  uuid: ec8be0c5-9eac-4728-8929-ef23c73d8341
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 clash ip4莫斯科'
+  port: 56967
+  server: 46.17.45.139
+  tls: false
+  type: vmess
+  uuid: 5458261b-ec18-4673-9251-fa7859a5cacb
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 clash ip4莫斯科 2'
+  port: 20592
+  server: 176.32.35.73
+  tls: false
+  type: vmess
+  uuid: e7385e13-1a69-4b2c-9d95-20ebf36226ae
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 clash ip4莫斯科 3'
+  port: 52341
+  server: 45.140.169.224
+  tls: false
+  type: vmess
+  uuid: 3f1079d6-998a-4d1b-98be-a7e9d5f30d07
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3
+  network: ws
+  port: 443
+  server: jp-01.yinriver.top
+  tls: true
+  type: vmess
+  uuid: 50f86e6f-a7d7-45bc-aa69-f95fc8cf3025
+  ws-headers:
+    Host: jp-01.yinriver.top
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 2
+  network: ws
+  port: 443
+  server: 172.67.223.77
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 3
+  network: ws
+  port: 443
+  server: 104.22.4.180
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 4
+  network: ws
+  port: 443
+  server: hostmonit.com
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 5
+  network: ws
+  port: 443
+  server: 104.16.148.48
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 6
+  network: ws
+  port: 443
+  server: 46.182.107.36
+  tls: true
+  type: vmess
+  uuid: 65ea6727-4461-47a7-a5c4-fef2c67f2f79
+  ws-headers:
+    Host: www.09462550.xyz
+  ws-path: /footers
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 7
+  network: ws
+  port: 24446
+  server: transit-azure-b1s-hk.speedtestcustom.tk
+  tls: false
+  type: vmess
+  uuid: 732ada90-3ad1-45bd-bd37-fb5fe1b9007c
+  ws-headers:
+    Host: transit-azure-b1s-hk.speedtestcustom.tk
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 8
+  network: ws
+  port: 52344
+  server: gzcm1.domain.hxray.me
+  tls: true
+  type: vmess
+  uuid: b1848660-f141-4e80-969e-d325c80aa209
+  ws-headers:
+    Host: sgp1.domain.hxray.me
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 9
+  network: ws
+  port: 61989
+  server: ahyd1.domain.hxray.me
+  tls: true
+  type: vmess
+  uuid: 98dff0a6-dc7b-4978-8fb0-a126b6be268d
+  ws-headers:
+    Host: sgp1.domain.hxray.me
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 10
+  network: ws
+  port: 52344
+  server: gzcm1.domain.hxray.me
+  tls: true
+  type: vmess
+  uuid: 98dff0a6-dc7b-4978-8fb0-a126b6be268d
+  ws-headers:
+    Host: sgp1.domain.hxray.me
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 11
+  network: ws
+  port: 31818
+  server: gz.cm.huitiank.com
+  tls: false
+  type: vmess
+  uuid: 5f6ed9ca-ef42-43e8-ab9f-470016bf92e9
+  ws-headers:
+    Host: pull-flv-l6.douyincdn.com
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 12
+  network: ws
+  port: 52344
+  server: gzcm1.domain.hxray.me
+  tls: true
+  type: vmess
+  uuid: 5cfff7ad-2f9c-404e-8844-1eca4f2fe5ac
+  ws-headers:
+    Host: sgp1.domain.hxray.me
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 13
+  network: ws
+  port: 12005
+  server: shcn2.domain.hxray.me
+  tls: true
+  type: vmess
+  uuid: 5cfff7ad-2f9c-404e-8844-1eca4f2fe5ac
+  ws-headers:
+    Host: sgp1.domain.hxray.me
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 14
+  network: ws
+  port: 12005
+  server: shcn2.domain.hxray.me
+  tls: true
+  type: vmess
+  uuid: b1848660-f141-4e80-969e-d325c80aa209
+  ws-headers:
+    Host: sgp1.domain.hxray.me
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 15
+  network: ws
+  port: 61989
+  server: ahyd1.domain.hxray.me
+  tls: true
+  type: vmess
+  uuid: b1848660-f141-4e80-969e-d325c80aa209
+  ws-headers:
+    Host: sgp1.domain.hxray.me
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 16
+  network: ws
+  port: 20001
+  server: cm-jm.okvpn.cc
+  tls: false
+  type: vmess
+  uuid: 94a60d56-10ee-4796-a072-25fc8d9a52b8
+  ws-headers:
+    Host: cm-jm.okvpn.cc
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 17
+  network: ws
+  port: 443
+  server: 180.215.218.223
+  tls: true
+  type: vmess
+  uuid: 702e0b48-e2cd-4286-ae37-d5275a65ed54
+  ws-headers:
+    Host: www.35462784.xyz
+  ws-path: /footers
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 18
+  network: ws
+  port: 443
+  server: 72.44.74.98
+  tls: true
+  type: vmess
+  uuid: 81295af2-bcd2-0d7e-8bc4-f1367049cf95
+  ws-headers:
+    Host: 72-44-74-98.wdnmd1145141919810.xyz
+  ws-path: /gafnvws
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 19
+  network: ws
+  port: 42359
+  server: 45.63.127.248
+  tls: false
+  type: vmess
+  uuid: e03ea624-6458-4c28-f20d-5f734f0db562
+  ws-headers:
+    Host: 45.63.127.248
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 20
+  port: 14420
+  server: 5.183.102.142
+  tls: false
+  type: vmess
+  uuid: 9984501d-e80a-4144-c6bd-2503fb49872d
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 21
+  network: ws
+  port: 80
+  server: 51.195.217.20
+  tls: false
+  type: vmess
+  uuid: 6c0cb6a9-2389-4b5d-8bec-b14b076f4a4e
+  ws-headers:
+    Host: 51.195.217.20
+  ws-path: /sshocean
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 22
+  network: ws
+  port: 443
+  server: 104.16.149.72
+  tls: true
+  type: vmess
+  uuid: e26e8e56-6af6-fe22-d1ed-926650b89c76
+  ws-headers:
+    Host: nsawsrb.mooncloud.bike
+  ws-path: /fokfvws
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 23
+  network: ws
+  port: 443
+  server: 104.20.82.105
+  tls: true
+  type: vmess
+  uuid: e26e8e56-6af6-fe22-d1ed-926650b89c76
+  ws-headers:
+    Host: nsawsrb.mooncloud.bike
+  ws-path: /fokfvws
+- alterId: 60
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 24
+  network: ws
+  port: 443
+  server: www.garmin.com
+  tls: true
+  type: vmess
+  uuid: 2ac0acf7-a788-4b3e-a643-3a87368a49dd
+  ws-headers:
+    Host: qq13.feiclouddd.me
+  ws-path: /sadfasf
+- alterId: 60
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 25
+  network: ws
+  port: 443
+  server: 104.19.45.117
+  tls: true
+  type: vmess
+  uuid: 2ac0acf7-a788-4b3e-a643-3a87368a49dd
+  ws-headers:
+    Host: qq13.feiclouddd.me
+  ws-path: /sadfasf
+- alterId: 60
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 26
+  network: ws
+  port: 443
+  server: 172.67.223.77
+  tls: true
+  type: vmess
+  uuid: 2ac0acf7-a788-4b3e-a643-3a87368a49dd
+  ws-headers:
+    Host: qq13.feiclouddd.me
+  ws-path: /sadfasf
+- alterId: 60
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 27
+  network: ws
+  port: 443
+  server: icook.tw
+  tls: true
+  type: vmess
+  uuid: 2ac0acf7-a788-4b3e-a643-3a87368a49dd
+  ws-headers:
+    Host: qq13.feiclouddd.me
+  ws-path: /sadfasf
+- alterId: 60
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 28
+  network: ws
+  port: 443
+  server: 104.21.239.147
+  tls: true
+  type: vmess
+  uuid: 2ac0acf7-a788-4b3e-a643-3a87368a49dd
+  ws-headers:
+    Host: qq13.feiclouddd.me
+  ws-path: /sadfasf
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 29
+  network: ws
+  port: 44443
+  server: hk1.domain.hxray.me
+  tls: true
+  type: vmess
+  uuid: 98dff0a6-dc7b-4978-8fb0-a126b6be268d
+  ws-headers:
+    Host: hk1.domain.hxray.me
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 30
+  network: ws
+  port: 443
+  server: 104.18.207.189
+  tls: true
+  type: vmess
+  uuid: e26e8e56-6af6-fe22-d1ed-926650b89c76
+  ws-headers:
+    Host: nsawsrb.mooncloud.bike
+  ws-path: /fokfvws
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 31
+  network: ws
+  port: 443
+  server: 46.182.107.94
+  tls: true
+  type: vmess
+  uuid: 743bdc87-1dea-41bf-aa0b-51dfbbfec8aa
+  ws-headers:
+    Host: www.54872833.xyz
+  ws-path: /footers
+- alterId: 60
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 32
+  network: ws
+  port: 443
+  server: 104.17.36.178
+  tls: true
+  type: vmess
+  uuid: 2ac0acf7-a788-4b3e-a643-3a87368a49dd
+  ws-headers:
+    Host: qq13.feiclouddd.me
+  ws-path: /sadfasf
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 33
+  network: ws
+  port: 443
+  server: 104.22.3.3
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 60
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 34
+  network: ws
+  port: 443
+  server: nn-ssr24.feiclouddd.me
+  tls: true
+  type: vmess
+  uuid: 94d3ddba-3c75-4ddd-84c5-b859a30b1fb9
+  ws-headers:
+    Host: nn-ssr24.feiclouddd.me
+  ws-path: /dsafasdf
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 35
+  network: ws
+  port: 80
+  server: 107.191.112.214
+  tls: false
+  type: vmess
+  uuid: 732ada90-3ad1-45bd-bd37-fb5fe1b9007c
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 36
+  network: ws
+  port: 443
+  server: 104.25.175.69
+  tls: true
+  type: vmess
+  uuid: 9e193088-078d-44cb-960a-f179d93554ee
+  ws-headers:
+    Host: nl.vincent-jackson2021.cf
+  ws-path: /vincent-jacksonvws
+- alterId: 60
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 37
+  network: ws
+  port: 443
+  server: 104.16.181.15
+  tls: true
+  type: vmess
+  uuid: 2ac0acf7-a788-4b3e-a643-3a87368a49dd
+  ws-headers:
+    Host: qq13.feiclouddd.me
+  ws-path: /sadfasf
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 38
+  network: ws
+  port: 443
+  server: 104.20.81.240
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 39
+  network: ws
+  port: 443
+  server: 104.16.16.255
+  tls: true
+  type: vmess
+  uuid: 7a1bd825-d7da-461c-be6a-d082e32d3337
+  ws-headers:
+    Host: ehtdz61g4.dongkid.online
+  ws-path: /qhjmvws?ed=2048
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 40
+  network: ws
+  port: 443
+  server: 154.84.1.217
+  tls: true
+  type: vmess
+  uuid: 130c9f2e-42b1-4ebf-b345-e26456a061f9
+  ws-headers:
+    Host: www.05222027.xyz
+  ws-path: /footers
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 41
+  network: ws
+  port: 443
+  server: 104.17.36.178
+  tls: true
+  type: vmess
+  uuid: 7a1bd825-d7da-461c-be6a-d082e32d3337
+  ws-headers:
+    Host: ehtdz61g4.dongkid.online
+  ws-path: /qhjmvws?ed=2048
+- alterId: 2
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 42
+  network: ws
+  port: 20925
+  server: 103.56.60.37
+  tls: false
+  type: vmess
+  uuid: b8583f26-9717-3f5a-91cf-b48a910344ad
+  ws-headers:
+    Host: 103.56.60.37
+  ws-path: /mfyun.m3u8
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 43
+  network: ws
+  port: 80
+  server: 199.60.103.228
+  tls: false
+  type: vmess
+  uuid: b22b990f-b6dd-4b57-a0e1-ee3f829d413f
+  ws-headers:
+    Host: eu-sshkit.v2-ray.cf
+  ws-path: /sshkit
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 44
+  network: ws
+  port: 443
+  server: www.garmin.com
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 45
+  network: ws
+  port: 443
+  server: 567567.cf
+  tls: true
+  type: vmess
+  uuid: 5f4b2e42-ff2b-6666-86fc-b7ba1b5361e8
+  ws-headers:
+    Host: 567567.cf
+  ws-path: /The-Great-Awakening_vws?ed=2048
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 46
+  network: ws
+  port: 443
+  server: icook.tw
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- name: httpsgitiov9999 clash ip3 47
+  password: 7f6b65e4-6d5b-4137-a1dc-d32f4a810239
+  port: 443
+  server: us2.paopao.cf
+  sni: us2.paopao.cf
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 48
+  network: ws
+  port: 443
+  server: 104.22.44.50
+  tls: true
+  type: vmess
+  uuid: 9e193088-078d-44cb-960a-f179d93554ee
+  ws-headers:
+    Host: nl.vincent-jackson2021.cf
+  ws-path: /vincent-jacksonvws
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 49
+  network: ws
+  port: 443
+  server: 104.18.135.208
+  tls: true
+  type: vmess
+  uuid: 9e193088-078d-44cb-960a-f179d93554ee
+  ws-headers:
+    Host: nl.vincent-jackson2021.cf
+  ws-path: /vincent-jacksonvws
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 50
+  network: ws
+  port: 443
+  server: icook.tw
+  tls: true
+  type: vmess
+  uuid: e2cbac5f-b754-407b-a6cc-3205482f1fb4
+  ws-headers:
+    Host: 567567.ga
+  ws-path: /Vincent-Jacksonvws?ed=2048
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 51
+  network: ws
+  port: 10121
+  server: 45.11.92.139
+  tls: false
+  type: vmess
+  uuid: 24cd8398-c0e6-4667-a712-a358754809d9
+  ws-headers:
+    Host: 45.11.92.139
+  ws-path: /
+- name: httpsgitiov9999 clash ip3 52
+  password: 7x42LetRa0
+  port: 1443
+  server: in1-1.noojat.com
+  sni: in1-1.noojat.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 53
+  network: ws
+  port: 443
+  server: t6.ssrsub.one
+  tls: true
+  type: vmess
+  uuid: 97018aac-0985-4d4b-8283-f774c9fe9418
+  ws-headers:
+    Host: t6.ssrsub.one
+  ws-path: /v2ray/fc671c24/
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 54
+  network: ws
+  port: 443
+  server: 23.224.30.36
+  tls: true
+  type: vmess
+  uuid: e4494518-74e8-4d6b-942a-6b332cce09ef
+  ws-headers:
+    Host: www.01902367.xyz
+  ws-path: /path/310910211916
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 55
+  network: ws
+  port: 443
+  server: 23.224.30.37
+  tls: true
+  type: vmess
+  uuid: e4494518-74e8-4d6b-942a-6b332cce09ef
+  ws-headers:
+    Host: www.01902367.xyz
+  ws-path: /path/310910211916
+- alterId: 60
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 56
+  network: ws
+  port: 443
+  server: qq13.feiclouddd.me
+  tls: true
+  type: vmess
+  uuid: 2ac0acf7-a788-4b3e-a643-3a87368a49dd
+  ws-headers:
+    Host: qq13.feiclouddd.me
+  ws-path: /sadfasf
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 57
+  network: ws
+  port: 443
+  server: 104.20.130.43
+  tls: true
+  type: vmess
+  uuid: 9e193088-078d-44cb-960a-f179d93554ee
+  ws-headers:
+    Host: nl.vincent-jackson2021.cf
+  ws-path: /vincent-jacksonvws
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 58
+  port: 59857
+  server: 5.183.101.204
+  tls: false
+  type: vmess
+  uuid: 4c35d374-dbf2-4e5f-c731-dfa49191825a
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 59
+  network: ws
+  port: 443
+  server: us2.paopao.cf
+  tls: true
+  type: vmess
+  uuid: 7f6b65e4-6d5b-4137-a1dc-d32f4a810239
+  ws-headers:
+    Host: us2.paopao.cf
+  ws-path: /tgzhucaidan
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 60
+  network: ws
+  port: 80
+  server: 146.59.13.37
+  tls: false
+  type: vmess
+  uuid: b79212e2-b670-4d4b-8c22-eb796921b97a
+  ws-headers:
+    Host: 146.59.13.37
+  ws-path: /sshocean
+- alterId: 60
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 61
+  network: ws
+  port: 443
+  server: 104.16.207.196
+  tls: true
+  type: vmess
+  uuid: 2ac0acf7-a788-4b3e-a643-3a87368a49dd
+  ws-headers:
+    Host: qq13.feiclouddd.me
+  ws-path: /sadfasf
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 62
+  network: ws
+  port: 80
+  server: bimbel.ruangguru.com
+  tls: false
+  type: vmess
+  uuid: b22b990f-b6dd-4b57-a0e1-ee3f829d413f
+  ws-headers:
+    Host: eu-sshkit.v2-ray.cf
+  ws-path: /sshkit
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 63
+  network: ws
+  port: 80
+  server: 45.82.167.21
+  tls: false
+  type: vmess
+  uuid: a7b384a1-dd97-4fc3-819d-06cd8c706811
+  ws-headers:
+    Host: pull.free.video.10010.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 64
+  network: ws
+  port: 443
+  server: 104.16.160.114
+  tls: true
+  type: vmess
+  uuid: 5f4b2e42-ff2b-4342-86fc-b7ba1b5361e8
+  ws-headers:
+    Host: vincent-jackson2021.ga
+  ws-path: /The-Great-Awakening_vws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 65
+  network: ws
+  port: 443
+  server: 104.20.130.43
+  tls: true
+  type: vmess
+  uuid: e2cbac5f-b754-407b-a6cc-3205482f1fb4
+  ws-headers:
+    Host: 567567.ga
+  ws-path: /Vincent-Jacksonvws?ed=2048
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 66
+  network: ws
+  port: 443
+  server: 104.160.186.54
+  tls: true
+  type: vmess
+  uuid: d3cbe556-8db3-47e0-8ef1-06b2cce00411
+  ws-headers:
+    Host: www.92726054.xyz
+  ws-path: /path/310910211916
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 67
+  network: ws
+  port: 443
+  server: www.17080100.xyz
+  tls: true
+  type: vmess
+  uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724
+  ws-headers:
+    Host: www.17080100.xyz
+  ws-path: /path/310910211916
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 68
+  network: ws
+  port: 443
+  server: icook.tw
+  tls: true
+  type: vmess
+  uuid: 5f4b2e42-ff2b-4342-86fc-b7ba1b5361e8
+  ws-headers:
+    Host: vincent-jackson2021.ga
+  ws-path: /The-Great-Awakening_vws?ed=2048
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 69
+  network: ws
+  port: 443
+  server: 46.182.107.37
+  tls: true
+  type: vmess
+  uuid: 65ea6727-4461-47a7-a5c4-fef2c67f2f79
+  ws-headers:
+    Host: www.09462550.xyz
+  ws-path: /footers
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 70
+  network: ws
+  port: 443
+  server: 46.182.107.93
+  tls: true
+  type: vmess
+  uuid: 743bdc87-1dea-41bf-aa0b-51dfbbfec8aa
+  ws-headers:
+    Host: www.54872833.xyz
+  ws-path: /footers
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 71
+  network: ws
+  port: 443
+  server: 46.182.107.154
+  tls: true
+  type: vmess
+  uuid: 130c9f2e-42b1-4ebf-b345-e26456a061f9
+  ws-headers:
+    Host: www.05222027.xyz
+  ws-path: /footers
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 72
+  network: ws
+  port: 443
+  server: 46.182.107.39
+  tls: true
+  type: vmess
+  uuid: d3133484-f2bf-4b0c-8d38-f8e645b65687
+  ws-headers:
+    Host: www.07890885.xyz
+  ws-path: /footers
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 73
+  network: ws
+  port: 443
+  server: 46.182.107.45
+  tls: true
+  type: vmess
+  uuid: fe5f69e7-e183-439b-950b-9661ef0651f2
+  ws-headers:
+    Host: www.68737987.xyz
+  ws-path: /footers
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 74
+  port: 56282
+  server: 46.17.43.179
+  tls: false
+  type: vmess
+  uuid: 5d3e6e14-5828-4e88-a946-bad5c700b4d5
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 75
+  network: ws
+  port: 443
+  server: 46.182.107.13
+  tls: true
+  type: vmess
+  uuid: a7fa8f14-4fb6-4280-9005-d6bbe99c5da9
+  ws-headers:
+    Host: www.07395375.xyz
+  ws-path: /path/310910211916
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 76
+  network: ws
+  port: 443
+  server: 46.182.107.146
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca4690dd24
+  ws-headers:
+    Host: www.44590130.xyz
+  ws-path: /footers
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 77
+  network: ws
+  port: 443
+  server: icook.tw
+  tls: true
+  type: vmess
+  uuid: 7a1bd825-d7da-461c-be6a-d082e32d3337
+  ws-headers:
+    Host: ehtdz61g4.dongkid.online
+  ws-path: /qhjmvws?ed=2048
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 78
+  network: ws
+  port: 443
+  server: 46.182.107.157
+  tls: true
+  type: vmess
+  uuid: 20b30916-e203-412e-8ec0-900f3acd5128
+  ws-headers:
+    Host: www.73345741.xyz
+  ws-path: /footers
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 79
+  network: ws
+  port: 443
+  server: 198.41.209.5
+  tls: true
+  type: vmess
+  uuid: 1c0d1093-876e-490f-8a5d-affbb78a79df
+  ws-headers:
+    Host: shy-heart-b4df.v5v5v5.workers.dev
+  ws-path: /1c0d1093-876e-490f-8a5d-affbb78a79df-vmess
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 80
+  network: ws
+  port: 443
+  server: 46.182.107.165
+  tls: true
+  type: vmess
+  uuid: d3133484-f2bf-4b0c-8d38-f8e645b65687
+  ws-headers:
+    Host: www.07890885.xyz
+  ws-path: /footers
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 81
+  network: ws
+  port: 80
+  server: euserv8p.ezddns.tk
+  tls: false
+  type: vmess
+  uuid: 24d6dc76-f0a0-4809-8a70-6ad2dce20022
+  ws-headers:
+    Host: euserv8p.ezddns.tk
+  ws-path: /video
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 82
+  network: ws
+  port: 443
+  server: www.digitalocean.com
+  tls: true
+  type: vmess
+  uuid: e2cbac5f-b754-407b-a6cc-3205482f1fb4
+  ws-headers:
+    Host: 567567.ga
+  ws-path: /Vincent-Jacksonvws?ed=2048
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip3 83
+  password: ugyBkSEFxVEmUYSHyvxmWNj9
+  port: 40220
+  server: 198.8.92.84
+  type: ss
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 84
+  network: ws
+  port: 443
+  server: www.17080100.xyz
+  tls: true
+  type: vmess
+  uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724
+  ws-headers:
+    Host: www.17080100.xyz
+  ws-path: /path/310910211916
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 85
+  network: ws
+  port: 36788
+  server: 45.79.114.57
+  tls: false
+  type: vmess
+  uuid: B22C2F57-0189-25E7-79FA-90717E212748
+  ws-headers:
+    Host: 45.79.114.57
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 86
+  network: ws
+  port: 443
+  server: 104.16.182.15
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 87
+  network: ws
+  port: 443
+  server: 104.16.181.15
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 88
+  network: ws
+  port: 443
+  server: www.garmin.com
+  tls: true
+  type: vmess
+  uuid: e2cbac5f-b754-407b-a6cc-3205482f1fb4
+  ws-headers:
+    Host: 567567.ga
+  ws-path: /Vincent-Jacksonvws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 89
+  port: 47611
+  server: 35.178.68.152
+  tls: false
+  type: vmess
+  uuid: 97a4d167-b361-48b8-b004-8bc45669e334
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 90
+  network: ws
+  port: 443
+  server: 46.182.107.44
+  tls: true
+  type: vmess
+  uuid: fe5f69e7-e183-439b-950b-9661ef0651f2
+  ws-headers:
+    Host: www.68737987.xyz
+  ws-path: /footers
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 91
+  network: ws
+  port: 443
+  server: 104.16.160.114
+  tls: true
+  type: vmess
+  uuid: 5f4b2e42-ff2b-4342-86fc-b7ba1b5361e8
+  ws-headers:
+    Host: vincent-jackson2021.ga
+  ws-path: /The-Great-Awakening_vws
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 92
+  network: ws
+  port: 443
+  server: 104.22.44.50
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 93
+  network: ws
+  port: 443
+  server: 104.16.160.114
+  tls: true
+  type: vmess
+  uuid: 5f4b2e42-ff2b-6666-86fc-b7ba1b5361e8
+  ws-headers:
+    Host: 567567.cf
+  ws-path: /The-Great-Awakening_vws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 94
+  network: ws
+  port: 443
+  server: 104.25.104.240
+  tls: true
+  type: vmess
+  uuid: 5f4b2e42-ff2b-6666-86fc-b7ba1b5361e8
+  ws-headers:
+    Host: 567567.cf
+  ws-path: /The-Great-Awakening_vws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 95
+  network: ws
+  port: 443
+  server: 104.25.104.240
+  tls: true
+  type: vmess
+  uuid: 9e193088-078d-44cb-960a-f179d93554ee
+  ws-headers:
+    Host: nl.vincent-jackson2021.cf
+  ws-path: /vincent-jacksonvws
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 96
+  port: 56282
+  server: 163.172.214.118
+  tls: false
+  type: vmess
+  uuid: 5d3e6e14-5828-4e88-a946-bad5c700b4d5
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 97
+  network: ws
+  port: 443
+  server: 172.67.209.58
+  tls: true
+  type: vmess
+  uuid: 9e193088-078d-44cb-960a-f179d93554ee
+  ws-headers:
+    Host: nl.vincent-jackson2021.cf
+  ws-path: /vincent-jacksonvws
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 98
+  network: ws
+  port: 443
+  server: www.garmin.com
+  tls: true
+  type: vmess
+  uuid: 5f4b2e42-ff2b-4342-86fc-b7ba1b5361e8
+  ws-headers:
+    Host: vincent-jackson2021.ga
+  ws-path: /The-Great-Awakening_vws?ed=2048
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 99
+  network: ws
+  port: 443
+  server: 104.20.130.43
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 60
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 100
+  network: ws
+  port: 443
+  server: qq1-cloud13.feiclouddd.me
+  tls: true
+  type: vmess
+  uuid: 478055cc-fdb8-404e-b730-c32faa2c7ca1
+  ws-headers:
+    Host: qq1-cloud13.feiclouddd.me
+  ws-path: /asdfasdf
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 101
+  network: ws
+  port: 443
+  server: 104.16.167.138
+  tls: true
+  type: vmess
+  uuid: 7a1bd825-d7da-461c-be6a-d082e32d3337
+  ws-headers:
+    Host: ehtdz61g4.dongkid.online
+  ws-path: /qhjmvws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 102
+  network: ws
+  port: 443
+  server: www.garmin.com
+  tls: true
+  type: vmess
+  uuid: 5f4b2e42-ff2b-6666-86fc-b7ba1b5361e8
+  ws-headers:
+    Host: 567567.cf
+  ws-path: /The-Great-Awakening_vws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 103
+  network: ws
+  port: 443
+  server: www.digitalocean.com
+  tls: true
+  type: vmess
+  uuid: 5f4b2e42-ff2b-6666-86fc-b7ba1b5361e8
+  ws-headers:
+    Host: 567567.cf
+  ws-path: /The-Great-Awakening_vws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 104
+  network: ws
+  port: 443
+  server: 104.16.160.114
+  tls: true
+  type: vmess
+  uuid: 9e193088-078d-44cb-960a-f179d93554ee
+  ws-headers:
+    Host: nl.vincent-jackson2021.cf
+  ws-path: /vincent-jacksonvws
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 105
+  network: ws
+  port: 443
+  server: www.digitalocean.com
+  tls: true
+  type: vmess
+  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
+  ws-headers:
+    Host: cdnde.irteyz.today
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 106
+  network: ws
+  port: 443
+  server: 13.49.246.208
+  tls: true
+  type: vmess
+  uuid: df055ea2-4d3a-445e-977d-8e958abaad3a
+  ws-headers:
+    Host: v2ray-se-2.xamjyssvpn.xyz
+  ws-path: /xamjyss143/
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 107
+  network: ws
+  port: 443
+  server: www.92726054.xyz
+  tls: true
+  type: vmess
+  uuid: d3cbe556-8db3-47e0-8ef1-06b2cce00411
+  ws-headers:
+    Host: www.92726054.xyz
+  ws-path: /path/310910211916
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 108
+  network: ws
+  port: 443
+  server: 172.67.223.77
+  tls: true
+  type: vmess
+  uuid: 9e193088-078d-44cb-960a-f179d93554ee
+  ws-headers:
+    Host: nl.vincent-jackson2021.cf
+  ws-path: /vincent-jacksonvws
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 109
+  network: ws
+  port: 80
+  server: euserv9p.ezddns.tk
+  tls: false
+  type: vmess
+  uuid: ca870483-fa7d-4f64-983a-6ed455143aca
+  ws-headers:
+    Host: euserv9p.ezddns.tk
+  ws-path: /live
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 110
+  network: ws
+  port: 443
+  server: nl.vincent-jackson2021.cf
+  tls: true
+  type: vmess
+  uuid: 9e193088-078d-44cb-960a-f179d93554ee
+  ws-headers:
+    Host: nl.vincent-jackson2021.cf
+  ws-path: /vincent-jacksonvws
+- alterId: 64
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 111
+  network: ws
+  port: 443
+  server: 107.167.9.124
+  tls: true
+  type: vmess
+  uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724
+  ws-headers:
+    Host: www.17080100.xyz
+  ws-path: /path/310910211916
+- alterId: 1
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 112
+  network: ws
+  port: 80
+  server: us-01.yinriver.top
+  tls: false
+  type: vmess
+  uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875
+  ws-headers:
+    Host: us-01.yinriver.top
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: httpsgitiov9999 clash ip3 113
+  port: 47611
+  server: 35.178.68.152
+  tls: false
+  type: vmess
+  uuid: 97a4d167-b361-48b8-b004-8bc45669e334
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1
+  password: J9Y2ncrdPEC38gwydNFFGBna
+  port: 35294
+  server: 89.187.168.39
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 2
+  password: kD9vkjnE6dsUzwQfvKkPkQAd
+  port: 37588
+  server: 85.10.50.164
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 3
+  password: CTK8GXFQgKYQErrghPJfZ6tk
+  port: 47121
+  server: 82.102.26.117
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 4
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 138.199.19.162
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 5
+  password: Vt5pBJFwdtNB26cJbTXxm88Z
+  port: 47027
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 6
+  password: wEsFcHCvbL4eJkL4DZQa7RgR
+  port: 45746
+  server: 82.102.26.117
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 7
+  password: YgusH2MWA8PWc3p2VDsR7AVv
+  port: 31764
+  server: 82.102.26.117
+  type: ss
+- name: httpsgitiov9999 clash ip1 8
+  port: 0
+  server: 4F3fw7PgIY
+  type: socks5
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 9
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 143.244.60.167
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 10
+  password: NHwQTPLCfaTMSqTnU3mjcSxe
+  port: 33998
+  server: 156.146.56.137
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 11
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 198.8.92.84
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 12
+  password: BdRWC38L5JUDMTYNNxJGcUwB
+  port: 49396
+  server: 82.102.26.117
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 13
+  password: kD9vkjnE6dsUzwQfvKkPkQAd
+  port: 37588
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 14
+  password: aYNeKDMzYQYw4KbUbJA8Wszq
+  port: 31944
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 15
+  password: CUndSZnYsPKcu6Kj8THVMBHD
+  port: 39772
+  server: 180.149.231.11
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: httpsgitiov9999 clash ip1 16
+  password: G!yBwPWH3Vao
+  port: 802
+  server: 66.55.148.42
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 17
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 84.17.53.221
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 18
+  password: LkFAzkzXkSCRYa2CsRdL8cGb
+  port: 34815
+  server: 198.8.92.84
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 19
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 89.46.223.239
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 20
+  password: n8w4StnbVD9dmXYn4Ajt87EA
+  port: 31572
+  server: 198.8.92.84
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 21
+  password: NHwQTPLCfaTMSqTnU3mjcSxe
+  port: 33998
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 22
+  password: kD9vkjnE6dsUzwQfvKkPkQAd
+  port: 37588
+  server: 89.187.168.39
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 23
+  password: YgusH2MWA8PWc3p2VDsR7AVv
+  port: 31764
+  server: 89.187.168.39
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 24
+  password: txmK9WhwP6WPhP7hqSBLVxpN
+  port: 34687
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 25
+  password: CTK8GXFQgKYQErrghPJfZ6tk
+  port: 47121
+  server: 91.90.123.115
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: httpsgitiov9999 clash ip1 26
+  password: G!yBwPWH3Vao
+  port: 808
+  server: 66.55.148.42
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 27
+  password: enctdKyJfSu76VqznKwTt6Ap
+  port: 37473
+  server: 198.8.92.84
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 28
+  password: kD9vkjnE6dsUzwQfvKkPkQAd
+  port: 37588
+  server: 198.8.92.84
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 29
+  password: CMduaFXddcQbwNAAs7xFDnc8
+  port: 33148
+  server: 198.8.92.84
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 30
+  password: wrCaGtrUbzeRqQLdc8Kmk3Nd
+  port: 49126
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 31
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 84.17.53.210
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 32
+  password: DKXfWwc4ebscpXTKpbt85rSH
+  port: 38742
+  server: 82.102.26.117
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 33
+  password: 4ejJ8n5ddLuYDUHGXJre2ufJ
+  port: 48938
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 34
+  password: r9Q3adc3ru9sfBDPEj4yp6U6
+  port: 48794
+  server: 91.90.123.115
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: httpsgitiov9999 clash ip1 35
+  password: G!yBwPWH3Vao
+  port: 812
+  server: 66.55.148.42
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 36
+  password: x23Z4LGkGDkThZ9Kaz4DURQp
+  port: 40093
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 37
+  password: jspgz9G3VmvBMCgMUWLBaZHu
+  port: 44820
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 38
+  password: n8w4StnbVD9dmXYn4Ajt87EA
+  port: 31572
+  server: 91.90.123.115
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: httpsgitiov9999 clash ip1 39
+  password: G!yBwPWH3Vao
+  port: 807
+  server: 66.55.148.42
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 40
+  password: F5bKkb9ggkLx4JbQrbLn7LjZ
+  port: 44945
+  server: 198.8.92.84
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 41
+  password: x23Z4LGkGDkThZ9Kaz4DURQp
+  port: 40093
+  server: 45.83.91.133
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 42
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 138.199.19.132
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 43
+  password: aYNeKDMzYQYw4KbUbJA8Wszq
+  port: 31944
+  server: 198.8.92.84
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 44
+  password: x23Z4LGkGDkThZ9Kaz4DURQp
+  port: 40093
+  server: 45.248.78.45
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 45
+  password: 8n6pwAcrrv2pj6tFY2p3TbQ6
+  port: 33992
+  server: 198.8.92.84
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: httpsgitiov9999 clash ip1 46
+  password: G!yBwPWH3Vao
+  port: 811
+  server: 66.55.148.42
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 47
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 185.180.14.147
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 48
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 138.199.19.182
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 49
+  password: gYL83DQWXuDbxmZAVVtUTXaK
+  port: 46642
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 50
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 138.199.19.154
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 51
+  password: CTK8GXFQgKYQErrghPJfZ6tk
+  port: 47121
+  server: 143.244.57.99
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 52
+  password: 8n6pwAcrrv2pj6tFY2p3TbQ6
+  port: 33992
+  server: 195.47.194.42
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 53
+  password: J9Y2ncrdPEC38gwydNFFGBna
+  port: 35294
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 54
+  password: x23Z4LGkGDkThZ9Kaz4DURQp
+  port: 40093
+  server: 143.244.57.99
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 55
+  password: FWrXcxPZjJxAN89xLgqY3Acp
+  port: 44236
+  server: 82.102.26.117
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: httpsgitiov9999 clash ip1 56
+  password: HgVDIN05O6bH
+  port: 57478
+  server: ss.uk.sshmax.net
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 57
+  password: aYNeKDMzYQYw4KbUbJA8Wszq
+  port: 31944
+  server: 89.187.168.39
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 58
+  password: LkFAzkzXkSCRYa2CsRdL8cGb
+  port: 34815
+  server: 195.47.194.42
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 59
+  password: kD9vkjnE6dsUzwQfvKkPkQAd
+  port: 37588
+  server: 23.82.11.49
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 60
+  password: CUndSZnYsPKcu6Kj8THVMBHD
+  port: 39772
+  server: 137.59.52.107
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 61
+  password: x23Z4LGkGDkThZ9Kaz4DURQp
+  port: 40093
+  server: 138.199.16.137
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 62
+  password: n8w4StnbVD9dmXYn4Ajt87EA
+  port: 31572
+  server: 82.102.26.117
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 63
+  password: gqtwGu9bVreJqL3FTHSVKGzy
+  port: 50695
+  server: 82.102.26.117
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 64
+  password: 8n6pwAcrrv2pj6tFY2p3TbQ6
+  port: 33992
+  server: 185.99.3.7
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 65
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 185.99.3.7
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: httpsgitiov9999 clash ip1 66
+  password: 96a15b984cd95acc
+  port: 35654
+  server: 137.220.161.216
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 67
+  password: Y9GcTPemHMKEkrfGQPJqFDNr
+  port: 49653
+  server: 82.102.26.117
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 68
+  password: z6pH3RyttkRWhJ5tpRyt6dYk
+  port: 41676
+  server: 82.102.26.117
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 69
+  password: b2jDPHUQxCNa2KmGHZjy7C4B
+  port: 50024
+  server: 138.199.16.137
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 70
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 185.212.111.6
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 71
+  password: aYNeKDMzYQYw4KbUbJA8Wszq
+  port: 31944
+  server: 195.47.194.42
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 72
+  password: fyXdw87yCH9SAmFkPvsvLVqC
+  port: 44745
+  server: 143.244.57.99
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 73
+  password: aYNeKDMzYQYw4KbUbJA8Wszq
+  port: 31944
+  server: 138.199.9.202
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 74
+  password: J9Y2ncrdPEC38gwydNFFGBna
+  port: 35294
+  server: 195.47.194.42
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 75
+  password: aYNeKDMzYQYw4KbUbJA8Wszq
+  port: 31944
+  server: 156.146.56.137
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 76
+  password: x23Z4LGkGDkThZ9Kaz4DURQp
+  port: 40093
+  server: 137.59.52.107
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 77
+  password: Kquv5UhvZXNMemAQy8DxZ7qn
+  port: 38620
+  server: 156.146.56.137
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 78
+  password: LkFAzkzXkSCRYa2CsRdL8cGb
+  port: 34815
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 79
+  password: NHwQTPLCfaTMSqTnU3mjcSxe
+  port: 33998
+  server: 198.8.92.84
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 80
+  password: FWrXcxPZjJxAN89xLgqY3Acp
+  port: 44236
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 81
+  password: jspgz9G3VmvBMCgMUWLBaZHu
+  port: 44820
+  server: 198.8.92.84
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: httpsgitiov9999 clash ip1 82
+  password: G!yBwPWH3Vao
+  port: 800
+  server: 51.89.99.59
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 83
+  password: YgusH2MWA8PWc3p2VDsR7AVv
+  port: 31764
+  server: 138.199.16.137
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 84
+  password: YgusH2MWA8PWc3p2VDsR7AVv
+  port: 31764
+  server: 198.8.92.84
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 85
+  password: DKXfWwc4ebscpXTKpbt85rSH
+  port: 38742
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 86
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 185.212.111.59
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: httpsgitiov9999 clash ip1 87
+  password: G!yBwPWH3Vao
+  port: 810
+  server: 66.55.148.42
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 88
+  password: AMvZHPXhPk6t
+  port: 4040
+  server: 176.31.146.89
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 89
+  password: z6pH3RyttkRWhJ5tpRyt6dYk
+  port: 41676
+  server: 91.90.123.115
+  type: ss
+- cipher: aes-256-gcm
+  name: httpsgitiov9999 clash ip1 90
+  password: YyCBeDdYX4cadHpCkkmdJLq8
+  port: 43893
+  server: 91.90.123.115
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 clash ip5德国'
+  port: 28599
+  server: 89.163.224.127
+  tls: false
+  type: vmess
+  uuid: ec8be0c5-9eac-4728-8929-ef23c73d8341
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 clash ip5德国 2'
+  port: 56748
+  server: 217.79.181.111
+  tls: false
+  type: vmess
+  uuid: bcc21751-81be-4b0b-8cbc-bc30d67cb818
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 clash ip4莫斯科'
+  port: 52341
+  server: 45.140.169.224
+  tls: false
+  type: vmess
+  uuid: 3f1079d6-998a-4d1b-98be-a7e9d5f30d07
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 clash ip4莫斯科 2'
+  port: 56967
+  server: 46.17.45.139
+  tls: false
+  type: vmess
+  uuid: 5458261b-ec18-4673-9251-fa7859a5cacb
+- alterId: 0
+  cipher: auto
+  name: ' httpsgitiov9999 clash ip4莫斯科 3'
+  port: 20592
+  server: 176.32.35.73
+  tls: false
+  type: vmess
+  uuid: e7385e13-1a69-4b2c-9d95-20ebf36226ae
