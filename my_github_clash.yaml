@@ -1,5 +1,4 @@
 proxies:
-#0803
   - {name: 🇭🇰 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点), server: azhk.onon.cloud, port: 13311, type: vmess, uuid: 66879def-36eb-333f-b012-52dc43651060, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /db, ws-headers: {Host: hk0.onon.cloud}}
   - {name: 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong, server: wr.naigai.one, port: 33893, type: trojan, password: e9a0ba8c-97ee-45ee-ba50-29cc7d508aed, sni: wr.naigai.one}
   - {name: 🇦🇷 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2, server: 13.75.55.48, port: 80, type: vmess, uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}}
