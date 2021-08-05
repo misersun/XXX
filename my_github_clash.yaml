@@ -1,12 +1,3 @@
-socks-port: 7891
-allow-lan: true
-bind-address: '*'
-mode: rule
-log-level: silent
-
-dns:
-  enable: false
-
 proxies:
 #0803
   - {name: 🇭🇰 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点), server: azhk.onon.cloud, port: 13311, type: vmess, uuid: 66879def-36eb-333f-b012-52dc43651060, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /db, ws-headers: {Host: hk0.onon.cloud}}
@@ -130,12 +121,3 @@ proxies:
   - {name: 欧洲(Youtube频道：工具大师！) 7, server: 95.179.222.187, port: 39536, type: vmess, uuid: 664b7607-e962-4e67-8cee-3aa2202ea44f, alterId: 0, cipher: auto, tls: false}
 
 
-
-proxy-groups:
-  - name: "testGithub"
-    type: url-test
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
-
-rules:
-  - MATCH,testGithub
