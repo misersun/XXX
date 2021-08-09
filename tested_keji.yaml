@@ -8,34 +8,6 @@ dns:
   enable: false
 
 proxies:
-  - {name: httpsgitiov9999 clash ip3 38, server: jb.wocaonimabi666.xyz, port: 53428, type: vmess, uuid: 9f4ea75a-c6d4-4068-b6c9-a0ae1873b309, alterId: 0, cipher: auto, tls: false}
-  - {name: httpsgitiov9999 clash ip3 37, server: jb.wocaonimabi666.xyz, port: 35715, type: vmess, uuid: a47a5806-797f-4395-dce0-b1b3385949e2, alterId: 0, cipher: auto, tls: false}
-  - {name: httpsgitiov9999 clash ip3 40, server: jb.wocaonimabi666.xyz, port: 35407, type: vmess, uuid: b3342b04-7da5-400f-c897-1f999a2e446b, alterId: 0, cipher: auto, tls: false}
-  - {name: httpsgitiov9999 clash ip3 39, server: jb.wocaonimabi666.xyz, port: 59113, type: vmess, uuid: c7a50d0c-9e90-41cb-912e-fcc4b68af7ff, alterId: 0, cipher: auto, tls: false}
-  - {name: httpsgitiov9999 clash ip3 85, server: 45.79.114.57, port: 36788, type: vmess, uuid: B22C2F57-0189-25E7-79FA-90717E212748, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 45.79.114.57}}
-  - {name: httpsgitiov9999 clash ip3 41, server: jb.wocaonimabi666.xyz, port: 31707, type: vmess, uuid: d1674a89-84de-4444-f7ca-2a7954212545, alterId: 0, cipher: auto, tls: false}
-  - {name: httpsgitiov9999 clash ip3 4, server: 16.162.118.217, port: 443, type: vmess, uuid: a076dc92-8e3f-4ad9-f93e-276562007d93, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 16.162.118.217}}
-  - {name: httpsgitiov9999 clash ip3 14, server: 16.162.191.144, port: 80, type: vmess, uuid: c8931063-7412-4635-b78e-0337804ee308, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 16.162.191.144}}
-  - {name: httpsgitiov9999 clash ip3 89, server: 52.53.159.192, port: 80, type: vmess, uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}}
-  - {name: httpsgitiov9999 clash ip3 18, server: 18.166.69.249, port: 443, type: vmess, uuid: 3b6d56a7-8e76-408e-c885-5a1bb4413e85, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 18.166.69.249}}
-  - {name: 🇷🇺 httpsgitiov9999 莫斯科, server: 46.17.43.179, port: 56282, type: vmess, uuid: 5d3e6e14-5828-4e88-a946-bad5c700b4d5, alterId: 0, cipher: auto, tls: false}
-  - {name: httpsgitiov9999 clash ip3 98, server: 107.191.112.214, port: 80, type: vmess, uuid: 732ada90-3ad1-45bd-bd37-fb5fe1b9007c, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}}
-  - {name: httpsgitiov9999 clash ip3 12, server: 104.28.16.5, port: 80, type: vmess, uuid: ed47a606-0bb2-32d0-8cac-7a8f84cf9763, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /home/livein122, ws-headers: {Host: kr1.sb-cloud.cf}}
-  - {name: httpsgitiov9999 clash ip3 60, server: 5.183.101.204, port: 59857, type: vmess, uuid: 4c35d374-dbf2-4e5f-c731-dfa49191825a, alterId: 64, cipher: auto, tls: false}
-  - {name: httpsgitiov9999 clash ip3 91, server: c23s801.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 8, cipher: auto, tls: false}
-  - {name: httpsgitiov9999 clash ip3 96, server: 52.195.9.114, port: 80, type: vmess, uuid: a1eaa929-a5e2-4f12-f6ac-ec9f451f0fbe, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 52.195.9.114}}
-  - {name: httpsgitiov9999 clash ip3 81, server: 167.71.235.142, port: 80, type: vmess, uuid: 927f8a2a-f2db-499b-e0f0-b1e344508546, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 167.71.235.142}}
-  - {name: 🇩🇪 httpsgitiov9999 clash ip5德国 2, server: 89.163.224.127, port: 28599, type: vmess, uuid: ec8be0c5-9eac-4728-8929-ef23c73d8341, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇩🇪 httpsgitiov9999 clash ip5德国, server: 217.79.181.111, port: 56748, type: vmess, uuid: bcc21751-81be-4b0b-8cbc-bc30d67cb818, alterId: 0, cipher: auto, tls: false}
-  - {name: httpsgitiov9999 clash ip3 19, server: 35.178.68.152, port: 47611, type: vmess, uuid: 97a4d167-b361-48b8-b004-8bc45669e334, alterId: 0, cipher: auto, tls: false}
-  - {name: httpsgitiov9999 clash ip3 93, server: 45.11.92.139, port: 10121, type: vmess, uuid: c2b9c453-0c2f-487d-ab1a-d45d17dde4f5, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 45.11.92.139}}
-  - {name: httpsgitiov9999 clash ip3 77, server: c23s3.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 8, cipher: auto, tls: false}
-  - {name: 🇳🇱 httpsgitiov9999 荷兰, server: 163.172.214.118, port: 56282, type: vmess, uuid: 5d3e6e14-5828-4e88-a946-bad5c700b4d5, alterId: 0, cipher: auto, tls: false}
-  - {name: httpsgitiov9999 clash ip3 16, server: 164.90.204.216, port: 80, type: vmess, uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}}
-  - {name: httpsgitiov9999 clash ip3 3, server: 64.225.107.38, port: 80, type: vmess, uuid: 013c0a7f-6b25-416f-d496-98611ea46c4f, alterId: 64, cipher: auto, tls: false}
-  - {name: httpsgitiov9999 clash ip3 4 2, server: 211.23.132.124, port: 9233, type: vmess, uuid: be58f4e4-894a-47ee-8836-cf75e74fa9c9, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 211.23.132.124}}
-  - {name: httpsgitiov9999 clash ip3 2, server: 161.35.216.140, port: 80, type: vmess, uuid: c2677816-0c3b-465f-eb2c-2b5b2edfc7fb, alterId: 64, cipher: auto, tls: false}
-#
   - {name: httpsgitiov9999 clash ip1 10, server: 156.146.56.137, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
   - {name: httpsgitiov9999 clash ip1 110, server: 185.44.76.188, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
   - {name: httpsgitiov9999 clash ip1 173, server: 143.244.57.99, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
@@ -210,7 +182,17 @@ proxies:
   - {name: httpsgitiov9999 clash ip1 108, server: 198.8.92.84, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
   - {name: httpsgitiov9999 clash ip1 33 2, server: 198.8.92.84, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
   - {name: httpsgitiov9999 clash ip3 6, server: t7.ssrsub.one, port: 8443, type: trojan, password: fZARUiTm, sni: t7.ssrsub.one}
-
+#
+  - {name: 欧洲(Youtube频道：工具大师！), server: 185.44.76.188, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: 捷克(Youtube频道：工具大师！), server: 45.83.91.133, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 欧洲(Youtube频道：工具大师！) 2, server: 139.99.201.56, port: 1443, type: ss, cipher: chacha20-ietf-poly1305, password: kRAxb8hPUxS0}
+  - {name: 🇺🇲 美国(Youtube频道：工具大师！), server: 198.8.92.84, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇺🇲 美国(Youtube频道：工具大师！) 2, server: 198.8.92.84, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
+  - {name: 🇺🇲 美国(Youtube频道：工具大师！) 3, server: 154.17.2.149, port: 18334, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
+  - {name: 欧洲(Youtube频道：工具大师！) 3, server: ss.au.sshmax.net, port: 1443, type: ss, cipher: chacha20-ietf-poly1305, password: kRAxb8hPUxS0}
+  - {name: 🇺🇲 馃嚭馃嚫 US_350, server: a7.ssrsub.one, port: 443, type: trojan, password: jlQv7pom, sni: a7.ssrsub.one}
+  - {name: 🇺🇲 馃嚭馃嚫 US_352, server: t7.ssrsub.one, port: 8443, type: trojan, password: fZARUiTm, sni: t7.ssrsub.one}
+  - {name: 🇨🇳 Relay_馃嚚馃嚦CN-馃嚬馃嚰TW_47, server: 117.28.243.187, port: 8333, type: ss, cipher: rc4-md5, password: passfw2xs4e!}
 
 
 
