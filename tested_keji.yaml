@@ -8,191 +8,150 @@ dns:
   enable: false
 
 proxies:
-  - {name: httpsgitiov9999 clash ip1 10, server: 156.146.56.137, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: httpsgitiov9999 clash ip1 110, server: 185.44.76.188, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: httpsgitiov9999 clash ip1 173, server: 143.244.57.99, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: httpsgitiov9999 clash ip1 22, server: 212.102.35.199, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
-  - {name: httpsgitiov9999 clash ip1 185, server: 143.244.57.99, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: httpsgitiov9999 clash ip1 80, server: 91.90.123.115, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
-  - {name: httpsgitiov9999 clash ip1 39, server: 104.244.208.203, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: httpsgitiov9999 clash ip1 153, server: 138.199.19.186, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: httpsgitiov9999 clash ip1 14, server: 91.90.123.115, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: httpsgitiov9999 clash ip1 171, server: 143.244.57.99, port: 44539, type: ss, cipher: aes-256-gcm, password: r6hDrkP4Et6EENTS8Qy7Tcmg}
-  - {name: httpsgitiov9999 clash ip1 2, server: 85.10.50.164, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: httpsgitiov9999 clash ip1 161, server: 185.108.106.152, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
-  - {name: httpsgitiov9999 clash ip1 54, server: 143.244.57.99, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: httpsgitiov9999 clash ip1 13, server: 138.199.16.137, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
-  - {name: httpsgitiov9999 clash ip1 85, server: 91.90.123.115, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
-  - {name: httpsgitiov9999 clash ip1 55, server: 185.44.76.188, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇺🇸 美国(Youtube频道：工具大师！), server: 198.8.92.84, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇺🇸 美国(Youtube频道：工具大师！) 2, server: 198.8.92.84, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
+  - {name: 🇺🇸 馃嚭馃嚫 US_352, server: t7.ssrsub.one, port: 8443, type: trojan, password: fZARUiTm, sni: t7.ssrsub.one}
+  - {name: 🇺🇸 馃嚭馃嚫 US_350, server: a7.ssrsub.one, port: 443, type: trojan, password: jlQv7pom, sni: a7.ssrsub.one}
+  - {name: 🇭🇰 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_13415 |43.28Mb, server: hkt04.clashcloud.tech, port: 37387, type: ssr, cipher: rc4-md5, password: qbpJjZ, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
+  - {name: 🇭🇰 Relay_馃嚚馃嚦CN-馃嚟馃嚢HK_44, server: n32.boom.party, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 165138:ndXj0r, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 Relay_馃嚚馃嚦CN-馃嚬馃嚰TW_43, server: p5.22332e.com, port: 8333, type: ss, cipher: rc4-md5, password: passfw2xs4e!}
+  - {name: 🇨🇳 Relay_馃嚚馃嚦CN-馃嚬馃嚰TW_47, server: 117.28.243.187, port: 8333, type: ss, cipher: rc4-md5, password: passfw2xs4e!}
+  - {name: 🇺🇸 馃嚭馃嚫US_13733, server: 138.197.232.58, port: 11394, type: ssr, cipher: aes-256-cfb, password: a02660, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
+
+  - {name: httpsgitiov9999 clash ip1 5, server: 212.102.44.83, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: httpsgitiov9999 clash ip1 152, server: 137.59.52.107, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
   - {name: httpsgitiov9999 clash ip1 91, server: 89.187.187.147, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: httpsgitiov9999 clash ip1 150, server: 91.232.105.253, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: httpsgitiov9999 clash ip1 30, server: 84.17.53.210, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: httpsgitiov9999 clash ip1 109, server: 91.90.123.115, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
-  - {name: httpsgitiov9999 clash ip1 4, server: 212.102.44.98, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: httpsgitiov9999 clash ip1 188, server: 185.166.84.73, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: httpsgitiov9999 clash ip1 139, server: 138.199.16.137, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: httpsgitiov9999 clash ip1 106, server: 208.78.41.197, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: httpsgitiov9999 clash ip1 31, server: 143.244.60.167, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: httpsgitiov9999 clash ip1 2, server: 143.244.56.230, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: httpsgitiov9999 clash ip1 104, server: 199.10.64.131, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: httpsgitiov9999 clash ip1 12, server: 143.244.56.230, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: httpsgitiov9999 clash ip1 60, server: 137.59.52.107, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
   - {name: httpsgitiov9999 clash ip1 48, server: 143.244.56.230, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: httpsgitiov9999 clash ip1 2 2, server: 143.244.57.99, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: httpsgitiov9999 clash ip1 73, server: 138.199.9.202, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: httpsgitiov9999 clash ip1 62, server: 91.90.123.115, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: httpsgitiov9999 clash ip1 27, server: 143.244.57.99, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: httpsgitiov9999 clash ip1 97, server: 5.189.202.16, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: httpsgitiov9999 clash ip1 131, server: 104.244.208.203, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: httpsgitiov9999 clash ip1 172, server: 143.244.57.99, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
-  - {name: httpsgitiov9999 clash ip1 4 2, server: 138.199.19.162, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: httpsgitiov9999 clash ip1 36, server: 138.199.16.137, port: 44539, type: ss, cipher: aes-256-gcm, password: r6hDrkP4Et6EENTS8Qy7Tcmg}
-  - {name: httpsgitiov9999 clash ip1 33, server: 91.90.123.115, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: httpsgitiov9999 clash ip1 8, server: 209.58.128.48, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: httpsgitiov9999 clash ip1 38, server: 137.59.52.107, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
   - {name: httpsgitiov9999 clash ip1 132, server: 185.153.151.104, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: httpsgitiov9999 clash ip1 177, server: 143.244.57.99, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: httpsgitiov9999 clash ip1 10, server: 185.242.5.215, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
+  - {name: httpsgitiov9999 clash ip1 4, server: 138.199.19.162, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: httpsgitiov9999 clash ip1 69, server: 198.147.22.83, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: httpsgitiov9999 clash ip1 73, server: 138.199.9.202, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: httpsgitiov9999 clash ip1 27, server: 143.244.57.99, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: httpsgitiov9999 clash ip1 26, server: 212.102.44.83, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: httpsgitiov9999 clash ip1 138, server: 66.115.182.82, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: httpsgitiov9999 clash ip1 187, server: 89.37.95.15, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
+  - {name: httpsgitiov9999 clash ip1 153, server: 138.199.19.186, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: httpsgitiov9999 clash ip1 171, server: 143.244.57.99, port: 44539, type: ss, cipher: aes-256-gcm, password: r6hDrkP4Et6EENTS8Qy7Tcmg}
+  - {name: httpsgitiov9999 clash ip1 139, server: 138.199.16.137, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: httpsgitiov9999 clash ip1 137, server: 37.19.220.194, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: httpsgitiov9999 clash ip1, server: 194.37.98.211, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: httpsgitiov9999 clash ip1 22, server: 212.102.35.199, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
+  - {name: httpsgitiov9999 clash ip1 13, server: 138.199.16.137, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
+  - {name: httpsgitiov9999 clash ip1 2 2, server: 143.244.57.99, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: httpsgitiov9999 clash ip1 88, server: 176.31.146.89, port: 4040, type: ss, cipher: aes-256-gcm, password: AMvZHPXhPk6t}
+  - {name: httpsgitiov9999 clash ip1 89, server: 193.29.106.61, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: httpsgitiov9999 clash ip1 118, server: 37.120.207.5, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: httpsgitiov9999 clash ip1 185, server: 143.244.57.99, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: httpsgitiov9999 clash ip1 150, server: 91.232.105.253, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
   - {name: httpsgitiov9999 clash ip1 21, server: 81.19.208.68, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
   - {name: httpsgitiov9999 clash ip1 75, server: 5.154.174.67, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: httpsgitiov9999 clash ip1 106, server: 208.78.41.197, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: httpsgitiov9999 clash ip1 3, server: 143.244.57.99, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
-  - {name: httpsgitiov9999 clash ip1 31, server: 143.244.60.167, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: httpsgitiov9999 clash ip1 59, server: 23.82.11.49, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: httpsgitiov9999 clash ip1 2 3, server: 143.244.56.230, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: httpsgitiov9999 clash ip1 15, server: 185.166.84.73, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: httpsgitiov9999 clash ip1 38, server: 138.199.19.182, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: httpsgitiov9999 clash ip1 45, server: 198.147.22.147, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
-  - {name: httpsgitiov9999 clash ip1 67, server: 185.246.208.105, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: httpsgitiov9999 clash ip1 104, server: 199.10.64.131, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: httpsgitiov9999 clash ip1 137, server: 37.19.220.194, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: httpsgitiov9999 clash ip1 189, server: 185.108.106.158, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: httpsgitiov9999 clash ip1 190, server: 185.166.84.73, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: httpsgitiov9999 clash ip1 48 2, server: 143.244.57.99, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
-  - {name: httpsgitiov9999 clash ip1 14 2, server: 138.199.16.137, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: httpsgitiov9999 clash ip1 111, server: 91.90.123.115, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: httpsgitiov9999 clash ip1 49, server: 91.90.123.115, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
-  - {name: httpsgitiov9999 clash ip1 5, server: 212.102.44.83, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: httpsgitiov9999 clash ip1 50, server: 165.231.163.19, port: 50232, type: ss, cipher: aes-256-gcm, password: CjchzpwdSjRtDjezYMwx9BKM}
-  - {name: httpsgitiov9999 clash ip1 143, server: 104.244.208.203, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: httpsgitiov9999 clash ip1 167, server: 185.108.106.106, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
-  - {name: httpsgitiov9999 clash ip1 186, server: 185.166.84.73, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
-  - {name: httpsgitiov9999 clash ip1 4 3, server: 143.244.57.99, port: 44745, type: ss, cipher: aes-256-gcm, password: fyXdw87yCH9SAmFkPvsvLVqC}
-  - {name: httpsgitiov9999 clash ip1 12, server: 143.244.56.230, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: httpsgitiov9999 clash ip1 83, server: 138.199.16.137, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
   - {name: httpsgitiov9999 clash ip1 5 2, server: 143.244.57.99, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
-  - {name: httpsgitiov9999 clash ip1 88, server: 176.31.146.89, port: 4040, type: ss, cipher: aes-256-gcm, password: AMvZHPXhPk6t}
-  - {name: httpsgitiov9999 clash ip1 26, server: 212.102.44.83, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: httpsgitiov9999 clash ip1 16, server: 212.102.54.135, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: httpsgitiov9999 clash ip1 154, server: 23.82.11.49, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: httpsgitiov9999 clash ip1 145, server: 217.138.220.163, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: httpsgitiov9999 clash ip1 41, server: 45.83.91.133, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: httpsgitiov9999 clash ip1 148, server: 37.120.221.5, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: httpsgitiov9999 clash ip1 182, server: 185.166.84.73, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
+  - {name: httpsgitiov9999 clash ip1 173, server: 143.244.57.99, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: httpsgitiov9999 clash ip1 48 2, server: 143.244.57.99, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: httpsgitiov9999 clash ip1 52, server: 51.195.62.223, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: httpsgitiov9999 clash ip1 53, server: 5.253.206.69, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: httpsgitiov9999 clash ip1 126, server: 104.244.208.213, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: httpsgitiov9999 clash ip1 13 2, server: 91.219.215.69, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: httpsgitiov9999 clash ip1 6, server: 138.199.16.137, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: httpsgitiov9999 clash ip1 161, server: 185.108.106.152, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
+  - {name: httpsgitiov9999 clash ip1 36, server: 138.199.16.137, port: 44539, type: ss, cipher: aes-256-gcm, password: r6hDrkP4Et6EENTS8Qy7Tcmg}
+  - {name: httpsgitiov9999 clash ip1 14, server: 138.199.16.137, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: httpsgitiov9999 clash ip1 4 2, server: 143.244.57.99, port: 44745, type: ss, cipher: aes-256-gcm, password: fyXdw87yCH9SAmFkPvsvLVqC}
+  - {name: httpsgitiov9999 clash ip1 86, server: 195.47.194.70, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: httpsgitiov9999 clash ip1 54, server: 143.244.57.99, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: httpsgitiov9999 clash ip1 177, server: 143.244.57.99, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: httpsgitiov9999 clash ip1 3, server: 143.244.57.99, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: httpsgitiov9999 clash ip1 15, server: 185.166.84.73, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: httpsgitiov9999 clash ip1 49, server: 91.90.123.115, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
+  - {name: httpsgitiov9999 clash ip1 144, server: 81.19.223.189, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: httpsgitiov9999 clash ip1 82, server: 195.158.249.40, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: httpsgitiov9999 clash ip1 90, server: 195.158.249.36, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: httpsgitiov9999 clash ip1 35, server: 91.219.215.51, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: httpsgitiov9999 clash ip1 79, server: 138.199.16.137, port: 42816, type: ss, cipher: aes-256-gcm, password: tBKBf4pVzNCFKdbPgvwrNXq3}
+  - {name: httpsgitiov9999 clash ip1 85, server: 91.90.123.115, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: httpsgitiov9999 clash ip1 38 2, server: 138.199.19.182, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
   - {name: httpsgitiov9999 clash ip1 17, server: 5.189.202.16, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: httpsgitiov9999 clash ip1 41, server: 165.231.163.19, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: httpsgitiov9999 clash ip1 46, server: 198.147.22.147, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
-  - {name: httpsgitiov9999 clash ip1 89, server: 193.29.106.61, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: httpsgitiov9999 clash ip1 107, server: 199.10.64.163, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: httpsgitiov9999 clash ip1 71, server: 185.44.76.188, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: httpsgitiov9999 clash ip1 25, server: 185.166.84.19, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: httpsgitiov9999 clash ip1 170, server: 185.108.106.74, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: httpsgitiov9999 clash ip1 102, server: 194.39.127.242, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: httpsgitiov9999 clash ip1 115, server: 217.138.219.227, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: httpsgitiov9999 clash ip1 61, server: 185.180.14.147, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: httpsgitiov9999 clash ip1 197, server: 138.199.16.137, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: httpsgitiov9999 clash ip1 14 2, server: 91.90.123.115, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: httpsgitiov9999 clash ip1 30, server: 84.17.53.210, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: httpsgitiov9999 clash ip1 62, server: 91.90.123.115, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: httpsgitiov9999 clash ip1 172, server: 143.244.57.99, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
+  - {name: httpsgitiov9999 clash ip1 33, server: 91.90.123.115, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: httpsgitiov9999 clash ip1 186, server: 185.166.84.73, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
+  - {name: httpsgitiov9999 clash ip1 149, server: 85.10.50.164, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: httpsgitiov9999 clash ip1 205, server: 91.205.230.152, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: httpsgitiov9999 clash ip1 193, server: 185.166.84.73, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
+  - {name: httpsgitiov9999 clash ip1 12 2, server: 138.199.16.137, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: httpsgitiov9999 clash ip1 58, server: 42.0.30.164, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: httpsgitiov9999 clash ip1 74, server: 180.149.231.11, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: httpsgitiov9999 clash ip1 80, server: 91.90.123.115, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: httpsgitiov9999 clash ip1 109, server: 91.90.123.115, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
+  - {name: httpsgitiov9999 clash ip1 83, server: 138.199.16.137, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
   - {name: httpsgitiov9999 clash ip1 135, server: 37.19.220.194, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
   - {name: httpsgitiov9999 clash ip1 139 2, server: 37.120.221.5, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: httpsgitiov9999 clash ip1 144, server: 81.19.223.189, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: httpsgitiov9999 clash ip1 146, server: 217.138.220.163, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
   - {name: httpsgitiov9999 clash ip1 159, server: 185.108.106.102, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
-  - {name: httpsgitiov9999 clash ip1 202, server: 165.231.163.7, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: httpsgitiov9999 clash ip1 71, server: 185.44.76.188, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: httpsgitiov9999 clash ip1 11, server: 66.115.177.156, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: httpsgitiov9999 clash ip1 19, server: 37.120.213.3, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
-  - {name: httpsgitiov9999 clash ip1 25, server: 185.166.84.19, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: httpsgitiov9999 clash ip1 34, server: ss.pl.sshmax.net, port: 1443, type: ss, cipher: chacha20-ietf-poly1305, password: M1LCZAlfz1bV}
-  - {name: httpsgitiov9999 clash ip1 52, server: 51.195.62.223, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: httpsgitiov9999 clash ip1 64, server: 185.174.159.59, port: 35200, type: ss, cipher: aes-256-gcm, password: WBLAbN6AwtV5avBx73hFRLB3}
-  - {name: httpsgitiov9999 clash ip1 78, server: 137.59.52.109, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
-  - {name: httpsgitiov9999 clash ip1 88 2, server: 85.10.50.164, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: httpsgitiov9999 clash ip1 112, server: 199.10.64.163, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: httpsgitiov9999 clash ip1 130, server: 66.115.182.69, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
-  - {name: httpsgitiov9999 clash ip1 134, server: 104.244.208.203, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: httpsgitiov9999 clash ip1 149, server: 85.10.50.164, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: httpsgitiov9999 clash ip1 154, server: 23.82.11.49, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
   - {name: httpsgitiov9999 clash ip1 200, server: 185.166.84.73, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
-  - {name: httpsgitiov9999 clash ip1 205, server: 91.205.230.152, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: httpsgitiov9999 clash ip1 70, server: 91.90.123.115, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
-  - {name: httpsgitiov9999 clash ip1 53, server: 5.253.206.69, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: httpsgitiov9999 clash ip1 86, server: 195.47.194.70, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: httpsgitiov9999 clash ip1 110 2, server: 91.90.123.115, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
-  - {name: httpsgitiov9999 clash ip1 138, server: 66.115.182.82, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: httpsgitiov9999 clash ip1 141, server: 66.115.182.106, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: httpsgitiov9999 clash ip1 145, server: 217.138.220.163, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: httpsgitiov9999 clash ip1 152, server: 137.59.52.107, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: httpsgitiov9999 clash ip1 163, server: 185.108.106.106, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: httpsgitiov9999 clash ip1 110, server: 91.90.123.115, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
   - {name: httpsgitiov9999 clash ip1 164, server: 185.108.106.152, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
-  - {name: httpsgitiov9999 clash ip1 170, server: 185.108.106.74, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: httpsgitiov9999 clash ip1 174, server: 185.108.106.152, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: httpsgitiov9999 clash ip1 178, server: 185.108.106.106, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
-  - {name: httpsgitiov9999 clash ip1 201, server: 165.231.163.7, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: httpsgitiov9999 clash ip1 41 2, server: 45.83.91.133, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: httpsgitiov9999 clash ip1 38 2, server: 137.59.52.107, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: httpsgitiov9999 clash ip1 125, server: 217.138.219.229, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: httpsgitiov9999 clash ip1 120, server: 91.90.123.187, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: httpsgitiov9999 clash ip1 59, server: 23.82.11.49, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: httpsgitiov9999 clash ip1 146, server: 217.138.220.163, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
+  - {name: httpsgitiov9999 clash ip1 88 2, server: 85.10.50.164, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: httpsgitiov9999 clash ip1 70, server: 91.90.123.115, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
   - {name: httpsgitiov9999 clash ip1 14 3, server: 185.166.84.33, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
   - {name: httpsgitiov9999 clash ip1 20, server: 5.187.49.189, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: httpsgitiov9999 clash ip1 49 2, server: 198.147.22.147, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
-  - {name: httpsgitiov9999 clash ip1 62 2, server: 185.166.84.79, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: httpsgitiov9999 clash ip1 69, server: 198.147.22.83, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: httpsgitiov9999 clash ip1 83 2, server: 195.158.249.36, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: httpsgitiov9999 clash ip1 123, server: 45.12.222.243, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
-  - {name: httpsgitiov9999 clash ip1 126, server: 104.244.208.213, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: httpsgitiov9999 clash ip1 148, server: 37.120.221.5, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: httpsgitiov9999 clash ip1 162, server: 185.108.106.106, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
-  - {name: httpsgitiov9999 clash ip1 166, server: 185.108.106.106, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
-  - {name: httpsgitiov9999 clash ip1 193, server: 185.166.84.73, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
-  - {name: httpsgitiov9999 clash ip1 194, server: 185.166.84.73, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
-  - {name: httpsgitiov9999 clash ip1 60, server: 137.59.52.107, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: httpsgitiov9999 clash ip1 42, server: 87.239.255.114, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
-  - {name: httpsgitiov9999 clash ip1 51, server: 198.8.92.84, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
-  - {name: httpsgitiov9999 clash ip1 56, server: 212.102.54.182, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: httpsgitiov9999 clash ip1 59 2, server: 185.166.84.79, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: httpsgitiov9999 clash ip1 72, server: 185.174.159.59, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
-  - {name: httpsgitiov9999 clash ip1 102, server: 194.39.127.242, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: httpsgitiov9999 clash ip1 114, server: 89.187.187.149, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: httpsgitiov9999 clash ip1 165, server: 185.108.106.148, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: httpsgitiov9999 clash ip1 176, server: 185.108.106.106, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
-  - {name: httpsgitiov9999 clash ip1 182, server: 185.166.84.73, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
-  - {name: httpsgitiov9999 clash ip1 187, server: 89.37.95.15, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
-  - {name: httpsgitiov9999 clash ip1 195, server: 185.166.84.73, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
-  - {name: httpsgitiov9999 clash ip1 12 2, server: 138.199.16.137, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
-  - {name: httpsgitiov9999 clash ip1 44, server: 196.244.191.45, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: httpsgitiov9999 clash ip1 60 2, server: 185.166.84.79, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: httpsgitiov9999 clash ip1 118, server: 37.120.207.5, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: httpsgitiov9999 clash ip1 125, server: 217.138.219.229, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: httpsgitiov9999 clash ip1 82, server: 195.158.249.40, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: httpsgitiov9999 clash ip1 84, server: 195.158.249.48, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: httpsgitiov9999 clash ip1 90, server: 195.158.249.36, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: httpsgitiov9999 clash ip1 136, server: 91.206.168.9, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: httpsgitiov9999 clash ip1 204, server: 185.153.150.58, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
-  - {name: httpsgitiov9999 clash ip1 13 2, server: 91.219.215.69, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: httpsgitiov9999 clash ip1 35, server: 91.219.215.51, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: httpsgitiov9999 clash ip1 98, server: 102.165.23.38, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: httpsgitiov9999 clash ip1 115, server: 217.138.219.227, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: httpsgitiov9999 clash ip1 64 2, server: 185.99.3.7, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: httpsgitiov9999 clash ip1 65, server: 185.99.3.7, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: httpsgitiov9999 clash ip1 84 2, server: 198.8.92.84, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: httpsgitiov9999 clash ip1 9, server: 212.102.40.66, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
-  - {name: httpsgitiov9999 clash ip1 155, server: 207.244.67.149, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
-  - {name: httpsgitiov9999 clash ip1 47, server: 198.147.22.87, port: 35200, type: ss, cipher: aes-256-gcm, password: WBLAbN6AwtV5avBx73hFRLB3}
-  - {name: httpsgitiov9999 clash ip1 71 2, server: 185.225.28.245, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: httpsgitiov9999 clash ip1 27 2, server: 198.8.92.84, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
   - {name: httpsgitiov9999 clash ip1 76, server: 198.147.22.87, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: httpsgitiov9999 clash ip3 83, server: 198.8.92.84, port: 40220, type: ss, cipher: aes-256-gcm, password: ugyBkSEFxVEmUYSHyvxmWNj9}
+  - {name: httpsgitiov9999 clash ip1 2 3, server: 85.10.50.164, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: httpsgitiov9999 clash ip1 83 2, server: 195.158.249.36, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: httpsgitiov9999 clash ip1 114, server: 89.187.187.149, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: httpsgitiov9999 clash ip1 65, server: 185.99.3.7, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
   - {name: httpsgitiov9999 clash ip1 199, server: 185.153.150.58, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: httpsgitiov9999 clash ip1 124, server: 198.8.92.84, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: httpsgitiov9999 clash ip1 43, server: 198.8.92.84, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: httpsgitiov9999 clash ip1 29, server: 198.8.92.84, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
-  - {name: httpsgitiov9999 clash ip1 11 2, server: 198.8.92.84, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: httpsgitiov9999 clash ip1 10 2, server: 185.242.5.215, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
   - {name: httpsgitiov9999 clash ip1 12 3, server: 207.244.67.149, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
-  - {name: httpsgitiov9999 clash ip1 203, server: 198.8.92.84, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
-  - {name: httpsgitiov9999 clash ip1 26 2, server: 198.8.92.84, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: httpsgitiov9999 clash ip1 97, server: 5.189.202.16, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: httpsgitiov9999 clash ip1 111, server: 91.90.123.115, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: httpsgitiov9999 clash ip1 44, server: 196.244.191.45, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: httpsgitiov9999 clash ip1 27 2, server: 198.8.92.84, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
+  - {name: httpsgitiov9999 clash ip1 204, server: 185.153.150.58, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
   - {name: httpsgitiov9999 clash ip1 48 3, server: 198.147.22.87, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: httpsgitiov9999 clash ip1 108, server: 198.8.92.84, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
+  - {name: httpsgitiov9999 clash ip1 3 2, server: 139.99.103.108, port: 57478, type: ss, cipher: chacha20-ietf-poly1305, password: 743zEswAb7oU}
+  - {name: httpsgitiov9999 clash ip1 174, server: 185.108.106.152, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: httpsgitiov9999 clash ip1 56, server: 212.102.54.182, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: httpsgitiov9999 clash ip1 84, server: 198.8.92.84, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: httpsgitiov9999 clash ip1 110 2, server: 185.44.76.188, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: httpsgitiov9999 clash ip1 55, server: 185.44.76.188, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: httpsgitiov9999 clash ip1 64, server: 185.99.3.7, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: httpsgitiov9999 clash ip1 203, server: 198.8.92.84, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
+  - {name: httpsgitiov9999 clash ip1 47, server: 198.147.22.87, port: 35200, type: ss, cipher: aes-256-gcm, password: WBLAbN6AwtV5avBx73hFRLB3}
+  - {name: httpsgitiov9999 clash ip1 194, server: 185.166.84.73, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
+  - {name: httpsgitiov9999 clash ip1 51, server: 198.8.92.84, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: httpsgitiov9999 clash ip3 83, server: 198.8.92.84, port: 40220, type: ss, cipher: aes-256-gcm, password: ugyBkSEFxVEmUYSHyvxmWNj9}
+  - {name: httpsgitiov9999 clash ip1 124, server: 198.8.92.84, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
   - {name: httpsgitiov9999 clash ip1 33 2, server: 198.8.92.84, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: httpsgitiov9999 clash ip3 6, server: t7.ssrsub.one, port: 8443, type: trojan, password: fZARUiTm, sni: t7.ssrsub.one}
-#
-  - {name: 欧洲(Youtube频道：工具大师！), server: 185.44.76.188, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: 捷克(Youtube频道：工具大师！), server: 45.83.91.133, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 欧洲(Youtube频道：工具大师！) 2, server: 139.99.201.56, port: 1443, type: ss, cipher: chacha20-ietf-poly1305, password: kRAxb8hPUxS0}
-  - {name: 🇺🇲 美国(Youtube频道：工具大师！), server: 198.8.92.84, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 🇺🇲 美国(Youtube频道：工具大师！) 2, server: 198.8.92.84, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
-  - {name: 🇺🇲 美国(Youtube频道：工具大师！) 3, server: 154.17.2.149, port: 18334, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
-  - {name: 欧洲(Youtube频道：工具大师！) 3, server: ss.au.sshmax.net, port: 1443, type: ss, cipher: chacha20-ietf-poly1305, password: kRAxb8hPUxS0}
-  - {name: 🇺🇲 馃嚭馃嚫 US_350, server: a7.ssrsub.one, port: 443, type: trojan, password: jlQv7pom, sni: a7.ssrsub.one}
-  - {name: 🇺🇲 馃嚭馃嚫 US_352, server: t7.ssrsub.one, port: 8443, type: trojan, password: fZARUiTm, sni: t7.ssrsub.one}
-  - {name: 🇨🇳 Relay_馃嚚馃嚦CN-馃嚬馃嚰TW_47, server: 117.28.243.187, port: 8333, type: ss, cipher: rc4-md5, password: passfw2xs4e!}
+  - {name: httpsgitiov9999 clash ip1 188, server: 185.166.84.73, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: httpsgitiov9999 clash ip1 195, server: 185.166.84.73, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
+  - {name: httpsgitiov9999 clash ip1 108, server: 198.8.92.84, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
+  - {name: httpsgitiov9999 clash ip3 5, server: a7.ssrsub.one, port: 443, type: trojan, password: jlQv7pom, sni: a7.ssrsub.one}
+  - {name: httpsgitiov9999 clash ip3 74, server: in1-1.noojat.com, port: 1443, type: trojan, password: 7x42LetRa0, sni: in1-1.noojat.com}
 
 
 
