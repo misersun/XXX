@@ -8,16 +8,13 @@ dns:
   enable: false
 
 proxies:
-  - {name: 🇺🇸 美国(Youtube频道：工具大师！), server: 198.8.92.84, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 🇺🇸 美国(Youtube频道：工具大师！) 2, server: 198.8.92.84, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
-  - {name: 🇺🇸 馃嚭馃嚫 US_352, server: t7.ssrsub.one, port: 8443, type: trojan, password: fZARUiTm, sni: t7.ssrsub.one}
-  - {name: 🇺🇸 馃嚭馃嚫 US_350, server: a7.ssrsub.one, port: 443, type: trojan, password: jlQv7pom, sni: a7.ssrsub.one}
-  - {name: 🇭🇰 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_13415 |43.28Mb, server: hkt04.clashcloud.tech, port: 37387, type: ssr, cipher: rc4-md5, password: qbpJjZ, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇭🇰 Relay_馃嚚馃嚦CN-馃嚟馃嚢HK_44, server: n32.boom.party, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 165138:ndXj0r, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 Relay_馃嚚馃嚦CN-馃嚬馃嚰TW_43, server: p5.22332e.com, port: 8333, type: ss, cipher: rc4-md5, password: passfw2xs4e!}
+  - {name: 欧洲(Youtube频道：工具大师！), server: 185.44.76.188, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: 捷克(Youtube频道：工具大师！), server: 45.83.91.133, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 🇦🇺 馃嚘馃嚭AU_1863 |15.01Mb, server: www.freetouchor.xyz, port: 443, type: trojan, password: mima0.0.000, sni: www.freetouchor.xyz}
+  - {name: 🇭🇰 Relay_馃嚭馃嚫US-馃嚟馃嚢HK_13555 |38.99Mb, server: sg01.cathayroute.com, port: 33099, type: ssr, cipher: rc4-md5, password: HdsrwE, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
+  - {name: 🇺🇸 Relay_馃嚭馃嚫US | 4.03Mb, server: sg09.cathayroute.com, port: 33099, type: ssr, cipher: rc4-md5, password: HdsrwE, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
   - {name: 🇨🇳 Relay_馃嚚馃嚦CN-馃嚬馃嚰TW_47, server: 117.28.243.187, port: 8333, type: ss, cipher: rc4-md5, password: passfw2xs4e!}
-  - {name: 🇺🇸 馃嚭馃嚫US_13733, server: 138.197.232.58, port: 11394, type: ssr, cipher: aes-256-cfb, password: a02660, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
-
+  - {name: Relay_馃嚚馃嚘CA-馃嚚馃嚘CA_1498 | 2.65Mb, server: ssr4.ssrsub.one, port: 27478, type: ss, cipher: aes-256-cfb, password: https://dlj.tf/ssrsub}
 
   - {name: httpsgitiov9999 clash ip1 60, server: 42.0.30.164, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
   - {name: httpsgitiov9999 clash ip1 58, server: 42.0.30.164, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
