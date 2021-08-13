@@ -59,26 +59,32 @@ proxies:
   - {name: 🇺🇸 馃嚭馃嚫US_13207, server: 164.90.204.216, port: 80, type: vmess, uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}}
   - {name: 🇷🇺 馃嚪馃嚭 RU_8213 | 3.70Mb, server: 45.11.92.139, port: 10121, type: vmess, uuid: c2b9c453-0c2f-487d-ab1a-d45d17dde4f5, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 45.11.92.139}}
 
-  - {name: httpsgitiov9999 clash ip3 40, server: jb.wocaonimabi666.xyz, port: 35407, type: vmess, uuid: b3342b04-7da5-400f-c897-1f999a2e446b, alterId: 0, cipher: auto, tls: false}
   - {name: httpsgitiov9999 clash ip3 38, server: jb.wocaonimabi666.xyz, port: 53428, type: vmess, uuid: 9f4ea75a-c6d4-4068-b6c9-a0ae1873b309, alterId: 0, cipher: auto, tls: false}
-  - {name: httpsgitiov9999 clash ip3 41, server: jb.wocaonimabi666.xyz, port: 31707, type: vmess, uuid: d1674a89-84de-4444-f7ca-2a7954212545, alterId: 0, cipher: auto, tls: false}
-  - {name: httpsgitiov9999 clash ip3 39, server: jb.wocaonimabi666.xyz, port: 59113, type: vmess, uuid: c7a50d0c-9e90-41cb-912e-fcc4b68af7ff, alterId: 0, cipher: auto, tls: false}
+  - {name: httpsgitiov9999 clash ip3, server: gggz.quickairport.top, port: 21826, type: vmess, uuid: 943c710e-273c-4a48-b52c-8ab43049a08b, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: gggz.quickairport.top}}
+  - {name: httpsgitiov9999 clash ip3 17, server: jb.wocaonimabi666.xyz, port: 48258, type: vmess, uuid: 5080a95a-27b6-441f-8cee-a6e2ba5c780a, alterId: 0, cipher: auto, tls: false}
+  - {name: httpsgitiov9999 clash ip3 40, server: jb.wocaonimabi666.xyz, port: 35407, type: vmess, uuid: b3342b04-7da5-400f-c897-1f999a2e446b, alterId: 0, cipher: auto, tls: false}
   - {name: httpsgitiov9999 clash ip3 51, server: 128.199.228.3, port: 80, type: vmess, uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 128.199.228.3}}
-  - {name: httpsgitiov9999 clash ip3 85, server: 45.79.114.57, port: 36788, type: vmess, uuid: B22C2F57-0189-25E7-79FA-90717E212748, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 45.79.114.57}}
+  - {name: httpsgitiov9999 clash ip3 41, server: jb.wocaonimabi666.xyz, port: 31707, type: vmess, uuid: d1674a89-84de-4444-f7ca-2a7954212545, alterId: 0, cipher: auto, tls: false}
   - {name: httpsgitiov9999 clash ip3 37, server: jb.wocaonimabi666.xyz, port: 35715, type: vmess, uuid: a47a5806-797f-4395-dce0-b1b3385949e2, alterId: 0, cipher: auto, tls: false}
+  - {name: httpsgitiov9999 clash ip3 2, server: gggz.quickairport.top, port: 21827, type: vmess, uuid: 943c710e-273c-4a48-b52c-8ab43049a08b, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: gggz.quickairport.top}}
+  - {name: httpsgitiov9999 clash ip3 39, server: jb.wocaonimabi666.xyz, port: 59113, type: vmess, uuid: c7a50d0c-9e90-41cb-912e-fcc4b68af7ff, alterId: 0, cipher: auto, tls: false}
+  - {name: httpsgitiov9999 clash ip3 30, server: 18.166.69.249, port: 44334, type: vmess, uuid: 3b6d56a7-8e76-408e-c885-5a1bb4413e85, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 18.166.69.249}}
+  - {name: httpsgitiov9999 clash ip3 85, server: 45.79.114.57, port: 36788, type: vmess, uuid: B22C2F57-0189-25E7-79FA-90717E212748, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 45.79.114.57}}
   - {name: httpsgitiov9999 clash ip3 98, server: 107.191.112.214, port: 80, type: vmess, uuid: 732ada90-3ad1-45bd-bd37-fb5fe1b9007c, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}}
-  - {name: 🇷🇺 httpsgitiov9999 莫斯科, server: 46.17.43.179, port: 56282, type: vmess, uuid: 5d3e6e14-5828-4e88-a946-bad5c700b4d5, alterId: 0, cipher: auto, tls: false}
+  - {name: httpsgitiov9999 clash ip3 5, server: c39s4.jamjams.net, port: 10606, type: vmess, uuid: c474da00-e28b-40b0-8356-8f62e5eb71e2, alterId: 8, cipher: auto, tls: false}
+  - {name: httpsgitiov9999 clash ip3 77, server: 188.166.217.16, port: 443, type: vmess, uuid: 7a3128da-6fe9-4cc6-cfb7-b97fe387b82f, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 188.166.217.16}}
   - {name: httpsgitiov9999 clash ip3 13, server: 104.16.148.27, port: 2082, type: vmess, uuid: ed47a606-0bb2-32d0-8cac-7a8f84cf9763, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /5hfgf/5hg, ws-headers: {Host: ru-1.sb-cloud.cf}}
-  - {name: 🇳🇱 httpsgitiov9999 荷兰, server: 163.172.214.118, port: 56282, type: vmess, uuid: 5d3e6e14-5828-4e88-a946-bad5c700b4d5, alterId: 0, cipher: auto, tls: false}
-  - {name: httpsgitiov9999 clash ip3 60, server: 5.183.101.204, port: 59857, type: vmess, uuid: 4c35d374-dbf2-4e5f-c731-dfa49191825a, alterId: 64, cipher: auto, tls: false}
-  - {name: httpsgitiov9999 clash ip3 77, server: c23s3.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 8, cipher: auto, tls: false}
-  - {name: httpsgitiov9999 clash ip3 91, server: c23s801.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 8, cipher: auto, tls: false}
+  - {name: httpsgitiov9999 clash ip3 4, server: 211.23.132.124, port: 9233, type: vmess, uuid: be58f4e4-894a-47ee-8836-cf75e74fa9c9, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 211.23.132.124}}
   - {name: 🇩🇪 httpsgitiov9999 clash ip5德国 2, server: 89.163.224.127, port: 28599, type: vmess, uuid: ec8be0c5-9eac-4728-8929-ef23c73d8341, alterId: 0, cipher: auto, tls: false}
   - {name: 🇩🇪 httpsgitiov9999 clash ip5德国, server: 217.79.181.111, port: 56748, type: vmess, uuid: bcc21751-81be-4b0b-8cbc-bc30d67cb818, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇳🇱 httpsgitiov9999 荷兰, server: 163.172.214.118, port: 56282, type: vmess, uuid: 5d3e6e14-5828-4e88-a946-bad5c700b4d5, alterId: 0, cipher: auto, tls: false}
+  - {name: httpsgitiov9999 clash ip3 11, server: euserv10p.ezddns.tk, port: 80, type: vmess, uuid: 4323a38e-29dc-4c6d-f436-b15114e57a75, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /download.zip, ws-headers: {Host: euserv10p.ezddns.tk}}
+  - {name: httpsgitiov9999 clash ip3 26, server: 16.162.118.217, port: 44334, type: vmess, uuid: a076dc92-8e3f-4ad9-f93e-276562007d93, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 16.162.118.217}}
   - {name: httpsgitiov9999 clash ip3 12, server: 104.28.16.5, port: 80, type: vmess, uuid: ed47a606-0bb2-32d0-8cac-7a8f84cf9763, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /home/livein122, ws-headers: {Host: kr1.sb-cloud.cf}}
-  - {name: httpsgitiov9999 clash ip3 4, server: 211.23.132.124, port: 9233, type: vmess, uuid: be58f4e4-894a-47ee-8836-cf75e74fa9c9, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 211.23.132.124}}
+  - {name: httpsgitiov9999 clash ip3 4 2, server: gggz.quickairport.top, port: 21824, type: vmess, uuid: 943c710e-273c-4a48-b52c-8ab43049a08b, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: gggz.quickairport.top}}
+  - {name: httpsgitiov9999 clash ip3 8, server: euserv17p.ezddns.tk, port: 80, type: vmess, uuid: 4a6cc4a6-491f-4a58-fb45-bf888f0b381f, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /video, ws-headers: {Host: euserv17p.ezddns.tk}}
+  - {name: httpsgitiov9999 clash ip3 29, server: 167.71.235.142, port: 44334, type: vmess, uuid: 927f8a2a-f2db-499b-e0f0-b1e344508546, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 167.71.235.142}}
   - {name: httpsgitiov9999 clash ip3 16, server: 164.90.204.216, port: 80, type: vmess, uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}}
-  - {name: httpsgitiov9999 clash ip3 93, server: 45.11.92.139, port: 10121, type: vmess, uuid: c2b9c453-0c2f-487d-ab1a-d45d17dde4f5, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 45.11.92.139}}
 
 
 proxy-groups:
