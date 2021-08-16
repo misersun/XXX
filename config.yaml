@@ -506,11 +506,9 @@ proxy-providers:
 
 
 #八度科技
-#https://raw.githubusercontent.com/chfchf0306/4.18clash/main/Class
-#https://raw.fastgit.org/chfchf0306/4.18clash/main/Class
   BaDu_all:
     type: http
-    url: "https://raw.fastgit.org/chfchf0306/4.18clash/main/Class"     
+    url: "https://raw.fastgit.org/chfchf0306/clash/main/clash"     
     path: ./download/BaDu_all.yaml
     health-check:
       enable: true
