@@ -117,7 +117,7 @@ proxy-groups:
     type: select
     use:
       - sspool_us
-      - herokuapp2_us
+      #- herokuapp2_us
       #- us_kingfu
       - DianXingPool
       - KeJiPool
@@ -340,7 +340,7 @@ proxy-groups:
     type: url-test
     use:
       - sspool_us
-      - herokuapp2_us
+      #- herokuapp2_us
       #- us_kingfu
     url: 'http://www.gstatic.com/generate_204'
     interval: 600 
@@ -569,14 +569,14 @@ proxy-providers:
       interval: 600
       url: http://www.gstatic.com/generate_204 
       
-  herokuapp2_us:
-    type: http
-    url: "https://free886.herokuapp.com/clash/proxies?c=US"    
-    path: ./download/herokuapp2_us.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204 
+#  herokuapp2_us:
+ #   type: http
+  #  url: "https://free886.herokuapp.com/clash/proxies?c=US"    
+  #  path: ./download/herokuapp2_us.yaml
+  #  health-check:
+  #    enable: true
+  #    interval: 600
+  #    url: http://www.gstatic.com/generate_204 
 
 # #https://www.233660.xyz/clash/config
   # all_233660:
