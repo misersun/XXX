@@ -116,7 +116,7 @@ proxy-groups:
   - name: "Just4FaceBook_MySelected"
     type: select
     use:
-      - sspool_us
+      #- sspool_us
       #- herokuapp2_us
       #- us_kingfu
       - DianXingPool
