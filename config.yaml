@@ -55,8 +55,8 @@ proxy-groups:
       - tested_YiDong_pool
       - tested_mypool
       - tested_lonxin
-      - tested2
-      - tested5
+      #- tested2
+      #- tested5
       #- tested6
       # - tested-free-1
       - tested-free-2
@@ -72,8 +72,8 @@ proxy-groups:
       - free_4
       - free_6
       - lonxin_all
-      - sspool_all
-      - herokuapp2_all
+      #- sspool_all
+      #- herokuapp2_all
       #- all_kingfu
 
   - name: "MySelected2"
@@ -109,7 +109,7 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - Just4FaceBook_tested
+      #- Just4FaceBook_tested
       - Just4FaceBook_MySelected
 
 
@@ -261,32 +261,6 @@ proxy-groups:
     interval: 600
     tolerance: 50
   
-  - name: "tested2"
-    type: url-test
-    use:
-      - sspool_all
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 600
-    tolerance: 50
-
-
-  - name: "tested5"
-    type: url-test
-    use:
-      - herokuapp2_all
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 600
-    tolerance: 50
-
-  # - name: "tested6"
-    # type: url-test
-    # use:
-      # - all_kingfu
-    # url: 'http://www.gstatic.com/generate_204'
-    # interval: 600
-    # tolerance: 50
-
-
 
   # - name: "tested-free-1"
     # type: url-test
@@ -336,14 +310,14 @@ proxy-groups:
     interval: 600
     tolerance: 50
 
-  - name: "Just4FaceBook_tested"
-    type: url-test
-    use:
-      - sspool_us
+#  - name: "Just4FaceBook_tested"
+#    type: url-test
+#    use:
+#      - sspool_us
       #- herokuapp2_us
       #- us_kingfu
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 600 
+#    url: 'http://www.gstatic.com/generate_204'
+#    interval: 600 
  
       
 proxy-providers:
@@ -515,127 +489,7 @@ proxy-providers:
       interval: 600
       url: http://www.gstatic.com/generate_204
 
-#https://sspool.herokuapp.com/clash/config 
-  sspool_all:
-    type: http
-    #url: "https://sspool.herokuapp.com/clash/proxies"
-    #https://sspool.herokuapp.com/clash/proxies?nc=CN,HK,TW,US,CA,JP,SG,AU,CH,DE,GB,NL,FR,RU
-    #url: "https://sspool.herokuapp.com/clash/proxies?nc=CN,HK,TW&speed=1,200"
-    url: "https://sspool.herokuapp.com/clash/proxies?c=US,CA,JP,SG,AU,CH,DE,GB,NL,FR,RU&speed=1,200"
-    path: ./download/sspool_all.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
-  
-  sspool_us:
-    type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?c=US&speed=1,200"
-    path: ./download/sspool_us.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
 
-
-# #https://proxypool-guest997.herokuapp.com/clash/config
-  # herokuapp_all:
-    # type: http
-    # #url: "https://proxypool-guest997.herokuapp.com/clash/proxies?nc=CN,HK,TW&speed=1,100"
-    # url: "https://proxypool-guest997.herokuapp.com/clash/proxies?c=US,CA,JP,SG,AU,CH,DE,GB,NL,FR,RU&speed=1,100"  
-    # path: ./download/herokuapp_all.yaml
-    # health-check:
-      # enable: true
-      # interval: 600
-      # url: http://www.gstatic.com/generate_204 
-      
-  # herokuapp_us:
-    # type: http
-    # url: "https://proxypool-guest997.herokuapp.com/clash/proxies?c=US&speed=1,100"    
-    # path: ./download/herokuapp_us.yaml
-    # health-check:
-      # enable: true
-      # interval: 600
-      # url: http://www.gstatic.com/generate_204 
-
-#https://free886.herokuapp.com/clash/config
-  herokuapp2_all:
-    type: http
-    #url: "https://free886.herokuapp.com/clash/proxies?nc=CN,TW,HK"
-    url: "https://free886.herokuapp.com/clash/proxies?c=US,CA,JP,SG,AU,CH,DE,GB,NL,FR,RU"     
-    path: ./download/herokuapp2_all.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204 
-      
-#  herokuapp2_us:
- #   type: http
-  #  url: "https://free886.herokuapp.com/clash/proxies?c=US"    
-  #  path: ./download/herokuapp2_us.yaml
-  #  health-check:
-  #    enable: true
-  #    interval: 600
-  #    url: http://www.gstatic.com/generate_204 
-
-# #https://www.233660.xyz/clash/config
-  # all_233660:
-    # type: http
-    # #url: "https://www.233660.xyz/clash/proxies?nc=CN,HK,TW&speed=1,30"
-    # url: "https://www.233660.xyz/clash/proxies?c=US,CA,JP,SG,AU,CH,DE,GB,NL,FR,RU&speed=1,100"  
-    # path: ./download/all_233660.yaml
-    # health-check:
-      # enable: true
-      # interval: 600
-      # url: http://www.gstatic.com/generate_204 
-      
-  # us_233660:
-    # type: http
-    # url: "https://www.233660.xyz/clash/proxies?c=US&speed=1,100"    
-    # path: ./download/us_233660.yaml
-    # health-check:
-      # enable: true
-      # interval: 600
-      # url: http://www.gstatic.com/generate_204 
-
-
-# #https://hm2019721.ml
-  # all_hm2019721:
-    # type: http
-    # url: "https://hm2019721.ml/clash/proxies?c=US,CA,JP,SG,AU,CH,DE,GB,NL,FR,RU&type=vmess"  
-    # path: ./download/all_hm2019721.yaml
-    # health-check:
-      # enable: true
-      # interval: 600
-      # url: http://www.gstatic.com/generate_204 
-      
-  # us_hm2019721:
-    # type: http
-    # url: "https://hm2019721.ml/clash/proxies?c=US&type=vmess"
-    # path: ./download/us_hm2019721.yaml
-    # health-check:
-      # enable: true
-      # interval: 600
-      # url: http://www.gstatic.com/generate_204 
-
-#https://free.kingfu.cf
-  # all_kingfu:
-    # type: http
-    # url: "https://free.kingfu.cf/clash/proxies?c=US,CA,JP,SG,AU,CH,DE,GB,NL,FR,RU&type=vmess"
-    # path: ./download/all_kingfu.yaml
-    # health-check:
-      # enable: true
-      # interval: 600
-      # url: http://www.gstatic.com/generate_204
-
-  # us_kingfu:
-    # type: http
-    # url: "https://free.kingfu.cf/clash/proxies?c=US&type=vmess"
-    # path: ./download/us_kingfu.yaml
-    # health-check:
-      # enable: true
-      # interval: 600
-      # url: http://www.gstatic.com/generate_204    
 
 
 
