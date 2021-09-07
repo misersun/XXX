@@ -409,10 +409,10 @@ proxy-providers:
 
   "MyPool":
     type: http
-    #url: "https://cdn.jsdelivr.net/gh/misersun/XXX@main/my_github_clash.yaml"
-    url: "https://raw.fastgit.org/misersun/XXX/main/my_github_clash.yaml"
+    #url: "https://cdn.jsdelivr.net/gh/misersun/XXX@main/my.yaml"
+    url: "https://raw.fastgit.org/misersun/XXX/main/my.yaml"
     interval: 3600
-    path: ./download/my_github_clash.yaml
+    path: ./download/my.yaml
     health-check:
       enable: true
       interval: 600
