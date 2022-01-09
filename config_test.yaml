@@ -32,9 +32,11 @@ proxy-groups:
   - name: "FuckWall"
     type: select
     proxies:
-      - test1
-      - test2
-      - test3
+      - test21_2801
+      - test200_2801
+      - test100_2801
+      - test200_57890
+      - test200_65891
       - DIRECT 
 
   - name: "Final-------------------------------------------"
@@ -44,18 +46,26 @@ proxy-groups:
       - DIRECT
 
 proxies:
-  - name: test1
+  - name: test21_2801
     type: socks5
     server: 192.168.2.21
     port: 2801
-  - name: test2
+  - name: test200_2801
     type: socks5
     server: 192.168.50.200
     port: 2801
-  - name: test3
+  - name: test100_2801
     type: socks5
     server: 192.168.50.100
     port: 2801    
+  - name: test200_57890
+    type: socks5
+    server: 192.168.50.200
+    port: 57890
+  - name: test200_65891
+    type: socks5
+    server: 192.168.50.200
+    port: 64891  
 
 # ★第四部分，规则配置
 rule-providers:
