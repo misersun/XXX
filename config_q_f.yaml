@@ -267,20 +267,20 @@ rule-providers:
 rules:
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
-  - DOMAIN-SUFFIX,googleapis.cn,FuckWall
+  - DOMAIN-SUFFIX,googleapis.cn,Just4FaceBook
   - DOMAIN-KEYWORD,facebook,Just4FaceBook
   - DOMAIN-KEYWORD,oculus,Just4FaceBook
   - DOMAIN-KEYWORD,oculuscdn,Just4FaceBook
   - DOMAIN-SUFFIX,myip.com,Just4FaceBook
-  #- RULE-SET,reject,REJECT
   - RULE-SET,icloud,DIRECT
   - RULE-SET,apple,DIRECT
-  - RULE-SET,google,FuckWall
-  - RULE-SET,proxy,FuckWall
   - RULE-SET,direct,DIRECT
-  - RULE-SET,telegramcidr,FuckWall
   - GEOIP,CN,DIRECT
   - DST-PORT,80,Web
   - DST-PORT,443,Web
+  #- RULE-SET,reject,REJECT
+  - RULE-SET,google,FuckWall
+  - RULE-SET,proxy,FuckWall
+  - RULE-SET,telegramcidr,FuckWall
 #  - MATCH,FuckWall
   - MATCH,Final-------------------------------------------
