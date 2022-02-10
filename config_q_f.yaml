@@ -31,6 +31,19 @@ dns:
 
 
 proxy-groups:
+  - name: "Web"
+    type: select
+    proxies:
+      - m_3
+      - m_2
+      - g_3
+      - game_socks
+      - home_socks5
+      - home_socks6
+      - home100_7890
+      - home200_7890
+      - DIRECT
+      
   - name: "FuckWall"
     type: select
     proxies:
@@ -267,5 +280,7 @@ rules:
   - RULE-SET,direct,DIRECT
   - RULE-SET,telegramcidr,FuckWall
   - GEOIP,CN,DIRECT
+  - DST-PORT,80,Web
+  - DST-PORT,443,Web
 #  - MATCH,FuckWall
   - MATCH,Final-------------------------------------------
