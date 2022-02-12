@@ -1,0 +1,305 @@
+# ★第一部分，系统配置
+mixed-port: 7891
+redir-port: 17891
+allow-lan: true
+bind-address: '*'
+mode: rule
+log-level: silent
+ipv6: false
+#external-controller: 0.0.0.0:9090
+#external-ui: dashboardB
+#interface-name: en0
+
+# ★第二部分，DNS配置
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.lan'
+    - 'localhost.ptlogin2.qq.com'
+    - 'dns.msftncsi.com'
+    - 'www.msftncsi.com'
+    - 'www.msftconnecttest.com'
+  nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+
+# ★第三部分，代理配置
+
+
+
+proxy-groups:
+  - name: "POP"
+    type: select
+    proxies:
+      - m_3
+      - m_2
+      - g_3
+      - feiniao
+      - game_socks
+      - home_socks5
+      - home_socks6
+      - home100_7890
+      - home200_7890
+      - DIRECT    
+  - name: "FuckWall"
+    type: select
+    proxies:
+      - m_3
+      - m_2
+      - g_3
+      - feiniao
+      - game_socks
+      - home_socks5
+      - home_socks6
+      - home100_7890
+      - home200_7890
+      - DIRECT
+  - name: "feiniao"
+    type: select
+    use:
+      - FeiNiaoPool 
+      
+  - name: "m_3"
+    type: select
+    use:
+      - config003Pool_Quest 
+
+  - name: "g_3"
+    type: select
+    use:
+      - config003Pool_game  
+ 
+  - name: "m_2"
+    type: select
+    use:
+      - config002Pool_Quest  
+
+  - name: "Just4FaceBook"
+    type: select
+    proxies:
+      - DIRECT
+      - Just4FaceBook_3_MySelected
+      - Just4FaceBook_2_MySelected
+      - m_3
+      - m_2
+      - g_3
+      - feiniao
+      - home_socks5
+      - home_socks6
+      
+  - name: "Just4FaceBook_3_MySelected"
+    type: select
+    use:
+      - US003_Pool
+
+  - name: "Just4FaceBook_2_MySelected"
+    type: select
+    use:
+      - US002_Pool
+
+  - name: "Final-------------------------------------------"
+    type: select
+    proxies:
+      - FuckWall
+      - DIRECT
+proxies:
+  - name: home_socks5
+    type: socks5
+    server: 192.168.50.200
+    port: 57890
+
+  - name: home_socks6
+    type: socks5
+    server: 192.168.50.200
+    port: 64891
+
+  - name: game_socks
+    type: socks5
+    server: 192.168.50.200
+    port: 64890
+  - name: home100_7890
+    type: socks5
+    server: 192.168.50.100
+    port: 7890
+  - name: home200_7890
+    type: socks5
+    server: 192.168.50.200
+    port: 7890
+proxy-providers:
+  "FeiNiaoPool":
+    type: http
+    #url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/config_quest.yaml"
+    url: "http://192.168.50.200:25500/sub?target=clash&url=https%3A%2F%2Ffeiniaoyun.tk%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3Dcb23b12b89fe02179b09c1dfd72d3cee&insert=false"
+    interval: 3600
+    path: ./download/feiniao.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+  "config003Pool_Quest":
+    type: http
+    #url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/config_quest.yaml"
+    url: "https://raw.fastgit.org/misersun/config003/main/config_quest.yaml"
+    interval: 3600
+    path: ./download/tested_config003_quest.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+  "config003Pool_game":
+    type: http
+    #url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/config_game.yaml"
+    url: "https://raw.fastgit.org/misersun/config003/main/config_game.yaml"
+    interval: 3600
+    path: ./download/tested_config003_game.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+  "config002Pool_Quest":
+    type: http
+    #url: "https://cdn.jsdelivr.net/gh/misersun/config002@main/config_quest.yaml"
+    url: "https://raw.fastgit.org/misersun/config002/main/config_quest.yaml"
+    interval: 3600
+    path: ./download/tested_config002_quest.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+  "US002_Pool":
+    type: http
+    #url: "https://cdn.jsdelivr.net/gh/misersun/config002@main/config_us.yaml"
+    url: "https://raw.fastgit.org/misersun/config002/main/config_us.yaml"
+    interval: 3600
+    path: ./download/US002.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+  "US003_Pool":
+    type: http
+    #url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/config_us.yaml"
+    url: "https://raw.fastgit.org/misersun/config003/main/config_us.yaml"
+    interval: 3600
+    path: ./download/US003.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+# ★第四部分，规则配置
+rule-providers:
+  reject:
+    type: http
+    behavior: domain
+    url: "https://raw.fastgit.org/misersun/rules/main/reject.txt"
+    path: ./ruleset/reject.yaml
+    interval: 86400
+
+  icloud:
+    type: http
+    behavior: domain
+    url: "https://raw.fastgit.org/misersun/rules/main/icloud.txt"
+    path: ./ruleset/icloud.yaml
+    interval: 86400
+
+  apple:
+    type: http
+    behavior: domain
+    url: "https://raw.fastgit.org/misersun/rules/main/apple.txt"
+    path: ./ruleset/apple.yaml
+    interval: 86400
+
+  google:
+    type: http
+    behavior: domain
+    url: "https://raw.fastgit.org/misersun/rules/main/google.txt"
+    path: ./ruleset/google.yaml
+    interval: 86400
+
+  proxy:
+    type: http
+    behavior: domain
+    url: "https://raw.fastgit.org/misersun/rules/main/proxy.txt"
+    path: ./ruleset/proxy.yaml
+    interval: 86400
+
+  direct:
+    type: http
+    behavior: domain
+    url: "https://raw.fastgit.org/misersun/rules/main/direct.txt"
+    path: ./ruleset/direct.yaml
+    interval: 86400
+
+  gfw:
+    type: http
+    behavior: domain
+    url: "https://raw.fastgit.org/misersun/rules/main/gfw.txt"
+    path: ./ruleset/gfw.yaml
+    interval: 86400
+
+  greatfire:
+    type: http
+    behavior: domain
+    url: "https://raw.fastgit.org/misersun/rules/main/greatfire.txt"
+    path: ./ruleset/greatfire.yaml
+    interval: 86400
+
+  tld-not-cn:
+    type: http
+    behavior: domain
+    url: "https://raw.fastgit.org/misersun/rules/main/tld-not-cn.txt"
+    path: ./ruleset/tld-not-cn.yaml
+    interval: 86400
+
+  telegramcidr:
+    type: http
+    behavior: ipcidr
+    url: "https://raw.fastgit.org/misersun/rules/main/telegramcidr.txt"
+    path: ./ruleset/telegramcidr.yaml
+    interval: 86400
+
+  cncidr:
+    type: http
+    behavior: ipcidr
+    url: "https://raw.fastgit.org/misersun/rules/main/cncidr.txt"
+    path: ./ruleset/cncidr.yaml
+    interval: 86400
+
+  lancidr:
+    type: http
+    behavior: ipcidr
+    url: "https://raw.fastgit.org/misersun/rules/main/lancidr.txt"
+    path: ./ruleset/lancidr.yaml
+    interval: 86400
+
+rules:
+  - DOMAIN,clash.razord.top,DIRECT
+  - DOMAIN,yacd.haishan.me,DIRECT
+  - DOMAIN-SUFFIX,googleapis.cn,Just4FaceBook
+  - DOMAIN-KEYWORD,facebook,Just4FaceBook
+  - DOMAIN-KEYWORD,oculus,Just4FaceBook
+  - DOMAIN-KEYWORD,oculuscdn,Just4FaceBook
+  - DOMAIN-SUFFIX,myip.com,Just4FaceBook
+  - DOMAIN-SUFFIX,unity3d.com,POP
+  - DOMAIN-SUFFIX,playfabapi.com,POP
+  - DOMAIN-SUFFIX,bigboxvr.com,POP
+  - DOMAIN-SUFFIX,vivox.com,POP  
+  - RULE-SET,icloud,DIRECT
+  - RULE-SET,apple,DIRECT
+  - RULE-SET,direct,DIRECT
+  - GEOIP,CN,DIRECT
+  #- RULE-SET,reject,REJECT
+  - RULE-SET,google,FuckWall
+  - RULE-SET,proxy,FuckWall
+  - RULE-SET,telegramcidr,FuckWall
+#  - MATCH,FuckWall
+  - MATCH,Final-------------------------------------------
