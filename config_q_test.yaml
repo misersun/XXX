@@ -89,6 +89,8 @@ proxy-groups:
       - feiniao
       - home_socks5
       - home_socks6
+      - home100_7890
+      - home200_7890
       
   - name: "Just4FaceBook_3_MySelected"
     type: select
