@@ -154,7 +154,7 @@ proxy-providers:
   "FeiNiaoPool":
     type: http
     #url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/config_quest.yaml"
-    url: "http://127.0.0.1:25500/sub?target=clash&url=http%3A%2F%2F127.0.0.1%3A5000%2F&insert=false"
+    url: "http://192.168.50.100:25500/sub?target=clash&url=http%3A%2F%2F127.0.0.1%3A5000%2F&insert=false"
     interval: 3600
     path: ./download/feiniao.yaml
     health-check:
