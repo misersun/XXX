@@ -107,29 +107,40 @@ proxy-groups:
     proxies:
       - FuckWall
       - DIRECT
+      - m_3
+      - m_2
+      - g_3
+      - feiniao
+      - home_socks5
+      - home_socks6
+      - home100_7890
+      - home200_7890
 proxies:
   - name: home_socks5
     type: socks5
     server: 192.168.50.200
     port: 57890
-
+    udp: true
   - name: home_socks6
     type: socks5
     server: 192.168.50.200
     port: 64891
-
+    udp: true
   - name: game_socks
     type: socks5
     server: 192.168.50.200
     port: 64890
+    udp: true
   - name: home100_7890
     type: socks5
     server: 192.168.50.100
     port: 7890
+    udp: true
   - name: home200_7890
     type: socks5
     server: 192.168.50.200
     port: 7890
+    udp: true
 proxy-providers:
   "FeiNiaoPool":
     type: http
