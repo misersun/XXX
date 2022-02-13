@@ -43,6 +43,7 @@ proxy-groups:
       - home_socks6
       - home100_7890
       - home200_7890
+      - home100_57890
       - DIRECT    
   - name: "FuckWall"
     type: select
@@ -56,6 +57,7 @@ proxy-groups:
       - home_socks6
       - home100_7890
       - home200_7890
+      - home100_57890
       - DIRECT
   - name: "feiniao"
     type: select
@@ -91,6 +93,7 @@ proxy-groups:
       - home_socks6
       - home100_7890
       - home200_7890
+      - home100_57890
       
   - name: "Just4FaceBook_3_MySelected"
     type: select
@@ -115,6 +118,7 @@ proxy-groups:
       - home_socks6
       - home100_7890
       - home200_7890
+      - home100_57890
 proxies:
   - name: home_socks5
     type: socks5
@@ -140,6 +144,11 @@ proxies:
     type: socks5
     server: 192.168.50.200
     port: 7890
+    udp: true
+  - name: home100_57890
+    type: socks5
+    server: 192.168.50.100
+    port: 57890
     udp: true
 proxy-providers:
   "FeiNiaoPool":
