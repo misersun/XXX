@@ -294,7 +294,8 @@ rules:
   - DOMAIN-SUFFIX,unity3d.com,POP
   - DOMAIN-SUFFIX,playfabapi.com,POP
   - DOMAIN-SUFFIX,bigboxvr.com,POP
-  - DOMAIN-SUFFIX,vivox.com,POP  
+  - DOMAIN-SUFFIX,vivox.com,POP
+  - DOMAIN-SUFFIX,amazonaws.com,POP    
   - RULE-SET,icloud,DIRECT
   - RULE-SET,apple,DIRECT
   - RULE-SET,direct,DIRECT
