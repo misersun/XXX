@@ -1,328 +1,613 @@
-# ★第一部分，系统配置
-mixed-port: 7891
-redir-port: 17891
+mixed-port: 7890
 allow-lan: true
 bind-address: '*'
 mode: rule
-log-level: silent
-ipv6: false
-#external-controller: 0.0.0.0:9090
-#external-ui: dashboardB
-#interface-name: en0
-
-# ★第二部分，DNS配置
+log-level: info
+external-controller: '127.0.0.1:9090'
 dns:
-  enable: true
-  listen: 0.0.0.0:1053
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  fake-ip-filter:
-    - '*.lan'
-    - 'localhost.ptlogin2.qq.com'
-    - 'dns.msftncsi.com'
-    - 'www.msftncsi.com'
-    - 'www.msftconnecttest.com'
-  nameserver:
-    - 223.5.5.5
-    - 119.29.29.29
-
-# ★第三部分，代理配置
-
-
-
-proxy-groups:
-  - name: "POP"
-    type: select
-    proxies:
-      - m_3
-      - m_2
-      - g_3
-      - feiniao
-      - game_socks
-      - home_socks5
-      - home_socks6
-      - home100_7890
-      - home200_7890
-      - home100_57890
-      - DIRECT    
-  - name: "FuckWall"
-    type: select
-    proxies:
-      - m_3
-      - m_2
-      - g_3
-      - feiniao
-      - game_socks
-      - home_socks5
-      - home_socks6
-      - home100_7890
-      - home200_7890
-      - home100_57890
-      - DIRECT
-  - name: "feiniao"
-    type: select
-    use:
-      - FeiNiaoPool 
-      
-  - name: "m_3"
-    type: select
-    use:
-      - config003Pool_Quest 
-
-  - name: "g_3"
-    type: select
-    use:
-      - config003Pool_game  
- 
-  - name: "m_2"
-    type: select
-    use:
-      - config002Pool_Quest  
-
-  - name: "Just4FaceBook"
-    type: select
-    proxies:
-      - DIRECT
-      - Just4FaceBook_3_MySelected
-      - Just4FaceBook_2_MySelected
-      - m_3
-      - m_2
-      - g_3
-      - feiniao
-      - home_socks5
-      - home_socks6
-      - home100_7890
-      - home200_7890
-      - home100_57890
-      
-  - name: "Just4FaceBook_3_MySelected"
-    type: select
-    use:
-      - US003_Pool
-
-  - name: "Just4FaceBook_2_MySelected"
-    type: select
-    use:
-      - US002_Pool
-
-  - name: "Final-------------------------------------------"
-    type: select
-    proxies:
-      - FuckWall
-      - DIRECT
-      - m_3
-      - m_2
-      - g_3
-      - feiniao
-      - home_socks5
-      - home_socks6
-      - home100_7890
-      - home200_7890
-      - home100_57890
+    enable: false
+    ipv6: false
+    default-nameserver: [223.5.5.5, 119.29.29.29]
+    enhanced-mode: redir-host
+    fake-ip-range: 198.18.0.1/16
+    use-hosts: true
+    nameserver: ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query']
+    fallback: ['tls://1.0.0.1:853', 'https://cloudflare-dns.com/dns-query', 'https://dns.google/dns-query']
+    fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-  - name: home_socks5
-    type: socks5
-    server: 192.168.50.200
-    port: 57890
-    udp: true
-  - name: home_socks6
-    type: socks5
-    server: 192.168.50.200
-    port: 64891
-    udp: true
-  - name: game_socks
-    type: socks5
-    server: 192.168.50.200
-    port: 64890
-    udp: true
-  - name: home100_7890
-    type: socks5
-    server: 192.168.50.100
-    port: 7890
-    udp: true
-  - name: home200_7890
-    type: socks5
-    server: 192.168.50.200
-    port: 7890
-    udp: true
-  - name: home100_57890
-    type: socks5
-    server: 192.168.50.100
-    port: 57890
-    udp: true
-proxy-providers:
-  "FeiNiaoPool":
-    type: http
-    #url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/config_quest.yaml"
-    url: "http://192.168.50.200:25500/sub?target=clash&url=https%3A%2F%2Ffeiniaoyun.tk%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3Dcb23b12b89fe02179b09c1dfd72d3cee&insert=false"
-    interval: 3600
-    path: ./download/feiniao.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
-
-  "config003Pool_Quest":
-    type: http
-    #url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/config_quest.yaml"
-    url: "https://raw.fastgit.org/misersun/config003/main/config_quest.yaml"
-    interval: 3600
-    path: ./download/tested_config003_quest.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
-
-  "config003Pool_game":
-    type: http
-    #url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/config_game.yaml"
-    url: "https://raw.fastgit.org/misersun/config003/main/config_game.yaml"
-    interval: 3600
-    path: ./download/tested_config003_game.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
-
-  "config002Pool_Quest":
-    type: http
-    #url: "https://cdn.jsdelivr.net/gh/misersun/config002@main/config_quest.yaml"
-    url: "https://raw.fastgit.org/misersun/config002/main/config_quest.yaml"
-    interval: 3600
-    path: ./download/tested_config002_quest.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
-
-  "US002_Pool":
-    type: http
-    #url: "https://cdn.jsdelivr.net/gh/misersun/config002@main/config_us.yaml"
-    url: "https://raw.fastgit.org/misersun/config002/main/config_us.yaml"
-    interval: 3600
-    path: ./download/US002.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
-
-  "US003_Pool":
-    type: http
-    #url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/config_us.yaml"
-    url: "https://raw.fastgit.org/misersun/config003/main/config_us.yaml"
-    interval: 3600
-    path: ./download/US003.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
-
-# ★第四部分，规则配置
-rule-providers:
-  reject:
-    type: http
-    behavior: domain
-    url: "https://raw.fastgit.org/misersun/rules/main/reject.txt"
-    path: ./ruleset/reject.yaml
-    interval: 86400
-
-  icloud:
-    type: http
-    behavior: domain
-    url: "https://raw.fastgit.org/misersun/rules/main/icloud.txt"
-    path: ./ruleset/icloud.yaml
-    interval: 86400
-
-  apple:
-    type: http
-    behavior: domain
-    url: "https://raw.fastgit.org/misersun/rules/main/apple.txt"
-    path: ./ruleset/apple.yaml
-    interval: 86400
-
-  google:
-    type: http
-    behavior: domain
-    url: "https://raw.fastgit.org/misersun/rules/main/google.txt"
-    path: ./ruleset/google.yaml
-    interval: 86400
-
-  proxy:
-    type: http
-    behavior: domain
-    url: "https://raw.fastgit.org/misersun/rules/main/proxy.txt"
-    path: ./ruleset/proxy.yaml
-    interval: 86400
-
-  direct:
-    type: http
-    behavior: domain
-    url: "https://raw.fastgit.org/misersun/rules/main/direct.txt"
-    path: ./ruleset/direct.yaml
-    interval: 86400
-
-  gfw:
-    type: http
-    behavior: domain
-    url: "https://raw.fastgit.org/misersun/rules/main/gfw.txt"
-    path: ./ruleset/gfw.yaml
-    interval: 86400
-
-  greatfire:
-    type: http
-    behavior: domain
-    url: "https://raw.fastgit.org/misersun/rules/main/greatfire.txt"
-    path: ./ruleset/greatfire.yaml
-    interval: 86400
-
-  tld-not-cn:
-    type: http
-    behavior: domain
-    url: "https://raw.fastgit.org/misersun/rules/main/tld-not-cn.txt"
-    path: ./ruleset/tld-not-cn.yaml
-    interval: 86400
-
-  telegramcidr:
-    type: http
-    behavior: ipcidr
-    url: "https://raw.fastgit.org/misersun/rules/main/telegramcidr.txt"
-    path: ./ruleset/telegramcidr.yaml
-    interval: 86400
-
-  cncidr:
-    type: http
-    behavior: ipcidr
-    url: "https://raw.fastgit.org/misersun/rules/main/cncidr.txt"
-    path: ./ruleset/cncidr.yaml
-    interval: 86400
-
-  lancidr:
-    type: http
-    behavior: ipcidr
-    url: "https://raw.fastgit.org/misersun/rules/main/lancidr.txt"
-    path: ./ruleset/lancidr.yaml
-    interval: 86400
-
+    - { name: 节点若失效，请更新订阅，使用前最好更新一次，更新报错请先开启代理翻墙（官网feiniaoyun.tk）, type: ss, server: a.b.c, port: 1, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇨🇳 台湾|高速|01(SS)1G带宽原生IP解锁奈飞', type: ss, server: tw01.170809.xyz, port: 52369, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇨🇳 台湾|高速|01深港隧道中转(SS)1G带宽原生IP解锁奈飞', type: ss, server: china-gzyd-1.forwardserver.xyz, port: 40744, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇨🇳 台湾|高速|01广州移动中转(SS)1G带宽原生IP解锁奈飞', type: ss, server: gy01.170809.xyz, port: 13017, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇨🇳 台湾|高速|04(SS)1G带宽原生IP解锁奈飞', type: ss, server: tw04.170809.xyz, port: 52338, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇨🇳 台湾|高速|04深港隧道中转(SS)1G带宽原生IP解锁奈飞', type: ss, server: china-gzyd-1.forwardserver.xyz, port: 36796, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇨🇳 台湾|高速|04杭州联通中转(SS)1G带宽原生IP解锁奈飞', type: ss, server: china-zj-hz-1.forwardserver.xyz, port: 38845, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇨🇳 台湾|高速|04广州移动中转(SS)1G带宽', type: ss, server: gy01.170809.xyz, port: 13001, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇨🇳 台湾|高速|05(SS)原生IP解锁奈飞', type: ss, server: tw05.170809.xyz, port: 10135, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇨🇳 台湾|高速|05(SS)广州移动中转原生IP解锁奈飞', type: ss, server: gy.cm.01.211129.xyz, port: 65024, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇸🇬 新加坡|04|OC(SS)1G带宽', type: ss, server: sgmax04.170809.xyz, port: 45344, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇸🇬 新加坡|04|OC(SS)广州移动中转1G带宽', type: ss, server: gy.cm.01.211129.xyz, port: 12348, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇸🇬 新加坡|02|LIN1G带宽', type: ss, server: sgmax02.170809.xyz, port: 62341, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇸🇬 新加坡|02|广州移动中转LIN1G带宽(SS)', type: ss, server: gy01.170809.xyz, port: 13020, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇸🇬 新加坡|08|LIN(SS)1G带宽', type: ss, server: sgmax08.170809.xyz, port: 12452, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇸🇬 新加坡|08|移动中转LIN(SS)1G带宽', type: ss, server: gy.cm.01.211129.xyz, port: 12058, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇸🇬 新加坡|07|AWS(SS)1G带宽', type: ss, server: sgmax07.170809.xyz, port: 24156, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇸🇬 新加坡|01|长沙联通中转LIN(SS)', type: ss, server: cs.cu.01.211129.xyz, port: 13353, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇸🇬 新加坡|05|长沙联通中转LIN(SS)', type: ss, server: cs.cu.01.211129.xyz, port: 62343, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇰🇷 韩国|01|AWS(SS)1G带宽', type: ss, server: kr01.170809.xyz, port: 43453, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇰🇷 韩国|01|广州移动中转(SS)1G带宽', type: ss, server: gy01.170809.xyz, port: 13014, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇰🇷 韩国|02|AWS(SS)1G带宽', type: ss, server: kr02.170809.xyz, port: 48642, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇯🇵 日本|高速|01|联通AWS(SS)1G带宽', type: ss, server: jpmax01.170809.xyz, port: 53861, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇯🇵 日本|02|AWS1G带宽(SS)', type: ss, server: jp02.170809.xyz, port: 35262, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇯🇵 日本|高速|02|联通AWS(SS)1G带宽', type: ss, server: jpmax02.170809.xyz, port: 52369, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇯🇵 日本|02|广州移动中转AWS1G带宽(SS)', type: ss, server: gy01.170809.xyz, port: 13012, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇯🇵 日本|04|联通AWS1G带宽(SS)', type: ss, server: jp04.170809.xyz, port: 45205, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇯🇵 日本|05|联通AWS1G带宽(SS)', type: ss, server: jp05.170809.xyz, port: 45324, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇯🇵 日本|01|(SS)1G带宽', type: ss, server: jp01.170809.xyz, port: 23454, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇯🇵 日本|01|长沙联通中转(SS)1G带宽', type: ss, server: cs.cu.01.211129.xyz, port: 59189, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇯🇵 日本|01|Trojan1G带宽', type: trojan, server: jp01.170809.xyz, port: 444, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇯🇵 日本|01|1G带宽', type: vmess, server: jp01.170809.xyz, port: 32446, uuid: d1410c51-389f-4aed-9828-0306fa11b7e3, alterId: 0, cipher: auto, udp: true, tls: true, network: ws }
+    - { name: '🇯🇵 日本|04|广州移动中转AWS1G带宽(SS)', type: ss, server: gy01.170809.xyz, port: 13002, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇭🇰 香港|高速|13|广州移动中转HGC(SS)1G带宽', type: ss, server: gy.cm.01.211129.xyz, port: 40195, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇭🇰 香港|高速|01|移动中转HGC(SS)1G带宽', type: ss, server: gy.cm.01.211129.xyz, port: 34835, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇭🇰 香港|高速|13|HGC(SS)1G带宽', type: ss, server: hkmax13.170809.xyz, port: 10236, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇭🇰 香港|高速|07|HKT(香港奈飞迪士尼)(SS)', type: ss, server: hkmax07.170809.xyz, port: 10220, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇭🇰 香港|高速|07|长沙联通中转HKT(SS)', type: ss, server: cs.cu.01.211129.xyz, port: 31929, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇭🇰 香港|高速|03|AZ(SS)', type: ss, server: hkmax03.170809.xyz, port: 23418, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇭🇰 香港|高速|03|移动中转AZ(SS)', type: ss, server: gy.cm.01.211129.xyz, port: 34992, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇭🇰 香港|高速|08|AZ(SS)', type: ss, server: hkmax08.170809.xyz, port: 56345, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇭🇰 香港|高速|08|广州移动中转AZ(SS)', type: ss, server: gy.cm.01.211129.xyz, port: 54279, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇭🇰 香港|高速|06|长沙联通中转HGC(SS)', type: ss, server: cs.cu.01.211129.xyz, port: 32278, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇭🇰 香港|高速|06|深港隧道中转HGC(SS)', type: ss, server: china-gzyd-1.forwardserver.xyz, port: 36161, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇭🇰 香港|高速|14|广州移动中转WTT(SS)', type: ss, server: gy.cm.01.211129.xyz, port: 20107, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇭🇰 香港|高速|14|长沙联通中转WTT(SS)', type: ss, server: cs.cu.01.211129.xyz, port: 29598, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇭🇰 香港|高速|15|AZ(SS)', type: ss, server: hkmax15.170809.xyz, port: 52552, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇭🇰 香港|高速|16|AWS(SS)', type: ss, server: hkmax16.170809.xyz, port: 45345, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇭🇰 香港|高速|15|广州移动中转AZ(SS)', type: ss, server: gy01.170809.xyz, port: 13006, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇭🇰 香港|高速|04|AZ(SS)', type: ss, server: hkmax04.170809.xyz, port: 45338, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇭🇰 香港|高速|04|广州移动中转AZ(SS)', type: ss, server: gy.cm.01.211129.xyz, port: 51701, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇭🇰 香港|高速|10|AZ(SS)', type: ss, server: hkmax10.170809.xyz, port: 60000, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇭🇰 香港|高速|10|广州移动中转AZ(SS)', type: ss, server: gy01.170809.xyz, port: 13016, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇭🇰 香港|高速|12|AZ(SS)', type: ss, server: hkmax12.170809.xyz, port: 21234, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇭🇰 香港|高速|12|广州移动中转AZ(SS)', type: ss, server: gy.cm.01.211129.xyz, port: 45118, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇭🇰 香港|高速|05|HKT(SS)', type: ss, server: hkmax05.170809.xyz, port: 10041, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇭🇰 香港|高速|05|广州移动中转HKT(SS)', type: ss, server: gy01.170809.xyz, port: 13015, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇭🇰 香港|高速|05|深港隧道中转HKT(SS)', type: ss, server: china-gzyd-1.forwardserver.xyz, port: 31602, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇺🇲 美国|高速|02|RN(SS)', type: ss, server: us02.135235.xyz, port: 12334, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇺🇲 美国|高速|02|广州移动中转RN(SS)', type: ss, server: gy01.170809.xyz, port: 13008, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇺🇲 美国|高速|03|RN(SS)', type: ss, server: us03.135235.xyz, port: 32165, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇺🇲 美国|高速|03|长沙联通中转RN(SS)', type: ss, server: cs.cu.01.211129.xyz, port: 40760, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇺🇲 美国|高速|04|杭州联通中转RN(SS)', type: ss, server: hz.cu.01.211129.xyz, port: 13362, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇺🇲 美国|高速|04|RN', type: vmess, server: us04.170809.xyz, port: 52745, uuid: d1410c51-389f-4aed-9828-0306fa11b7e3, alterId: 0, cipher: auto, udp: true, tls: true, network: ws }
+    - { name: '🇺🇲 美国|高速|05|RN(SS)', type: ss, server: us05.170809.xyz, port: 43535, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇺🇲 美国|高速|05|长沙联通中转RN(SS)', type: ss, server: cs.cu.01.211129.xyz, port: 39568, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇸🇬 新加坡|05|LIN(SS)', type: ss, server: sgmax05.170809.xyz, port: 21353, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇸🇬 新加坡|06|AWS(SS)', type: ss, server: sgmax06.170809.xyz, port: 23825, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇸🇬 新加坡|06|广州移动中转AWS(SS)', type: ss, server: gy01.170809.xyz, port: 13010, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇸🇬 新加坡|01|LIN(SS)', type: ss, server: sg01.170809.xyz, port: 24534, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇭🇰 香港|10|AZ(SS)', type: ss, server: hk10.170809.xyz, port: 46799, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇭🇰 香港|11|AZ(SS)', type: ss, server: hk11.170809.xyz, port: 31314, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇭🇰 香港|12|AWS(SS)', type: ss, server: hk12.170809.xyz, port: 56453, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇭🇰 香港|12|广州移动中转AWS(SS)', type: ss, server: gy.cm.01.211129.xyz, port: 61650, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇭🇰 香港|13|AZ(SS)', type: ss, server: hk13.170809.xyz, port: 31667, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇭🇰 香港|14|AZ(SS)', type: ss, server: hk14.170809.xyz, port: 45624, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇭🇰 香港|15|AZ(SS)', type: ss, server: hk15.170809.xyz, port: 56453, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+    - { name: '🇭🇰 香港|16|AZ(SS)', type: ss, server: hk16.170809.xyz, port: 56453, cipher: chacha20-ietf-poly1305, password: d1410c51-389f-4aed-9828-0306fa11b7e3, udp: true }
+proxy-groups:
+    - { name: 飞鸟云, type: select, proxies: [自动选择, 故障转移, 节点若失效，请更新订阅，使用前最好更新一次，更新报错请先开启代理翻墙（官网feiniaoyun.tk）, '🇨🇳 台湾|高速|01(SS)1G带宽原生IP解锁奈飞', '🇨🇳 台湾|高速|01深港隧道中转(SS)1G带宽原生IP解锁奈飞', '🇨🇳 台湾|高速|01广州移动中转(SS)1G带宽原生IP解锁奈飞', '🇨🇳 台湾|高速|04(SS)1G带宽原生IP解锁奈飞', '🇨🇳 台湾|高速|04深港隧道中转(SS)1G带宽原生IP解锁奈飞', '🇨🇳 台湾|高速|04杭州联通中转(SS)1G带宽原生IP解锁奈飞', '🇨🇳 台湾|高速|04广州移动中转(SS)1G带宽', '🇨🇳 台湾|高速|05(SS)原生IP解锁奈飞', '🇨🇳 台湾|高速|05(SS)广州移动中转原生IP解锁奈飞', '🇸🇬 新加坡|04|OC(SS)1G带宽', '🇸🇬 新加坡|04|OC(SS)广州移动中转1G带宽', '🇸🇬 新加坡|02|LIN1G带宽', '🇸🇬 新加坡|02|广州移动中转LIN1G带宽(SS)', '🇸🇬 新加坡|08|LIN(SS)1G带宽', '🇸🇬 新加坡|08|移动中转LIN(SS)1G带宽', '🇸🇬 新加坡|07|AWS(SS)1G带宽', '🇸🇬 新加坡|01|长沙联通中转LIN(SS)', '🇸🇬 新加坡|05|长沙联通中转LIN(SS)', '🇰🇷 韩国|01|AWS(SS)1G带宽', '🇰🇷 韩国|01|广州移动中转(SS)1G带宽', '🇰🇷 韩国|02|AWS(SS)1G带宽', '🇯🇵 日本|高速|01|联通AWS(SS)1G带宽', '🇯🇵 日本|02|AWS1G带宽(SS)', '🇯🇵 日本|高速|02|联通AWS(SS)1G带宽', '🇯🇵 日本|02|广州移动中转AWS1G带宽(SS)', '🇯🇵 日本|04|联通AWS1G带宽(SS)', '🇯🇵 日本|05|联通AWS1G带宽(SS)', '🇯🇵 日本|01|(SS)1G带宽', '🇯🇵 日本|01|长沙联通中转(SS)1G带宽', '🇯🇵 日本|01|Trojan1G带宽', '🇯🇵 日本|01|1G带宽', '🇯🇵 日本|04|广州移动中转AWS1G带宽(SS)', '🇭🇰 香港|高速|13|广州移动中转HGC(SS)1G带宽', '🇭🇰 香港|高速|01|移动中转HGC(SS)1G带宽', '🇭🇰 香港|高速|13|HGC(SS)1G带宽', '🇭🇰 香港|高速|07|HKT(香港奈飞迪士尼)(SS)', '🇭🇰 香港|高速|07|长沙联通中转HKT(SS)', '🇭🇰 香港|高速|03|AZ(SS)', '🇭🇰 香港|高速|03|移动中转AZ(SS)', '🇭🇰 香港|高速|08|AZ(SS)', '🇭🇰 香港|高速|08|广州移动中转AZ(SS)', '🇭🇰 香港|高速|06|长沙联通中转HGC(SS)', '🇭🇰 香港|高速|06|深港隧道中转HGC(SS)', '🇭🇰 香港|高速|14|广州移动中转WTT(SS)', '🇭🇰 香港|高速|14|长沙联通中转WTT(SS)', '🇭🇰 香港|高速|15|AZ(SS)', '🇭🇰 香港|高速|16|AWS(SS)', '🇭🇰 香港|高速|15|广州移动中转AZ(SS)', '🇭🇰 香港|高速|04|AZ(SS)', '🇭🇰 香港|高速|04|广州移动中转AZ(SS)', '🇭🇰 香港|高速|10|AZ(SS)', '🇭🇰 香港|高速|10|广州移动中转AZ(SS)', '🇭🇰 香港|高速|12|AZ(SS)', '🇭🇰 香港|高速|12|广州移动中转AZ(SS)', '🇭🇰 香港|高速|05|HKT(SS)', '🇭🇰 香港|高速|05|广州移动中转HKT(SS)', '🇭🇰 香港|高速|05|深港隧道中转HKT(SS)', '🇺🇲 美国|高速|02|RN(SS)', '🇺🇲 美国|高速|02|广州移动中转RN(SS)', '🇺🇲 美国|高速|03|RN(SS)', '🇺🇲 美国|高速|03|长沙联通中转RN(SS)', '🇺🇲 美国|高速|04|杭州联通中转RN(SS)', '🇺🇲 美国|高速|04|RN', '🇺🇲 美国|高速|05|RN(SS)', '🇺🇲 美国|高速|05|长沙联通中转RN(SS)', '🇸🇬 新加坡|05|LIN(SS)', '🇸🇬 新加坡|06|AWS(SS)', '🇸🇬 新加坡|06|广州移动中转AWS(SS)', '🇸🇬 新加坡|01|LIN(SS)', '🇭🇰 香港|10|AZ(SS)', '🇭🇰 香港|11|AZ(SS)', '🇭🇰 香港|12|AWS(SS)', '🇭🇰 香港|12|广州移动中转AWS(SS)', '🇭🇰 香港|13|AZ(SS)', '🇭🇰 香港|14|AZ(SS)', '🇭🇰 香港|15|AZ(SS)', '🇭🇰 香港|16|AZ(SS)'] }
+    - { name: 自动选择, type: url-test, proxies: [节点若失效，请更新订阅，使用前最好更新一次，更新报错请先开启代理翻墙（官网feiniaoyun.tk）, '🇨🇳 台湾|高速|01(SS)1G带宽原生IP解锁奈飞', '🇨🇳 台湾|高速|01深港隧道中转(SS)1G带宽原生IP解锁奈飞', '🇨🇳 台湾|高速|01广州移动中转(SS)1G带宽原生IP解锁奈飞', '🇨🇳 台湾|高速|04(SS)1G带宽原生IP解锁奈飞', '🇨🇳 台湾|高速|04深港隧道中转(SS)1G带宽原生IP解锁奈飞', '🇨🇳 台湾|高速|04杭州联通中转(SS)1G带宽原生IP解锁奈飞', '🇨🇳 台湾|高速|04广州移动中转(SS)1G带宽', '🇨🇳 台湾|高速|05(SS)原生IP解锁奈飞', '🇨🇳 台湾|高速|05(SS)广州移动中转原生IP解锁奈飞', '🇸🇬 新加坡|04|OC(SS)1G带宽', '🇸🇬 新加坡|04|OC(SS)广州移动中转1G带宽', '🇸🇬 新加坡|02|LIN1G带宽', '🇸🇬 新加坡|02|广州移动中转LIN1G带宽(SS)', '🇸🇬 新加坡|08|LIN(SS)1G带宽', '🇸🇬 新加坡|08|移动中转LIN(SS)1G带宽', '🇸🇬 新加坡|07|AWS(SS)1G带宽', '🇸🇬 新加坡|01|长沙联通中转LIN(SS)', '🇸🇬 新加坡|05|长沙联通中转LIN(SS)', '🇰🇷 韩国|01|AWS(SS)1G带宽', '🇰🇷 韩国|01|广州移动中转(SS)1G带宽', '🇰🇷 韩国|02|AWS(SS)1G带宽', '🇯🇵 日本|高速|01|联通AWS(SS)1G带宽', '🇯🇵 日本|02|AWS1G带宽(SS)', '🇯🇵 日本|高速|02|联通AWS(SS)1G带宽', '🇯🇵 日本|02|广州移动中转AWS1G带宽(SS)', '🇯🇵 日本|04|联通AWS1G带宽(SS)', '🇯🇵 日本|05|联通AWS1G带宽(SS)', '🇯🇵 日本|01|(SS)1G带宽', '🇯🇵 日本|01|长沙联通中转(SS)1G带宽', '🇯🇵 日本|01|Trojan1G带宽', '🇯🇵 日本|01|1G带宽', '🇯🇵 日本|04|广州移动中转AWS1G带宽(SS)', '🇭🇰 香港|高速|13|广州移动中转HGC(SS)1G带宽', '🇭🇰 香港|高速|01|移动中转HGC(SS)1G带宽', '🇭🇰 香港|高速|13|HGC(SS)1G带宽', '🇭🇰 香港|高速|07|HKT(香港奈飞迪士尼)(SS)', '🇭🇰 香港|高速|07|长沙联通中转HKT(SS)', '🇭🇰 香港|高速|03|AZ(SS)', '🇭🇰 香港|高速|03|移动中转AZ(SS)', '🇭🇰 香港|高速|08|AZ(SS)', '🇭🇰 香港|高速|08|广州移动中转AZ(SS)', '🇭🇰 香港|高速|06|长沙联通中转HGC(SS)', '🇭🇰 香港|高速|06|深港隧道中转HGC(SS)', '🇭🇰 香港|高速|14|广州移动中转WTT(SS)', '🇭🇰 香港|高速|14|长沙联通中转WTT(SS)', '🇭🇰 香港|高速|15|AZ(SS)', '🇭🇰 香港|高速|16|AWS(SS)', '🇭🇰 香港|高速|15|广州移动中转AZ(SS)', '🇭🇰 香港|高速|04|AZ(SS)', '🇭🇰 香港|高速|04|广州移动中转AZ(SS)', '🇭🇰 香港|高速|10|AZ(SS)', '🇭🇰 香港|高速|10|广州移动中转AZ(SS)', '🇭🇰 香港|高速|12|AZ(SS)', '🇭🇰 香港|高速|12|广州移动中转AZ(SS)', '🇭🇰 香港|高速|05|HKT(SS)', '🇭🇰 香港|高速|05|广州移动中转HKT(SS)', '🇭🇰 香港|高速|05|深港隧道中转HKT(SS)', '🇺🇲 美国|高速|02|RN(SS)', '🇺🇲 美国|高速|02|广州移动中转RN(SS)', '🇺🇲 美国|高速|03|RN(SS)', '🇺🇲 美国|高速|03|长沙联通中转RN(SS)', '🇺🇲 美国|高速|04|杭州联通中转RN(SS)', '🇺🇲 美国|高速|04|RN', '🇺🇲 美国|高速|05|RN(SS)', '🇺🇲 美国|高速|05|长沙联通中转RN(SS)', '🇸🇬 新加坡|05|LIN(SS)', '🇸🇬 新加坡|06|AWS(SS)', '🇸🇬 新加坡|06|广州移动中转AWS(SS)', '🇸🇬 新加坡|01|LIN(SS)', '🇭🇰 香港|10|AZ(SS)', '🇭🇰 香港|11|AZ(SS)', '🇭🇰 香港|12|AWS(SS)', '🇭🇰 香港|12|广州移动中转AWS(SS)', '🇭🇰 香港|13|AZ(SS)', '🇭🇰 香港|14|AZ(SS)', '🇭🇰 香港|15|AZ(SS)', '🇭🇰 香港|16|AZ(SS)'], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 故障转移, type: fallback, proxies: [节点若失效，请更新订阅，使用前最好更新一次，更新报错请先开启代理翻墙（官网feiniaoyun.tk）, '🇨🇳 台湾|高速|01(SS)1G带宽原生IP解锁奈飞', '🇨🇳 台湾|高速|01深港隧道中转(SS)1G带宽原生IP解锁奈飞', '🇨🇳 台湾|高速|01广州移动中转(SS)1G带宽原生IP解锁奈飞', '🇨🇳 台湾|高速|04(SS)1G带宽原生IP解锁奈飞', '🇨🇳 台湾|高速|04深港隧道中转(SS)1G带宽原生IP解锁奈飞', '🇨🇳 台湾|高速|04杭州联通中转(SS)1G带宽原生IP解锁奈飞', '🇨🇳 台湾|高速|04广州移动中转(SS)1G带宽', '🇨🇳 台湾|高速|05(SS)原生IP解锁奈飞', '🇨🇳 台湾|高速|05(SS)广州移动中转原生IP解锁奈飞', '🇸🇬 新加坡|04|OC(SS)1G带宽', '🇸🇬 新加坡|04|OC(SS)广州移动中转1G带宽', '🇸🇬 新加坡|02|LIN1G带宽', '🇸🇬 新加坡|02|广州移动中转LIN1G带宽(SS)', '🇸🇬 新加坡|08|LIN(SS)1G带宽', '🇸🇬 新加坡|08|移动中转LIN(SS)1G带宽', '🇸🇬 新加坡|07|AWS(SS)1G带宽', '🇸🇬 新加坡|01|长沙联通中转LIN(SS)', '🇸🇬 新加坡|05|长沙联通中转LIN(SS)', '🇰🇷 韩国|01|AWS(SS)1G带宽', '🇰🇷 韩国|01|广州移动中转(SS)1G带宽', '🇰🇷 韩国|02|AWS(SS)1G带宽', '🇯🇵 日本|高速|01|联通AWS(SS)1G带宽', '🇯🇵 日本|02|AWS1G带宽(SS)', '🇯🇵 日本|高速|02|联通AWS(SS)1G带宽', '🇯🇵 日本|02|广州移动中转AWS1G带宽(SS)', '🇯🇵 日本|04|联通AWS1G带宽(SS)', '🇯🇵 日本|05|联通AWS1G带宽(SS)', '🇯🇵 日本|01|(SS)1G带宽', '🇯🇵 日本|01|长沙联通中转(SS)1G带宽', '🇯🇵 日本|01|Trojan1G带宽', '🇯🇵 日本|01|1G带宽', '🇯🇵 日本|04|广州移动中转AWS1G带宽(SS)', '🇭🇰 香港|高速|13|广州移动中转HGC(SS)1G带宽', '🇭🇰 香港|高速|01|移动中转HGC(SS)1G带宽', '🇭🇰 香港|高速|13|HGC(SS)1G带宽', '🇭🇰 香港|高速|07|HKT(香港奈飞迪士尼)(SS)', '🇭🇰 香港|高速|07|长沙联通中转HKT(SS)', '🇭🇰 香港|高速|03|AZ(SS)', '🇭🇰 香港|高速|03|移动中转AZ(SS)', '🇭🇰 香港|高速|08|AZ(SS)', '🇭🇰 香港|高速|08|广州移动中转AZ(SS)', '🇭🇰 香港|高速|06|长沙联通中转HGC(SS)', '🇭🇰 香港|高速|06|深港隧道中转HGC(SS)', '🇭🇰 香港|高速|14|广州移动中转WTT(SS)', '🇭🇰 香港|高速|14|长沙联通中转WTT(SS)', '🇭🇰 香港|高速|15|AZ(SS)', '🇭🇰 香港|高速|16|AWS(SS)', '🇭🇰 香港|高速|15|广州移动中转AZ(SS)', '🇭🇰 香港|高速|04|AZ(SS)', '🇭🇰 香港|高速|04|广州移动中转AZ(SS)', '🇭🇰 香港|高速|10|AZ(SS)', '🇭🇰 香港|高速|10|广州移动中转AZ(SS)', '🇭🇰 香港|高速|12|AZ(SS)', '🇭🇰 香港|高速|12|广州移动中转AZ(SS)', '🇭🇰 香港|高速|05|HKT(SS)', '🇭🇰 香港|高速|05|广州移动中转HKT(SS)', '🇭🇰 香港|高速|05|深港隧道中转HKT(SS)', '🇺🇲 美国|高速|02|RN(SS)', '🇺🇲 美国|高速|02|广州移动中转RN(SS)', '🇺🇲 美国|高速|03|RN(SS)', '🇺🇲 美国|高速|03|长沙联通中转RN(SS)', '🇺🇲 美国|高速|04|杭州联通中转RN(SS)', '🇺🇲 美国|高速|04|RN', '🇺🇲 美国|高速|05|RN(SS)', '🇺🇲 美国|高速|05|长沙联通中转RN(SS)', '🇸🇬 新加坡|05|LIN(SS)', '🇸🇬 新加坡|06|AWS(SS)', '🇸🇬 新加坡|06|广州移动中转AWS(SS)', '🇸🇬 新加坡|01|LIN(SS)', '🇭🇰 香港|10|AZ(SS)', '🇭🇰 香港|11|AZ(SS)', '🇭🇰 香港|12|AWS(SS)', '🇭🇰 香港|12|广州移动中转AWS(SS)', '🇭🇰 香港|13|AZ(SS)', '🇭🇰 香港|14|AZ(SS)', '🇭🇰 香港|15|AZ(SS)', '🇭🇰 香港|16|AZ(SS)'], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
 rules:
-  - DOMAIN,clash.razord.top,DIRECT
-  - DOMAIN,yacd.haishan.me,DIRECT
-  - DOMAIN-SUFFIX,googleapis.cn,Just4FaceBook
-  - DOMAIN-KEYWORD,facebook,Just4FaceBook
-  - DOMAIN-KEYWORD,oculus,Just4FaceBook
-  - DOMAIN-KEYWORD,oculuscdn,Just4FaceBook
-  - DOMAIN-SUFFIX,myip.com,Just4FaceBook
-  - DOMAIN-SUFFIX,unity3d.com,POP
-  - DOMAIN-SUFFIX,playfabapi.com,POP
-  - DOMAIN-SUFFIX,bigboxvr.com,POP
-  - DOMAIN-SUFFIX,vivox.com,POP
-  - DOMAIN-SUFFIX,amazonaws.com,POP    
-  - RULE-SET,icloud,DIRECT
-  - RULE-SET,apple,DIRECT
-  - RULE-SET,direct,DIRECT
-  - GEOIP,CN,DIRECT
-  #- RULE-SET,reject,REJECT
-  - RULE-SET,google,FuckWall
-  - RULE-SET,proxy,FuckWall
-  - RULE-SET,telegramcidr,FuckWall
-#  - MATCH,FuckWall
-  - MATCH,Final-------------------------------------------
+    - 'DOMAIN,feiniaoyun.tk,DIRECT'
+    - 'DOMAIN-SUFFIX,services.googleapis.cn,飞鸟云'
+    - 'DOMAIN-SUFFIX,xn--ngstr-lra8j.com,飞鸟云'
+    - 'DOMAIN,safebrowsing.urlsec.qq.com,DIRECT'
+    - 'DOMAIN,safebrowsing.googleapis.com,DIRECT'
+    - 'DOMAIN,developer.apple.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,digicert.com,飞鸟云'
+    - 'DOMAIN,ocsp.apple.com,飞鸟云'
+    - 'DOMAIN,ocsp.comodoca.com,飞鸟云'
+    - 'DOMAIN,ocsp.usertrust.com,飞鸟云'
+    - 'DOMAIN,ocsp.sectigo.com,飞鸟云'
+    - 'DOMAIN,ocsp.verisign.net,飞鸟云'
+    - 'DOMAIN-SUFFIX,apple-dns.net,飞鸟云'
+    - 'DOMAIN,testflight.apple.com,飞鸟云'
+    - 'DOMAIN,sandbox.itunes.apple.com,飞鸟云'
+    - 'DOMAIN,itunes.apple.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,apps.apple.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,blobstore.apple.com,飞鸟云'
+    - 'DOMAIN,cvws.icloud-content.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,mzstatic.com,DIRECT'
+    - 'DOMAIN-SUFFIX,itunes.apple.com,DIRECT'
+    - 'DOMAIN-SUFFIX,icloud.com,DIRECT'
+    - 'DOMAIN-SUFFIX,icloud-content.com,DIRECT'
+    - 'DOMAIN-SUFFIX,me.com,DIRECT'
+    - 'DOMAIN-SUFFIX,aaplimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,cdn20.com,DIRECT'
+    - 'DOMAIN-SUFFIX,cdn-apple.com,DIRECT'
+    - 'DOMAIN-SUFFIX,akadns.net,DIRECT'
+    - 'DOMAIN-SUFFIX,akamaiedge.net,DIRECT'
+    - 'DOMAIN-SUFFIX,edgekey.net,DIRECT'
+    - 'DOMAIN-SUFFIX,mwcloudcdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,mwcname.com,DIRECT'
+    - 'DOMAIN-SUFFIX,apple.com,DIRECT'
+    - 'DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT'
+    - 'DOMAIN-SUFFIX,apple-mapkit.com,DIRECT'
+    - 'DOMAIN-SUFFIX,cn,DIRECT'
+    - 'DOMAIN-KEYWORD,-cn,DIRECT'
+    - 'DOMAIN-SUFFIX,126.com,DIRECT'
+    - 'DOMAIN-SUFFIX,126.net,DIRECT'
+    - 'DOMAIN-SUFFIX,127.net,DIRECT'
+    - 'DOMAIN-SUFFIX,163.com,DIRECT'
+    - 'DOMAIN-SUFFIX,360buyimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,36kr.com,DIRECT'
+    - 'DOMAIN-SUFFIX,acfun.tv,DIRECT'
+    - 'DOMAIN-SUFFIX,air-matters.com,DIRECT'
+    - 'DOMAIN-SUFFIX,aixifan.com,DIRECT'
+    - 'DOMAIN-KEYWORD,alicdn,DIRECT'
+    - 'DOMAIN-KEYWORD,alipay,DIRECT'
+    - 'DOMAIN-KEYWORD,taobao,DIRECT'
+    - 'DOMAIN-SUFFIX,amap.com,DIRECT'
+    - 'DOMAIN-SUFFIX,autonavi.com,DIRECT'
+    - 'DOMAIN-KEYWORD,baidu,DIRECT'
+    - 'DOMAIN-SUFFIX,bdimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,bdstatic.com,DIRECT'
+    - 'DOMAIN-SUFFIX,bilibili.com,DIRECT'
+    - 'DOMAIN-SUFFIX,bilivideo.com,DIRECT'
+    - 'DOMAIN-SUFFIX,caiyunapp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,clouddn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,cnbeta.com,DIRECT'
+    - 'DOMAIN-SUFFIX,cnbetacdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,cootekservice.com,DIRECT'
+    - 'DOMAIN-SUFFIX,csdn.net,DIRECT'
+    - 'DOMAIN-SUFFIX,ctrip.com,DIRECT'
+    - 'DOMAIN-SUFFIX,dgtle.com,DIRECT'
+    - 'DOMAIN-SUFFIX,dianping.com,DIRECT'
+    - 'DOMAIN-SUFFIX,douban.com,DIRECT'
+    - 'DOMAIN-SUFFIX,doubanio.com,DIRECT'
+    - 'DOMAIN-SUFFIX,duokan.com,DIRECT'
+    - 'DOMAIN-SUFFIX,easou.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ele.me,DIRECT'
+    - 'DOMAIN-SUFFIX,feng.com,DIRECT'
+    - 'DOMAIN-SUFFIX,fir.im,DIRECT'
+    - 'DOMAIN-SUFFIX,frdic.com,DIRECT'
+    - 'DOMAIN-SUFFIX,g-cores.com,DIRECT'
+    - 'DOMAIN-SUFFIX,godic.net,DIRECT'
+    - 'DOMAIN-SUFFIX,gtimg.com,DIRECT'
+    - 'DOMAIN,cdn.hockeyapp.net,DIRECT'
+    - 'DOMAIN-SUFFIX,hongxiu.com,DIRECT'
+    - 'DOMAIN-SUFFIX,hxcdn.net,DIRECT'
+    - 'DOMAIN-SUFFIX,iciba.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ifeng.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ifengimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ipip.net,DIRECT'
+    - 'DOMAIN-SUFFIX,iqiyi.com,DIRECT'
+    - 'DOMAIN-SUFFIX,jd.com,DIRECT'
+    - 'DOMAIN-SUFFIX,jianshu.com,DIRECT'
+    - 'DOMAIN-SUFFIX,knewone.com,DIRECT'
+    - 'DOMAIN-SUFFIX,le.com,DIRECT'
+    - 'DOMAIN-SUFFIX,lecloud.com,DIRECT'
+    - 'DOMAIN-SUFFIX,lemicp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,licdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,luoo.net,DIRECT'
+    - 'DOMAIN-SUFFIX,meituan.com,DIRECT'
+    - 'DOMAIN-SUFFIX,meituan.net,DIRECT'
+    - 'DOMAIN-SUFFIX,mi.com,DIRECT'
+    - 'DOMAIN-SUFFIX,miaopai.com,DIRECT'
+    - 'DOMAIN-SUFFIX,microsoft.com,DIRECT'
+    - 'DOMAIN-SUFFIX,microsoftonline.com,DIRECT'
+    - 'DOMAIN-SUFFIX,miui.com,DIRECT'
+    - 'DOMAIN-SUFFIX,miwifi.com,DIRECT'
+    - 'DOMAIN-SUFFIX,mob.com,DIRECT'
+    - 'DOMAIN-SUFFIX,netease.com,DIRECT'
+    - 'DOMAIN-SUFFIX,office.com,DIRECT'
+    - 'DOMAIN-SUFFIX,office365.com,DIRECT'
+    - 'DOMAIN-KEYWORD,officecdn,DIRECT'
+    - 'DOMAIN-SUFFIX,oschina.net,DIRECT'
+    - 'DOMAIN-SUFFIX,ppsimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,pstatp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qcloud.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qdaily.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qdmm.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qhimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qhres.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qidian.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qihucdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qiniu.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qiniucdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qiyipic.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qq.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qqurl.com,DIRECT'
+    - 'DOMAIN-SUFFIX,rarbg.to,DIRECT'
+    - 'DOMAIN-SUFFIX,ruguoapp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,segmentfault.com,DIRECT'
+    - 'DOMAIN-SUFFIX,sinaapp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,smzdm.com,DIRECT'
+    - 'DOMAIN-SUFFIX,snapdrop.net,DIRECT'
+    - 'DOMAIN-SUFFIX,sogou.com,DIRECT'
+    - 'DOMAIN-SUFFIX,sogoucdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,sohu.com,DIRECT'
+    - 'DOMAIN-SUFFIX,soku.com,DIRECT'
+    - 'DOMAIN-SUFFIX,speedtest.net,DIRECT'
+    - 'DOMAIN-SUFFIX,sspai.com,DIRECT'
+    - 'DOMAIN-SUFFIX,suning.com,DIRECT'
+    - 'DOMAIN-SUFFIX,taobao.com,DIRECT'
+    - 'DOMAIN-SUFFIX,tencent.com,DIRECT'
+    - 'DOMAIN-SUFFIX,tenpay.com,DIRECT'
+    - 'DOMAIN-SUFFIX,tianyancha.com,DIRECT'
+    - 'DOMAIN-SUFFIX,tmall.com,DIRECT'
+    - 'DOMAIN-SUFFIX,tudou.com,DIRECT'
+    - 'DOMAIN-SUFFIX,umetrip.com,DIRECT'
+    - 'DOMAIN-SUFFIX,upaiyun.com,DIRECT'
+    - 'DOMAIN-SUFFIX,upyun.com,DIRECT'
+    - 'DOMAIN-SUFFIX,veryzhun.com,DIRECT'
+    - 'DOMAIN-SUFFIX,weather.com,DIRECT'
+    - 'DOMAIN-SUFFIX,weibo.com,DIRECT'
+    - 'DOMAIN-SUFFIX,xiami.com,DIRECT'
+    - 'DOMAIN-SUFFIX,xiami.net,DIRECT'
+    - 'DOMAIN-SUFFIX,xiaomicp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ximalaya.com,DIRECT'
+    - 'DOMAIN-SUFFIX,xmcdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,xunlei.com,DIRECT'
+    - 'DOMAIN-SUFFIX,yhd.com,DIRECT'
+    - 'DOMAIN-SUFFIX,yihaodianimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,yinxiang.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ykimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,youdao.com,DIRECT'
+    - 'DOMAIN-SUFFIX,youku.com,DIRECT'
+    - 'DOMAIN-SUFFIX,zealer.com,DIRECT'
+    - 'DOMAIN-SUFFIX,zhihu.com,DIRECT'
+    - 'DOMAIN-SUFFIX,zhimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,zimuzu.tv,DIRECT'
+    - 'DOMAIN-SUFFIX,zoho.com,DIRECT'
+    - 'DOMAIN-KEYWORD,amazon,飞鸟云'
+    - 'DOMAIN-KEYWORD,google,飞鸟云'
+    - 'DOMAIN-KEYWORD,gmail,飞鸟云'
+    - 'DOMAIN-KEYWORD,youtube,飞鸟云'
+    - 'DOMAIN-KEYWORD,facebook,飞鸟云'
+    - 'DOMAIN-SUFFIX,fb.me,飞鸟云'
+    - 'DOMAIN-SUFFIX,fbcdn.net,飞鸟云'
+    - 'DOMAIN-KEYWORD,twitter,飞鸟云'
+    - 'DOMAIN-KEYWORD,instagram,飞鸟云'
+    - 'DOMAIN-KEYWORD,dropbox,飞鸟云'
+    - 'DOMAIN-SUFFIX,twimg.com,飞鸟云'
+    - 'DOMAIN-KEYWORD,blogspot,飞鸟云'
+    - 'DOMAIN-SUFFIX,youtu.be,飞鸟云'
+    - 'DOMAIN-KEYWORD,whatsapp,飞鸟云'
+    - 'DOMAIN-KEYWORD,admarvel,REJECT'
+    - 'DOMAIN-KEYWORD,admaster,REJECT'
+    - 'DOMAIN-KEYWORD,adsage,REJECT'
+    - 'DOMAIN-KEYWORD,adsmogo,REJECT'
+    - 'DOMAIN-KEYWORD,adsrvmedia,REJECT'
+    - 'DOMAIN-KEYWORD,adwords,REJECT'
+    - 'DOMAIN-KEYWORD,adservice,REJECT'
+    - 'DOMAIN-SUFFIX,appsflyer.com,REJECT'
+    - 'DOMAIN-KEYWORD,domob,REJECT'
+    - 'DOMAIN-SUFFIX,doubleclick.net,REJECT'
+    - 'DOMAIN-KEYWORD,duomeng,REJECT'
+    - 'DOMAIN-KEYWORD,dwtrack,REJECT'
+    - 'DOMAIN-KEYWORD,guanggao,REJECT'
+    - 'DOMAIN-KEYWORD,lianmeng,REJECT'
+    - 'DOMAIN-SUFFIX,mmstat.com,REJECT'
+    - 'DOMAIN-KEYWORD,mopub,REJECT'
+    - 'DOMAIN-KEYWORD,omgmta,REJECT'
+    - 'DOMAIN-KEYWORD,openx,REJECT'
+    - 'DOMAIN-KEYWORD,partnerad,REJECT'
+    - 'DOMAIN-KEYWORD,pingfore,REJECT'
+    - 'DOMAIN-KEYWORD,supersonicads,REJECT'
+    - 'DOMAIN-KEYWORD,uedas,REJECT'
+    - 'DOMAIN-KEYWORD,umeng,REJECT'
+    - 'DOMAIN-KEYWORD,usage,REJECT'
+    - 'DOMAIN-SUFFIX,vungle.com,REJECT'
+    - 'DOMAIN-KEYWORD,wlmonitor,REJECT'
+    - 'DOMAIN-KEYWORD,zjtoolbar,REJECT'
+    - 'DOMAIN-SUFFIX,9to5mac.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,abpchina.org,飞鸟云'
+    - 'DOMAIN-SUFFIX,adblockplus.org,飞鸟云'
+    - 'DOMAIN-SUFFIX,adobe.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,akamaized.net,飞鸟云'
+    - 'DOMAIN-SUFFIX,alfredapp.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,amplitude.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,ampproject.org,飞鸟云'
+    - 'DOMAIN-SUFFIX,android.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,angularjs.org,飞鸟云'
+    - 'DOMAIN-SUFFIX,aolcdn.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,apkpure.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,appledaily.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,appshopper.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,appspot.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,arcgis.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,archive.org,飞鸟云'
+    - 'DOMAIN-SUFFIX,armorgames.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,aspnetcdn.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,att.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,awsstatic.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,azureedge.net,飞鸟云'
+    - 'DOMAIN-SUFFIX,azurewebsites.net,飞鸟云'
+    - 'DOMAIN-SUFFIX,bing.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,bintray.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,bit.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,bit.ly,飞鸟云'
+    - 'DOMAIN-SUFFIX,bitbucket.org,飞鸟云'
+    - 'DOMAIN-SUFFIX,bjango.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,bkrtx.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,blog.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,blogcdn.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,blogger.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,blogsmithmedia.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,blogspot.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,blogspot.hk,飞鸟云'
+    - 'DOMAIN-SUFFIX,bloomberg.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,box.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,box.net,飞鸟云'
+    - 'DOMAIN-SUFFIX,cachefly.net,飞鸟云'
+    - 'DOMAIN-SUFFIX,chromium.org,飞鸟云'
+    - 'DOMAIN-SUFFIX,cl.ly,飞鸟云'
+    - 'DOMAIN-SUFFIX,cloudflare.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,cloudfront.net,飞鸟云'
+    - 'DOMAIN-SUFFIX,cloudmagic.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,cmail19.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,cnet.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,cocoapods.org,飞鸟云'
+    - 'DOMAIN-SUFFIX,comodoca.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,crashlytics.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,culturedcode.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,d.pr,飞鸟云'
+    - 'DOMAIN-SUFFIX,danilo.to,飞鸟云'
+    - 'DOMAIN-SUFFIX,dayone.me,飞鸟云'
+    - 'DOMAIN-SUFFIX,db.tt,飞鸟云'
+    - 'DOMAIN-SUFFIX,deskconnect.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,disq.us,飞鸟云'
+    - 'DOMAIN-SUFFIX,disqus.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,disquscdn.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,dnsimple.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,docker.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,dribbble.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,droplr.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,duckduckgo.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,dueapp.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,dytt8.net,飞鸟云'
+    - 'DOMAIN-SUFFIX,edgecastcdn.net,飞鸟云'
+    - 'DOMAIN-SUFFIX,edgekey.net,飞鸟云'
+    - 'DOMAIN-SUFFIX,edgesuite.net,飞鸟云'
+    - 'DOMAIN-SUFFIX,engadget.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,entrust.net,飞鸟云'
+    - 'DOMAIN-SUFFIX,eurekavpt.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,evernote.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,fabric.io,飞鸟云'
+    - 'DOMAIN-SUFFIX,fast.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,fastly.net,飞鸟云'
+    - 'DOMAIN-SUFFIX,fc2.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,feedburner.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,feedly.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,feedsportal.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,fiftythree.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,firebaseio.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,flexibits.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,flickr.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,flipboard.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,g.co,飞鸟云'
+    - 'DOMAIN-SUFFIX,gabia.net,飞鸟云'
+    - 'DOMAIN-SUFFIX,geni.us,飞鸟云'
+    - 'DOMAIN-SUFFIX,gfx.ms,飞鸟云'
+    - 'DOMAIN-SUFFIX,ggpht.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,ghostnoteapp.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,git.io,飞鸟云'
+    - 'DOMAIN-KEYWORD,github,飞鸟云'
+    - 'DOMAIN-SUFFIX,globalsign.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,gmodules.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,godaddy.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,golang.org,飞鸟云'
+    - 'DOMAIN-SUFFIX,gongm.in,飞鸟云'
+    - 'DOMAIN-SUFFIX,goo.gl,飞鸟云'
+    - 'DOMAIN-SUFFIX,goodreaders.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,goodreads.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,gravatar.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,gstatic.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,gvt0.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,hockeyapp.net,飞鸟云'
+    - 'DOMAIN-SUFFIX,hotmail.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,icons8.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,ifixit.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,ift.tt,飞鸟云'
+    - 'DOMAIN-SUFFIX,ifttt.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,iherb.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,imageshack.us,飞鸟云'
+    - 'DOMAIN-SUFFIX,img.ly,飞鸟云'
+    - 'DOMAIN-SUFFIX,imgur.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,imore.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,instapaper.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,ipn.li,飞鸟云'
+    - 'DOMAIN-SUFFIX,is.gd,飞鸟云'
+    - 'DOMAIN-SUFFIX,issuu.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,itgonglun.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,itun.es,飞鸟云'
+    - 'DOMAIN-SUFFIX,ixquick.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,j.mp,飞鸟云'
+    - 'DOMAIN-SUFFIX,js.revsci.net,飞鸟云'
+    - 'DOMAIN-SUFFIX,jshint.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,jtvnw.net,飞鸟云'
+    - 'DOMAIN-SUFFIX,justgetflux.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,kat.cr,飞鸟云'
+    - 'DOMAIN-SUFFIX,klip.me,飞鸟云'
+    - 'DOMAIN-SUFFIX,libsyn.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,linkedin.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,linode.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,lithium.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,littlehj.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,live.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,live.net,飞鸟云'
+    - 'DOMAIN-SUFFIX,livefilestore.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,llnwd.net,飞鸟云'
+    - 'DOMAIN-SUFFIX,macid.co,飞鸟云'
+    - 'DOMAIN-SUFFIX,macromedia.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,macrumors.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,mashable.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,mathjax.org,飞鸟云'
+    - 'DOMAIN-SUFFIX,medium.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,mega.co.nz,飞鸟云'
+    - 'DOMAIN-SUFFIX,mega.nz,飞鸟云'
+    - 'DOMAIN-SUFFIX,megaupload.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,microsofttranslator.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,mindnode.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,mobile01.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,modmyi.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,msedge.net,飞鸟云'
+    - 'DOMAIN-SUFFIX,myfontastic.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,name.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,nextmedia.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,nsstatic.net,飞鸟云'
+    - 'DOMAIN-SUFFIX,nssurge.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,nyt.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,nytimes.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,omnigroup.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,onedrive.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,onenote.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,ooyala.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,openvpn.net,飞鸟云'
+    - 'DOMAIN-SUFFIX,openwrt.org,飞鸟云'
+    - 'DOMAIN-SUFFIX,orkut.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,osxdaily.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,outlook.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,ow.ly,飞鸟云'
+    - 'DOMAIN-SUFFIX,paddleapi.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,parallels.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,parse.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,pdfexpert.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,periscope.tv,飞鸟云'
+    - 'DOMAIN-SUFFIX,pinboard.in,飞鸟云'
+    - 'DOMAIN-SUFFIX,pinterest.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,pixelmator.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,pixiv.net,飞鸟云'
+    - 'DOMAIN-SUFFIX,playpcesor.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,playstation.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,playstation.com.hk,飞鸟云'
+    - 'DOMAIN-SUFFIX,playstation.net,飞鸟云'
+    - 'DOMAIN-SUFFIX,playstationnetwork.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,pushwoosh.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,rime.im,飞鸟云'
+    - 'DOMAIN-SUFFIX,servebom.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,sfx.ms,飞鸟云'
+    - 'DOMAIN-SUFFIX,shadowsocks.org,飞鸟云'
+    - 'DOMAIN-SUFFIX,sharethis.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,shazam.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,skype.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,smartdns飞鸟云.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,smartmailcloud.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,sndcdn.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,sony.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,soundcloud.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,sourceforge.net,飞鸟云'
+    - 'DOMAIN-SUFFIX,spotify.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,squarespace.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,sstatic.net,飞鸟云'
+    - 'DOMAIN-SUFFIX,st.luluku.pw,飞鸟云'
+    - 'DOMAIN-SUFFIX,stackoverflow.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,startpage.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,staticflickr.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,steamcommunity.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,symauth.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,symcb.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,symcd.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,tapbots.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,tapbots.net,飞鸟云'
+    - 'DOMAIN-SUFFIX,tdesktop.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,techcrunch.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,techsmith.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,thepiratebay.org,飞鸟云'
+    - 'DOMAIN-SUFFIX,theverge.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,time.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,timeinc.net,飞鸟云'
+    - 'DOMAIN-SUFFIX,tiny.cc,飞鸟云'
+    - 'DOMAIN-SUFFIX,tinypic.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,tmblr.co,飞鸟云'
+    - 'DOMAIN-SUFFIX,todoist.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,trello.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,trustasiassl.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,tumblr.co,飞鸟云'
+    - 'DOMAIN-SUFFIX,tumblr.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,tweetdeck.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,tweetmarker.net,飞鸟云'
+    - 'DOMAIN-SUFFIX,twitch.tv,飞鸟云'
+    - 'DOMAIN-SUFFIX,txmblr.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,typekit.net,飞鸟云'
+    - 'DOMAIN-SUFFIX,ubertags.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,ublock.org,飞鸟云'
+    - 'DOMAIN-SUFFIX,ubnt.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,ulyssesapp.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,urchin.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,usertrust.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,v.gd,飞鸟云'
+    - 'DOMAIN-SUFFIX,v2ex.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,vimeo.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,vimeocdn.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,vine.co,飞鸟云'
+    - 'DOMAIN-SUFFIX,vivaldi.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,vox-cdn.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,vsco.co,飞鸟云'
+    - 'DOMAIN-SUFFIX,vultr.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,w.org,飞鸟云'
+    - 'DOMAIN-SUFFIX,w3schools.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,webtype.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,wikiwand.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,wikileaks.org,飞鸟云'
+    - 'DOMAIN-SUFFIX,wikimedia.org,飞鸟云'
+    - 'DOMAIN-SUFFIX,wikipedia.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,wikipedia.org,飞鸟云'
+    - 'DOMAIN-SUFFIX,windows.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,windows.net,飞鸟云'
+    - 'DOMAIN-SUFFIX,wire.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,wordpress.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,workflowy.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,wp.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,wsj.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,wsj.net,飞鸟云'
+    - 'DOMAIN-SUFFIX,xda-developers.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,xeeno.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,xiti.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,yahoo.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,yimg.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,ying.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,yoyo.org,飞鸟云'
+    - 'DOMAIN-SUFFIX,ytimg.com,飞鸟云'
+    - 'DOMAIN-SUFFIX,telegra.ph,飞鸟云'
+    - 'DOMAIN-SUFFIX,telegram.org,飞鸟云'
+    - 'IP-CIDR,91.108.4.0/22,飞鸟云,no-resolve'
+    - 'IP-CIDR,91.108.8.0/21,飞鸟云,no-resolve'
+    - 'IP-CIDR,91.108.16.0/22,飞鸟云,no-resolve'
+    - 'IP-CIDR,91.108.56.0/22,飞鸟云,no-resolve'
+    - 'IP-CIDR,149.154.160.0/20,飞鸟云,no-resolve'
+    - 'IP-CIDR6,2001:67c:4e8::/48,飞鸟云,no-resolve'
+    - 'IP-CIDR6,2001:b28:f23d::/48,飞鸟云,no-resolve'
+    - 'IP-CIDR6,2001:b28:f23f::/48,飞鸟云,no-resolve'
+    - 'IP-CIDR,120.232.181.162/32,飞鸟云,no-resolve'
+    - 'IP-CIDR,120.241.147.226/32,飞鸟云,no-resolve'
+    - 'IP-CIDR,120.253.253.226/32,飞鸟云,no-resolve'
+    - 'IP-CIDR,120.253.255.162/32,飞鸟云,no-resolve'
+    - 'IP-CIDR,120.253.255.34/32,飞鸟云,no-resolve'
+    - 'IP-CIDR,120.253.255.98/32,飞鸟云,no-resolve'
+    - 'IP-CIDR,180.163.150.162/32,飞鸟云,no-resolve'
+    - 'IP-CIDR,180.163.150.34/32,飞鸟云,no-resolve'
+    - 'IP-CIDR,180.163.151.162/32,飞鸟云,no-resolve'
+    - 'IP-CIDR,180.163.151.34/32,飞鸟云,no-resolve'
+    - 'IP-CIDR,203.208.39.0/24,飞鸟云,no-resolve'
+    - 'IP-CIDR,203.208.40.0/24,飞鸟云,no-resolve'
+    - 'IP-CIDR,203.208.41.0/24,飞鸟云,no-resolve'
+    - 'IP-CIDR,203.208.43.0/24,飞鸟云,no-resolve'
+    - 'IP-CIDR,203.208.50.0/24,飞鸟云,no-resolve'
+    - 'IP-CIDR,220.181.174.162/32,飞鸟云,no-resolve'
+    - 'IP-CIDR,220.181.174.226/32,飞鸟云,no-resolve'
+    - 'IP-CIDR,220.181.174.34/32,飞鸟云,no-resolve'
+    - 'DOMAIN,injections.adguard.org,DIRECT'
+    - 'DOMAIN,local.adguard.org,DIRECT'
+    - 'DOMAIN-SUFFIX,local,DIRECT'
+    - 'IP-CIDR,127.0.0.0/8,DIRECT'
+    - 'IP-CIDR,172.16.0.0/12,DIRECT'
+    - 'IP-CIDR,192.168.0.0/16,DIRECT'
+    - 'IP-CIDR,10.0.0.0/8,DIRECT'
+    - 'IP-CIDR,17.0.0.0/8,DIRECT'
+    - 'IP-CIDR,100.64.0.0/10,DIRECT'
+    - 'IP-CIDR,224.0.0.0/4,DIRECT'
+    - 'IP-CIDR6,fe80::/10,DIRECT'
+    - 'GEOIP,CN,DIRECT'
+    - 'MATCH,飞鸟云'
