@@ -31,7 +31,7 @@ dns:
 
 
 proxy-groups:
-  - name: "Web"
+  - name: "POP"
     type: select
     proxies:
       - m_3
@@ -43,8 +43,8 @@ proxy-groups:
       - home_socks6
       - home100_7890
       - home200_7890
-      - DIRECT
-      
+      - home100_57890
+      - DIRECT    
   - name: "FuckWall"
     type: select
     proxies:
@@ -57,6 +57,7 @@ proxy-groups:
       - home_socks6
       - home100_7890
       - home200_7890
+      - home100_57890
       - DIRECT
   - name: "feiniao"
     type: select
@@ -90,6 +91,9 @@ proxy-groups:
       - feiniao
       - home_socks5
       - home_socks6
+      - home100_7890
+      - home200_7890
+      - home100_57890
       
   - name: "Just4FaceBook_3_MySelected"
     type: select
@@ -106,34 +110,51 @@ proxy-groups:
     proxies:
       - FuckWall
       - DIRECT
+      - m_3
+      - m_2
+      - g_3
+      - feiniao
+      - home_socks5
+      - home_socks6
+      - home100_7890
+      - home200_7890
+      - home100_57890
 proxies:
   - name: home_socks5
     type: socks5
     server: 192.168.50.200
     port: 57890
-
+    udp: true
   - name: home_socks6
     type: socks5
     server: 192.168.50.200
     port: 64891
-
+    udp: true
   - name: game_socks
     type: socks5
     server: 192.168.50.200
     port: 64890
+    udp: true
   - name: home100_7890
     type: socks5
     server: 192.168.50.100
     port: 7890
+    udp: true
   - name: home200_7890
     type: socks5
     server: 192.168.50.200
     port: 7890
+    udp: true
+  - name: home100_57890
+    type: socks5
+    server: 192.168.50.100
+    port: 57890
+    udp: true
 proxy-providers:
   "FeiNiaoPool":
     type: http
     #url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/config_quest.yaml"
-    url: "http://192.168.50.200:25500/sub?target=clash&url=https%3A%2F%2Ffeiniaoyun.tk%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3Dcb23b12b89fe02179b09c1dfd72d3cee&insert=false"
+    url: "http://127.0.0.1:25500/sub?target=clash&url=http%3A%2F%2F127.0.0.1%3A5000%2F&insert=false"
     interval: 3600
     path: ./download/feiniao.yaml
     health-check:
@@ -290,12 +311,15 @@ rules:
   - DOMAIN-KEYWORD,oculus,Just4FaceBook
   - DOMAIN-KEYWORD,oculuscdn,Just4FaceBook
   - DOMAIN-SUFFIX,myip.com,Just4FaceBook
+  - DOMAIN-SUFFIX,unity3d.com,POP
+  - DOMAIN-SUFFIX,playfabapi.com,POP
+  - DOMAIN-SUFFIX,bigboxvr.com,POP
+  - DOMAIN-SUFFIX,vivox.com,POP
+  - DOMAIN-SUFFIX,amazonaws.com,POP    
   - RULE-SET,icloud,DIRECT
   - RULE-SET,apple,DIRECT
   - RULE-SET,direct,DIRECT
   - GEOIP,CN,DIRECT
-  - DST-PORT,80,Web
-  - DST-PORT,443,Web
   #- RULE-SET,reject,REJECT
   - RULE-SET,google,FuckWall
   - RULE-SET,proxy,FuckWall
