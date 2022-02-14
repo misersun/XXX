@@ -223,7 +223,8 @@ rule-providers:
     type: http
     behavior: domain
     #url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
-    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/reject.txt"
+    #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/reject.txt"
+    url: "https://raw.fastgit.org/misersun/rules/main/reject.txt"
     path: ./ruleset/reject.yaml
     interval: 86400
 
@@ -231,7 +232,8 @@ rule-providers:
     type: http
     behavior: domain
     #url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt"
-    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/icloud.txt"
+    #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/icloud.txt"
+    url: "https://raw.fastgit.org/misersun/rules/main/icloud.txt"
     path: ./ruleset/icloud.yaml
     interval: 86400
 
@@ -239,7 +241,8 @@ rule-providers:
     type: http
     behavior: domain
     #url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt"
-    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/apple.txt"
+    #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/apple.txt"
+    url: "https://raw.fastgit.org/misersun/rules/main/apple.txt"
     path: ./ruleset/apple.yaml
     interval: 86400
 
@@ -247,7 +250,8 @@ rule-providers:
     type: http
     behavior: domain
     #url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt"
-    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/google.txt"
+    #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/google.txt"
+    url: "https://raw.fastgit.org/misersun/rules/main/google.txt"
     path: ./ruleset/google.yaml
     interval: 86400
 
@@ -255,7 +259,8 @@ rule-providers:
     type: http
     behavior: domain
     #url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt"
-    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/proxy.txt"
+    #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/proxy.txt"
+    url: "https://raw.fastgit.org/misersun/rules/main/proxy.txt"
     path: ./ruleset/proxy.yaml
     interval: 86400
 
@@ -263,7 +268,8 @@ rule-providers:
     type: http
     behavior: domain
     #url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"
-    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/direct.txt"
+    #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/direct.txt"
+    url: "https://raw.fastgit.org/misersun/rules/main/direct.txt"
     path: ./ruleset/direct.yaml
     interval: 86400
 
@@ -271,7 +277,8 @@ rule-providers:
     type: http
     behavior: domain
     #url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt"
-    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/gfw.txt"
+    #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/gfw.txt"
+    url: "https://raw.fastgit.org/misersun/rules/main/gfw.txt"
     path: ./ruleset/gfw.yaml
     interval: 86400
 
@@ -279,7 +286,8 @@ rule-providers:
     type: http
     behavior: domain
     #url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/greatfire.txt"
-    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/greatfire.txt"
+    #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/greatfire.txt"
+    url: "https://raw.fastgit.org/misersun/rules/main/greatfire.txt"
     path: ./ruleset/greatfire.yaml
     interval: 86400
 
@@ -287,7 +295,8 @@ rule-providers:
     type: http
     behavior: domain
     #url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt"
-    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/tld-not-cn.txt"
+    #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/tld-not-cn.txt"
+    url: "https://raw.fastgit.org/misersun/rules/main/tld-not-cn.txt"
     path: ./ruleset/tld-not-cn.yaml
     interval: 86400
 
@@ -295,7 +304,8 @@ rule-providers:
     type: http
     behavior: ipcidr
     #url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt"
-    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/telegramcidr.txt"
+    #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/telegramcidr.txt"
+    url: "https://raw.fastgit.org/misersun/rules/main/telegramcidr.txt"
     path: ./ruleset/telegramcidr.yaml
     interval: 86400
 
@@ -303,7 +313,8 @@ rule-providers:
     type: http
     behavior: ipcidr
     #url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt"
-    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/cncidr.txt"
+    #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/cncidr.txt"
+    url: "https://raw.fastgit.org/misersun/rules/main/cncidr.txt"
     path: ./ruleset/cncidr.yaml
     interval: 86400
 
@@ -311,7 +322,8 @@ rule-providers:
     type: http
     behavior: ipcidr
     #url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
-    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/lancidr.txt"
+    #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/lancidr.txt"
+    url: "https://raw.fastgit.org/misersun/rules/main/lancidr.txt"
     path: ./ruleset/lancidr.yaml
     interval: 86400
 
