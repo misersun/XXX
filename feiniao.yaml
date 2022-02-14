@@ -75,6 +75,8 @@ proxy-providers:
       url: http://www.gstatic.com/generate_204
 
 rules:
+ - IP-CIDR,74.201.106.0/24,DIRECT,no-resolve
+ - DOMAIN-SUFFIX,vivox.com,DIRECT
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
