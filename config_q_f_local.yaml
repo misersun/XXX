@@ -154,7 +154,7 @@ proxy-providers:
   "FeiNiaoPool":
     type: http
     #url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/config_quest.yaml"
-    url: "http://192.168.50.100:25500/sub?target=clash&url=http%3A%2F%2F127.0.0.1%3A5000%2F&insert=false"
+    url: "http://192.168.50.100:5000/"
     interval: 3600
     path: ./download/feiniao.yaml
     health-check:
@@ -222,91 +222,108 @@ rule-providers:
   reject:
     type: http
     behavior: domain
-    url: "https://raw.fastgit.org/misersun/rules/main/reject.txt"
+    #url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
+    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/reject.txt"
     path: ./ruleset/reject.yaml
     interval: 86400
 
   icloud:
     type: http
     behavior: domain
-    url: "https://raw.fastgit.org/misersun/rules/main/icloud.txt"
+    #url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt"
+    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/icloud.txt"
     path: ./ruleset/icloud.yaml
     interval: 86400
 
   apple:
     type: http
     behavior: domain
-    url: "https://raw.fastgit.org/misersun/rules/main/apple.txt"
+    #url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt"
+    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/apple.txt"
     path: ./ruleset/apple.yaml
     interval: 86400
 
   google:
     type: http
     behavior: domain
-    url: "https://raw.fastgit.org/misersun/rules/main/google.txt"
+    #url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt"
+    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/google.txt"
     path: ./ruleset/google.yaml
     interval: 86400
 
   proxy:
     type: http
     behavior: domain
-    url: "https://raw.fastgit.org/misersun/rules/main/proxy.txt"
+    #url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt"
+    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/proxy.txt"
     path: ./ruleset/proxy.yaml
     interval: 86400
 
   direct:
     type: http
     behavior: domain
-    url: "https://raw.fastgit.org/misersun/rules/main/direct.txt"
+    #url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"
+    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/direct.txt"
     path: ./ruleset/direct.yaml
     interval: 86400
 
   gfw:
     type: http
     behavior: domain
-    url: "https://raw.fastgit.org/misersun/rules/main/gfw.txt"
+    #url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt"
+    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/gfw.txt"
     path: ./ruleset/gfw.yaml
     interval: 86400
 
   greatfire:
     type: http
     behavior: domain
-    url: "https://raw.fastgit.org/misersun/rules/main/greatfire.txt"
+    #url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/greatfire.txt"
+    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/greatfire.txt"
     path: ./ruleset/greatfire.yaml
     interval: 86400
 
   tld-not-cn:
     type: http
     behavior: domain
-    url: "https://raw.fastgit.org/misersun/rules/main/tld-not-cn.txt"
+    #url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt"
+    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/tld-not-cn.txt"
     path: ./ruleset/tld-not-cn.yaml
     interval: 86400
 
   telegramcidr:
     type: http
     behavior: ipcidr
-    url: "https://raw.fastgit.org/misersun/rules/main/telegramcidr.txt"
+    #url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt"
+    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/telegramcidr.txt"
     path: ./ruleset/telegramcidr.yaml
     interval: 86400
 
   cncidr:
     type: http
     behavior: ipcidr
-    url: "https://raw.fastgit.org/misersun/rules/main/cncidr.txt"
+    #url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt"
+    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/cncidr.txt"
     path: ./ruleset/cncidr.yaml
     interval: 86400
 
   lancidr:
     type: http
     behavior: ipcidr
-    url: "https://raw.fastgit.org/misersun/rules/main/lancidr.txt"
+    #url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
+    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/lancidr.txt"
     path: ./ruleset/lancidr.yaml
     interval: 86400
 
 rules:
+  - DOMAIN-SUFFIX,googleapis.cn,Just4FaceBook
+  - DOMAIN-SUFFIX,vivox.com,DIRECT
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
-  - DOMAIN-SUFFIX,googleapis.cn,Just4FaceBook
+  - RULE-SET,icloud,DIRECT
+  - RULE-SET,apple,DIRECT
+  - RULE-SET,direct,DIRECT
+  - GEOIP,CN,DIRECT
   - DOMAIN-KEYWORD,facebook,Just4FaceBook
   - DOMAIN-KEYWORD,oculus,Just4FaceBook
   - DOMAIN-KEYWORD,oculuscdn,Just4FaceBook
@@ -314,13 +331,8 @@ rules:
   - DOMAIN-SUFFIX,unity3d.com,POP
   - DOMAIN-SUFFIX,playfabapi.com,POP
   - DOMAIN-SUFFIX,bigboxvr.com,POP
-  - DOMAIN-SUFFIX,vivox.com,POP
   - DOMAIN-SUFFIX,amazonaws.com,POP    
-  - RULE-SET,icloud,DIRECT
-  - RULE-SET,apple,DIRECT
-  - RULE-SET,direct,DIRECT
-  - GEOIP,CN,DIRECT
-  #- RULE-SET,reject,REJECT
+  - RULE-SET,reject,REJECT
   - RULE-SET,google,FuckWall
   - RULE-SET,proxy,FuckWall
   - RULE-SET,telegramcidr,FuckWall
