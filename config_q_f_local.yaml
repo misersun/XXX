@@ -329,6 +329,7 @@ rule-providers:
 
 rules:
   - DOMAIN-SUFFIX,googleapis.cn,Just4FaceBook
+  - IP-CIDR,74.201.106.0/24,DIRECT,no-resolve
   - DOMAIN-SUFFIX,vivox.com,DIRECT
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
