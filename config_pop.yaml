@@ -30,13 +30,66 @@ dns:
 
 
 proxy-groups:
-  - name: "SSR_GAME"
+  - name: "POP"
+    type: select
+    proxies:
+      - ssr_game
+      - feiniao
+      - sub
+      - home100_7890
+      - home200_7890
+      - home100_57890
+      - home200_57890
+      - home100_2801
+      - home200_2801
+      - DIRECT
+  - name: "ssr_game"
     type: select
     use:
-      - ssr_game   
+      - SSR_GAME_POOL   
+  - name: "feiniao"
+    type: select
+    use:
+      - FeiNiaoPool 
+  - name: "sub"
+    type: select
+    use:
+      - SUB_Pool 
+      
+proxies:
+  - name: home100_2801
+    type: socks5
+    server: 192.168.50.100
+    port: 2801
+    udp: true
+  - name: home200_2801
+    type: socks5
+    server: 192.168.50.200
+    port: 2801
+    udp: true
+  - name: home100_7890
+    type: socks5
+    server: 192.168.50.100
+    port: 7890
+    udp: true
+  - name: home200_7890
+    type: socks5
+    server: 192.168.50.200
+    port: 7890
+    udp: true
+  - name: home100_57890
+    type: socks5
+    server: 192.168.50.100
+    port: 57890
+    udp: true
+  - name: home200_57890
+    type: socks5
+    server: 192.168.50.200
+    port: 57890
+    udp: true
 
 proxy-providers:
-  "ssr_game":
+  "SSR_GAME_POOL":
     type: http
     url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/config_ssr_game.yaml"
     #url: "https://raw.fastgit.org/misersun/config003/main/config_ssr_game.yaml"
@@ -47,6 +100,27 @@ proxy-providers:
       interval: 600
       url: http://www.gstatic.com/generate_204
 
+  "FeiNiaoPool":
+    type: http
+    url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/feiniao.yaml"
+    #url: "https://raw.fastgit.org/misersun/config003/main/feiniao.yaml"
+    interval: 3600
+    path: ./download/feiniao.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+      
+  "SUB_Pool":
+    type: http
+    url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/sub.yaml"
+    #url: "https://raw.fastgit.org/misersun/config003/main/sub.yaml"
+    interval: 3600
+    path: ./download/sub.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
 # ★第四部分，规则配置
 rule-providers:
   # reject:
@@ -171,7 +245,7 @@ rules:
   # - DOMAIN-KEYWORD,oculus,Just4FaceBook
   # - DOMAIN-KEYWORD,oculuscdn,Just4FaceBook
   # - DOMAIN-SUFFIX,myip.com,Just4FaceBook
-  - RULE-SET,gfw,SSR_GAME
+  - RULE-SET,gfw,POP
   # - DOMAIN-SUFFIX,unity3d.com,POP
   # - DOMAIN-SUFFIX,playfabapi.com,POP
   # - DOMAIN-SUFFIX,bigboxvr.com,POP
