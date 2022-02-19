@@ -33,9 +33,12 @@ proxy-groups:
   - name: "POP"
     type: select
     proxies:
-      - ssr_game
-      - feiniao
-      - sub
+      - ssr_udp_game3
+      - ssr_udp_game2
+      - ssr_game3
+      - ssr_game2
+      # - feiniao
+      # - sub
       - home100_7890
       - home200_7890
       - home100_57890
@@ -43,18 +46,31 @@ proxy-groups:
       - home100_2801
       - home200_2801
       - DIRECT
-  - name: "ssr_game"
+  - name: "ssr_udp_game3"
     type: select
     use:
-      - SSR_GAME_POOL   
-  - name: "feiniao"
+      - SSR_UDP_GAME_POOL3 
+  - name: "ssr_game3"
     type: select
     use:
-      - FeiNiaoPool 
-  - name: "sub"
+      - SSR_GAME_POOL3  
+  - name: "ssr_udp_game2"
     type: select
     use:
-      - SUB_Pool 
+      - SSR_UDP_GAME_POOL2 
+  - name: "ssr_game2"
+    type: select
+    use:
+      - SSR_GAME_POOL2 
+
+  # - name: "feiniao"
+    # type: select
+    # use:
+      # - FeiNiaoPool 
+  # - name: "sub"
+    # type: select
+    # use:
+      # - SUB_Pool 
       
 proxies:
   - name: home100_2801
@@ -89,7 +105,18 @@ proxies:
     udp: true
 
 proxy-providers:
-  "SSR_GAME_POOL":
+  "SSR_UDP_GAME_POOL3":
+    type: http
+    url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/config_ssr_udp_game.yaml"
+    #url: "https://raw.fastgit.org/misersun/config003/main/config_ssr_udp_game.yaml"
+    interval: 3600
+    path: ./download/config_ssr_game.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+  "SSR_GAME_POOL3":
     type: http
     url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/config_ssr_game.yaml"
     #url: "https://raw.fastgit.org/misersun/config003/main/config_ssr_game.yaml"
@@ -100,27 +127,49 @@ proxy-providers:
       interval: 600
       url: http://www.gstatic.com/generate_204
 
-  "FeiNiaoPool":
+  "SSR_UDP_GAME_POOL2":
     type: http
-    url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/feiniao.yaml"
-    #url: "https://raw.fastgit.org/misersun/config003/main/feiniao.yaml"
+    url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/config_ssr_udp_game.yaml"
+    #url: "https://raw.fastgit.org/misersun/config002/main/config_ssr_udp_game.yaml"
     interval: 3600
-    path: ./download/feiniao.yaml
+    path: ./download/config_ssr_game.yaml
     health-check:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
+
+  "SSR_GAME_POOL2":
+    type: http
+    url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/config_ssr_game.yaml"
+    #url: "https://raw.fastgit.org/misersun/config002/main/config_ssr_game.yaml"
+    interval: 3600
+    path: ./download/config_ssr_game.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+  # "FeiNiaoPool":
+    # type: http
+    # url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/feiniao.yaml"
+    # #url: "https://raw.fastgit.org/misersun/config003/main/feiniao.yaml"
+    # interval: 3600
+    # path: ./download/feiniao.yaml
+    # health-check:
+      # enable: true
+      # interval: 600
+      # url: http://www.gstatic.com/generate_204
       
-  "SUB_Pool":
-    type: http
-    url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/sub.yaml"
-    #url: "https://raw.fastgit.org/misersun/config003/main/sub.yaml"
-    interval: 3600
-    path: ./download/sub.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
+  # "SUB_Pool":
+    # type: http
+    # url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/sub.yaml"
+    # #url: "https://raw.fastgit.org/misersun/config003/main/sub.yaml"
+    # interval: 3600
+    # path: ./download/sub.yaml
+    # health-check:
+      # enable: true
+      # interval: 600
+      # url: http://www.gstatic.com/generate_204
 # ★第四部分，规则配置
 rule-providers:
   # reject:
