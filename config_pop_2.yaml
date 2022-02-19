@@ -1,0 +1,186 @@
+# ★第一部分，系统配置
+mixed-port: 7891
+redir-port: 17891
+allow-lan: false
+bind-address: '*'
+mode: rule
+log-level: silent
+ipv6: false
+#external-controller: 0.0.0.0:9090
+#external-ui: dashboardB
+#interface-name: en0
+
+# ★第二部分，DNS配置
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.lan'
+    - 'localhost.ptlogin2.qq.com'
+    - 'dns.msftncsi.com'
+    - 'www.msftncsi.com'
+    - 'www.msftconnecttest.com'
+  nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+
+# ★第三部分，代理配置
+
+
+proxy-groups:
+  - name: "POP"
+    type: select
+    use:
+      - SSR_GAME_POOL   
+
+proxy-providers:
+  "SSR_GAME_POOL":
+    type: http
+    url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/config_ssr_game.yaml"
+    #url: "https://raw.fastgit.org/misersun/config003/main/config_ssr_game.yaml"
+    interval: 3600
+    path: ./download/config_ssr_game.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+
+# ★第四部分，规则配置
+rule-providers:
+  # reject:
+    # type: http
+    # behavior: domain
+    # url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
+    # #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/reject.txt"
+    # #url: "https://raw.fastgit.org/misersun/rules/main/reject.txt"
+    # path: ./ruleset/reject.yaml
+    # interval: 86400
+
+  # icloud:
+    # type: http
+    # behavior: domain
+    # url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt"
+    # #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/icloud.txt"
+    # #url: "https://raw.fastgit.org/misersun/rules/main/icloud.txt"
+    # path: ./ruleset/icloud.yaml
+    # interval: 86400
+
+  # apple:
+    # type: http
+    # behavior: domain
+    # url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt"
+    # #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/apple.txt"
+    # #url: "https://raw.fastgit.org/misersun/rules/main/apple.txt"
+    # path: ./ruleset/apple.yaml
+    # interval: 86400
+
+  # google:
+    # type: http
+    # behavior: domain
+    # url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt"
+    # #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/google.txt"
+    # #url: "https://raw.fastgit.org/misersun/rules/main/google.txt"
+    # path: ./ruleset/google.yaml
+    # interval: 86400
+
+  # proxy:
+    # type: http
+    # behavior: domain
+    # url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt"
+    # #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/proxy.txt"
+    # #url: "https://raw.fastgit.org/misersun/rules/main/proxy.txt"
+    # path: ./ruleset/proxy.yaml
+    # interval: 86400
+
+  # direct:
+    # type: http
+    # behavior: domain
+    # url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"
+    # #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/direct.txt"
+    # #url: "https://raw.fastgit.org/misersun/rules/main/direct.txt"
+    # path: ./ruleset/direct.yaml
+    # interval: 86400
+
+  gfw:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt"
+    #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/gfw.txt"
+    #url: "https://raw.fastgit.org/misersun/rules/main/gfw.txt"
+    path: ./ruleset/gfw.yaml
+    interval: 86400
+
+  # greatfire:
+    # type: http
+    # behavior: domain
+    # url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/greatfire.txt"
+    # #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/greatfire.txt"
+    # #url: "https://raw.fastgit.org/misersun/rules/main/greatfire.txt"
+    # path: ./ruleset/greatfire.yaml
+    # interval: 86400
+
+  # tld-not-cn:
+    # type: http
+    # behavior: domain
+    # url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt"
+    # #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/tld-not-cn.txt"
+    # #url: "https://raw.fastgit.org/misersun/rules/main/tld-not-cn.txt"
+    # path: ./ruleset/tld-not-cn.yaml
+    # interval: 86400
+
+  # telegramcidr:
+    # type: http
+    # behavior: ipcidr
+    # url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt"
+    # #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/telegramcidr.txt"
+    # #url: "https://raw.fastgit.org/misersun/rules/main/telegramcidr.txt"
+    # path: ./ruleset/telegramcidr.yaml
+    # interval: 86400
+
+  # cncidr:
+    # type: http
+    # behavior: ipcidr
+    # url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt"
+    # #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/cncidr.txt"
+    # #url: "https://raw.fastgit.org/misersun/rules/main/cncidr.txt"
+    # path: ./ruleset/cncidr.yaml
+    # interval: 86400
+
+  # lancidr:
+    # type: http
+    # behavior: ipcidr
+    # url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
+    # #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/lancidr.txt"
+    # #url: "https://raw.fastgit.org/misersun/rules/main/lancidr.txt"
+    # path: ./ruleset/lancidr.yaml
+    # interval: 86400
+
+rules:
+  #- DOMAIN-SUFFIX,googleapis.cn,Just4FaceBook
+  # - IP-CIDR,74.201.106.0/24,DIRECT,no-resolve
+  # - DOMAIN-SUFFIX,vivox.com,DIRECT
+  # - DOMAIN,clash.razord.top,DIRECT
+  # - DOMAIN,yacd.haishan.me,DIRECT
+  # - RULE-SET,icloud,DIRECT
+  # - RULE-SET,apple,DIRECT
+  # - RULE-SET,direct,DIRECT
+  # - GEOIP,CN,DIRECT
+  # - DOMAIN-KEYWORD,facebook,Just4FaceBook
+  # - DOMAIN-KEYWORD,oculus,Just4FaceBook
+  # - DOMAIN-KEYWORD,oculuscdn,Just4FaceBook
+  # - DOMAIN-SUFFIX,myip.com,Just4FaceBook
+  - RULE-SET,gfw,POP
+  # - DOMAIN-SUFFIX,unity3d.com,POP
+  # - DOMAIN-SUFFIX,playfabapi.com,POP
+  # - DOMAIN-SUFFIX,bigboxvr.com,POP
+  # - DOMAIN-SUFFIX,amazonaws.com,POP    
+  # - RULE-SET,reject,REJECT
+  # - RULE-SET,google,FuckWall
+  # - RULE-SET,proxy,FuckWall
+  # - RULE-SET,telegramcidr,FuckWall
+# #  - MATCH,FuckWall
+  # - MATCH,Final-------------------------------------------
+  - MATCH,DIRECT
