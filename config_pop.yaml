@@ -129,7 +129,7 @@ proxy-providers:
 
   "SSR_UDP_GAME_POOL2":
     type: http
-    url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/config_ssr_udp_game.yaml"
+    url: "https://cdn.jsdelivr.net/gh/misersun/config002@main/config_ssr_udp_game.yaml"
     #url: "https://raw.fastgit.org/misersun/config002/main/config_ssr_udp_game.yaml"
     interval: 3600
     path: ./download/config_ssr_game.yaml
@@ -140,7 +140,7 @@ proxy-providers:
 
   "SSR_GAME_POOL2":
     type: http
-    url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/config_ssr_game.yaml"
+    url: "https://cdn.jsdelivr.net/gh/misersun/config002@main/config_ssr_game.yaml"
     #url: "https://raw.fastgit.org/misersun/config002/main/config_ssr_game.yaml"
     interval: 3600
     path: ./download/config_ssr_game.yaml
