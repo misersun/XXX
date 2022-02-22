@@ -235,14 +235,14 @@ rule-providers:
     path: ./ruleset/gfw.yaml
     interval: 86400
 
-  # greatfire:
-    # type: http
-    # behavior: domain
-    # url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/greatfire.txt"
-    # #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/greatfire.txt"
-    # #url: "https://raw.fastgit.org/misersun/rules/main/greatfire.txt"
-    # path: ./ruleset/greatfire.yaml
-    # interval: 86400
+  greatfire:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/greatfire.txt"
+    #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/greatfire.txt"
+    #url: "https://raw.fastgit.org/misersun/rules/main/greatfire.txt"
+    path: ./ruleset/greatfire.yaml
+    interval: 86400
 
   # tld-not-cn:
     # type: http
@@ -281,6 +281,8 @@ rule-providers:
     # interval: 86400
 
 rules:
+  - DOMAIN,clash.razord.top,DIRECT
+  - DOMAIN,yacd.haishan.me,DIRECT
   #- DOMAIN-SUFFIX,googleapis.cn,Just4FaceBook
   # - IP-CIDR,74.201.106.0/24,DIRECT,no-resolve
   # - DOMAIN-SUFFIX,vivox.com,DIRECT
@@ -295,9 +297,10 @@ rules:
   # - DOMAIN-KEYWORD,oculuscdn,Just4FaceBook
   # - DOMAIN-SUFFIX,myip.com,Just4FaceBook
   - RULE-SET,gfw,POP
-  # - DOMAIN-SUFFIX,unity3d.com,POP
-  # - DOMAIN-SUFFIX,playfabapi.com,POP
-  # - DOMAIN-SUFFIX,bigboxvr.com,POP
+  - RULE-SET,greatfire,POP
+  - DOMAIN-SUFFIX,unity3d.com,POP
+  - DOMAIN-SUFFIX,playfabapi.com,POP
+  - DOMAIN-SUFFIX,bigboxvr.com,POP
   # - DOMAIN-SUFFIX,amazonaws.com,POP    
   # - RULE-SET,reject,REJECT
   # - RULE-SET,google,FuckWall
