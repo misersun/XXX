@@ -107,8 +107,8 @@ proxies:
 proxy-providers:
   "SSR_UDP_GAME_POOL3":
     type: http
-    url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/config_ssr_udp_game.yaml"
-    #url: "https://raw.fastgit.org/misersun/config003/main/config_ssr_udp_game.yaml"
+    #url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/config_ssr_udp_game.yaml"
+    url: "https://raw.fastgit.org/misersun/config003/main/config_ssr_udp_game.yaml"
     interval: 3600
     path: ./download/config_ssr_game.yaml
     health-check:
@@ -118,8 +118,8 @@ proxy-providers:
 
   "SSR_GAME_POOL3":
     type: http
-    url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/config_ssr_game.yaml"
-    #url: "https://raw.fastgit.org/misersun/config003/main/config_ssr_game.yaml"
+    #url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/config_ssr_game.yaml"
+    url: "https://raw.fastgit.org/misersun/config003/main/config_ssr_game.yaml"
     interval: 3600
     path: ./download/config_ssr_game.yaml
     health-check:
@@ -129,8 +129,8 @@ proxy-providers:
 
   "SSR_UDP_GAME_POOL2":
     type: http
-    url: "https://cdn.jsdelivr.net/gh/misersun/config002@main/config_ssr_udp_game.yaml"
-    #url: "https://raw.fastgit.org/misersun/config002/main/config_ssr_udp_game.yaml"
+    #url: "https://cdn.jsdelivr.net/gh/misersun/config002@main/config_ssr_udp_game.yaml"
+    url: "https://raw.fastgit.org/misersun/config002/main/config_ssr_udp_game.yaml"
     interval: 3600
     path: ./download/config_ssr_game.yaml
     health-check:
@@ -140,8 +140,8 @@ proxy-providers:
 
   "SSR_GAME_POOL2":
     type: http
-    url: "https://cdn.jsdelivr.net/gh/misersun/config002@main/config_ssr_game.yaml"
-    #url: "https://raw.fastgit.org/misersun/config002/main/config_ssr_game.yaml"
+    #url: "https://cdn.jsdelivr.net/gh/misersun/config002@main/config_ssr_game.yaml"
+    url: "https://raw.fastgit.org/misersun/config002/main/config_ssr_game.yaml"
     interval: 3600
     path: ./download/config_ssr_game.yaml
     health-check:
@@ -229,8 +229,8 @@ rule-providers:
   gfw:
     type: http
     behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt"
-    #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/gfw.txt"
+    #url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt"
+    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/gfw.txt"
     #url: "https://raw.fastgit.org/misersun/rules/main/gfw.txt"
     path: ./ruleset/gfw.yaml
     interval: 86400
@@ -238,8 +238,8 @@ rule-providers:
   greatfire:
     type: http
     behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/greatfire.txt"
-    #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/greatfire.txt"
+    #url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/greatfire.txt"
+    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/greatfire.txt"
     #url: "https://raw.fastgit.org/misersun/rules/main/greatfire.txt"
     path: ./ruleset/greatfire.yaml
     interval: 86400
