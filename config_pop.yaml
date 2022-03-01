@@ -37,8 +37,12 @@ proxy-groups:
       - ssr_udp_game2
       - ssr_game3
       - ssr_game2
-      # - feiniao
-      # - sub
+      - quest_3
+      - quest_2
+      - S_3
+      - S_2
+      - V_3
+      - V_2
       - home100_7890
       - home200_7890
       - home100_57890
@@ -46,6 +50,28 @@ proxy-groups:
       - home100_2801
       - home200_2801
       - DIRECT
+
+  - name: "Just4FaceBook"
+    type: select
+    proxies:
+      - ssr_udp_game3
+      - ssr_udp_game2
+      - ssr_game3
+      - ssr_game2
+      - quest_3
+      - quest_2
+      - S_3
+      - S_2
+      - V_3
+      - V_2
+      - home100_7890
+      - home200_7890
+      - home100_57890
+      - home200_57890
+      - home100_2801
+      - home200_2801
+      - DIRECT
+
   - name: "ssr_udp_game3"
     type: select
     use:
@@ -62,6 +88,38 @@ proxy-groups:
     type: select
     use:
       - SSR_GAME_POOL2 
+
+  - name: "quest_3"
+    type: select
+    use:
+      - config003Pool_Quest 
+ 
+  - name: "quest_2"
+    type: select
+    use:
+      - config002Pool_Quest  
+
+  - name: "S_3"
+    type: select
+    use:
+      - config003Pool_S
+      
+  - name: "V_3"
+    type: select
+    use:
+      - config003Pool_V
+
+  - name: "S_2"
+    type: select
+    use:
+      - config002Pool_S 
+      
+  - name: "V_2"
+    type: select
+    use:
+      - config002Pool_V 
+
+
 
   # - name: "feiniao"
     # type: select
@@ -149,27 +207,71 @@ proxy-providers:
       interval: 600
       url: http://www.gstatic.com/generate_204
 
-  # "FeiNiaoPool":
-    # type: http
-    # url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/feiniao.yaml"
-    # #url: "https://raw.fastgit.org/misersun/config003/main/feiniao.yaml"
-    # interval: 3600
-    # path: ./download/feiniao.yaml
-    # health-check:
-      # enable: true
-      # interval: 600
-      # url: http://www.gstatic.com/generate_204
-      
-  # "SUB_Pool":
-    # type: http
-    # url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/sub.yaml"
-    # #url: "https://raw.fastgit.org/misersun/config003/main/sub.yaml"
-    # interval: 3600
-    # path: ./download/sub.yaml
-    # health-check:
-      # enable: true
-      # interval: 600
-      # url: http://www.gstatic.com/generate_204
+  "config003Pool_Quest":
+    type: http
+    url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/config_quest.yaml"
+    #url: "https://raw.fastgit.org/misersun/config003/main/config_quest.yaml"
+    interval: 3600
+    path: ./download/tested_config003_quest.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+  "config002Pool_Quest":
+    type: http
+    url: "https://cdn.jsdelivr.net/gh/misersun/config002@main/config_quest.yaml"
+    #url: "https://raw.fastgit.org/misersun/config002/main/config_quest.yaml"
+    interval: 3600
+    path: ./download/tested_config002_quest.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+  "config003Pool_V":
+    type: http
+    url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/config_v.yaml"
+    #url: "https://raw.fastgit.org/misersun/config003/main/config_v.yaml"
+    interval: 3600
+    path: ./download/tested_config003_v.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+  "config002Pool_V":
+    type: http
+    url: "https://cdn.jsdelivr.net/gh/misersun/config002@main/config_v.yaml"
+    #url: "https://raw.fastgit.org/misersun/config002/main/config_v.yaml"
+    interval: 3600
+    path: ./download/tested_config002_v.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+  "config003Pool_S":
+    type: http
+    url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/config_s.yaml"
+    #url: "https://raw.fastgit.org/misersun/config003/main/config_s.yaml"
+    interval: 3600
+    path: ./download/tested_config003_s.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+  "config002Pool_S":
+    type: http
+    url: "https://cdn.jsdelivr.net/gh/misersun/config002@main/config_s.yaml"
+    #url: "https://raw.fastgit.org/misersun/config002/main/config_s.yaml"
+    interval: 3600
+    path: ./download/tested_config002_s.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
 # ★第四部分，规则配置
 rule-providers:
   # reject:
@@ -292,10 +394,10 @@ rules:
   # - RULE-SET,apple,DIRECT
   # - RULE-SET,direct,DIRECT
   # - GEOIP,CN,DIRECT
-  # - DOMAIN-KEYWORD,facebook,Just4FaceBook
-  # - DOMAIN-KEYWORD,oculus,Just4FaceBook
-  # - DOMAIN-KEYWORD,oculuscdn,Just4FaceBook
-  # - DOMAIN-SUFFIX,myip.com,Just4FaceBook
+  - DOMAIN-KEYWORD,facebook,Just4FaceBook
+  - DOMAIN-KEYWORD,oculus,Just4FaceBook
+  - DOMAIN-KEYWORD,oculuscdn,Just4FaceBook
+  - DOMAIN-SUFFIX,myip.com,Just4FaceBook
   - RULE-SET,gfw,POP
   - RULE-SET,greatfire,POP
   - DOMAIN-SUFFIX,unity3d.com,POP
