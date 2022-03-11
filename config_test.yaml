@@ -35,6 +35,7 @@ proxy-groups:
       - test21_2801
       - test21_7890
       - test21_64890
+      - test21_57890
       - test200_2801
       - test100_2801
       - test200_57890
@@ -61,6 +62,10 @@ proxies:
     type: socks5
     server: 192.168.2.21
     port: 64890
+  - name: test21_57890
+    type: socks5
+    server: 192.168.1.21
+    port: 57890
   - name: test200_2801
     type: socks5
     server: 192.168.50.200
