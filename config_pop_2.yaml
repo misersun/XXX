@@ -155,6 +155,12 @@ proxy-groups:
       - POP
       - VIVOX
       - Just4FaceBook
+      - home100_7890
+      - home200_7890
+      - home100_57890
+      - home200_57890
+      - home100_2801
+      - home200_2801
         
 proxies:
   - name: home100_2801
