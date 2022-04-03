@@ -30,9 +30,10 @@ dns:
 
 
 proxy-groups:
-  - name: "POP"
+  - name: "POP_MAIN"
     type: select
     proxies:
+      - DIRECT
       - ssr_udp_game3
       - ssr_udp_game2
       - ssr_game3
@@ -49,10 +50,30 @@ proxy-groups:
       - home200_57890
       - home100_2801
       - home200_2801
+  - name: "POP_SUB"
+    type: select
+    proxies:
       - DIRECT
+      - ssr_udp_game3
+      - ssr_udp_game2
+      - ssr_game3
+      - ssr_game2
+      - quest_3
+      - quest_2
+      - S_3
+      - S_2
+      - V_3
+      - V_2
+      - home100_7890
+      - home200_7890
+      - home100_57890
+      - home200_57890
+      - home100_2801
+      - home200_2801
   - name: "VIVOX"
     type: select
     proxies:
+      - DIRECT
       - ssr_udp_game3
       - ssr_udp_game2
       - ssr_game3
@@ -69,7 +90,6 @@ proxy-groups:
       - home200_57890
       - home100_2801
       - home200_2801
-      - DIRECT
   - name: "Just4FaceBook"
     type: select
     proxies:
@@ -152,9 +172,20 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - POP
+      - POP_MAIN
+      - POP_SUB
       - VIVOX
       - Just4FaceBook
+      - ssr_udp_game3
+      - ssr_udp_game2
+      - ssr_game3
+      - ssr_game2
+      - quest_3
+      - quest_2
+      - S_3
+      - S_2
+      - V_3
+      - V_2
       - home100_7890
       - home200_7890
       - home100_57890
@@ -429,7 +460,12 @@ rules:
   - DOMAIN-KEYWORD,facebook,Just4FaceBook
   - DOMAIN-KEYWORD,oculus,Just4FaceBook
   - DOMAIN-KEYWORD,oculuscdn,Just4FaceBook
+  - DOMAIN-SUFFIX,oculus.com,Just4FaceBook
+  - DOMAIN-SUFFIX,oculuscdn.com,Just4FaceBook
+  - DOMAIN-SUFFIX,facebook.com,Just4FaceBook
+  #- DOMAIN-SUFFIX,amazonaws.com,Just4FaceBook
   - DOMAIN-SUFFIX,myip.com,Just4FaceBook
+  - DOMAIN-SUFFIX,amazonaws.com,POP_MAIN
   - IP-CIDR,63.251.140.0/24,VIVOX,no-resolve
   - IP-CIDR,70.42.198.0/23,VIVOX,no-resolve
   - IP-CIDR,74.201.102.0/23,VIVOX,no-resolve
@@ -437,12 +473,12 @@ rules:
   - IP-CIDR,216.52.53.0/24,VIVOX,no-resolve
   - IP-CIDR,69.25.124.0/23,VIVOX,no-resolve
   - DOMAIN-SUFFIX,vivox.com,VIVOX
-  - RULE-SET,gfw,POP
-  - RULE-SET,greatfire,POP
-  - DOMAIN-SUFFIX,unity3d.com,POP
-  - DOMAIN-SUFFIX,playfabapi.com,POP
-  - DOMAIN-SUFFIX,bigboxvr.com,POP
-  # - DOMAIN-SUFFIX,amazonaws.com,POP    
+  - DOMAIN-SUFFIX,unity3d.com,POP_SUB
+  - DOMAIN-SUFFIX,playfabapi.com,POP_SUB
+  - DOMAIN-SUFFIX,bigboxvr.com,POP_SUB
+  - RULE-SET,gfw,POP_SUB
+  - RULE-SET,greatfire,POP_SUB
+  # - DOMAIN-SUFFIX,amazonaws.com,POP_SUB    
   # - RULE-SET,reject,REJECT
   # - RULE-SET,google,FuckWall
   # - RULE-SET,proxy,FuckWall

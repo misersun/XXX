@@ -176,6 +176,16 @@ proxy-groups:
       - POP_SUB
       - VIVOX
       - Just4FaceBook
+      - ssr_udp_game3
+      - ssr_udp_game2
+      - ssr_game3
+      - ssr_game2
+      - quest_3
+      - quest_2
+      - S_3
+      - S_2
+      - V_3
+      - V_2
       - home100_7890
       - home200_7890
       - home100_57890
