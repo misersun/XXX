@@ -432,7 +432,7 @@ rules:
   - DOMAIN-SUFFIX,oculus.com,Just4FaceBook
   - DOMAIN-SUFFIX,oculuscdn.com,Just4FaceBook
   - DOMAIN-SUFFIX,facebook.com,Just4FaceBook
-  - DOMAIN-SUFFIX,amazonaws.com,Just4FaceBook
+  #- DOMAIN-SUFFIX,amazonaws.com,Just4FaceBook
   - DOMAIN-SUFFIX,myip.com,Just4FaceBook
   - IP-CIDR,63.251.140.0/24,VIVOX,no-resolve
   - IP-CIDR,70.42.198.0/23,VIVOX,no-resolve
@@ -441,11 +441,12 @@ rules:
   - IP-CIDR,216.52.53.0/24,VIVOX,no-resolve
   - IP-CIDR,69.25.124.0/23,VIVOX,no-resolve
   - DOMAIN-SUFFIX,vivox.com,VIVOX
-  - RULE-SET,gfw,POP
-  - RULE-SET,greatfire,POP
   - DOMAIN-SUFFIX,unity3d.com,POP
   - DOMAIN-SUFFIX,playfabapi.com,POP
   - DOMAIN-SUFFIX,bigboxvr.com,POP
+  - DOMAIN-SUFFIX,amazonaws.com,POP
+  - RULE-SET,gfw,POP
+  - RULE-SET,greatfire,POP
   # - DOMAIN-SUFFIX,amazonaws.com,POP    
   # - RULE-SET,reject,REJECT
   # - RULE-SET,google,FuckWall
