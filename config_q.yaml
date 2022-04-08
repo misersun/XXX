@@ -136,7 +136,7 @@ proxies:
   - name: home200_9909
     type: socks5
     server: 192.168.50.200
-    port: 64890
+    port: 9909
     udp: true
 proxy-providers:
   "config003Pool_Quest":
