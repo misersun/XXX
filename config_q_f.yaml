@@ -46,6 +46,7 @@ proxy-groups:
       - home200_7890
       - home100_64890
       - home200_64890
+      - home200_9909
       - DIRECT
       
   - name: "quest_3"
@@ -94,6 +95,7 @@ proxy-groups:
       - home200_7890
       - home100_64890
       - home200_64890
+      - home200_9909
 
   - name: "Final-------------------------------------------"
     type: select
@@ -131,6 +133,12 @@ proxies:
     server: 192.168.50.200
     port: 64890
     udp: true
+  - name: home200_9909
+    type: socks5
+    server: 192.168.50.200
+    port: 64890
+    udp: true
+
 proxy-providers:
   "config003Pool_Quest":
     type: http
@@ -200,13 +208,13 @@ proxy-providers:
 
 # ★第四部分，规则配置
 rule-providers:
-  reject:
-    type: http
-    behavior: domain
-    #url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
-    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/reject.txt"
-    path: ./ruleset/reject.yaml
-    interval: 86400
+  # reject:
+    # type: http
+    # behavior: domain
+    # #url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
+    # url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/reject.txt"
+    # path: ./ruleset/reject.yaml
+    # interval: 86400
 
   icloud:
     type: http
