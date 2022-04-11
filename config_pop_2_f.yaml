@@ -96,7 +96,7 @@ proxy-groups:
       - home200_2801
       - home100_geph
       - home200_geph
-  - name: "Just4FaceBook"
+  - name: "OCULUS"
     type: select
     proxies:
       - ssr_udp_game3
@@ -118,6 +118,54 @@ proxy-groups:
       - home100_geph
       - home200_geph
       - DIRECT
+  - name: "FACEBOOK"
+    type: select
+    proxies:
+      - ssr_udp_game3
+      - ssr_udp_game2
+      - ssr_game3
+      - ssr_game2
+      - quest_3
+      - quest_2
+      - S_3
+      - S_2
+      - V_3
+      - V_2
+      - home100_7890
+      - home200_7890
+      - home100_57890
+      - home200_57890
+      - home100_2801
+      - home200_2801
+      - home100_geph
+      - home200_geph
+      - DIRECT
+  - name: "FINAL"
+    type: select
+    proxies:
+      - DIRECT
+      - POP_MAIN
+      - POP_SUB
+      - VIVOX
+      - OCULUS
+      - ssr_udp_game3
+      - ssr_udp_game2
+      - ssr_game3
+      - ssr_game2
+      - quest_3
+      - quest_2
+      - S_3
+      - S_2
+      - V_3
+      - V_2
+      - home100_7890
+      - home200_7890
+      - home100_57890
+      - home200_57890
+      - home100_2801
+      - home200_2801
+      - home100_geph
+      - home200_geph
 
   - name: "ssr_udp_game3"
     type: select
@@ -166,8 +214,6 @@ proxy-groups:
     use:
       - config002Pool_V 
 
-
-
   # - name: "feiniao"
     # type: select
     # use:
@@ -176,32 +222,6 @@ proxy-groups:
     # type: select
     # use:
       # - SUB_Pool 
-  - name: "FINAL"
-    type: select
-    proxies:
-      - DIRECT
-      - POP_MAIN
-      - POP_SUB
-      - VIVOX
-      - Just4FaceBook
-      - ssr_udp_game3
-      - ssr_udp_game2
-      - ssr_game3
-      - ssr_game2
-      - quest_3
-      - quest_2
-      - S_3
-      - S_2
-      - V_3
-      - V_2
-      - home100_7890
-      - home200_7890
-      - home100_57890
-      - home200_57890
-      - home100_2801
-      - home200_2801
-      - home100_geph
-      - home200_geph
         
 proxies:
   - name: home100_2801
@@ -467,7 +487,7 @@ rule-providers:
 rules:
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
-  #- DOMAIN-SUFFIX,googleapis.cn,Just4FaceBook
+  #- DOMAIN-SUFFIX,googleapis.cn,OCULUS
   # - IP-CIDR,74.201.106.0/24,DIRECT,no-resolve
   # - DOMAIN-SUFFIX,vivox.com,DIRECT
   # - DOMAIN,clash.razord.top,DIRECT
@@ -476,14 +496,14 @@ rules:
   # - RULE-SET,apple,DIRECT
   # - RULE-SET,direct,DIRECT
   # - GEOIP,CN,DIRECT
-  - DOMAIN-KEYWORD,facebook,Just4FaceBook
-  - DOMAIN-KEYWORD,oculus,Just4FaceBook
-  - DOMAIN-KEYWORD,oculuscdn,Just4FaceBook
-  - DOMAIN-SUFFIX,oculus.com,Just4FaceBook
-  - DOMAIN-SUFFIX,oculuscdn.com,Just4FaceBook
-  - DOMAIN-SUFFIX,facebook.com,Just4FaceBook
-  #- DOMAIN-SUFFIX,amazonaws.com,Just4FaceBook
-  - DOMAIN-SUFFIX,myip.com,Just4FaceBook
+  - DOMAIN-KEYWORD,facebook,FACEBOOK
+  - DOMAIN-SUFFIX,facebook.com,FACEBOOK
+  - DOMAIN-KEYWORD,oculus,OCULUS
+  - DOMAIN-KEYWORD,oculuscdn,OCULUS
+  - DOMAIN-SUFFIX,oculus.com,OCULUS
+  - DOMAIN-SUFFIX,oculuscdn.com,OCULUS
+  #- DOMAIN-SUFFIX,amazonaws.com,OCULUS
+  - DOMAIN-SUFFIX,myip.com,OCULUS
   - DOMAIN-SUFFIX,amazonaws.com,POP_MAIN
   - IP-CIDR,63.251.140.0/24,VIVOX,no-resolve
   - IP-CIDR,70.42.198.0/23,VIVOX,no-resolve
