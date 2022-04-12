@@ -30,7 +30,29 @@ dns:
 
 
 proxy-groups:
-  - name: "POP_MAIN"
+  - name: "FACEBOOK"
+    type: select
+    proxies:
+      - ssr_udp_game3
+      - ssr_udp_game2
+      - ssr_game3
+      - ssr_game2
+      - quest_3
+      - quest_2
+      - S_3
+      - S_2
+      - V_3
+      - V_2
+      - home100_7890
+      - home200_7890
+      - home100_57890
+      - home200_57890
+      - home100_2801
+      - home200_2801
+      - home100_geph
+      - home200_geph
+      - DIRECT
+  - name: "OCULUS"
     type: select
     proxies:
       - DIRECT
@@ -52,7 +74,8 @@ proxy-groups:
       - home200_2801
       - home100_geph
       - home200_geph
-  - name: "POP_SUB"
+      
+  - name: "POP_MAIN"
     type: select
     proxies:
       - DIRECT
@@ -96,9 +119,11 @@ proxy-groups:
       - home200_2801
       - home100_geph
       - home200_geph
-  - name: "OCULUS"
+
+  - name: "POP_SUB"
     type: select
     proxies:
+      - DIRECT
       - ssr_udp_game3
       - ssr_udp_game2
       - ssr_game3
@@ -117,10 +142,11 @@ proxy-groups:
       - home200_2801
       - home100_geph
       - home200_geph
-      - DIRECT
-  - name: "FACEBOOK"
+
+  - name: "GFW_"
     type: select
     proxies:
+      - DIRECT
       - ssr_udp_game3
       - ssr_udp_game2
       - ssr_game3
@@ -139,7 +165,7 @@ proxy-groups:
       - home200_2801
       - home100_geph
       - home200_geph
-      - DIRECT
+
   - name: "FINAL"
     type: select
     proxies:
@@ -515,8 +541,8 @@ rules:
   - DOMAIN-SUFFIX,unity3d.com,POP_SUB
   - DOMAIN-SUFFIX,playfabapi.com,POP_SUB
   - DOMAIN-SUFFIX,bigboxvr.com,POP_SUB
-  - RULE-SET,gfw,POP_SUB
-  - RULE-SET,greatfire,POP_SUB
+  - RULE-SET,gfw,GFW_
+  - RULE-SET,greatfire,GFW_
   # - DOMAIN-SUFFIX,amazonaws.com,POP_SUB    
   # - RULE-SET,reject,REJECT
   # - RULE-SET,google,FuckWall
