@@ -1,0 +1,599 @@
+# ★第一部分，系统配置
+mixed-port: 7891
+redir-port: 17891
+allow-lan: false
+bind-address: '*'
+mode: rule
+log-level: silent
+ipv6: false
+#external-controller: 0.0.0.0:9090
+#external-ui: dashboardB
+#interface-name: en0
+
+# ★第二部分，DNS配置
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.lan'
+    - 'localhost.ptlogin2.qq.com'
+    - 'dns.msftncsi.com'
+    - 'www.msftncsi.com'
+    - 'www.msftconnecttest.com'
+  nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+
+# ★第三部分，代理配置
+
+
+proxy-groups:
+  - name: "FACEBOOK"
+    type: select
+    proxies:
+      - llcool
+      - ssr_udp_game3
+      - ssr_udp_game2
+      - ssr_game3
+      - ssr_game2
+      - quest_3
+      - quest_2
+      - S_3
+      - S_2
+      - V_3
+      - V_2
+      - home100_7890
+      - home200_7890
+      - home100_57890
+      - home200_57890
+      - home100_2801
+      - home200_2801
+      - home100_geph
+      - home200_geph
+      - DIRECT
+  - name: "OCULUS"
+    type: select
+    proxies:
+      - DIRECT
+      - llcool
+      - ssr_udp_game3
+      - ssr_udp_game2
+      - ssr_game3
+      - ssr_game2
+      - quest_3
+      - quest_2
+      - S_3
+      - S_2
+      - V_3
+      - V_2
+      - home100_7890
+      - home200_7890
+      - home100_57890
+      - home200_57890
+      - home100_2801
+      - home200_2801
+      - home100_geph
+      - home200_geph
+      
+  - name: "POP_MAIN"
+    type: select
+    proxies:
+      - DIRECT
+      - llcool
+      - ssr_udp_game3
+      - ssr_udp_game2
+      - ssr_game3
+      - ssr_game2
+      - quest_3
+      - quest_2
+      - S_3
+      - S_2
+      - V_3
+      - V_2
+      - home100_7890
+      - home200_7890
+      - home100_57890
+      - home200_57890
+      - home100_2801
+      - home200_2801
+      - home100_geph
+      - home200_geph
+  - name: "VIVOX"
+    type: select
+    proxies:
+      - DIRECT
+      - stc
+      - ssr_udp_game3
+      - ssr_udp_game2
+      - ssr_game3
+      - ssr_game2
+      - quest_3
+      - quest_2
+      - S_3
+      - S_2
+      - V_3
+      - V_2
+      - home100_7890
+      - home200_7890
+      - home100_57890
+      - home200_57890
+      - home100_2801
+      - home200_2801
+      - home100_geph
+      - home200_geph
+
+  - name: "POP_SUB"
+    type: select
+    proxies:
+      - DIRECT
+      - llcool
+      - ssr_udp_game3
+      - ssr_udp_game2
+      - ssr_game3
+      - ssr_game2
+      - quest_3
+      - quest_2
+      - S_3
+      - S_2
+      - V_3
+      - V_2
+      - home100_7890
+      - home200_7890
+      - home100_57890
+      - home200_57890
+      - home100_2801
+      - home200_2801
+      - home100_geph
+      - home200_geph
+
+  - name: "GFW_"
+    type: select
+    proxies:
+      - DIRECT
+      - llcool
+      - ssr_udp_game3
+      - ssr_udp_game2
+      - ssr_game3
+      - ssr_game2
+      - quest_3
+      - quest_2
+      - S_3
+      - S_2
+      - V_3
+      - V_2
+      - home100_7890
+      - home200_7890
+      - home100_57890
+      - home200_57890
+      - home100_2801
+      - home200_2801
+      - home100_geph
+      - home200_geph
+
+  - name: "FINAL"
+    type: select
+    proxies:
+      - DIRECT
+      - llcool
+      - POP_MAIN
+      - POP_SUB
+      - VIVOX
+      - OCULUS
+      - ssr_udp_game3
+      - ssr_udp_game2
+      - ssr_game3
+      - ssr_game2
+      - quest_3
+      - quest_2
+      - S_3
+      - S_2
+      - V_3
+      - V_2
+      - home100_7890
+      - home200_7890
+      - home100_57890
+      - home200_57890
+      - home100_2801
+      - home200_2801
+      - home100_geph
+      - home200_geph
+
+  - name: "stc"
+    type: select
+    proxies:
+      - stc_auto
+    use:
+      - stcPool 
+
+  - name: "llcool"
+    type: select
+    proxies:
+      - llcool_auto
+    use:    
+      - llcoolPool 
+
+  - name: "ssr_udp_game3"
+    type: select
+    use:
+      - SSR_UDP_GAME_POOL3 
+  - name: "ssr_game3"
+    type: select
+    use:
+      - SSR_GAME_POOL3  
+  - name: "ssr_udp_game2"
+    type: select
+    use:
+      - SSR_UDP_GAME_POOL2 
+  - name: "ssr_game2"
+    type: select
+    use:
+      - SSR_GAME_POOL2 
+
+  - name: "quest_3"
+    type: select
+    use:
+      - config003Pool_Quest 
+ 
+  - name: "quest_2"
+    type: select
+    use:
+      - config002Pool_Quest  
+
+  - name: "S_3"
+    type: select
+    use:
+      - config003Pool_S
+      
+  - name: "V_3"
+    type: select
+    use:
+      - config003Pool_V
+
+  - name: "S_2"
+    type: select
+    use:
+      - config002Pool_S 
+      
+  - name: "V_2"
+    type: select
+    use:
+      - config002Pool_V 
+
+  - name: "stc_auto"
+    type: url-test
+    use:
+      - stcPool 
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 86400
+
+  - name: "llcool_auto"
+    type: url-test
+    use:
+      - llcoolPool 
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 86400
+
+proxies:
+  - name: home100_2801
+    type: socks5
+    server: 192.168.50.100
+    port: 2801
+    udp: true
+  - name: home200_2801
+    type: socks5
+    server: 192.168.50.200
+    port: 2801
+    udp: true
+  - name: home100_7890
+    type: socks5
+    server: 192.168.50.100
+    port: 7890
+    udp: true
+  - name: home200_7890
+    type: socks5
+    server: 192.168.50.200
+    port: 7890
+    udp: true
+  - name: home100_57890
+    type: socks5
+    server: 192.168.50.100
+    port: 57890
+    udp: true
+  - name: home200_57890
+    type: socks5
+    server: 192.168.50.200
+    port: 57890
+    udp: true
+  - name: home100_geph
+    type: socks5
+    server: 192.168.50.100
+    port: 9909
+    udp: true
+  - name: home200_geph
+    type: socks5
+    server: 192.168.50.200
+    port: 9909
+    udp: true
+proxy-providers:
+  "SSR_UDP_GAME_POOL3":
+    type: http
+    #url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/config_ssr_udp_game.yaml"
+    url: "https://raw.fastgit.org/misersun/config003/main/config_ssr_udp_game.yaml"
+    interval: 3600
+    path: ./download/config_ssr_game.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+  "SSR_GAME_POOL3":
+    type: http
+    #url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/config_ssr_game.yaml"
+    url: "https://raw.fastgit.org/misersun/config003/main/config_ssr_game.yaml"
+    interval: 3600
+    path: ./download/config_ssr_game.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+  "SSR_UDP_GAME_POOL2":
+    type: http
+    #url: "https://cdn.jsdelivr.net/gh/misersun/config002@main/config_ssr_udp_game.yaml"
+    url: "https://raw.fastgit.org/misersun/config002/main/config_ssr_udp_game.yaml"
+    interval: 3600
+    path: ./download/config_ssr_game.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+  "SSR_GAME_POOL2":
+    type: http
+    #url: "https://cdn.jsdelivr.net/gh/misersun/config002@main/config_ssr_game.yaml"
+    url: "https://raw.fastgit.org/misersun/config002/main/config_ssr_game.yaml"
+    interval: 3600
+    path: ./download/config_ssr_game.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+  "config003Pool_Quest":
+    type: http
+    #url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/config_quest.yaml"
+    url: "https://raw.fastgit.org/misersun/config003/main/config_quest.yaml"
+    interval: 3600
+    path: ./download/tested_config003_quest.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+  "config002Pool_Quest":
+    type: http
+    #url: "https://cdn.jsdelivr.net/gh/misersun/config002@main/config_quest.yaml"
+    url: "https://raw.fastgit.org/misersun/config002/main/config_quest.yaml"
+    interval: 3600
+    path: ./download/tested_config002_quest.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+  "config003Pool_V":
+    type: http
+    #url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/config_v.yaml"
+    url: "https://raw.fastgit.org/misersun/config003/main/config_v.yaml"
+    interval: 3600
+    path: ./download/tested_config003_v.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+  "config002Pool_V":
+    type: http
+    #url: "https://cdn.jsdelivr.net/gh/misersun/config002@main/config_v.yaml"
+    url: "https://raw.fastgit.org/misersun/config002/main/config_v.yaml"
+    interval: 3600
+    path: ./download/tested_config002_v.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+  "config003Pool_S":
+    type: http
+    #url: "https://cdn.jsdelivr.net/gh/misersun/config003@main/config_s.yaml"
+    url: "https://raw.fastgit.org/misersun/config003/main/config_s.yaml"
+    interval: 3600
+    path: ./download/tested_config003_s.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+  "config002Pool_S":
+    type: http
+    #url: "https://cdn.jsdelivr.net/gh/misersun/config002@main/config_s.yaml"
+    url: "https://raw.fastgit.org/misersun/config002/main/config_s.yaml"
+    interval: 3600
+    path: ./download/tested_config002_s.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+  "stcPool":
+    type: http
+    url: "http://192.168.50.200:5000/static/config_stc.yaml"
+    interval: 3600
+    path: ./download/stc.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  "llcoolPool":
+    type: http
+    url: "http://192.168.50.200:5000/static/config_llcool.yaml"
+    interval: 3600
+    path: ./download/llcool.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+# ★第四部分，规则配置
+rule-providers:
+  # reject:
+    # type: http
+    # behavior: domain
+    # url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
+    # #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/reject.txt"
+    # #url: "https://raw.fastgit.org/misersun/rules/main/reject.txt"
+    # path: ./ruleset/reject.yaml
+    # interval: 86400
+
+  # icloud:
+    # type: http
+    # behavior: domain
+    # url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt"
+    # #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/icloud.txt"
+    # #url: "https://raw.fastgit.org/misersun/rules/main/icloud.txt"
+    # path: ./ruleset/icloud.yaml
+    # interval: 86400
+
+  # apple:
+    # type: http
+    # behavior: domain
+    # url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt"
+    # #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/apple.txt"
+    # #url: "https://raw.fastgit.org/misersun/rules/main/apple.txt"
+    # path: ./ruleset/apple.yaml
+    # interval: 86400
+
+  # google:
+    # type: http
+    # behavior: domain
+    # url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt"
+    # #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/google.txt"
+    # #url: "https://raw.fastgit.org/misersun/rules/main/google.txt"
+    # path: ./ruleset/google.yaml
+    # interval: 86400
+
+  # proxy:
+    # type: http
+    # behavior: domain
+    # url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt"
+    # #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/proxy.txt"
+    # #url: "https://raw.fastgit.org/misersun/rules/main/proxy.txt"
+    # path: ./ruleset/proxy.yaml
+    # interval: 86400
+
+  # direct:
+    # type: http
+    # behavior: domain
+    # url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"
+    # #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/direct.txt"
+    # #url: "https://raw.fastgit.org/misersun/rules/main/direct.txt"
+    # path: ./ruleset/direct.yaml
+    # interval: 86400
+
+  gfw:
+    type: http
+    behavior: domain
+    #url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt"
+    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/gfw.txt"
+    #url: "https://raw.fastgit.org/misersun/rules/main/gfw.txt"
+    path: ./ruleset/gfw.yaml
+    interval: 86400
+
+  greatfire:
+    type: http
+    behavior: domain
+    #url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/greatfire.txt"
+    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/greatfire.txt"
+    #url: "https://raw.fastgit.org/misersun/rules/main/greatfire.txt"
+    path: ./ruleset/greatfire.yaml
+    interval: 86400
+
+  # tld-not-cn:
+    # type: http
+    # behavior: domain
+    # url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt"
+    # #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/tld-not-cn.txt"
+    # #url: "https://raw.fastgit.org/misersun/rules/main/tld-not-cn.txt"
+    # path: ./ruleset/tld-not-cn.yaml
+    # interval: 86400
+
+  # telegramcidr:
+    # type: http
+    # behavior: ipcidr
+    # url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt"
+    # #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/telegramcidr.txt"
+    # #url: "https://raw.fastgit.org/misersun/rules/main/telegramcidr.txt"
+    # path: ./ruleset/telegramcidr.yaml
+    # interval: 86400
+
+  # cncidr:
+    # type: http
+    # behavior: ipcidr
+    # url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt"
+    # #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/cncidr.txt"
+    # #url: "https://raw.fastgit.org/misersun/rules/main/cncidr.txt"
+    # path: ./ruleset/cncidr.yaml
+    # interval: 86400
+
+  # lancidr:
+    # type: http
+    # behavior: ipcidr
+    # url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
+    # #url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/lancidr.txt"
+    # #url: "https://raw.fastgit.org/misersun/rules/main/lancidr.txt"
+    # path: ./ruleset/lancidr.yaml
+    # interval: 86400
+
+rules:
+  - DOMAIN,clash.razord.top,DIRECT
+  - DOMAIN,yacd.haishan.me,DIRECT
+  #- DOMAIN-SUFFIX,googleapis.cn,OCULUS
+  # - IP-CIDR,74.201.106.0/24,DIRECT,no-resolve
+  # - DOMAIN-SUFFIX,vivox.com,DIRECT
+  # - DOMAIN,clash.razord.top,DIRECT
+  # - DOMAIN,yacd.haishan.me,DIRECT
+  # - RULE-SET,icloud,DIRECT
+  # - RULE-SET,apple,DIRECT
+  # - RULE-SET,direct,DIRECT
+  # - GEOIP,CN,DIRECT
+  - DOMAIN-KEYWORD,facebook,FACEBOOK
+  - DOMAIN-SUFFIX,facebook.com,FACEBOOK
+  - DOMAIN-KEYWORD,oculus,OCULUS
+  - DOMAIN-KEYWORD,oculuscdn,OCULUS
+  - DOMAIN-SUFFIX,oculus.com,OCULUS
+  - DOMAIN-SUFFIX,oculuscdn.com,OCULUS
+  #- DOMAIN-SUFFIX,amazonaws.com,OCULUS
+  - DOMAIN-SUFFIX,myip.com,OCULUS
+  - DOMAIN-SUFFIX,amazonaws.com,POP_MAIN
+  - IP-CIDR,63.251.140.0/24,VIVOX,no-resolve
+  - IP-CIDR,70.42.198.0/23,VIVOX,no-resolve
+  - IP-CIDR,74.201.102.0/23,VIVOX,no-resolve
+  - IP-CIDR,74.201.106.0/23,VIVOX,no-resolve
+  - IP-CIDR,216.52.53.0/24,VIVOX,no-resolve
+  - IP-CIDR,69.25.124.0/23,VIVOX,no-resolve
+  - DOMAIN-SUFFIX,vivox.com,VIVOX
+  - DOMAIN-SUFFIX,unity3d.com,POP_SUB
+  - DOMAIN-SUFFIX,playfabapi.com,POP_SUB
+  - DOMAIN-SUFFIX,bigboxvr.com,POP_SUB
+  - RULE-SET,gfw,GFW_
+  - RULE-SET,greatfire,GFW_
+  # - DOMAIN-SUFFIX,amazonaws.com,POP_SUB    
+  # - RULE-SET,reject,REJECT
+  # - RULE-SET,google,FuckWall
+  # - RULE-SET,proxy,FuckWall
+  # - RULE-SET,telegramcidr,FuckWall
+# #  - MATCH,FuckWall
+  - MATCH,FINAL
+  # - MATCH,DIRECT
