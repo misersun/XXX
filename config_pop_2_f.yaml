@@ -595,5 +595,6 @@ rules:
   # - RULE-SET,proxy,FuckWall
   # - RULE-SET,telegramcidr,FuckWall
 # #  - MATCH,FuckWall
+  - GEOIP,CN,DIRECT
   - MATCH,FINAL
   # - MATCH,DIRECT
