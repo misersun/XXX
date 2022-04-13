@@ -9,7 +9,6 @@ ipv6: false
 #external-controller: 0.0.0.0:9090
 #external-ui: dashboardB
 #interface-name: en0
-
 # ★第二部分，DNS配置
 dns:
   enable: true
