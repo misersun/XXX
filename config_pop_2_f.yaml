@@ -33,6 +33,7 @@ proxy-groups:
   - name: "FACEBOOK"
     type: select
     proxies:
+      - llcool
       - ssr_udp_game3
       - ssr_udp_game2
       - ssr_game3
@@ -56,6 +57,7 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
+      - llcool
       - ssr_udp_game3
       - ssr_udp_game2
       - ssr_game3
@@ -79,6 +81,7 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
+      - llcool
       - ssr_udp_game3
       - ssr_udp_game2
       - ssr_game3
@@ -101,6 +104,7 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
+      - stc
       - ssr_udp_game3
       - ssr_udp_game2
       - ssr_game3
@@ -124,6 +128,7 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
+      - llcool
       - ssr_udp_game3
       - ssr_udp_game2
       - ssr_game3
@@ -147,6 +152,7 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
+      - llcool
       - ssr_udp_game3
       - ssr_udp_game2
       - ssr_game3
@@ -170,6 +176,7 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
+      - llcool
       - POP_MAIN
       - POP_SUB
       - VIVOX
@@ -192,6 +199,20 @@ proxy-groups:
       - home200_2801
       - home100_geph
       - home200_geph
+
+  - name: "stc"
+    type: select
+    proxies:
+      - stc_auto
+    use:
+      - stcPool 
+
+  - name: "llcool"
+    type: select
+    proxies:
+      - llcool_auto
+    use:    
+      - llcoolPool 
 
   - name: "ssr_udp_game3"
     type: select
@@ -240,15 +261,20 @@ proxy-groups:
     use:
       - config002Pool_V 
 
-  # - name: "feiniao"
-    # type: select
-    # use:
-      # - FeiNiaoPool 
-  # - name: "sub"
-    # type: select
-    # use:
-      # - SUB_Pool 
-        
+  - name: "stc_auto"
+    type: url-test
+    use:
+      - stcPool 
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 86400
+
+  - name: "llcool_auto"
+    type: url-test
+    use:
+      - llcoolPool 
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 86400
+
 proxies:
   - name: home100_2801
     type: socks5
@@ -400,6 +426,26 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
+
+  "stcPool":
+    type: http
+    url: "http://192.168.50.200:5000/static/config_stc.yaml"
+    interval: 3600
+    path: ./download/stc.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  "llcoolPool":
+    type: http
+    url: "http://192.168.50.200:5000/static/config_llcool.yaml"
+    interval: 3600
+    path: ./download/llcool.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
 # ★第四部分，规则配置
 rule-providers:
   # reject:
