@@ -36,11 +36,13 @@ proxy-groups:
       - test21_7890
       - test21_64890
       - test21_57890
-      - test200_2801
-      - test100_2801
+      - test200_2801      
       - test200_57890
       - test200_65890
       - test200_65891
+      - test200_7890
+      - test100_7890
+      - test100_2801
       - DIRECT 
 
   - name: "Final-------------------------------------------"
@@ -86,7 +88,16 @@ proxies:
     type: socks5
     server: 192.168.50.200
     port: 64891
-    
+  - name: test200_7890
+    type: socks5
+    server: 192.168.50.200
+    port: 7890
+  - name: test100_7890
+    type: socks5
+    server: 192.168.50.100
+    port: 7890
+
+
 # ★第四部分，规则配置
 rule-providers:
   reject:
