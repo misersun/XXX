@@ -1,0 +1,191 @@
+# ★第一部分，系统配置
+mixed-port: 7891
+redir-port: 17891
+allow-lan: false
+bind-address: '*'
+mode: rule
+log-level: silent
+ipv6: false
+#external-controller: 0.0.0.0:9090
+#external-ui: dashboardB
+#interface-name: en0
+
+# ★第二部分，DNS配置
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.lan'
+    - 'localhost.ptlogin2.qq.com'
+    - 'dns.msftncsi.com'
+    - 'www.msftncsi.com'
+    - 'www.msftconnecttest.com'
+  nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+
+# ★第三部分，代理配置
+
+proxy-groups:
+  - name: "FuckWall"
+    type: select
+    proxies:
+      - test200_7890
+      - test200_57890
+      - test200_2801      
+      - test200_65890
+      - test200_65891
+      - test100_7890
+      - test100_2801
+      - test21_2801
+      - test21_7890
+      - test21_64890
+      - test21_57890
+      - DIRECT 
+
+  - name: "Final"
+    type: select
+    proxies:
+      - FuckWall
+      - DIRECT
+
+proxies:
+  - name: test21_2801
+    type: socks5
+    server: 192.168.2.21
+    port: 2801
+  - name: test21_7890
+    type: socks5
+    server: 192.168.2.21
+    port: 7890
+  - name: test21_64890
+    type: socks5
+    server: 192.168.2.21
+    port: 64890
+  - name: test21_57890
+    type: socks5
+    server: 192.168.2.21
+    port: 57890
+  - name: test200_2801
+    type: socks5
+    server: 192.168.50.200
+    port: 2801
+  - name: test100_2801
+    type: socks5
+    server: 192.168.50.100
+    port: 2801    
+  - name: test200_57890
+    type: socks5
+    server: 192.168.50.200
+    port: 57890
+  - name: test200_65890
+    type: socks5
+    server: 192.168.50.200
+    port: 64890  
+  - name: test200_65891
+    type: socks5
+    server: 192.168.50.200
+    port: 64891
+  - name: test200_7890
+    type: socks5
+    server: 192.168.50.200
+    port: 7890
+  - name: test100_7890
+    type: socks5
+    server: 192.168.50.100
+    port: 7890
+
+
+# ★第四部分，规则配置
+rule-providers:
+  # reject:
+    # type: http
+    # behavior: domain
+    # url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
+    # path: ./ruleset/reject.yaml
+    # interval: 86400
+
+  # icloud:
+    # type: http
+    # behavior: domain
+    # url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt"
+    # path: ./ruleset/icloud.yaml
+    # interval: 86400
+
+  # apple:
+    # type: http
+    # behavior: domain
+    # url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt"
+    # path: ./ruleset/apple.yaml
+    # interval: 86400
+
+  # google:
+    # type: http
+    # behavior: domain
+    # url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt"
+    # path: ./ruleset/google.yaml
+    # interval: 86400
+
+  # proxy:
+    # type: http
+    # behavior: domain
+    # url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt"
+    # path: ./ruleset/proxy.yaml
+    # interval: 86400
+
+  # direct:
+    # type: http
+    # behavior: domain
+    # url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"
+    # path: ./ruleset/direct.yaml
+    # interval: 86400
+
+  # gfw:
+    # type: http
+    # behavior: domain
+    # url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt"
+    # path: ./ruleset/gfw.yaml
+    # interval: 86400
+
+  # greatfire:
+    # type: http
+    # behavior: domain
+    # url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/greatfire.txt"
+    # path: ./ruleset/greatfire.yaml
+    # interval: 86400
+
+  # tld-not-cn:
+    # type: http
+    # behavior: domain
+    # url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt"
+    # path: ./ruleset/tld-not-cn.yaml
+    # interval: 86400
+
+  # telegramcidr:
+    # type: http
+    # behavior: ipcidr
+    # url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt"
+    # path: ./ruleset/telegramcidr.yaml
+    # interval: 86400
+
+  cncidr:
+    type: http
+    behavior: ipcidr
+    #url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt"
+    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/cncidr.txt"
+    path: ./ruleset/cncidr.yaml
+    interval: 86400
+
+  # lancidr:
+    # type: http
+    # behavior: ipcidr
+    # url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
+    # path: ./ruleset/lancidr.yaml
+    # interval: 86400
+
+rules:
+  - GEOIP,CN,DIRECT
+#  - MATCH,FuckWall
+  - MATCH,Final
