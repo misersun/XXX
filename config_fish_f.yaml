@@ -6,7 +6,7 @@ bind-address: '*'
 mode: rule
 log-level: silent
 ipv6: false
-external-controller: 0.0.0.0:9090
+#external-controller: 0.0.0.0:9090
 #external-ui: dashboardB
 #interface-name: en0
 
@@ -34,12 +34,14 @@ proxy-groups:
   - name: "REALFISH"
     type: select
     proxies:
+      - home200_37890
       - home200_7890
       - REJECT
       - DIRECT
   - name: "Just4FaceBook"
     type: select
     proxies:
+      - home200_37890
       - DIRECT
       - quest_3
       - quest_2
@@ -58,6 +60,7 @@ proxy-groups:
   - name: "FuckWall"
     type: select
     proxies:
+      - home200_37890
       - quest_3
       - quest_2
       - S_3
@@ -143,6 +146,11 @@ proxies:
     type: socks5
     server: 192.168.50.200
     port: 9909
+    udp: true
+  - name: home200_37890
+    type: socks5
+    server: 192.168.50.200
+    port: 37890
     udp: true
 
 proxy-providers:
